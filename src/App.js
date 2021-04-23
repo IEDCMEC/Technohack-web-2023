@@ -9,10 +9,8 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Route path="/">
-          <Home />
-          {/* <Event /> */}
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/hackathon" component={Event} />
       </Router>
     );
   }

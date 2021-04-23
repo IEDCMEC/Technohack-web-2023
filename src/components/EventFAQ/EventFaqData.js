@@ -1,13 +1,13 @@
-const data = [
+const eventData = [
   {
     id: 1,
-    question: "Random FAQ question about Technoprenur",
+    question: "What did the fox say regarding the hackathon?",
     ans:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
   },
   {
     id: 2,
-    question: "What comes after tomorrow?",
+    question: "Another FAQ abot the event",
     ans:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
   },
@@ -20,7 +20,7 @@ const data = [
   {
     id: 4,
     question:
-      "Super long faq question which is so long that I'm running out of words to say so ig I should prolly end it with some blabbering like blah blah blah?",
+      "Super long faq question which is so long that I'm running out of words to say so bg I should prolly end it with some blabbering like blah blah blah?",
     ans:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
   },
@@ -38,4 +38,4 @@ const data = [
   },
 ];
 
-export default data;
+export default eventData;

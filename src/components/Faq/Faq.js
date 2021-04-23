@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import data from "./FaqData";
 import {
   Accordion,
   AccordionItem,
@@ -9,15 +8,18 @@ import {
 } from "react-accessible-accordion";
 import "./Faq.css";
 
-const Faq = () => {
-  const [collapsed, setCollapsed] = useState([]);
+const Faq = ({ data, faqClass }) => {
+  const [collapsedIds, setCollapsedIds] = useState([]);
+
   return (
-    <div className="faq">
-      <div className="section-heading">FAQs</div>
+    <div className={`faq ${faqClass}`}>
+      {/* show title only for home page */}
+      {!faqClass && <div className="section-heading">FAQ</div>}
+
       <Accordion
         allowMultipleExpanded={true}
         allowZeroExpanded={true}
-        onChange={(ids) => setCollapsed(ids)}
+        onChange={(ids) => setCollapsedIds(ids)}
       >
         {data.map(({ id, question, ans }, index) => (
           <AccordionItem key={id} uuid={id} className="faq-container">
@@ -28,7 +30,7 @@ const Faq = () => {
                     <div style={{ marginRight: "10px" }}>{index + 1}.</div>
                     <p>{question}</p>
                   </div>
-                  <div>{collapsed.includes(id) ? "-" : "+"}</div>
+                  <div>{collapsedIds.includes(id) ? "-" : "+"}</div>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
