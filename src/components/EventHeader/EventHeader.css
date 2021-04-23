@@ -1,0 +1,37 @@
+.event-header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.event-landing{
+    padding:100px 100px 0 100px;
+    height: 100%;
+    position: relative;
+}
+.event-landing::before{
+    content: '';
+    float: left;
+    height: 100%;
+}
+.event-countdown-container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.event-countdown-container{
+    border-left: 5px solid #9126DE;
+    position: relative;
+}
+.left-border-top-square{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    left: -10px;
+    background: #9126DE;
+}
+.event-countdown{
+    height: 200px;
+    margin-left: 100px;
+    background-color: violet;
+}
