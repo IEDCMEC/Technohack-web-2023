@@ -1,0 +1,13 @@
+.event-page{
+    background: #19072C;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+.event-main{
+    margin-left: 100px;
+    border-left: 5px solid #9126DE;
+    height: 300vh;
+    width: 100vw;
+}

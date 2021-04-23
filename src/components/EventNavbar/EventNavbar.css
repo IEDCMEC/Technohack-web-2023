@@ -1,0 +1,21 @@
+.event-navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+
+.event-nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.event-active{
+    font-weight: bold;
+}

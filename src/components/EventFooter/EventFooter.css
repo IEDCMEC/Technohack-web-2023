@@ -1,0 +1,23 @@
+.event-footer{
+    width: 100vw;
+    position: relative;
+    height: 200px;
+    background: #27054D;
+}
+.event-footer-margin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 105px;
+    border-right: 5px solid #9126DE;
+}
+.event-footer-margin::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    right: -10px;
+    width:15px;
+    height:15px;
+    background-color:#9126DE; /* to see where it is */
+  }
