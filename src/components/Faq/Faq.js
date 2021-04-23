@@ -1,38 +1,45 @@
-import { Component } from 'react';
-import './Faq.css';
+import React, { useState } from "react";
+import data from "./FaqData";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import "./Faq.css";
 
-export default class Faq extends Component {
-    render() {
-        return (
-                <div className="faq">
-                    <div className="section-heading">faq</div>
-                    <div className="faq-container">
-                        <div className="faq-question">
-                            1.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                        <div className="faq-question">
-                            2.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                        <div className="faq-question">
-                            3.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                        <div className="faq-question">
-                            4.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                        <div className="faq-question">
-                            5.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                        <div className="faq-question">
-                            6.addsdfdfdf <span className="faq-plus">+</span>
-                            <div className="faq-answer"></div>
-                        </div>
-                    </div>
+const Faq = () => {
+  const [collapsed, setCollapsed] = useState([]);
+  return (
+    <div className="faq">
+      <div className="section-heading">FAQs</div>
+      <Accordion
+        allowMultipleExpanded={true}
+        allowZeroExpanded={true}
+        onChange={(ids) => setCollapsed(ids)}
+      >
+        {data.map(({ id, question, ans }, index) => (
+          <AccordionItem key={id} uuid={id} className="faq-container">
+            <AccordionItemHeading>
+              <AccordionItemButton>
+                <div className="question-wrapper">
+                  <div style={{ marginRight: "10px", display: "flex" }}>
+                    <div style={{ marginRight: "10px" }}>{index + 1}.</div>
+                    <p>{question}</p>
+                  </div>
+                  <div>{collapsed.includes(id) ? "-" : "+"}</div>
                 </div>
-            )
-        }
-    };             
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <p className="faq-answer">{ans}</p>
+            </AccordionItemPanel>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  );
+};
+
+export default Faq;
