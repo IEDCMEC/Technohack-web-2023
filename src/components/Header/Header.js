@@ -12,7 +12,7 @@ export default class Header extends Component {
             <div className="header">
                 <div className="fade">
                     <FadeIn
-                        delay={1000}
+                        delay={500}
                         transitionDuration={1000}
                     >
                         <div className="header-image-navbar">
