@@ -8,7 +8,7 @@
   background-color: var(--background-color);
 }
 
-.section-heading {
+.faq-title {
   margin: 40px;
   font-weight: bold;
   font-size: 55px;
@@ -24,6 +24,7 @@
   background: var(--color);
   width: 75%;
 }
+
 .question-wrapper {
   width: 100%;
   font-family: Poppins;
@@ -36,6 +37,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .faq-answer {
   margin-top: 10px;
   font-family: Montserrat;
@@ -46,7 +48,7 @@
   font-weight: 500;
 }
 
-.event {
+.faq.event {
   --background-color: #19072c;
   --color: rgba(143, 0, 255, 0.6);
   --text-color: rgba(255, 255, 255, 1);
@@ -56,7 +58,7 @@
   .faq-container {
     width: 100%;
   }
-  .section-heading {
+  .faq-title {
     text-align: center;
   }
 }

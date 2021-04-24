@@ -14,7 +14,7 @@ const Faq = ({ data, faqClass }) => {
   return (
     <div className={`faq ${faqClass}`}>
       {/* show title only for home page */}
-      {!faqClass && <div className="section-heading">FAQ</div>}
+      {!faqClass && <div className="faq-title">FAQ</div>}
 
       <Accordion
         allowMultipleExpanded={true}
@@ -30,7 +30,9 @@ const Faq = ({ data, faqClass }) => {
                     <div style={{ marginRight: "10px" }}>{index + 1}.</div>
                     <p>{question}</p>
                   </div>
-                  <div>{collapsedIds.includes(id) ? "-" : "+"}</div>
+                  <div style={{ marginLeft: "10px" }}>
+                    {collapsedIds.includes(id) ? "-" : "+"}
+                  </div>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
