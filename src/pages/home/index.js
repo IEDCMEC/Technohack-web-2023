@@ -5,6 +5,7 @@ import Competitions from "../../components/Competitions/Competitions";
 import Faq from "../../components/Faq/Faq";
 import data from "../../components/Faq/FaqData";
 import Footer from "../../components/Footer/Footer";
+import About from "../../components/About/About";
 
 export default class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class Home extends Component {
         <Speakers />
         <Competitions />
         <Faq data={data} />
+        <About/>
         <Footer/>
       </div>
     );
