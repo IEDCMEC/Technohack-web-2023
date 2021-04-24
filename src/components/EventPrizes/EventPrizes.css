@@ -1,0 +1,56 @@
+.prize-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: auto;
+}
+
+.prize-card {
+  background-color: #25043f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 2rem 4rem 2rem 4rem;
+  color: white;
+  margin: 3rem;
+}
+.prize-image {
+  width: 13rem;
+  height: 12rem;
+}
+
+.prize-text {
+  font-size: large;
+}
+@media only screen and (max-width: 850px) {
+  .prize-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+  }
+  .prize-text {
+    margin: auto;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .prize-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+  }
+  .prize-img {
+    width: 6rem;
+    height: 5rem;
+  }
+  .prize-text {
+    margin: auto;
+    font-size: large;
+  }
+}
