@@ -6,7 +6,7 @@ export default class Competitions extends Component {
     render() {
         return (
                 <div className="competition" id="competitions">
-                    <div className="section-heading">Competitions</div>
+                    <div className="section-heading-competitions">Competitions</div>
                     <div className="competition-container">
                         <div className="competition-box">
                             <div className="competition-image"></div>
