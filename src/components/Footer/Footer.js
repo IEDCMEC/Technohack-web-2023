@@ -10,7 +10,7 @@ export default class Footer extends Component {
         return (
            <div className="footer-container">
                 <div className="footer-iedc-logo">
-                    <img src={Logo}/>
+                    <img className= "footer-iedc-image" src={Logo}/>
                 </div>
                 <div className="footer-copy">
                     <h4 className="footer-h4">Innovation and Entrepreneurship Development Cell</h4>
@@ -22,10 +22,10 @@ export default class Footer extends Component {
                 </div>
                 <div className="footer-scoial">
                     <a className="footer-insta" href="">
-                        <img src={insta}/>
+                        <img className= "footer-insta-image" src={insta}/>
                     </a>
                     <a className="footer-linkedin" href="">
-                        <img src={linkedin}/>
+                        <img className= "footer-linkedin-image" src={linkedin}/>
                     </a>
                     <a className="footer-twitter" href="">
                         <img className= "footer-twitter-image" src={twitter}/>
