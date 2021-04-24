@@ -7,7 +7,7 @@ import eventData from "./EventFaqData";
 export default class EventFAQ extends Component {
   render() {
     return (
-      <div>
+      <div id="faq">
         <EventSectionHeading text="FAQ" />
         <Faq faqClass="event" data={eventData} />
       </div>
