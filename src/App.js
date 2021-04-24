@@ -10,7 +10,8 @@ export default class App extends Component {
     return(
       <Router>
         <Route path="/">
-          <Event />
+          {/* <Event /> */}
+          <Home/>
         </Route>
       </Router> 
     );

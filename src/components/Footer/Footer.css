@@ -1,0 +1,93 @@
+.footer-container{
+    position: relative;
+    width:100vw;
+    height: 200px;
+    background: #F9F9F9;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-iedc-logo{
+    position: relative;
+    width: 220px;
+    height: 46px;
+    /* left: 4.5%;
+     */
+    top: 77px;
+    margin-left: 4.5%;
+     
+}
+
+.footer-copy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 765px;
+    height: 164px;
+    left: 20px;
+    top: 30px;
+    line-height: 200%;
+/* or 50px */
+
+font-feature-settings: 'kern' off;
+
+color: #002874;
+
+}
+
+.footer-h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 5px;
+    
+}
+
+.footer-address{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.footer-scoial{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 278.2px;
+    height: 57.66px;
+    left: -45px;
+    top: 71px;
+}
+.footer-insta{
+    position: relative;
+    width: 32.38px;
+    height: 32.76px;
+    margin-right: 20px;
+   
+}
+.footer-linkedin{
+    position: relative;
+    width: 32.38px;
+    height: 32.76px;
+    margin-right: 20px;
+}
+
+.footer-twitter{
+    position: relative;
+    width: 56.98px;
+    height: 56.98px;
+    
+}
+
+.footer-twitter-image{
+    position: relative;
+    width: 56.98px;
+    height: 56.98px;
+}
+
+@media screen {
+    
+}
