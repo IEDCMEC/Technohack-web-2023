@@ -5,8 +5,8 @@ import './Competitions.css';
 export default class Competitions extends Component {
     render() {
         return (
-                <div className="competition" id="competition">
-                    <div className="section-heading">Competition</div>
+                <div className="competition" id="competitions">
+                    <div className="section-heading">Competitions</div>
                     <div className="competition-container">
                         <div className="competition-box">
                             <div className="competition-image"></div>

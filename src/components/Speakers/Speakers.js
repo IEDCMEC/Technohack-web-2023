@@ -4,7 +4,7 @@ import './Speakers.css';
 export default class Speakers extends Component {
     render() {
         return (
-                <div className="speaker" id="competition">
+                <div className="speaker" id="speakers">
                     <div className="section-heading">Speaker Sessions</div>
                     <div className="speaker-container">
                         <div className="speaker-brewing-box">
