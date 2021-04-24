@@ -1,13 +1,16 @@
-import { Component } from 'react';
-import EventSectionHeading from '../EventSectionHeading/EventSectionHeading'
-import './EventFAQ.css';
+import { Component } from "react";
+import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
+import Faq from "../Faq/Faq";
+import "./EventFAQ.css";
+import eventData from "./EventFaqData";
 
 export default class EventFAQ extends Component {
-    render() {
-        return (
-           <div>
-                <EventSectionHeading text="FAQ" />
-           </div> 
-        )
-    }
+  render() {
+    return (
+      <div>
+        <EventSectionHeading text="FAQ" />
+        <Faq faqClass="event" data={eventData} />
+      </div>
+    );
+  }
 }
