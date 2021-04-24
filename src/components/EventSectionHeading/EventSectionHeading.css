@@ -9,6 +9,13 @@
     width: 80px;
     background: #9126DE;
 }
+.section-right-line{
+    height: 5px;
+    background: #9126DE;
+    display: none;
+    flex: 1;
+
+}
 .section-left-line-right-square{
     height: 15px;
     width: 15px;
@@ -21,4 +28,15 @@ line-height: 75px;
 text-transform: capitalize;
 color: #FFFFFF;
 padding-left: 40px;
+padding-right: 40px;
+width: max-content !important;
+}
+
+@media screen and (max-width: 900px) {
+    .section-left-line-right-square{
+        display: none;
+    }   
+    .section-right-line{
+        display: block;
+    }
 }

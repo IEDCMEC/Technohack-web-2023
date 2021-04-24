@@ -5,10 +5,10 @@
 }
 .event-landing{
     padding:20px 100px 0 100px;
-    height: 100%;
     position: relative;
+    overflow-x: visible;
 }
-.event-landing::before{
+/* .event-landing::before{
     content: '';
     float: left;
     height: 100%;
@@ -17,11 +17,13 @@
     content: '';
     display: block;
     clear: both;
-}
+    height: 100%;
+} */
 .event-countdown-container{
     border-left: 5px solid #9126DE;
     position: relative;
     margin-top:-180px;
+    overflow-x: visible;
 }
 .left-border-top-square{
     position: absolute;
@@ -31,11 +33,7 @@
     left: -10px;
     background: #9126DE;
 }
-.event-countdown{
-    height: 200px;
-    margin-left: 100px;
-    background-color: violet;
-}
+
 .event-row-container{
     display: flex;
     padding: 50px 0;

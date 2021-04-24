@@ -8,6 +8,7 @@ export default class EventSectionHeading extends Component {
                 <div className="section-left-line"></div>
                 <div className="section-left-line-right-square"></div>
                 <p className="event-section-heading">{this.props.text}</p>
+                <div className="section-right-line"></div>
            </div> 
 
         )
