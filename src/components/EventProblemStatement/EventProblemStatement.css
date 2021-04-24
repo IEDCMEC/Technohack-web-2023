@@ -1,0 +1,27 @@
+.combine{
+    display: flex;
+    padding: 50px 0;
+    flex-direction: row;
+}
+.problem-text{
+    color: white;
+    padding-left: 135px;
+    padding-right: 50px;
+}
+.image{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    transform: translate(-25%,-5%);
+}
+@media screen and (max-width: 550px){
+    .combine{
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image{
+        transform: translate(30%,0);
+    }
+}
