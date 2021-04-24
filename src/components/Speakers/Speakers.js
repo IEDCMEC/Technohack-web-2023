@@ -49,6 +49,7 @@ export default class Speakers extends Component {
                         </div>
                     </div>
                 </div>
-            )
-        }
-    };             
+            </div>
+        )
+    }
+};

@@ -16,6 +16,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.event-nav-link>a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .event-active{
     font-weight: bold;
 }

@@ -5,7 +5,7 @@ import './EventSponsers.css';
 export default class EventSponsers extends Component {
     render() {
         return (
-            <div>
+            <div id="sponsors">
                 <EventSectionHeading text="Sponsors" />
                 <div className="sponsors-container">
                     <h2 className="sponsors-title">Hackathon Partners</h2>
