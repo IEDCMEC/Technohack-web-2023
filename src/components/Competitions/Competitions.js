@@ -53,7 +53,6 @@ export default class Competitions extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
         )
     }
 };
