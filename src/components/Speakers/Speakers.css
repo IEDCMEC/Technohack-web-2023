@@ -33,6 +33,27 @@
     position: relative;
     overflow:hidden;
 }
+.speaker-brewing-box{
+    background: #BBBBBB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 400px;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4B4B4B;
+}
 .speaker-image{
     width: 100%;
     position: absolute;
@@ -77,10 +98,18 @@
         height: 400px;
         width: 300px;
     }
+    .speaker-brewing-box{
+        height: 400px;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:790px){
     .speaker-box{
+        height: 340px;
+        width: 220px;
+    }
+    .speaker-brewing-box{
         height: 340px;
         width: 220px;
     }
@@ -91,6 +120,11 @@
         height: 370px;
         width: 270px;
     }
+    .speaker-brewing-box{
+        height: 370px;
+        width: 270px;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -107,6 +141,11 @@
         justify-content: center;
     }
     .speaker-box{
+        height: 370px;
+        width: 270px;
+        margin-right: 0;
+    }
+    .speaker-brewing-box{
         height: 370px;
         width: 270px;
         margin-right: 0;
