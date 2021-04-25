@@ -19,11 +19,12 @@
 }
 .prize-image {
   width: 13rem;
-  height: 12rem;
+  height: auto;
 }
 
 .prize-text {
   font-size: large;
+  margin: auto;
 }
 @media only screen and (max-width: 850px) {
   .prize-card {
@@ -44,13 +45,14 @@
     display: flex;
     flex-direction: row;
     margin: 1.5rem;
+    padding: 2rem;
   }
-  .prize-img {
-    width: 6rem;
-    height: 5rem;
+  .prize-image {
+    width: 50%;
   }
   .prize-text {
     margin: auto;
     font-size: large;
+    white-space: nowrap;
   }
 }
