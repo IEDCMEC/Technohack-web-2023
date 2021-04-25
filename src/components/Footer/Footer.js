@@ -20,7 +20,7 @@ export default class Footer extends Component {
                         <p className="footer-p">iedc@mec.ac.in</p>
                     </div>
                 </div>
-                <div className="footer-scoial">
+                <div className="footer-social">
                     <a className="footer-insta" href="">
                         <img className= "footer-insta-image" src={insta}/>
                     </a>

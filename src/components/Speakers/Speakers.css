@@ -6,7 +6,7 @@
     overflow-x: hidden;
 }
 
-.section-heading{
+.section-heading-speakers {
     margin: 40px;
     font-weight: bold;
     font-size: 55px;
@@ -113,8 +113,10 @@
         height: 340px;
         width: 220px;
     }
+    .section-heading-speakers {
+        font-size: 40px;
+    }
 }
-
 @media screen and (max-width:616px){
     .speaker-box{
         height: 370px;
@@ -149,5 +151,8 @@
         height: 370px;
         width: 270px;
         margin-right: 0;
+    }
+    .section-heading-speakers {
+        font-size: 30px;
     }
 }

@@ -5,7 +5,7 @@ export default class Speakers extends Component {
     render() {
         return (
                 <div className="speaker" id="speakers">
-                    <div className="section-heading">Speaker Sessions</div>
+                    <div className="section-heading-speakers">Speaker Sessions</div>
                     <div className="speaker-container">
                         <div className="speaker-brewing-box">
                             {/*<div className="speaker-image"></div>
