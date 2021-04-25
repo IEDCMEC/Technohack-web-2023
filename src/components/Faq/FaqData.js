@@ -36,6 +36,12 @@ const data = [
     ans:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
   },
+  {
+    id: 7,
+    question: "Small Faq.",
+    ans:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+  },
 ];
 
 export default data;

@@ -24,6 +24,9 @@
   background: var(--color);
   width: 75%;
 }
+.faq-container :focus {
+  outline: none;
+}
 
 .question-wrapper {
   width: 100%;
@@ -35,7 +38,6 @@
   font-size: 1.1rem;
   padding: 5px;
   display: flex;
-  justify-content: space-between;
 }
 
 .faq-answer {
@@ -58,6 +60,7 @@
   .faq-container {
     width: 100%;
   }
+
   .faq-title {
     text-align: center;
   }
