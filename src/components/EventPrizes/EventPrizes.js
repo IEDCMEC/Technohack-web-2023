@@ -76,6 +76,8 @@ export default class EventPrizes extends Component {
   ];
   render() {
     return (
+      <>
+      <div id="prizes-link_for_navbar"></div>
       <div id="prizes">
         <EventSectionHeading text="Prizes" />
         <div className="prize-container">
@@ -92,6 +94,7 @@ export default class EventPrizes extends Component {
           ))}
         </div>
       </div>
+      </>
     );
   }
 }

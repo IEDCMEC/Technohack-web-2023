@@ -9,7 +9,8 @@ import Tezos from "../../assets/Tezos.png";
 import Devfolio from "../../assets/Devfolio.png";
 export default class EventSponsers extends Component {
     render() {
-        return (
+        return (<>
+            <div id="sponsors-link_for_navbar"></div>
             <div id="sponsors">
                 <EventSectionHeading text="Sponsors" />
                 <div className="sponsors-container">
@@ -78,6 +79,7 @@ export default class EventSponsers extends Component {
                     </div>
                 </div>
             </div>
+            </>
         )
     }
 }

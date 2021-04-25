@@ -6,11 +6,13 @@ import eventData from "./EventFaqData";
 
 export default class EventFAQ extends Component {
   render() {
-    return (
+    return (<>
+      <div id="faq-link_for_navbar"></div>
       <div id="faq">
         <EventSectionHeading text="FAQ" />
         <Faq faqClass="event" data={eventData} />
       </div>
+      </>
     );
   }
 }
