@@ -9,6 +9,8 @@
 }
 
 .prize-card {
+  display:flex;
+  flex-direction: column;
   background-color: #25043f;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -16,20 +18,29 @@
   padding: 2rem 4rem 2rem 4rem;
   color: white;
   margin: 3rem;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  height: 329px;
+  width: 336px;
 }
 .prize-image {
   width: 13rem;
   height: 12rem;
 }
+.devfolio-prize-image {
+  width: 180px;
+
+}
 
 .prize-text {
   font-size: large;
+  padding-top:10px;
 }
 @media only screen and (max-width: 850px) {
   .prize-card {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+
     margin: 1.5rem;
   }
   .prize-text {
@@ -41,8 +52,7 @@
 @media only screen and (max-width: 450px) {
   .prize-card {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+
     margin: 1.5rem;
   }
   .prize-img {
