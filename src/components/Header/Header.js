@@ -40,7 +40,7 @@ export default class Header extends Component {
                     <div className="row2">
                         <div className="element1">
                             <div className="header-bottom-content">
-                                <div className="header-bottom-content-number">5</div>
+                                <div className="header-bottom-content-number">3</div>
                                 <hr style={{ border: 0, height: 1, backgroundColor: "grey"}} />
                                 <div className="header-bottom-content-text">Days</div>
                             </div>
@@ -65,7 +65,7 @@ export default class Header extends Component {
                             <div className="header-bottom-content">
                                 <div className="header-bottom-content-number">1000+</div>
                                 <hr style={{ border: 0, height: 1, backgroundColor: "grey"}} />
-                                <div className="header-bottom-content-text">Students</div>
+                                <div className="header-bottom-content-text">Participants</div>
                             </div>
                         </div>
                     </div>

@@ -10,13 +10,20 @@ export default class EventProblemStatement extends Component {
                 <EventSectionHeading text="Tracks" />
                 <div className='combine'>
                     <div>
-                        <p className='problem-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        <br /><br /> Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        <p className='problem-text'>
+                            <b>Spoon</b>: Build your solution on the Cloud.  <br/>
+                            Only invidual participants are eligible for this track.
+                        </p>
+                        <br/> <br/>
+                        <p className='problem-text'>
+                        <b>Block Chain</b>: The future lies in Decentralization and
+            Transparency. This track is for blockchain enthusiasts.
+                        </p>
+                        <br/> <br/>
+                        <p className='problem-text'>
+                        <b>Open Innovation</b>: We do not want to tie you down with problem
+            statements, hence, if you are a free thinker and already have
+            solutions to problems, then this track is for you.
                         </p>
                     </div>
                     <div className="problem-statement-image-container">
