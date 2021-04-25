@@ -82,4 +82,8 @@
     .event-countdown-container{
         display:none;
     }
+    .event-landing{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 } 

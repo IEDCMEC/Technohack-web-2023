@@ -18,7 +18,7 @@ export default class EventProblemStatement extends Component {
                         anim id est laborum.
                         </p>
                     </div>
-                    <div>
+                    <div className="problem-statement-image-container">
                         <img src={problemImg} alt="Image" className='problem-statement-image' />
                     </div>
                 </div>
