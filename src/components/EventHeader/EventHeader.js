@@ -27,7 +27,6 @@ export default function EventHeader () {
             as a part of <strong> IEDC MEC's Technopreneur </strong> event. 
             TechnoHack invites all geeks and entrepreneurs to come up with
             solutions to problems of today.
-            
                         </p>
                         <div className="event-reg-btn">
                         <div
@@ -37,18 +36,18 @@ export default function EventHeader () {
             style={{ height: "44px", width: "312px" }}
           ></div>
                         </div>
-                       
+                        <div className="counter">
+          <Counter date={`2021-05-17T00:00:00`} />
+        </div>
                     </div>
                     <div>
                         <img src={HeaderImage} alt="Header-Image" className='event-header-image' />
                     </div>
                 </div>
-
+                
                 <div className="event-countdown-container">
-                    <div className="left-border-top-square"></div>
-                    <div className="counter">
-          <Counter date={`2021-05-17T00:00:00`} />
-        </div>
+                <div className="left-border-top-square"></div>
+
                 </div>
             </div>
            </div> 
