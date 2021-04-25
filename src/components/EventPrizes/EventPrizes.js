@@ -14,6 +14,12 @@ import Spoon from "../../assets/spoon.png";
 export default class EventPrizes extends Component {
   prizeCards = [
     {
+      description: "Cloud Engineer Internship ",
+      img: Spoon,
+      prizeMoney: "₹90,000",
+      imgStyle: "devfolio-prize-image",
+    },
+    {
       description: "First Prize",
       img: first,
       prizeMoney: "₹10,000",
@@ -71,12 +77,6 @@ export default class EventPrizes extends Component {
       description: "Best Dapp built on Celo",
       img: Celo,
       prizeMoney: "₹20,000",
-      imgStyle: "devfolio-prize-image",
-    },
-    {
-      description: "Cloud Engineer Internship ",
-      img: Spoon,
-      prizeMoney: "₹90,000",
       imgStyle: "devfolio-prize-image",
     },
   ];
