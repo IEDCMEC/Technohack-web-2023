@@ -2,14 +2,40 @@ import React from 'react'
 import collegeLogo from '../../assets/college_logo.png';
 import iedcLogo from '../../assets/iedc_logo.png';
 import tieLogo from '../../assets/Tie.jpeg';
+import KSUMlogo from '../../assets/KSUMITEM.png';
 import './About.css';
 function About() {
     return (
         <div id="about">
             <h1 className='about-heading'>ABOUT US</h1>
             <div>
+            <div className='box2'>
+                    <p className='about-text2 techno'>
+                        <b>Technopreneur</b> is the flagship event of IEDC MEC, and one of the most looked forward to events
+                    in MEC. It is the annual entrepreneurial and managerial symposium of Model Engineering College
+                    and includes a plethora of events including Idea Pitching, Prototype Development, hackathons,
+                    and much more. The first edition of Technopreneur, Technopreneur 2006, went on to win the Best
+                    Yi-Net event at the CII National Summit in Mumbai. Technopreneur 2021 will embrace its past
+                    legacy with a modern upgrade and intends to train and up-skill the hungry minds seeking to
+                    build enterprises on their own. With over 1000+ participants from top engineering colleges and
+                    B-schools across the country, Technopreneur aims to impact everyone from students to working-class
+                    professionals. One of our most exciting pre-events for this year is the Hult Prize, which is an annual,
+                    year-long competition that challenges students to solve pressing social issues around the world.
+                    <br /> <br />
+                        <b>Emerge! Endure! Evolve! </b>
+                        <br /> <br />
+                    Technopreneur has always followed the path of these three words when it comes to choosing a
+                    theme. In this pandemic-stricken world, each human being is fighting through thick and thin to
+                    overcome the challenges we are faced with. To successfully emerge from the ashes of these dire
+                    conditions, this year's theme for Technopreneur is to evolve into a better world through disruption,
+                    to provide the most innovative solutions for our problems. Our theme hopes to invoke a sense of
+                    responsibility and leadership in one's mind in order for them to understand that all our battles can
+                    be won through entrepreneurial solutions. Technopreneur is that missing puzzle piece for aspiring minds
+                    to make their ideas and dreams come true.
+                    </p>
+                </div>
                 <div className='box1'>
-                    <p className='about-text'>
+                    <p className='about-text2'>
                         Govt. Model Engineering College has been a centre of excellence for the last 31 years
                         and has carved an elegant niche for itself among the best engineering colleges across
                         the nation. Working steadily since its inception to bring out the best in its students,
@@ -35,7 +61,7 @@ function About() {
                     </p>
                 </div>
                 <div className='box1'>
-                    <p className='about-text2'>
+                    <p className='about-text'>
                         Govt. Model Engineering College has been a centre of excellence for the last 31 years and has
                         carved an elegant niche for itself among the best engineering colleges across the nation. Working
                         steadily since its inception to bring out the best in its students, MEC boasts of record-breaking
@@ -44,28 +70,12 @@ function About() {
                     <img src={tieLogo} alt='Tie' className='tie-img' />
                 </div>
                 <div className='box2'>
-                    <p className='about-text2 techno'>
-                        <b>Technopreneur</b> is the flagship event of IEDC MEC, and one of the most looked forward to events
-                    in MEC. It is the annual entrepreneurial and managerial symposium of Model Engineering College
-                    and includes a plethora of events including Idea Pitching, Prototype Development, hackathons,
-                    and much more. The first edition of Technopreneur, Technopreneur 2006, went on to win the Best
-                    Yi-Net event at the CII National Summit in Mumbai. Technopreneur 2021 will embrace its past
-                    legacy with a modern upgrade and intends to train and up-skill the hungry minds seeking to
-                    build enterprises on their own. With over 1000+ participants from top engineering colleges and
-                    B-schools across the country, Technopreneur aims to impact everyone from students to working-class
-                    professionals. One of our most exciting pre-events for this year is the Hult Prize, which is an annual,
-                    year-long competition that challenges students to solve pressing social issues around the world.
-                    <br /> <br />
-                        <b>Emerge! Endure! Evolve! </b>
-                        <br /> <br />
-                    Technopreneur has always followed the path of these three words when it comes to choosing a
-                    theme. In this pandemic-stricken world, each human being is fighting through thick and thin to
-                    overcome the challenges we are faced with. To successfully emerge from the ashes of these dire
-                    conditions, this year's theme for Technopreneur is to evolve into a better world through disruption,
-                    to provide the most innovative solutions for our problems. Our theme hopes to invoke a sense of
-                    responsibility and leadership in one's mind in order for them to understand that all our battles can
-                    be won through entrepreneurial solutions. Technopreneur is that missing puzzle piece for aspiring minds
-                    to make their ideas and dreams come true.
+                    <img src={ KSUMlogo } alt='KSUM' className='ksum' />
+                    <p className='about-text'>
+                    Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship 
+                    development and incubation activities in Kerala. With the  vision to strengthen the Startup 
+                    Eco System to support Industrial growth of Kerala ,KSUM continues to forge and implement 
+                    forward-looking policies to build a vibrant startup culture.
                     </p>
                 </div>
             </div>
