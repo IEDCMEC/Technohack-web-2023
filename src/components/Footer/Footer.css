@@ -5,7 +5,7 @@
         position: relative;
         width:100vw;
         height: 200px;
-        /* background: #F9F9F9; */
+        background: #F9F9F9;
         bottom: 0;
         display: flex;
         justify-content: space-between;

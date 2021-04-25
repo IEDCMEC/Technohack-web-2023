@@ -6,6 +6,7 @@
     color: white;
     padding-left: 135px;
     padding-right: 100px;
+    font-size:20px;
 }
 .problem-statement-image {
     width: 50%;
@@ -20,7 +21,6 @@
     .problem-statement-image{
         transform: translate(30%,0);
         margin-bottom: 10px;
-        width: 30%;
     }
     .problem-statement-image-container {
         align-content: center;

@@ -6,7 +6,7 @@ export default class EventProblemStatement extends Component {
     render() {
         return (
             <div id="problem-statement">
-                <EventSectionHeading text="Problem Statement" />
+                <EventSectionHeading text="Tracks" />
                 <div className='combine'>
                     <div>
                         <p className='problem-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
