@@ -20,7 +20,7 @@ export default class Header extends Component {
                             <img className="header-image" src={HeaderImage1} />
                         </div>
                         <div className="header-image-navbar">
-                            <img className="header-image" src={HeaderImage2} />
+                            <img className="header-image techno_logo_on_top" src={HeaderImage2} />
                         </div>
                         <div className="header-image-navbar last_one">
                             <img className="header-image ksum_img" src={HeaderImage4} />

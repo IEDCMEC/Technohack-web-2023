@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   width: 98%;
   margin: auto;
-  padding-right: 60px;
+  padding-right: 100px;
 }
 
 .prize-card {
@@ -18,7 +18,8 @@
   border-radius: 12px;
   padding: 2rem 4rem 2rem 4rem;
   color: white;
-  margin: 3rem;
+  margin: 2rem;
+  margin-right: 2%;
   text-align:center;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@
     font-size: large;
   }
   .prize-container{
-    padding-right: 0px;
+    padding-right: 20px;
   }
 }
 

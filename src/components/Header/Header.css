@@ -31,7 +31,7 @@
 }
 
 .header-bottom{
-    margin-top: 20vh;
+    margin-top: 30vh;
     /* position: absolute; */
     /* bottom: 0; */
     width: 100vw; 
@@ -131,6 +131,7 @@
 }
 
 @media screen and (max-width:840px) {
+
     .header-bottom{
         flex-direction: column;
         justify-content: center;
@@ -159,11 +160,16 @@
     }
 }
 @media screen and (max-width:600px) {
+    .fade {
+        margin-top: 10vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .nav {
         visibility: hidden;
     }
     .header{
-        margin-top: 35vh;
+        margin-top: 30vh;
     }
     .header-image{
         width: 80%;
@@ -180,5 +186,14 @@
     }
     .fade{
         margin-bottom: 30vh;
+    }
+    .techno_logo_on_top{
+        width: 90%;
+    }
+    .ksum_img{
+        width: 40%;
+    }
+    .tie_img{
+        width: 40%;
     }
 }
