@@ -31,6 +31,7 @@
         height: 9rem;
         width: 105px;
         border-right: 5px solid #9126de;
+        overflow-x: visible;
     }
 
     .event-footer-margin::after {
