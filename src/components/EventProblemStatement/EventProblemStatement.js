@@ -4,7 +4,8 @@ import './EventProblemStatement.css';
 import problemImg from '../../assets/problemImg.png';
 export default class EventProblemStatement extends Component {
     render() {
-        return (
+        return (<>
+            <div id="problem-statement-link_for_navbar"></div>
             <div id="problem-statement">
                 <EventSectionHeading text="Tracks" />
                 <div className='combine'>
@@ -23,6 +24,7 @@ export default class EventProblemStatement extends Component {
                     </div>
                 </div>
             </div>
+            </>
         )
     }
 }
