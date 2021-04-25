@@ -26,7 +26,7 @@
 }
 .prize-image {
   width: 13rem;
-  height: 12rem;
+  height: auto;
 }
 .devfolio-prize-image {
   width: 180px;
@@ -36,6 +36,7 @@
 .prize-text {
   font-size: large;
   padding-top:10px;
+  margin: auto;
 }
 @media only screen and (max-width: 850px) {
   .prize-card {
@@ -54,13 +55,14 @@
     width: 100%;
 
     margin: 1.5rem;
+    padding: 2rem;
   }
-  .prize-img {
-    width: 6rem;
-    height: 5rem;
+  .prize-image {
+    width: 50%;
   }
   .prize-text {
     margin: auto;
     font-size: large;
+    white-space: nowrap;
   }
 }
