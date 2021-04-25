@@ -29,7 +29,7 @@ export default class EventHeader extends Component {
                 <div className="event-countdown-container">
                     <div className="left-border-top-square"></div>
                     <div className="counter">
-          <Counter date={`2021-05-24T00:00:00`} />
+          <Counter date={`2021-05-17T00:00:00`} />
         </div>
                 </div>
             </div>

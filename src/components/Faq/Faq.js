@@ -12,7 +12,7 @@ const Faq = ({ data, faqClass }) => {
   const [collapsedIds, setCollapsedIds] = useState([]);
 
   return (
-    <div className={`faq ${faqClass}`}>
+    <div id="faq" className={`faq ${faqClass}`}>
       {/* show title only for home page */}
       {!faqClass && <div className="faq-title">FAQ</div>}
 

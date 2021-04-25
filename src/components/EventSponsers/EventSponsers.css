@@ -70,7 +70,7 @@
 
 @media (max-width: 900px) {
     .sponsors-container {
-        margin-left: -80px;
+        margin-left: 10px;
     }
     .sponsors-col {
         height: 130px;

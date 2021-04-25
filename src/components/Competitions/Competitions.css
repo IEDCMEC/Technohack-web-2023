@@ -1,11 +1,11 @@
 .competition{
-    width: 100vw;
-    height: 100vh;    
+    width: 100%;
+    min-height: 100vh;    
     background: #002874;
     padding: 40px;
 }
 
-.section-heading{
+.section-heading-competitions{
     margin: 40px;
     font-weight: bold;
     font-size: 55px;
@@ -16,18 +16,43 @@
 .competition-container{
     margin: 70px;
     display: flex;
-    justify-content: space-between;
-    width: 150%;
-    overflow-x: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .competition-box{
-    height: 400px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-right: 80px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     position: relative;
     overflow:hidden;
+}
+
+.competition-brewing-box{
+    background: #BBBBBB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 600px;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4B4B4B;
 }
 .competition-image{
     height: 100%;
@@ -77,6 +102,7 @@ width: 80%;
 text-align: center;
 box-shadow: 0px 2.78788px 2.78788px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
+text-decoration: none;
 }
 
 .blue{
@@ -85,4 +111,79 @@ border-radius: 20px;
 
 .red{
     background-color: #CC0045;
+}
+@media screen and (max-width:1100px){
+    .competition-box{
+        height: 370px;
+        width: 240px;
+    }
+    .competition-brewing-box{
+        height: 370px;
+        width: 240px;
+    }
+}
+
+
+@media screen and (max-width:934px){
+    .competition-box{
+        height: 400px;
+        width: 300px;
+    }
+    .competition-brewing-box{
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .competition-box{
+        height: 340px;
+        width: 220px;
+    }
+    .section-heading-competitions {
+        font-size: 40px;
+    }
+    .competition-brewing-box{
+        height: 340px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:616px){
+    .competition-box{
+        height: 370px;
+        width: 270px;
+    }
+    .competition-brewing-box{
+        height: 370px;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .competition{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .section-heading-competitions {
+        font-size: 30px;
+    }
+    .competition-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .competition-box{
+        height: 370px;
+        width: 270px;
+        margin-right: 0;
+    }
+    .competition-brewing-box{
+        height: 370px;
+        width: 270px;
+        margin-right: 0;
+    }
 }

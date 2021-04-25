@@ -35,7 +35,7 @@ export default class EventPrizes extends Component {
   ];
   render() {
     return (
-      <div>
+      <div id="prizes">
         <EventSectionHeading text="Prizes" />
         <div className="prize-container">
           {this.prizeCards.map((prize) => (

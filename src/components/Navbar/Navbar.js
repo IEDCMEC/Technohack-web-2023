@@ -3,36 +3,36 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 import './Navbar.css';
 export default class Navbar extends Component {
-    render() {
-    return ( 
-        <nav className="navbar">
-          <ul className="nav-item">
-            <li>
-              <Link to="/#/speakers" smooth={true} spy={true} duration={1000}
+  render() {
+    return (
+      <nav className="navbar">
+        <ul className="nav-item">
+          <li>
+            <Link to="#speakers" smooth={true} spy={true} duration={1000}
               className="av-link">
-                SPEAKERS
+              SPEAKERS
                 </Link>
-            </li>
-            <li>
-              <Link to="../Competitions/Competitions" smooth={true} spy={true} duration={1000}
+          </li>
+          <li>
+            <Link to="#competitions" smooth={true} spy={true} duration={1000}
               className="av-link">
-                COMPETITIONS
+              COMPETITIONS
                 </Link>
-            </li>
-            <li>
-              <Link to="../Faq/Faq" smooth={true} spy={true} duration={1000}
+          </li>
+          <li>
+            <Link to="#faq" smooth={true} spy={true} duration={1000}
               className="av-link">
-                FAQS
+              FAQS
                 </Link>
-            </li>
-            <li>
-              <Link to="#" smooth={true} spy={true} duration={1000}
+          </li>
+          <li>
+            <Link to="#about" smooth={true} spy={true} duration={1000}
               className="av-link">
-                ABOUT
+              ABOUT
                 </Link>
-            </li>
-          </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     )
-}
+  }
 }
