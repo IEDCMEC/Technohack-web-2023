@@ -22,7 +22,7 @@
 .event-countdown-container{
     border-left: 5px solid #9126DE;
     position: relative;
-    margin-top:-180px;
+    /* margin-top:100px; */
     overflow-x: visible;
 }
 .left-border-top-square{
@@ -31,6 +31,7 @@
     width: 15px;
     top: 0;
     left: -10px;
+    margin-top: -50px;
     background: #9126DE;
 }
 
@@ -57,15 +58,15 @@
 }
 .counter{
     margin-left:100px;
-    padding-top:50px;
+    padding-top:90px;
 }
 .event-header-image{
-    width:397px;
-    height:397px;
-   
-    
+    width: 80%;
+    margin-left: 20%;
+    /* width:397px; */
+    /* height:397px; */
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .event-row-container{
        text-align: center;
     }
@@ -86,5 +87,8 @@
     .event-landing{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .counter{
+        margin-left: auto;
     }
 } 
