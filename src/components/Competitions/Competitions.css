@@ -77,7 +77,7 @@
     transition: 0.2s;
 }
 .competition-image-container:hover .competition-image{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .competition-image-container:hover .competition-image-text{
