@@ -10,7 +10,9 @@ const Footer = () => {
             <div className="event-footer-margin"></div>
             <div className="container">
                 <div className="logo">
-                    <img src={Logo} alt="" />
+                    <a href="http://iedcmec.in/" target="_blank" rel="noreferrer noopener">
+                        <img src={Logo} alt="" />
+                    </a>
                 </div>
 
                 <div className="description-container">
@@ -27,17 +29,17 @@ const Footer = () => {
                 <div className={"socials"}>
                     <a
                         href="https://www.instagram.com/iedcmec"
-                        target="_blank "
+                        target="_blank " rel="noreferrer noopener"
                     >
                         <img src={Instagram} alt="" />
                     </a>
                     <a
                         href="https://www.linkedin.com/company/iedcmec"
-                        target="_blank "
+                        target="_blank " rel="noreferrer noopener"
                     >
                         <img src={LinkedIn} alt="" />
                     </a>
-                    <a href="https://www.twitter.com/iedc_mec" target="_blank ">
+                    <a href="https://www.twitter.com/iedc_mec" target="_blank " rel="noreferrer noopener">
                         <img src={Twitter} alt="" />
                     </a>
                 </div>
