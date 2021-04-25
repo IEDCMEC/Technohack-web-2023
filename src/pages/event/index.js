@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useEffect} from 'react';
 import EventHeader from '../../components/EventHeader/EventHeader';
 import EventProblemStatement from '../../components/EventProblemStatement/EventProblemStatement'
 import EventPrizes from '../../components/EventPrizes/EventPrizes'
@@ -8,8 +8,11 @@ import EventFooter from '../../components/EventFooter/EventFooter';
 import BackgroundAnimation from '../../components/BackgroundAnimation/BackgroundAnimation';
 import './index.css';
 
-export default class Event extends Component {
-    render() {
+export default function Event() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
         return (
            <div className="event-page">
                 <EventHeader />
@@ -24,5 +27,4 @@ export default class Event extends Component {
                 <EventFooter />
            </div> 
         )
-    }
 }    

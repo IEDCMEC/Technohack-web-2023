@@ -1,12 +1,21 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import HeaderImage from '../../assets/event-header.png';
 import eventregbtn from '../../assets/event-reg-btn.png';
 import EventNavbar from '../EventNavbar/EventNavbar';
 import './EventHeader.css';
 import Counter from "../Counter";
 
-export default class EventHeader extends Component {
-    render() {
+export default function EventHeader () {
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://apply.devfolio.co/v2/sdk.js";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
         return (
            <div className="event-header">
             <EventNavbar />
@@ -18,8 +27,17 @@ export default class EventHeader extends Component {
             as a part of <strong> IEDC MEC's Technopreneur </strong> event. 
             TechnoHack invites all geeks and entrepreneurs to come up with
             solutions to problems of today.
+            
                         </p>
-                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn' />    
+                        <div className="event-reg-btn">
+                        <div
+            className="apply-button"
+            data-hackathon-slug="YOUR-HACKATHON-SLUG"
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
+                        </div>
+                       
                     </div>
                     <div>
                         <img src={HeaderImage} alt="Header-Image" className='event-header-image' />
@@ -29,12 +47,12 @@ export default class EventHeader extends Component {
                 <div className="event-countdown-container">
                     <div className="left-border-top-square"></div>
                     <div className="counter">
-          <Counter date={`2021-05-24T00:00:00`} />
+          <Counter date={`2021-05-17T00:00:00`} />
         </div>
                 </div>
             </div>
            </div> 
 
         )
-    }
+   
 }
