@@ -1,7 +1,7 @@
 .event-header{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .event-landing{
     padding:20px 100px 0 100px;
