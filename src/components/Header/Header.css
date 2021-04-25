@@ -18,6 +18,17 @@
 .header-image{
     width: 60vw;
 }
+.ksum_img{
+    width: 15%;
+}
+.last_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tie_img{
+    width: 15%;
+}
 
 .header-bottom{
     margin-top: 20vh;

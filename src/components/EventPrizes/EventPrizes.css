@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   width: 98%;
   margin: auto;
+  padding-right: 60px;
 }
 
 .prize-card {
@@ -48,6 +49,9 @@
   .prize-text {
     margin: auto;
     font-size: large;
+  }
+  .prize-container{
+    padding-right: 0px;
   }
 }
 
