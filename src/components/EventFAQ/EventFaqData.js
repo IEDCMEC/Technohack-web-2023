@@ -17,6 +17,18 @@ const eventData = [
     ans:
       "This event is completely free! We’ll provide you with a plethora of resources and tools to hack with.",
   },
+  {
+    id: 4,
+    question: "What are the details about Spoon Internsip?",
+    ans:
+      "The internship is for a Cloud Engineer role at Spoon, with a stipend of Rs. 15,000 per month.",
+  },
+  {
+    id: 5,
+    question: "Who do I contact if I have any further doubts?",
+    ans:
+      "You can contact our Event Managers: Rindish (+91 85478 61324) or Adithya (+91 70127 03717). They'll be happy to help",
+  },
 ];
 
 export default eventData;
