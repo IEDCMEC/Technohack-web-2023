@@ -26,10 +26,8 @@ const Faq = ({ data, faqClass }) => {
             <AccordionItemHeading>
               <AccordionItemButton>
                 <div className="question-wrapper">
-                  <div style={{ marginRight: "10px", display: "flex" }}>
-                    <div style={{ marginRight: "10px" }}>{index + 1}.</div>
-                    <p>{question}</p>
-                  </div>
+                  <div style={{ marginRight: "10px" }}>{index + 1}.</div>
+                  <div style={{ flex: 1 }}>{question}</div>
                   <div style={{ marginLeft: "10px" }}>
                     {collapsedIds.includes(id) ? "-" : "+"}
                   </div>
