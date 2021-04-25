@@ -1,3 +1,8 @@
+#prizes{
+  position: relative;
+  z-index: 4;
+}
+
 .prize-container {
   display: flex;
   flex-direction: row;

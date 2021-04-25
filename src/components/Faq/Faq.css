@@ -49,7 +49,7 @@
 }
 
 .faq.event {
-  --background-color: #19072c;
+  --background-color: #19072c00;
   --color: rgba(143, 0, 255, 0.6);
   --text-color: rgba(255, 255, 255, 1);
 }

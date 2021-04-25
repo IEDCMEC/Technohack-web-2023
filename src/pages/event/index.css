@@ -4,6 +4,8 @@
     font-style: normal;
     font-weight: normal;
     overflow-x: hidden;
+    overflow-y: hidden !important;
+    height: fit-content;
 }
 .event-main{
     margin-top: -100px;
@@ -12,6 +14,8 @@
     width: 100vw;
     padding-top:100px; 
     padding-bottom: 100px;
+    position: relative;
+    overflow:visible;
 }
 
 

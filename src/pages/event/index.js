@@ -5,6 +5,7 @@ import EventPrizes from '../../components/EventPrizes/EventPrizes'
 import EventFAQ from '../../components/EventFAQ/EventFAQ'
 import EventSponsers from '../../components/EventSponsers/EventSponsers'
 import EventFooter from '../../components/EventFooter/EventFooter';
+import BackgroundAnimation from '../../components/BackgroundAnimation/BackgroundAnimation';
 import './index.css';
 
 export default class Event extends Component {
@@ -13,10 +14,12 @@ export default class Event extends Component {
            <div className="event-page">
                 <EventHeader />
                 <div className="event-main">
+
                     <EventProblemStatement />
                     <EventPrizes />
                     <EventFAQ />
                     <EventSponsers />
+                    <BackgroundAnimation />
                 </div>
                 <EventFooter />
            </div> 

@@ -1,0 +1,41 @@
+.cls-1{fill:#280a45;opacity:0.56;}
+
+.background-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow:visible;
+    z-index: 1;
+    top: 0;
+    left: -100px;
+}
+.svg-animation svg{
+    overflow: visible;
+    display: none;
+}
+
+#svg-1 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-2 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-3 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-1{
+    transform: translate(-300px, -200px);
+}
+#svg-2{
+    transform: translate(500px, 700px) scale(1.2);
+}
+#svg-3{
+    transform: translate(000px, -2200px) scale(0.8) rotateZ(-180deg);
+}
+
+#svg-4{
+    transform: translate(-700px, -3500px) scale(0.5) rotateZ(-150deg);
+}
+#svg-5{
+    transform: translate(400px, -6700px) scale(1.1) rotateZ(-150deg);
+}
