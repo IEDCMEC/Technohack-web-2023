@@ -6,7 +6,7 @@ export default class EventProblemStatement extends Component {
     render() {
         return (
             <div id="problem-statement">
-                <EventSectionHeading text="Problem Statement" />
+                <EventSectionHeading text="Tracks" />
                 <div className='combine'>
                     <div>
                         <p className='problem-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -18,8 +18,8 @@ export default class EventProblemStatement extends Component {
                         anim id est laborum.
                         </p>
                     </div>
-                    <div>
-                        <img src={problemImg} alt="Image" className='image' />
+                    <div className="problem-statement-image-container">
+                        <img src={problemImg} alt="Image" className='problem-statement-image' />
                     </div>
                 </div>
             </div>
