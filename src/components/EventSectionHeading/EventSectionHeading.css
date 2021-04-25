@@ -40,3 +40,45 @@ width: max-content !important;
         display: block;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .section-left-line{
+        width: 70px;
+    }
+    .event-section-heading{
+        font-size: 40px;
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section-left-line{
+        width: 30px;
+    }
+    .event-section-heading{
+        font-size: 32px;
+        padding: 0 20px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .section-left-line{
+        width: 30px;
+    }
+    .event-section-heading{
+        font-size: 28px;
+        padding: 0 20px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .section-left-line{
+        width: 20px;
+    }
+    .event-section-heading{
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+}
