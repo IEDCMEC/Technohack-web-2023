@@ -19,7 +19,7 @@ export default class EventProblemStatement extends Component {
                         </p>
                     </div>
                     <div>
-                        <img src={problemImg} alt="Image" className='image' />
+                        <img src={problemImg} alt="Image" className='problem-statement-image' />
                     </div>
                 </div>
             </div>
