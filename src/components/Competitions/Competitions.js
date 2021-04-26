@@ -35,7 +35,7 @@ export default class Competitions extends Component {
                                 <p className="competition-text-designation">Zerodha CEO</p>
                                 <div className="competition-button red">Register</div>
                             </div>*/}
-                            <p>Something's Brewing</p>
+                            <p>Something lit is brewing here</p>
                         </div>
                         <div className="competition-brewing-box">
                             {/*<div className="competition-image"></div>
@@ -44,7 +44,7 @@ export default class Competitions extends Component {
                                 <p className="competition-text-designation">Zerodha CEO</p>
                                 <div className="competition-button red">Register</div>
                             </div>*/}
-                            <p>Stay Tuned</p>
+                            <p>Something lit is brewing here</p>
                         </div>
                     </div>
                 </div>

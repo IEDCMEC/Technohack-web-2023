@@ -23,6 +23,11 @@ export default class EventSponsers extends Component {
                             <img src={Devfolio} alt="sponsor_image" className="sponsor-image"></img>
                         </a>
                         </div>
+                        <div className="sponsors-col sponsors-col-lg">
+                            <a href="https://www.spoon.money/" target="_blank" rel="noreferrer noopener">
+                            <img src={Spoon} alt="sponsor_image" className="sponsor-image"></img>
+                            </a>
+                        </div>
                     </div>
                     <h2 className="sponsors-title"><span className="sponsors-heading-platinum">Platinum</span> Sponsors</h2>
                     <div className="sponsors-row">
@@ -44,11 +49,6 @@ export default class EventSponsers extends Component {
                         <div className="sponsors-col sponsors-col-lg">
                             <a href="https://tezos.com/" target="_blank" rel="noreferrer noopener">
                             <img src={Tezos} alt="sponsor_image" className="sponsor-image"></img>
-                            </a>
-                        </div>
-                        <div className="sponsors-col sponsors-col-lg">
-                            <a href="https://www.spoon.money/" target="_blank" rel="noreferrer noopener">
-                            <img src={Spoon} alt="sponsor_image" className="sponsor-image"></img>
                             </a>
                         </div>
                     </div>

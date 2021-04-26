@@ -14,7 +14,7 @@ export default class Speakers extends Component {
                                 <p className="speaker-text-name">Etho Oral</p>
                                 <p className="speaker-text-designation">Zerodha CEO</p>
                             </div>*/}
-                            <p>Something's Brewing</p>
+                            <p>Something lit is brewing here</p>
                         </div>
                         <div className="speaker-brewing-box">
                             {/*<div className="speaker-image"></div>
@@ -22,7 +22,7 @@ export default class Speakers extends Component {
                                 <p className="speaker-text-name">Etho Oral</p>
                                 <p className="speaker-text-designation">Zerodha CEO</p>
                             </div>*/}
-                            <p>Something Amazing</p>
+                            <p>Something lit is brewing here</p>
                         </div>
                         <div className="speaker-brewing-box">
                             {/*<div className="speaker-image"></div>
@@ -30,7 +30,7 @@ export default class Speakers extends Component {
                                 <p className="speaker-text-name">Etho Oral</p>
                                 <p className="speaker-text-designation">Zerodha CEO</p>
                             </div>*/}
-                            <p>Something Exciting</p>
+                            <p>Something lit is brewing here</p>
                         </div>
                     </div>
                 </div>
