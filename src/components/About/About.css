@@ -1,7 +1,12 @@
+#about{
+    position: relative;
+}
 .about-heading{
     color: #002874;
     padding: 25px 50px;
     margin-top: 25px;
+    position: relative;
+    z-index: 3;
 }
 .about-text{
     display: flex;
@@ -22,20 +27,26 @@
     width: 85%;
     display: flex;
     box-sizing: content-box;
-    box-shadow: 2px 1px 8px gray;
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.05);
     border-radius: 0 15px 15px 0;
     box-shadow: 10px;
     padding: 10px 30px;
     margin-bottom: 50px;
+    background-color: white;
+    position: relative;
+    z-index: 3;
 }
 .box2{
     width: 90%;
     display: flex;
     box-sizing: content-box;
     border-radius: 15px 0 0 15px;
-    box-shadow: 1px 2px 12px gray;
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.06);
     margin-bottom: 50px;
     float: right;
+    background-color: white;
+    position: relative;
+    z-index: 3;
 }
 .about-text.iedc{
     padding-left: 30px;

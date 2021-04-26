@@ -1,4 +1,4 @@
-.cls-2{fill:rgba(255, 255, 255, 0.15);}
+.cls-2{fill:rgba(221, 218, 218, 0.288);}
 
 .background-animation{
     position: absolute;
@@ -33,109 +33,35 @@
 #svg-1{
     position: absolute;
     top: -300px;
-    left:600px;
-    transform: scale(1.3);
+    left:400px;
+    transform: scale(1);
 }
 #svg-2{
     position: absolute;
     top: 00px;
     left: -50%;
-    transform: scale(.8) rotateZ('90deg');
+    transform: scale(.3) rotate(90deg);
 }
 #svg-3{
     position: absolute;
     top: 1800px;
     left: 80vw;
-    transform: scale(1.5) rotateZ(-180deg);
+    transform: scale(0.8) rotate(-180deg);
 }
 
 #svg-4{
     position: absolute;
-    bottom:-800px;
+    bottom:-1000px;
     right: -100vw;
-    transform: scale(0.6) rotateZ(-150deg);
+    transform: scale(0.5) rotate(-150deg);
 }
 #svg-5{
     position: absolute;
     bottom: -1500px;
     left: -100vw;
-    transform: scale(0.7) rotateZ(-150deg);
+    transform: scale(0.4) rotate(-150deg);
 }
 
-#svg-6{
-    position: absolute;
-    top: 0;
-    right: -50vw;
-    transform: scale(0.3);
-}
-
-#svg-7{
-    position: absolute;
-    top: -800px;
-    left: -700px;
-    transform: scale(0.1);
-}
-
-
-#svg-8{
-    position: absolute;
-    top: -1500px;
-    left: -1200px;
-    transform: scale(0.08) rotate(-30deg);
-}
-
-#svg-9{
-    position: absolute;
-    top: 150px;
-    left: 700px;
-    transform: scale(0.2) rotate(60deg);
-}
-
-#svg-10{
-    position: absolute;
-    top: 750px;
-    left: 1200px;
-    transform: scale(3) rotate(60deg);
-}
-
-
-#svg-11{
-    position: absolute;
-    top: 1250px;
-    left: 200px;
-    transform: scale(0.3) rotate(60deg);
-}
-
-#svg-12{
-    position: absolute;
-    top: 950px;
-    left: -800px;
-    transform: scale(0.1) rotate(60deg);
-}
-
-
-#svg-13{
-    position: absolute;
-    top: 1750px;
-    left: 100px;
-    transform: scale(0.2) rotate(120deg);
-}
-
-
-#svg-14{
-    position: absolute;
-    top: 2050px;
-    right: -1000px;
-    transform: scale(0.1) rotate(180deg);
-}
-
-#svg-15{
-    position: absolute;
-    top: 1850px;
-    right: -500px;
-    transform: scale(0.1) rotate(-40deg);
-}
-
- /* #svg-13 > path{
+ /* #svg-5 > path{
     fill: tomato;
-}  */
+}   */

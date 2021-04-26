@@ -2,10 +2,12 @@ import React from 'react'
 import collegeLogo from '../../assets/college_logo.png';
 import iedcLogo from '../../assets/iedc_logo.png';
 import tieLogo from '../../assets/Tie.jpeg';
+import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 import './About.css';
 function About() {
     return (
         <div id="about">
+        <BackgroundAnimation />
             <h1 className='about-heading'>ABOUT US</h1>
             <div>
                 <div className='box1'>
