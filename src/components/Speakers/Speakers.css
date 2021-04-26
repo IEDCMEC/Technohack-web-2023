@@ -4,6 +4,8 @@
     background: #CC0045;
     padding: 40px;
     overflow-x: hidden;
+    position: relative;
+
 }
 
 .section-heading-speakers {
@@ -13,6 +15,8 @@
     line-height: 67px;
     text-transform: uppercase;
     color: white;
+    z-index: 3;
+    position: relative;
 }
 .speaker-container{
     /* margin: 70px; */
@@ -22,6 +26,8 @@
     justify-content: space-evenly;
     width: 100%;
     margin-top: 60px;
+    z-index: 3;
+    position: relative;
 }
 
 .speaker-box{

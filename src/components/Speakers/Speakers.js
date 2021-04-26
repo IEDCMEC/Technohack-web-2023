@@ -1,10 +1,11 @@
 import { Component } from 'react';
 import './Speakers.css';
-
+import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 export default class Speakers extends Component {
     render() {
         return (
                 <div className="speaker" id="speakers">
+                    <BackgroundAnimation />
                     <div className="section-heading-speakers">Speaker Sessions</div>
                     <div className="speaker-container">
                         <div className="speaker-brewing-box">

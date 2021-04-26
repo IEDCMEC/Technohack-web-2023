@@ -7,6 +7,9 @@
     overflow-y: hidden !important;
     height: fit-content;
 }
+.event-background-container{
+    position: relative;
+}
 .event-main{
     margin-top: -200px;
     margin-left: 100px;
@@ -15,7 +18,7 @@
     padding-top:100px; 
     padding-bottom: 100px;
     position: relative;
-    overflow:visible;
+    z-index: 4;
 }
 
 @media (min-height: 850px) {
