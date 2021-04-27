@@ -3,6 +3,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    z-index: 20;
 }
 .section-left-line{
     height: 5px;

@@ -10,6 +10,7 @@
     background-color: var(--eventFooterBg);
     color: white;
     line-height: 1.5rem;
+    z-index: 4;
 }
 
 .event-footer .container {

@@ -17,6 +17,7 @@
   background-color: #5300BF;
   border-radius: 0.5rem;
   padding: 1rem;
+  width: 120px;
 }
 
 @media screen and (min-width: 1080px) {

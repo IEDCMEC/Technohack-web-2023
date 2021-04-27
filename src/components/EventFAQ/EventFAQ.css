@@ -1,3 +1,8 @@
+
+#faq{
+    position: relative;
+    z-index: 4;
+}
     .faq_two {
     --background-color: #cc0045;
     --color: white;
@@ -56,6 +61,25 @@
     --color: rgba(143, 0, 255, 0.6);
     --text-color: rgba(255, 255, 255, 1);
   }
+
+
+  .event-faq {
+
+    --background-color: #19072c;
+    --color: rgba(143, 0, 255, 0.6);
+    --text-color: rgba(255, 255, 255, 1);
+    
+      width: 100vw;
+      padding: 0px 20px;
+      padding-top: 40px;
+      background-color: var(--background-color);
+    
+  }
+
+  .faq.event {
+    padding: 0px 20px;
+    padding-bottom: 40px;
+  }
   
   @media only screen and (max-width: 500px) {
     .faq-container_two {
@@ -66,4 +90,4 @@
       text-align: center;
     }
   }
-  
+ 

@@ -5,6 +5,7 @@ import EventPrizes from '../../components/EventPrizes/EventPrizes'
 import EventFAQ from '../../components/EventFAQ/EventFAQ'
 import EventSponsers from '../../components/EventSponsers/EventSponsers'
 import EventFooter from '../../components/EventFooter/EventFooter';
+import BackgroundAnimation from '../../components/EventBackgroundAnimation/EventBackgroundAnimation';
 import './index.css';
 
 export default function Event() {
@@ -14,12 +15,16 @@ export default function Event() {
 
         return (
            <div className="event-page">
-                <EventHeader />
-                <div className="event-main">
-                    <EventProblemStatement />
-                    <EventPrizes />
-                    <EventFAQ />
-                    <EventSponsers />
+                <EventHeader/>
+                <div className="event-background-container">
+                    <BackgroundAnimation />
+                    <div className="event-main">
+                        <EventProblemStatement />
+                        <EventPrizes />
+                        <EventFAQ />
+                        <EventSponsers />
+
+                    </div>
                 </div>
                 <EventFooter />
            </div> 

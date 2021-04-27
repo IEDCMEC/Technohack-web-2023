@@ -1,3 +1,7 @@
+#problem-statement{
+    position: relative;
+    z-index: 4;
+}
 .combine{
     display: flex;
     padding: 50px 0;

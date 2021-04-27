@@ -1,3 +1,7 @@
+#sponsors{
+    position: relative;
+    z-index: 4;
+}
 .sponsors-container {
     color: white;
     margin-top: 20px;
