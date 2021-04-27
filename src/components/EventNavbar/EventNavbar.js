@@ -24,7 +24,7 @@ export default class EventNavbar extends Component {
                     </Link>
                 </div>
                 <div className="event-nav-link">
-                    <Link to="#faq-link_for_navbar" smooth={true} spy={true} duration={1000}>
+                    <Link to="#faq-link_for_navbar_two" smooth={true} spy={true} duration={1000}>
                         Faq
                     </Link>
                 </div>
