@@ -28,7 +28,7 @@ export default function EventHeader () {
             TechnoHack invites all geeks and entrepreneurs to come up with
             solutions to problems of today.
                         </p>
-                        <div className="event-reg-btn">
+                        <div className="event-reg-btn-header">
                         <div
             className="apply-button"
             data-hackathon-slug="technohack"
