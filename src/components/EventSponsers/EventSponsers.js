@@ -61,7 +61,7 @@ export default class EventSponsers extends Component {
                         </a>
                         </div>
                     </div>
-                    <h2 className="sponsors-title">Hackathon Partner</h2>
+                    <h2 className="sponsors-title">Outreach Partner</h2>
                     <div className="sponsors-row">
                         <div className="sponsors-col sponsors-col-lg">
                             <img src={HackClub} alt="sponsor_image" className="sponsor-image"></img>
