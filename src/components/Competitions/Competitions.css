@@ -71,6 +71,8 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     /* text-align: center; */
+    font-size: 0.8rem;
+    
 }
 .competition-image-container{
     height: 100%;
@@ -80,7 +82,9 @@
     bottom: 0;
     background-color: white;
     transition: 0.2s;
+    overflow: hidden;
 }
+
 .competition-image-container:hover .competition-image{
     opacity: 0.1;
 }

@@ -10,20 +10,19 @@ import './index.css';
 
 export default function Event() {
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+        window.scrollTo(0,0);
+      }, []);
 
         return (
            <div className="event-page">
                 <EventHeader/>
                 <div className="event-background-container">
-                    <BackgroundAnimation />
+                    {/* <BackgroundAnimation /> */}
                     <div className="event-main">
                         <EventProblemStatement />
                         <EventPrizes />
                         <EventFAQ />
                         <EventSponsers />
-
                     </div>
                 </div>
                 <EventFooter />
