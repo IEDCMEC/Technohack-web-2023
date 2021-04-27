@@ -1,40 +1,33 @@
 const eventData = [
   {
     id: 1,
-    question: "What did the fox say regarding the hackathon?",
+    question: "Who can attend?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Current students of any college of India as well as working professionals.",
   },
   {
     id: 2,
-    question: "Another FAQ abot the event",
+    question: "What is the team size?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "You can have a team with minimum size of 2 members and maximum of 4 members. For the spoon track, only individual participants are eligible.",
   },
   {
     id: 3,
-    question: "Some random faq quesion with a question mark at the end..?",
+    question: "How much does it cost?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio repr",
+      "This event is completely free! We’ll provide you with a plethora of resources and tools to hack with.",
   },
   {
     id: 4,
-    question:
-      "Super long faq question which is so long that I'm running out of words to say so bg I should prolly end it with some blabbering like blah blah blah?",
+    question: "What are the details about Spoon Internsip?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "The internship is for a Cloud Engineer role at Spoon, with a stipend of Rs. 15,000 per month.",
   },
   {
     id: 5,
-    question: "What comes day after tomorrow",
+    question: "Who do I contact if I have any further doubts?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
-  },
-  {
-    id: 6,
-    question: "Some random faq quesion with a question mark at the end..?",
-    ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "You can contact our Event Managers: Rindish (+91 85478 61324) or Adithya (+91 70127 03717). They'll be happy to help",
   },
 ];
 

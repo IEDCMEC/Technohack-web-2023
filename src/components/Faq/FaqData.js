@@ -1,40 +1,40 @@
 const data = [
   {
     id: 1,
-    question: "Random FAQ question about Technoprenur",
+    question: "Is Technopreneur free?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Yes, we have planned out various tiers of tickets for you to get the best out of our event. Apart from free tickets we also have premium access tickets and VIP tickets which will also include various goodies and perks.",
   },
   {
     id: 2,
-    question: "What comes after tomorrow?",
+    question: "Is it open for Everyone?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Yes!",
   },
   {
     id: 3,
-    question: "Some random faq quesion with a question mark at the end..?",
+    question: "What are some of the events associated with Technopreneur?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio repr",
+      "Technopreneur conducts a number of innovative events such as Idea Pitching competitions, Prototype Development programs, hackathons, boot camps, speaker sessions, and much more.",
   },
   {
     id: 4,
     question:
-      "Super long faq question which is so long that I'm running out of words to say so ig I should prolly end it with some blabbering like blah blah blah?",
+      "Who were the previous speakers?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Our legacy of speakers include prominent voices such as Mr. Sam Pitroda (Former Advisor to PMO), Dr. K. Radhakrishnan (Former ISRO Chairman), Dr. S. Gopalakrishnan (Co-founder of Infosys), Mr. Suhas Gopinath (World’s youngest CEO, Globals Inc.), Dr. C V Ananda Bose (Former Secretary to Govt of India), Sudha Chandran (Renowned Entertainer) among others.",
   },
   {
     id: 5,
-    question: "What comes day after tomorrow",
+    question: "Who is this event for?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Students, Entrepreneurs and working class professionals will find it beneficial  and can gain practical experience in the entrepreneurial field by attending Technopreneur.",
   },
   {
     id: 6,
-    question: "Some random faq quesion with a question mark at the end..?",
+    question: "Will I get an event certificate for attending?",
     ans:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nostrum quia doloribus id assumenda recusandae accusantium quidem accusamus quam rerum corrupti, nulla distinctio reprehenderit blanditiis. Officiis nesciunt corporis omnis.",
+      "Yes!",
   },
 ];
 

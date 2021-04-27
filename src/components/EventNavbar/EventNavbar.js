@@ -12,24 +12,24 @@ export default class EventNavbar extends Component {
 
             <div className="event-navbar">
                 <img src={logo} alt="techno-hack" className="techno-logo"></img>
-                <div className="event-nav-link event-active"><a href="">Home</a></div>
+                {/* <div className="event-nav-link event-active"><a href="">Home</a></div> */}
                 <div className="event-nav-link ">
-                    <Link to="#problem-statement" smooth={true} spy={true} duration={1000}>
+                    <Link to="#problem-statement-link_for_navbar" smooth={true} spy={true} duration={1000}>
                         Tracks
                     </Link>
                 </div>
                 <div className="event-nav-link">
-                    <Link to="#prizes" smooth={true} spy={true} duration={1000}>
+                    <Link to="#prizes-link_for_navbar" smooth={true} spy={true} duration={1000}>
                         Prizes
                     </Link>
                 </div>
                 <div className="event-nav-link">
-                    <Link to="#faq" smooth={true} spy={true} duration={1000}>
+                    <Link to="#faq-link_for_navbar" smooth={true} spy={true} duration={1000}>
                         Faq
                     </Link>
                 </div>
                 <div className="event-nav-link">
-                    <Link to="#sponsors" smooth={true} spy={true} duration={1000}>
+                    <Link to="#sponsors-link_for_navbar" smooth={true} spy={true} duration={1000}>
                         Sponsors
                     </Link>
                 </div>
