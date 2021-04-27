@@ -30,7 +30,7 @@ export default class EventSponsers extends Component {
                             </a>
                         </div>
                     </div>
-                    <h2 className="sponsors-title"><span className="sponsors-heading-platinum">Platinum</span> Sponsors</h2>
+                    <h2 className="sponsors-title"><span className="sponsors-heading-platinum">Silver</span> Sponsors</h2>
                     <div className="sponsors-row">
                         <div className="sponsors-col sponsors-col-lg">
                             <a href="https://matic.network/" target="_blank" rel="noreferrer noopener">
