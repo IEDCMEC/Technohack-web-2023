@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import './Competitions.css';
 import TechnoHackBanner from "../../assets/technohack_banner.jpeg";
 import TechnoLogo from "../../assets/technohacklogo.jpg";
-
+import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 export default class Competitions extends Component {
     render() {
         return (
                 <div className="competition" id="competitions">
+                <BackgroundAnimation />
                     <div className="section-heading-competitions">Competitions</div>
                     <div className="competition-container">
                         <div className="competition-box">

@@ -14,6 +14,8 @@
   font-size: 55px;
   line-height: 67px;
   color: var(--color);
+  z-index: 3;
+  position: relative;
 }
 
 .faq-container {
@@ -23,6 +25,8 @@
   border-radius: 10px;
   background: var(--color);
   width: 75%;
+  z-index: 3;
+  position: relative;
 }
 .faq-container :focus {
   outline: none;
@@ -51,7 +55,7 @@
 }
 
 .faq.event {
-  --background-color: #19072c;
+  --background-color: #19072c00;
   --color: rgba(143, 0, 255, 0.6);
   --text-color: rgba(255, 255, 255, 1);
 }

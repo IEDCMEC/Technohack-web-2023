@@ -1,3 +1,8 @@
+
+#faq{
+    position: relative;
+    z-index: 4;
+}
     .faq_two {
     --background-color: #cc0045;
     --color: white;
@@ -85,4 +90,4 @@
       text-align: center;
     }
   }
-  
+ 

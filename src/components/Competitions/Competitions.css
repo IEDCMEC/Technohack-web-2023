@@ -3,6 +3,7 @@
     min-height: 100vh;    
     background: #002874;
     padding: 40px;
+    position: relative;
 }
 
 .section-heading-competitions{
@@ -12,6 +13,8 @@
     line-height: 67px;
     text-transform: uppercase;
     color: white;
+    z-index: 3;
+    position: relative;
 }
 .competition-container{
     /* margin: 70px; */
@@ -21,6 +24,8 @@
     justify-content: space-evenly;
     width: 100%;
     margin-top: 60px;
+    z-index: 3;
+    position: relative;
 }
 
 .competition-box{
