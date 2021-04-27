@@ -31,7 +31,7 @@ export default function EventHeader () {
                         <div className="event-reg-btn">
                         <div
             className="apply-button"
-            data-hackathon-slug="YOUR-HACKATHON-SLUG"
+            data-hackathon-slug="technohack"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
           ></div>
