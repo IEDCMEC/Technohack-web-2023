@@ -16,6 +16,16 @@
     width: 50%;
 }
 
+.event-reg-btn{
+
+}
+
+@media screen and (max-width: 1302px){
+    .event-reg-btn{
+       margin-left: 136px; 
+    }
+}
+
 @media screen and (max-width: 900px){
     .combine{
         padding-right: 20px;
@@ -36,4 +46,7 @@
     .combine {
         padding-left: 10px;
     }
+    .event-reg-btn{
+        margin-left: 50px; 
+     }
 }

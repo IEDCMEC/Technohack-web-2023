@@ -22,7 +22,7 @@ const Footer = () => {
                             <br />
                         </strong>
                         Govt. Model Engineering College <br />
-                        Thrikkakara, Kochi, Kerala 682021 <br /> iedc@mec.ac.in
+                        Thrikkakara, Kochi, Kerala 682021 <br /> adithyaanilkumar@mec.ac.in
                     </div>
                 </div>
 
