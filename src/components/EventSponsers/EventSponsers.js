@@ -8,6 +8,7 @@ import Portis from "../../assets/Portis.png";
 import Tezos from "../../assets/Tezos.png";
 import Devfolio from "../../assets/Devfolio.png";
 import Spoon from "../../assets/spoon.png";
+import HackClub from "../../assets/hackclub.png";
 
 export default class EventSponsers extends Component {
     render() {
@@ -58,6 +59,12 @@ export default class EventSponsers extends Component {
                         <a href="https://awsugkochi.in/" target="_blank" rel="noreferrer noopener">
                             <img src={AWSug} alt="sponsor_image" className="sponsor-image"></img>
                         </a>
+                        </div>
+                    </div>
+                    <h2 className="sponsors-title">Hackathon Partner</h2>
+                    <div className="sponsors-row">
+                        <div className="sponsors-col sponsors-col-lg">
+                            <img src={HackClub} alt="sponsor_image" className="sponsor-image"></img>
                         </div>
                     </div>
                 </div>

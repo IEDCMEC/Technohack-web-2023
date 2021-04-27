@@ -72,8 +72,8 @@
     width: 50%;
   }
   .prize-text {
-    margin: auto;
-    font-size: large;
-    white-space: nowrap;
+    /* margin: auto; */
+    /* font-size: large; */
+    /* white-space: nowrap; */
   }
 }
