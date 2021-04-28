@@ -17,7 +17,7 @@ export default class EventProblemStatement extends Component {
                             Only invidual participants are eligible for this track.
                         </p>
                         <a href={process.env.PUBLIC_URL + '/tracks/Spoon.pdf'}>
-                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn' />
+                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn-probelm' />
                         </a>
                         <br/> <br/>
                         <p className='problem-text'>
@@ -25,7 +25,7 @@ export default class EventProblemStatement extends Component {
             Transparency. This track is for blockchain enthusiasts.
                         </p>
                         <a href={process.env.PUBLIC_URL + '/tracks/Blockchain.pdf'}>
-                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn' />
+                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn-probelm' />
                         </a>
                         <br/> <br/>
                         <p className='problem-text'>
@@ -34,7 +34,7 @@ export default class EventProblemStatement extends Component {
             solutions to problems, then this track is for you.
                         </p>
                         <a href={process.env.PUBLIC_URL + '/tracks/Open_Innovation.pdf'}>
-                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn' />
+                        <img src={eventregbtn} alt="Register-btn" className='event-reg-btn-probelm' />
                         </a>
                     </div>
                     <div className="problem-statement-image-container">
