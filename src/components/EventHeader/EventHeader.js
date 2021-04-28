@@ -23,10 +23,8 @@ export default function EventHeader () {
 
             <div className='event-row-container'>
                     <div>
-                        <p className='header-text'> <strong> TechnoHack </strong> is a nation-wide hackathon conducted 
-            as a part of <strong> IEDC MEC's Technopreneur </strong> event. 
-            TechnoHack invites all geeks and entrepreneurs to come up with
-            solutions to problems of today.
+                        <p className='header-text'> Here is the chance you’ve been waiting for to give wings to your <strong>creativity</strong>.
+                        Give life to your <strong>innovative</strong> ideas that can be solutions to the problems of today with <strong>TechnoHack!</strong>
                         </p>
                         <div className="event-reg-btn-header">
                         <div
