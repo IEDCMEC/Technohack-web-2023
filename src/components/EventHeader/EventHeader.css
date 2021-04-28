@@ -43,7 +43,7 @@
     justify-content: flex-end;
  
 }
-.event-reg-btn{
+.event-reg-btn-header{
     padding-left:135px;
     margin-top:20px;
     overflow-x: visible;
@@ -78,9 +78,8 @@
     .event-header-image{
         display:none;
     }
-    .event-reg-btn{
+    .event-reg-btn-header{
         padding-left: 0px;
-      
     }
     .event-countdown-container{
         display:none;

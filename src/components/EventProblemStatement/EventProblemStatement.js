@@ -12,13 +12,14 @@ export default class EventProblemStatement extends Component {
                 <div className='combine'>
                     <div>
                         <p className='problem-text'>
-                            <b>Spoon</b>:Your mission should you choose to accept it, is to innovate to build a cloud-based hack in the personal finance management space.
+                            <b>Spoon</b>: Your mission should you choose to accept it, is to innovate to build a cloud-based hack in the personal finance management space.
   <br/>
                             Only invidual participants are eligible for this track.
                         </p>
                         <a href={process.env.PUBLIC_URL + '/tracks/Spoon.pdf'}>
                         <img src={eventregbtn} alt="Register-btn" className='event-reg-btn-probelm' />
                         </a>
+                        <br/> <br/>
                         <br/> <br/>
                         <p className='problem-text'>
                         <b>Block Chain</b>: The future lies in Decentralization and
@@ -27,6 +28,7 @@ export default class EventProblemStatement extends Component {
                         <a href={process.env.PUBLIC_URL + '/tracks/Blockchain.pdf'}>
                         <img src={eventregbtn} alt="Register-btn" className='event-reg-btn-probelm' />
                         </a>
+                        <br/> <br/>
                         <br/> <br/>
                         <p className='problem-text'>
                         <b>Open Innovation</b>: We do not want to tie you down with problem
