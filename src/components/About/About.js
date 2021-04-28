@@ -64,10 +64,16 @@ function About() {
                 </div>
                 <div className='box1'>
                     <p className='about-text'>
-                        Govt. Model Engineering College has been a centre of excellence for the last 31 years and has
-                        carved an elegant niche for itself among the best engineering colleges across the nation. Working
-                        steadily since its inception to bring out the best in its students, MEC boasts of record-breaking
-                        placements and is a centre of academic excellence.
+                    TiE is a non-profit, global community welcoming entrepreneurs from all over the world. 
+                    The mission of TiE is to foster entrepreneurship through mentoring, networking, education, funding,
+                    and incubation. With a focus of giving back to the community, Tie’s focus is on generating and 
+                    nurturing the next generation of entrepreneurs.
+                    <br/><br/>
+                    TiE Kerala has always had a distinct character
+                    in the form and content of its programs for their intensity, creativity, and eagerness to 
+                    follow the hitherto uncharted course. The series of seminars on SMEs (Family-run Businesses), 
+                    Women Entrepreneurship, Farm-related Industries, the Formation of Kerala Support Group, 
+                    TiE Kerala Seed Fund, etc are a few examples of their influential programs.
                     </p>
                     <img src={tieLogo} alt='Tie' className='tie-img' />
                 </div>

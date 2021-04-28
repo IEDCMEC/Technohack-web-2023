@@ -3,7 +3,7 @@ const eventData = [
     id: 1,
     question: "Who can attend?",
     ans:
-      "Students currently studying in any college of India, as well as working professionals",
+      "Students currently studying in any college , as well as working professionals",
   },
   {
     id: 2,
