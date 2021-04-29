@@ -21,7 +21,8 @@ export default class AngelConnectInvestors extends Component {
   ];
 
   render() {
-    return (
+    return (<>
+      <div id="angelconnectinvestors"></div>
       <div className="angel-connect-investors">
         <div className="investor-container">
           {this.investors.map((investor) => (
@@ -48,6 +49,7 @@ export default class AngelConnectInvestors extends Component {
           ))}
         </div>
       </div>
+      </>
     );
   }
 }

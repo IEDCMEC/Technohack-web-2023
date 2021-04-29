@@ -31,7 +31,8 @@ export default class AngelConnectTimeline extends Component {
   }
 
   render() {
-    return (
+    return (<>
+      <div id="angelconnecttimeline"></div>
       <div className="angel-connect-timeline">
         <div className="angel-connect-timeline-header">
           <h1>TIMELINE</h1>
@@ -62,6 +63,7 @@ export default class AngelConnectTimeline extends Component {
           </div>
         </div>
       </div>
+    </>
     );
   }
 }

@@ -1,69 +1,71 @@
 .angel-connect-navbar{
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-.angel-connect-nav-link{
+
+.angel-connect-nav-link{  
+    display: flex;
+    flex-grow: .3 ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;  
     text-decoration: none;
     font-weight: 600;
-    font-size: 23px;
-    line-height: 34px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #000000;
+   
+}
+
+.menulogo{
+    display: hidden;
 }
 
 .angel-connect-nav-link>a{
+    padding: 5%;
+    font-size: 15px;
     text-decoration: none;
-    color: #000000;
+    color:  #002874;
+    
+}
+ 
+.angel-connect-nav-link>a:hover {
+    color: #CC0045;
 }
 
 .angel-connect-active{
     font-weight: bold;
 }
 .techno-logo{
-    width:20%;
-    height:20%;
+    padding-top: 5px;
+    padding-left: 1%;
+
 }
 .techno-logo-mobile{
     display:none;
     text-align:center;
 }
 .nav-wrap{
-   text-align: center;
-    margin-top: 10px;
+    text-align: center;
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .angel-connect-nav-link{
         font-size:17px;
     }
   }
-  @media only screen and (max-width: 900px) {
-    .techno-logo{
-        display:none;
-    }
-    .angel-connect-nav-link{
-        font-size:15px;
-    }
-    .techno-logo-mobile{
-        display: inline-block;
-        width:50%;
-        height:50%;
-    }
-    .nav-wrap{
-        margin-top: 20px;
-    }
-  }
+ 
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 600px) {
    
     .angel-connect-nav-link{
-        font-size:12px;
+        justify-content: space-evenly;
+        flex:1;
+
     }
   }

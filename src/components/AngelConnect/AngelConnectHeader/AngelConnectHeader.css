@@ -1,5 +1,69 @@
 .angel-connect-header{
     width: 100vw;
-    height: 100vh;
+    height:120vh ;
     background-color: #E4EEFF;
+    background-image:url('../../../assets/Vector.png'), url('../../../assets/Vector 5.png'), url('../../../assets/Group 1445.png'), url('../../../assets/Vector 6.png'), url('../../../assets/Rectangle 472.png'), url('../../../assets/dots.svg'), url('../../../assets/dots.svg');
+    background-position: -10% -50%, -5% 70%, 7% 27%, right, 90% 120%, 87% 17%, 8% 85%;
+    background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 40%, 30%, 12%, 15%, 43% 90%, 5%, 5%;
 }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.angelconnect {
+    padding-top: 6%;
+}
+
+.content {
+    padding: 2% 25% ;
+    color: #13196d	;	
+    text-align: center;
+}
+
+.register {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    width: 160px;
+    padding:1% 1%;
+    background-color: #CC0045;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .angel-connect-header{
+        background-position: -10% -40%, -5% -25%, 7% 35%, 100% -25%, 90% 70%, 87% 20%, 8% 80%;
+        background-size: 40%, 30%, 12%, 15%, 43% 80%, 5%, 5%;
+    }
+    
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .angel-connect-header{
+        height: 160vh;
+        padding-bottom:10%;
+        background-image:url('../../../assets/Vector.png'), url('../../../assets/Vector 5.png'), url('../../../assets/Group 1445.png'),  url('../../../assets/dots.svg');
+        background-position: -15% -5%, 0% -25%, 7% 22%,  87% 92%;
+        background-size: 80%, 50%, 29%, 10%;
+    }  
+    .angelconnect{
+        padding-top: 26%;
+    } 
+    .content{
+        padding: 10% 10% ;
+        padding-top: 5%;
+        padding-bottom: 7% ;
+        text-align: center;
+    }
+    .register{
+        padding-left: 2.5%;
+    }
+  }
+ 
