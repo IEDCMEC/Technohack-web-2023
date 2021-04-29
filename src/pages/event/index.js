@@ -1,11 +1,11 @@
 import { useEffect} from 'react';
-import EventHeader from '../../components/EventHeader/EventHeader';
-import EventProblemStatement from '../../components/EventProblemStatement/EventProblemStatement'
-import EventPrizes from '../../components/EventPrizes/EventPrizes'
-import EventFAQ from '../../components/EventFAQ/EventFAQ'
-import EventSponsers from '../../components/EventSponsers/EventSponsers'
-import EventFooter from '../../components/EventFooter/EventFooter';
-import BackgroundAnimation from '../../components/EventBackgroundAnimation/EventBackgroundAnimation';
+import EventHeader from '../../components/Event/EventHeader/EventHeader';
+import EventProblemStatement from '../../components/Event/EventProblemStatement/EventProblemStatement'
+import EventPrizes from '../../components/Event/EventPrizes/EventPrizes'
+import EventFAQ from '../../components/Event/EventFAQ/EventFAQ'
+import EventSponsers from '../../components/Event/EventSponsers/EventSponsers'
+import EventFooter from '../../components/Event/EventFooter/EventFooter';
+import BackgroundAnimation from '../../components/Event/EventBackgroundAnimation/EventBackgroundAnimation';
 import './index.css';
 import { Helmet } from "react-helmet";
 
@@ -30,6 +30,7 @@ export default function Event() {
                 <div className="event-background-container">
                     {/* <BackgroundAnimation /> */}
                     <div className="event-main">
+                        <div className="left-border-top-square"></div>
                         <EventProblemStatement />
                         <EventPrizes />
                         <EventFAQ />

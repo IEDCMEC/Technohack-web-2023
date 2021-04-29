@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from "./pages/home";
 import Event from "./pages/event";
+import AngelConnect from "./pages/angelconnect"
 
 export default class App extends Component {  
   render(){
@@ -12,6 +13,7 @@ export default class App extends Component {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/technohack" component={Event} exact />
+        <Route path="/angelconnect" component={AngelConnect} exact />
       </Switch>
     </BrowserRouter>
     );
