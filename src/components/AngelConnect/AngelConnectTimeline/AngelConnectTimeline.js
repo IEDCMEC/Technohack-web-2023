@@ -46,8 +46,8 @@ export default class AngelConnectTimeline extends Component {
                   className={this.dateStyleHandler(day.number)}
                   key={day.number}>
                   <span>
-                    {this.state.selectedDay === day.number ?
-                      <img className="angel-connect-timeline-mobile-only-icon" src={arrowIcon} alt="icon"></img>
+                    {this.state.selectedDay === day.number
+                      ? <img className="angel-connect-timeline-mobile-only-icon" src={arrowIcon} alt="icon"></img>
                       : <span className="angel-connect-timeline-mobile-only-icon-empty"></span>
                     }
                   </span>
