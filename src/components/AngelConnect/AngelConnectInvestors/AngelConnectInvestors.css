@@ -1,7 +1,71 @@
-.angel-connect-investors{
-    width: 100vw;
-    height: calc(100vh + 200px);
-    background-color: #CC0045;
-    z-index: 3;
-    position: relative;
+.angel-connect-investors {
+  width: 100vw;
+  height: calc(100vh + 320px);
+  background-color: #cc0045;
+  z-index: 3;
+  position: relative;
+}
+
+.investor-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+  width: 90%;
+}
+.investor-card-container {
+  width: 25%;
+}
+
+.investor-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  border-radius: 12px;
+  padding: 10px;
+  color: #002874;
+  margin: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 270px;
+}
+.investor-image {
+  text-align: center;
+  object-fit: contain;
+  height: 250px;
+}
+
+.investor-text {
+  padding: 15px 10px 15px 10px;
+  margin: auto;
+  overflow: hidden;
+}
+@media only screen and (max-width: 850px) {
+  .investor-card-container {
+    width: 100%;
+  }
+  .investor-text {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .investor-card-container {
+    width: 100%;
+  }
+  .investor-card {
+    margin: 2rem auto 2rem auto;
+  }
+  .angel-connect-investors {
+    width: auto;
+    height: auto;
+  }
 }
