@@ -13,6 +13,7 @@ const Faq = ({ data, faqClass }) => {
 
   return (
     <div id="faq" className={`faq ${faqClass}`}>
+      {/* <BackgroundAnimation /> */}
       {/* show title only for home page */}
       {!faqClass && <div className="faq-title">FAQ</div>}
 

@@ -1,0 +1,69 @@
+.angel-connect-navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.angel-connect-nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.angel-connect-nav-link>a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.angel-connect-active{
+    font-weight: bold;
+}
+.techno-logo{
+    width:20%;
+    height:20%;
+}
+.techno-logo-mobile{
+    display:none;
+    text-align:center;
+}
+.nav-wrap{
+   text-align: center;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .angel-connect-nav-link{
+        font-size:17px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .techno-logo{
+        display:none;
+    }
+    .angel-connect-nav-link{
+        font-size:15px;
+    }
+    .techno-logo-mobile{
+        display: inline-block;
+        width:50%;
+        height:50%;
+    }
+    .nav-wrap{
+        margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+   
+    .angel-connect-nav-link{
+        font-size:12px;
+    }
+  }
