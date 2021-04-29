@@ -11,8 +11,9 @@ export default class App extends Component {
     return(
       <BrowserRouter>
       <Switch>
-        <Route path="/" component={AngelConnect} exact />
+        <Route path="/" component={Home} exact />
         <Route path="/technohack" component={Event} exact />
+        <Route path="/angelconnect" component={AngelConnect} exact />
       </Switch>
     </BrowserRouter>
     );
