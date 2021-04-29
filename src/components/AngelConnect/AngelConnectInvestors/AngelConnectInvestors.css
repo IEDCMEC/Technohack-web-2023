@@ -61,6 +61,9 @@
   .investor-card-container {
     width: 100%;
   }
+  .investor-container {
+    margin-top: 18rem;
+  }
   .investor-card {
     margin: 2rem auto 2rem auto;
   }
