@@ -1,0 +1,7 @@
+.angel-connect-about{
+    width: 100vw;
+    height: calc(100vh + 200px);
+    background-color: #002874;
+    position: relative;
+    z-index: 3;
+}
