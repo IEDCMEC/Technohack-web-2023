@@ -3,7 +3,7 @@ const eventData = [
     id: 1,
     question: "Who can attend?",
     ans:
-      "Students currently studying in any college of India, as well as working professionals",
+      "Students currently studying in any college , as well as working professionals",
   },
   {
     id: 2,
@@ -19,9 +19,9 @@ const eventData = [
   },
   {
     id: 4,
-    question: "What are the details about Spoon Internsip?",
+    question: "What are the details about Spoon Internship?",
     ans:
-      "The internship is for a Cloud Engineer role at Spoon, for a period of 6 months, with a stipend of 1 Lakh (Rs.15,000 per month). It will be awarded to 1 individual from the Spoon Track.",
+      "The internship is for a Cloud Engineer role at Spoon, for a period of 6 months, with a stipend of Rs.90,000 (Rs.15,000 per month). It will be awarded to 1 individual from the Spoon Track.",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const eventData = [
     question: "When do registrations close?",
     ans:
       `
-      The registrations close on 17th may 2021,00:00 IST.
+      The registrations close on 17th may 2021, 00:00 IST.
       `,
   },
   {

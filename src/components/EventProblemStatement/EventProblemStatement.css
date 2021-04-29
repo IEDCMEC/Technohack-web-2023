@@ -15,6 +15,17 @@
 .problem-statement-image {
     width: 50%;
 }
+.event-reg-btn-probelm{
+    margin-left: 136px; 
+    margin-top: 15px;
+ }
+
+@media screen and (max-width: 1302px){
+    .event-reg-btn-probelm{
+       margin-left: 136px; 
+       margin-top: 15px;
+    }
+}
 
 @media screen and (max-width: 900px){
     .combine{
@@ -36,4 +47,8 @@
     .combine {
         padding-left: 10px;
     }
+    .event-reg-btn-probelm{
+        margin-left: 50px; 
+        margin-top: 15px;
+     }
 }
