@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import './AngelConnectNavbar.css';
-import logo from '../../../assets/techno-logo.png'
+import logo from '../../../assets/Main logo.png'
 
 export default class EventNavbar extends Component {
     render() {

@@ -1,5 +1,99 @@
 .angel-connect-header{
     width: 100vw;
-    height: 100vh;
+    height:120vh ;
     background-color: #E4EEFF;
+    background-image:url('../../../assets/Vector.png'), url('../../../assets/Vector 5.png'), url('../../../assets/Group 1445.png'), url('../../../assets/Vector 6.png'), url('../../../assets/Rectangle 472.png'), url('../../../assets/dots.svg'), url('../../../assets/dots.svg');
+    background-position: -10% -50%, -5% 70%, 7% 27%, right, 91% 120%, 87% 17%, 8% 85%;
+    background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 40%, 30%, 12%, 15%, 43% 90%, 5%, 5%;
 }
+
+
+.angelconnect-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.angelconnect-header-angelconnecttitle {
+    padding-top: 6%;
+}
+
+.angelconnect-header-content {
+    padding: 2% 25% ;
+    color: #13196d	;	
+    text-align: center;
+}
+
+.angelconnect-header-register {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    width: 160px;
+    padding:1% 1%;
+    background-color: #CC0045;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .angel-connect-header{
+        background-position: -10% -40%, -5% -25%, 7% 35%, 100% -25%, 90% 70%, 87% 20%, 8% 80%;
+        background-size: 40%, 30%, 12%, 15%, 43% 80%, 5%, 5%;
+    }
+    
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .angel-connect-header{
+        padding-bottom:10%;
+        background-image:url('../../../assets/Vector.png'), url('../../../assets/Vector 5.png'), url('../../../assets/Group 1445.png'),  url('../../../assets/dots.svg');
+        background-position: -15% -5%, 0% -25%, 7% 22%,  94% 94%;
+        background-size: 80%, 50%, 29%, 10%;
+    }  
+
+
+    .angelconnect-header-angelconnecttitle{
+        padding: 17% 6% 6% 6%;
+    } 
+
+    img {
+        max-width: 100%;
+        height:auto;
+    }
+    .angelconnect-header-content{
+        padding: 10% 10% ;
+        padding-top: 5%;
+        padding-bottom: 7% ;
+        text-align: center;
+        font-size: 18px;
+    }
+    .angelconnect-header-register{
+        margin-bottom: 5%;
+    }
+
+  }
+ 
+  @media only screen and (max-width: 400px) {
+    .angel-connect-header{
+        height: 155vh;
+        background-position: -15% -5%, 0% -25%, 7% 22%,  90% 90%;
+    }  
+
+
+    .angelconnect-header-angelconnecttitle{
+
+        padding: 26% 6% 18% 6%;
+    } 
+
+    .angelconnect-header-content{
+        font-size: 14px;
+    }
+    .angelconnect-header-register {
+        font-size: 20px;
+        width: 135px;
+    }
+ 
+  }
