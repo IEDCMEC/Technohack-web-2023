@@ -1,6 +1,6 @@
 .angel-connect-investors {
   width: 100vw;
-  /* height: calc(100vh + 340px); */
+  /* height: calc(100vh + 320px); */
   height: auto;
   background-color: #cc0045;
   z-index: 3;
@@ -27,11 +27,12 @@
   flex-direction: column;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2rem auto 1.5rem auto;
 
   border-radius: 12px;
   padding: 10px;
   color: #002874;
-  margin: 2rem;
+  /* margin: 2rem; */
   text-align: center;
   justify-content: center;
   align-items: center;
