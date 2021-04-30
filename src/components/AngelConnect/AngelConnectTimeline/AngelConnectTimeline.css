@@ -1,0 +1,163 @@
+.angel-connect-timeline {
+    position: absolute;
+    top: 200vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #DBE6FA;
+    box-shadow: 0px 10px 35px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 90vw;
+    height: 400px;
+    z-index: 4;
+    color: #002874;
+}
+
+.angel-connect-timeline-header {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.angel-connect-timeline-header>h1 {
+    font-size: 35px;
+}
+
+.angel-connect-timeline>hr {
+    border-top: 1px solid #8097C3
+}
+
+.angel-connect-timeline-datebox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+
+}
+
+.angel-connect-timeline-date {
+    display: inline;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.angel-connect-timeline-date-selected {
+    background-color:#CBDDFB;
+    font-weight: 550;
+}
+
+.angel-connect-timeline-main {
+    padding: 20px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.angel-connect-timeline-content {
+    text-align: center;
+    padding: 40px;
+    padding-top: 70px;
+    height: 78%;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    background-color:#CBDDFB;
+}
+
+.angel-connect-timeline-content-title {
+    font-weight: 450;
+    font-size: 35px;
+}
+
+.angel-connect-timeline-content-body {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.angel-connect-timeline-border-left {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.angel-connect-timeline-border-center {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.angel-connect-timeline-border-right {
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.angel-connect-timeline-mobile-only-icon {
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+    .angel-connect-timeline-date {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .angel-connect-timeline-date {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .angel-connect-timeline {
+        top: 196vh;
+        height: 500px;
+    }
+
+    .angel-connect-timeline-header>h1 {
+        font-size: 30px;
+    }
+
+    .angel-connect-timeline-mobile-only-icon {
+        display: inline;
+        width: 12px;
+        margin-right: 5px;
+        margin-bottom: 1px;
+    }
+
+    .angel-connect-timeline-mobile-only-icon-empty {
+        margin-right: 13px;
+    }
+
+    .angel-connect-timeline-datebox {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .angel-connect-timeline-date {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .angel-connect-timeline-date-selected {
+        background-color: #DBE6FA;
+    }
+
+    .angel-connect-timeline-main {
+        height: 400px;
+    }
+
+    .angel-connect-timeline-content {
+        border-radius: 20px;
+        padding: 12px;
+        padding-top: 50px;
+        margin-top: 10px;
+        height: 55%;
+    }
+
+    .angel-connect-timeline-content-title {
+        font-size: 25px;
+    }
+
+    .angel-connect-timeline-content-body {
+        font-size: 15px;
+    }
+   
+}
+
