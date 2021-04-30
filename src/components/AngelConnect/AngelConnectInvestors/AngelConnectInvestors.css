@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.investor-container {
+.angel-investor-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,70 +15,65 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 15rem; */
+
   width: 90%;
 }
-.investor-card-container {
-  width: 25%;
-}
 
-.investor-card {
+.angel-investor-card {
   display: flex;
   flex-direction: column;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 2rem auto 1.5rem auto;
+  margin: 2rem;
 
   border-radius: 12px;
   padding: 10px;
   color: #002874;
-  /* margin: 2rem; */
+
   text-align: center;
   justify-content: center;
   align-items: center;
   height: fit-content;
   width: 270px;
 }
-.investor-image {
+.angel-investor-image {
   text-align: center;
   object-fit: contain;
   height: 250px;
 }
 
-.investor-text {
+.angel-investor-text {
   padding: 15px 10px 15px 10px;
   margin: auto;
   overflow: hidden;
 }
-.investor-heading {
+.angel-investor-heading {
   text-align: center;
   color: white;
   margin-top: 15rem;
 }
 @media only screen and (max-width: 850px) {
-  .investor-card-container {
+  .angel-investor-card-container {
     width: 50%;
   }
-  .investor-text {
+  .angel-investor-text {
     margin: auto;
   }
   .angel-connect-investors {
     width: auto;
     height: auto;
   }
-  .investor-heading {
+  .angel-investor-heading {
     margin-top: 20rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .investor-card-container {
+  .angel-investor-card-container {
     width: 100%;
   }
-  /* .investor-container {
-    margin-top: 18rem;
-  } */
-  .investor-card {
+
+  .angel-investor-card {
     margin: 2rem auto 2rem auto;
   }
   .angel-connect-investors {

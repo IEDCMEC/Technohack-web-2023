@@ -1,54 +1,54 @@
-.angel-connect-about{
-    width: 100vw;
-    height: calc(100vh + 200px);
-    background-color: #002874;
-    position: relative;
-    z-index: 3;
-    background-image:url('../../../assets/border.png'),url('../../../assets/border2.png');
-    background-position: 50% 20%, 50% 30%; 
-    background-repeat:no-repeat;
-    background-size: 80% 65%, 90% 100%;
-    
+.angel-connect-about {
+  width: 100vw;
+  height: calc(100vh + 200px);
+  background-color: #002874;
+  position: relative;
+  z-index: 3;
+  background-image: url("../../../assets/border.png"),
+    url("../../../assets/border2.png");
+  background-position: 50% 20%, 50% 30%;
+  background-repeat: no-repeat;
+  background-size: 80% 65%, 90% 100%;
 }
-.angel-heading{
-    display: flex;
-    color: white;
-    align-items: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    justify-content: center;
+.angel-heading {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  justify-content: center;
 }
-.angel-text{
-    padding: 0 20%;
-    padding-bottom: 8%;
-    color: white;
+.angel-text {
+  padding: 0 20%;
+  padding-bottom: 8%;
+  color: white;
 }
-    
-.angelImg{
-    display: flex;
-    position: relative;
-    padding-top: 10px;
-    padding-right: 15%;
-    width: 30%;
-    height: 10%;
-    float: right;
+
+.angelImg {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  padding-right: 15%;
+  width: 30%;
+  height: 10%;
+  float: right;
 }
-@media screen and (max-width: 500px){
-    .angel-connect-about{
-    background-image: url('../../../assets/border.png');
-    background-position: 50% 15%; 
-    }
-    .angel-heading{
-        padding-top: 20%;
-        padding-bottom: 30px;
-    }
-    .angelImg{
-        display: none;
-    }
+@media screen and (max-width: 500px) {
+  .angel-connect-about {
+    background-image: url("../../../assets/border.png");
+    background-position: 50% 15%;
+  }
+  .angel-heading {
+    padding-top: 20%;
+    padding-bottom: 30px;
+  }
+  .angelImg {
+    display: none;
+  }
 }
-@media screen and (max-width: 350px){
-    .angel-text{
-        padding: 0 10%;
-        font-size: 10px;
-    }
+@media screen and (max-width: 350px) {
+  .angel-text {
+    padding: 0 10%;
+    font-size: 10px;
+  }
 }
