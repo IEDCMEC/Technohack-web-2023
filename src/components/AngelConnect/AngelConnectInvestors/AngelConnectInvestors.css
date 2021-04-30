@@ -1,6 +1,7 @@
 .angel-connect-investors {
   width: 100vw;
-  height: calc(100vh + 320px);
+  /* height: calc(100vh + 340px); */
+  height: auto;
   background-color: #cc0045;
   z-index: 3;
   position: relative;
