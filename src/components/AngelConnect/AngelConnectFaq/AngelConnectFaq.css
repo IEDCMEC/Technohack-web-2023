@@ -2,4 +2,55 @@
     width: 100vw;
     height: 100vh;
     background-color: #002874;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.angel-connect-faq-container_two {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #195AC7;
+    width: 75%;
+  }
+  .angel-connect-faq-heading{
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .angel-connect-faq-container_two :focus {
+    outline: none;
+  }
+
+  .angel-connect-question-wrapper_two {
+    width: 100%;
+    font-family: Poppins;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 5px;
+    display: flex;
+  }
+
+  .angel-connect-faq-answer_two {
+    margin-top: 10px;
+    font-family: Montserrat;
+    line-height: 24px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+
+
+
+  @media only screen and (max-width: 500px) {
+    .angel-connect-faq-container_two {
+      width: 100%;
+    }
+  }
