@@ -1,7 +1,8 @@
 .angel-connect-faq{
     width: 100vw;
     height: 100vh;
-    background-color: #002874;
+    /* background-color: #002874; */
+    background-image: url("../../../assets/event_faq_background.png");
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -17,8 +18,8 @@
   .angel-connect-faq-heading{
     text-align: center;
     color: white;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 
   .angel-connect-faq-container_two :focus {
