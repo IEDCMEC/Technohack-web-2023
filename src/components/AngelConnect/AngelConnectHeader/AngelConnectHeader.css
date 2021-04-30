@@ -3,30 +3,30 @@
     height:120vh ;
     background-color: #E4EEFF;
     background-image:url('../../../assets/Vector.png'), url('../../../assets/Vector 5.png'), url('../../../assets/Group 1445.png'), url('../../../assets/Vector 6.png'), url('../../../assets/Rectangle 472.png'), url('../../../assets/dots.svg'), url('../../../assets/dots.svg');
-    background-position: -10% -50%, -5% 70%, 7% 27%, right, 90% 120%, 87% 17%, 8% 85%;
+    background-position: -10% -50%, -5% 70%, 7% 27%, right, 91% 120%, 87% 17%, 8% 85%;
     background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 40%, 30%, 12%, 15%, 43% 90%, 5%, 5%;
 }
 
 
-.container {
+.angelconnect-header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-.angelconnect {
+.angelconnect-header-angelconnecttitle {
     padding-top: 6%;
 }
 
-.content {
+.angelconnect-header-content {
     padding: 2% 25% ;
     color: #13196d	;	
     text-align: center;
 }
 
-.register {
+.angelconnect-header-register {
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
@@ -55,7 +55,7 @@
     }  
 
 
-    .angelconnect{
+    .angelconnect-header-angelconnecttitle{
         padding: 17% 6% 6% 6%;
     } 
 
@@ -63,14 +63,14 @@
         max-width: 100%;
         height:auto;
     }
-    .content{
+    .angelconnect-header-content{
         padding: 10% 10% ;
         padding-top: 5%;
         padding-bottom: 7% ;
         text-align: center;
         font-size: 18px;
     }
-    .register{
+    .angelconnect-header-register{
         margin-bottom: 5%;
     }
 
@@ -83,15 +83,15 @@
     }  
 
 
-    .angelconnect{
+    .angelconnect-header-angelconnecttitle{
 
         padding: 26% 6% 18% 6%;
     } 
 
-    .content{
+    .angelconnect-header-content{
         font-size: 14px;
     }
-    .register {
+    .angelconnect-header-register {
         font-size: 20px;
         width: 135px;
     }

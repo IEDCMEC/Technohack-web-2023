@@ -13,13 +13,13 @@ export default class AngelConnectHeader extends Component {
             <div className="angel-connect-header">
 
                 <AngelConnectNavbar />
-                <div className="container" >
-                    <div className="angelconnect">
+                <div className="angelconnect-header-container" >
+                    <div className="angelconnect-header-angelconnecttitle">
                     <img src={title} alt="Angel Connect" width='412' height='232'></img>
                     </div>
-                    <div className="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis velit augue. Sed ornare massa lobortis luctus vehicula. Donec est odio, venenatis sit amet neque eu, pulvinar commodo sapien.</div>
-                    <div className="register">
-                        <Link className="register" to="#" smooth={true} >
+                    <div className="angelconnect-header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis velit augue. Sed ornare massa lobortis luctus vehicula. Donec est odio, venenatis sit amet neque eu, pulvinar commodo sapien.</div>
+                    <div className="angelconnect-header-register">
+                        <Link className="angelconnect-header-register" to="#" smooth={true} >
                             REGISTER
                         </Link>
                     </div>
