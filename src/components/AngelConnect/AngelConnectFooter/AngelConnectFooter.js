@@ -1,8 +1,8 @@
 import "./AngelConnectFooter.css";
 import Logo from "../../../assets/LogoWhite.png";
-import Twitter from "../../../assets/twitter_blue.png";
-import Instagram from "../../../assets/instagram_blue.png";
-import LinkedIn from "../../../assets/linkedin_blue.png";
+import Twitter from "../../../assets/twitter_white.png";
+import Instagram from "../../../assets/ig_white.svg";
+import LinkedIn from "../../../assets/linkedin_white.png";
 
 const Footer = () => {
   return (

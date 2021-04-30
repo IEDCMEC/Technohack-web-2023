@@ -11,7 +11,6 @@ export default class AngelConnectHeader extends Component {
     render() {
         return (
             <div className="angel-connect-header">
-
                 <AngelConnectNavbar />
                 <div className="angelconnect-header-container" >
                     <div className="angelconnect-header-angelconnecttitle">

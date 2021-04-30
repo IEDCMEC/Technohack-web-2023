@@ -1,6 +1,6 @@
 .angel-connect-timeline {
     position: absolute;
-    top: 200vh;
+    top: 220vh;
     left: 50%;
     transform: translateX(-50%);
     background: #DBE6FA;
@@ -106,7 +106,7 @@
 
 @media (max-width: 800px) {
     .angel-connect-timeline {
-        top: 196vh;
+        /* top: 196vh; */
         height: 500px;
     }
 
@@ -161,3 +161,10 @@
    
 }
 
+@media (max-width: 400px) {
+    .angel-connect-timeline {
+        top: 250vh;
+        height: 500px;
+    }
+
+}
