@@ -6,7 +6,7 @@ import LinkedIn from "../../../assets/linkedin_blue.png";
 
 const Footer = () => {
   return (
-    <div className="angel-connect-footer">
+    <div className="angel-connect-footer" id="angel-connect-footer">
       <div className="container">
         <div className="logo">
           <a

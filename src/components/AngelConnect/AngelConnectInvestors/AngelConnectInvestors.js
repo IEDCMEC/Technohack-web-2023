@@ -22,7 +22,7 @@ export default class AngelConnectInvestors extends Component {
 
   render() {
     return (
-      <div className="angel-connect-investors">
+      <div className="angel-connect-investors" id="angel-connect-investors">
         <div className="investor-container">
           {this.investors.map((investor) => (
             <div className="investor-card-container">
