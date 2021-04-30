@@ -22,6 +22,10 @@
     color: #000000;
 }
 
+#angel-connect-contact-us-navbar-button>a{
+    color: #cc0045;
+}
+
 .angel-connect-active{
     font-weight: bold;
 }
