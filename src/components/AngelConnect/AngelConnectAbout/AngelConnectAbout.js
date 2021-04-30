@@ -5,8 +5,8 @@ import logo from '../../../assets/angel_connect_white.png'
 export default class AngelConnectAbout extends Component {
     render() {
         return (
-            <div className="angel-connect-about">
-              <h1 className='angel-heading'> ANGEL CONNECT </h1>
+            <div className="angel-connect-about" id="angel-connect-about">
+              <div className='angel-heading'> ANGEL CONNECT </div>
               <p className='angel-text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas proin dapibus orci quisque 
               justo dui morbi. Id interdum eu nec at eros pretium.Lorem ipsum dolor sit amet, consectetur 
