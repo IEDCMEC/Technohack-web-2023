@@ -12,7 +12,7 @@ const Faq = ({ data, faqClass }) => {
   const [collapsedIds, setCollapsedIds] = useState([]);
 
   return (
-    <div id='faq' className={`faq ${faqClass}`}>
+    <div className={`faq ${faqClass}`}>
       <Accordion
         allowMultipleExpanded={true}
         allowZeroExpanded={true}

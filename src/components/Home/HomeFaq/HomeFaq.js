@@ -5,7 +5,7 @@ import "./HomeFaq.css";
 
 const HomeFaq = () => {
   return (
-    <div className='home-faq'>
+    <div id='faq' className='home-faq'>
       <div className='faq-title'>FAQ</div>
       <Faq data={data} />
     </div>
