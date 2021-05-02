@@ -185,6 +185,35 @@ export default function AngelConnectFaq() {
             </AccordionItemPanel>
           </AccordionItem>
         }
+                {
+          <AccordionItem
+            key={24}
+            uuid={24}
+            className="angel-connect-faq-container_two"
+          >
+            <AccordionItemHeading>
+              <AccordionItemButton>
+                <div className="angel-connect-question-wrapper_two">
+                  <div style={{ marginRight: "10px" }}>{6}.</div>
+                  <div style={{ flex: 1 }}>
+                    {"Who should I contact if I have any doubts?"}
+                  </div>
+                  <div style={{ marginLeft: "10px" }}>
+                    {collapsedIds_two.includes(24) ? "-" : "+"}
+                  </div>
+                </div>
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <p className="angel-connect-faq-answer_two">
+              Feel free to contact your event managers:
+              Razeen (+91 90743 09203)
+              or
+              Tobin (+91 90744 88627)
+              </p>
+            </AccordionItemPanel>
+          </AccordionItem>
+        }
       </Accordion>
     </div>
   );

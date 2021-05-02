@@ -14,9 +14,7 @@ export default class AngelConnectHeader extends Component {
             <img src={title} alt="Angel Connect" width="412" height="232"></img>
           </div>
           <div className="angelconnect-header-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            quis velit augue. Sed ornare massa lobortis luctus vehicula. Donec
-            est odio, venenatis sit amet neque eu, pulvinar commodo sapien.
+          
           </div>
           <div className="angelconnect-header-register">
             <a

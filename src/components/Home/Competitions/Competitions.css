@@ -16,6 +16,9 @@
     z-index: 3;
     position: relative;
 }
+#competition-angel-connect-logo{
+    width: 30%;
+}
 .competition-container{
     /* margin: 70px; */
     display: flex;
@@ -117,10 +120,18 @@
     height: 50vh;
     transition: 0.2s ease;
 }
-.competition-text-name-container{
+
+.competition-text-name-container-hackathon{
     overflow: hidden;
-    padding-top:18px;
+    padding-top:20px;
     padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.competition-text-name-container-angelconnect{
+    overflow: hidden;
+    padding-top:1px;
+    /* padding-bottom: 5px; */
     font-size: 24px;
     line-height: 30px;
 }
@@ -148,6 +159,11 @@ border-radius: 20px;
 text-decoration: none;
 background-color: #002874;
 transition: 0.3s;
+}
+
+#angelconnet-image-banner {
+    width: 100%;
+    height: 65%;
 }
 
 .competition-button:hover{
