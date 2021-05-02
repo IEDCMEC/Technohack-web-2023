@@ -9,13 +9,13 @@ const timelineData = [
         number: 1,
         date: "22nd May 2021",
         title: "Last Round",
-        content: "Last Round"
+        // content: "Last Round"
     },
     {
         number: 2,
         date: "23rd May 2021",
         title: "Last Round",
-        content: "Last Round"
+        // content: "Last Round"
     },
 ]
 

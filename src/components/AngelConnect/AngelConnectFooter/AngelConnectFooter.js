@@ -24,7 +24,9 @@ const Footer = () => {
               Innovation and Entrepreneurship Development Cell <br />
             </strong>
             Govt. Model Engineering College <br />
-            Thrikkakara, Kochi, Kerala 682021 <br /> adithyaanilkumar@mec.ac.in
+            Thrikkakara, Kochi, Kerala 682021 <br />
+            Razeen (+91 90743 09203) <br/>
+            Tobin (+91 90744 88627)
           </div>
         </div>
 
