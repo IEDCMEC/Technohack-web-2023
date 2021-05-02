@@ -187,8 +187,8 @@ export default function AngelConnectFaq() {
         }
                 {
           <AccordionItem
-            key={24}
-            uuid={24}
+            key={25}
+            uuid={25}
             className="angel-connect-faq-container_two"
           >
             <AccordionItemHeading>
@@ -199,7 +199,7 @@ export default function AngelConnectFaq() {
                     {"Who should I contact if I have any doubts?"}
                   </div>
                   <div style={{ marginLeft: "10px" }}>
-                    {collapsedIds_two.includes(24) ? "-" : "+"}
+                    {collapsedIds_two.includes(25) ? "-" : "+"}
                   </div>
                 </div>
               </AccordionItemButton>
