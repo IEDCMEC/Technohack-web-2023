@@ -23,12 +23,15 @@ export default class AngelConnectInvestors extends Component {
   render() {
     return (
       <div className="angel-connect-investors">
-        <div className="investor-container">
+        <div className="angel-investor-heading">
+          <h1>OUR INVESTORS</h1>
+        </div>
+        <div className="angel-investor-container">
           {this.investors.map((investor) => (
-            <div className="investor-card-container">
-              <div className="investor-card">
-                <img className="investor-image" src={investor.img} />
-                <div className="investor-text">
+            <div className="angel-investor-card-container">
+              <div className="angel-investor-card">
+                <img className="angel-investor-image" src={investor.img} />
+                <div className="angel-investor-text">
                   <div style={{ textAlign: "center", fontWeight: "bolder" }}>
                     <b>{investor.name}</b>
                   </div>

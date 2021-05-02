@@ -32,7 +32,7 @@ export default class AngelConnectTimeline extends Component {
 
   render() {
     return (
-      <div className="angel-connect-timeline">
+      <div className="angel-connect-timeline" id="angel-connect-timeline">
         <div className="angel-connect-timeline-header">
           <h1>TIMELINE</h1>
         </div>

@@ -1,12 +1,12 @@
 import "./AngelConnectFooter.css";
 import Logo from "../../../assets/LogoWhite.png";
-import Twitter from "../../../assets/twitter_blue.png";
-import Instagram from "../../../assets/instagram_blue.png";
-import LinkedIn from "../../../assets/linkedin_blue.png";
+import Twitter from "../../../assets/twitter_white.png";
+import Instagram from "../../../assets/ig_white.svg";
+import LinkedIn from "../../../assets/linkedin_white.png";
 
 const Footer = () => {
   return (
-    <div className="angel-connect-footer">
+    <div className="angel-connect-footer" id="angel-connect-footer">
       <div className="container">
         <div className="logo">
           <a
