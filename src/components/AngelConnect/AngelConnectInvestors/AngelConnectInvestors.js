@@ -1,28 +1,28 @@
 import { Component } from "react";
 import "./AngelConnectInvestors.css";
-import investor1 from "../../../assets/investor1.png";
-import investor2 from "../../../assets/investor2.png";
-import investor3 from "../../../assets/investor3.png";
-import investor4 from "../../../assets/investor4.png";
-import investor5 from "../../../assets/investor5.png";
-import investor6 from "../../../assets/investor6.png";
-import investor7 from "../../../assets/investor7.png";
-import investor8 from "../../../assets/investor8.png";
+import KANLogo from "../../../assets/KAN.jpg";
+// import investor2 from "../../../assets/investor2.png";
+// import investor3 from "../../../assets/investor3.png";
+// import investor4 from "../../../assets/investor4.png";
+// import investor5 from "../../../assets/investor5.png";
+// import investor6 from "../../../assets/investor6.png";
+// import investor7 from "../../../assets/investor7.png";
+// import investor8 from "../../../assets/investor8.png";
 export default class AngelConnectInvestors extends Component {
   investors = [
-    { img: investor1, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor2, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor3, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor4, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor5, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor6, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor7, name: "V C Karthik", founder: "FOUNDER" },
-    { img: investor8, name: "V C Karthik", founder: "FOUNDER" },
+    { img: KANLogo, name: "Kerala Angel Network", founder: "" },
+    // { img: investor2, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor3, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor4, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor5, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor6, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor7, name: "V C Karthik", founder: "FOUNDER" },
+    // { img: investor8, name: "V C Karthik", founder: "FOUNDER" },
   ];
 
   render() {
     return (
-      <div className="angel-connect-investors">
+      <div className="angel-connect-investors" id="angel-connect-investors">
         <div className="angel-investor-heading">
           <h1>OUR INVESTORS</h1>
         </div>

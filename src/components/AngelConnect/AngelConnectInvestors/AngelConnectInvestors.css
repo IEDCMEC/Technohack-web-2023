@@ -40,6 +40,7 @@
   text-align: center;
   object-fit: contain;
   height: 250px;
+  width: 100%;
 }
 
 .angel-investor-text {

@@ -1,33 +1,21 @@
 const timelineData = [
     {
         number: 0,
-        date: "23rd December 2021",
-        title: "Registration begins.",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        date: "17th May 2021",
+        title: "Submission Deadline",
+        content: "Deadline for the first round of submissions. 7 teams are shortlisted."
     },
     {
         number: 1,
-        date: "24th December 2021",
-        title: "Whatever happens after registration",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        date: "22nd May 2021",
+        title: "Last Round",
+        // content: "Last Round"
     },
     {
         number: 2,
-        date: "25th December 2021",
-        title: "It's Christmas!",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        number: 3,
-        date: "26th December 2021",
-        title: "We're almost done..",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        number: 4,
-        date: "27th December 2021",
-        title: "Prizes announced :)",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        date: "23rd May 2021",
+        title: "Last Round",
+        // content: "Last Round"
     },
 ]
 
