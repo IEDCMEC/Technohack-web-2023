@@ -22,7 +22,7 @@ export default class AngelConnectInvestors extends Component {
 
   render() {
     return (
-      <div className="angel-connect-investors">
+      <div className="angel-connect-investors" id="angel-connect-investors">
         <div className="angel-investor-heading">
           <h1>OUR INVESTORS</h1>
         </div>

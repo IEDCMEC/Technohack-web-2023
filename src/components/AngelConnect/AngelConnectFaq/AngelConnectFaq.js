@@ -194,7 +194,7 @@ export default function AngelConnectFaq() {
             <AccordionItemHeading>
               <AccordionItemButton>
                 <div className="angel-connect-question-wrapper_two">
-                  <div style={{ marginRight: "10px" }}>{5}.</div>
+                  <div style={{ marginRight: "10px" }}>{6}.</div>
                   <div style={{ flex: 1 }}>
                     {"Who should I contact if I have any doubts?"}
                   </div>
