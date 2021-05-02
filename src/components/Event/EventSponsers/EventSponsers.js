@@ -9,6 +9,7 @@ import Tezos from "../../../assets/Tezos.png";
 import Devfolio from "../../../assets/Devfolio.png";
 import Spoon from "../../../assets/spoon.png";
 import HackClub from "../../../assets/hackclub.png";
+import DSC from "../../../assets/dsc_logo.png";
 
 export default class EventSponsers extends Component {
     render() {
@@ -67,10 +68,15 @@ export default class EventSponsers extends Component {
                             <img src={HackClub} alt="sponsor_image" className="sponsor-image"></img>
                         </div>
                     </div>
+                    <h2 className="sponsors-title">Community Partner</h2>
+                    <div className="sponsors-row">
+                        <div className="sponsors-col sponsors-col-lg">
+                            <img src={DSC} alt="sponsor_image" className="sponsor-image" id="dsc-img"></img>
+                        </div>
+                    </div>
                 </div>
             </div>
             </>
         )
     }
 }
-
