@@ -170,6 +170,7 @@ text-decoration: none;
 background-color: #002874;
 transition: 0.3s;
 position: absolute;
+margin-bottom: 20px;
 bottom: 10px;
 }
 
