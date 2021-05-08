@@ -13,10 +13,24 @@ export default class Navbar extends Component {
               SPEAKERS
                 </Link>
           </li>
+
+          <li>
+            <Link to="#workshops" smooth={true} spy={true} duration={1000}
+              className="av-link">
+              WORKSHOPS
+                </Link>
+          </li>
+
           <li>
             <Link to="#competitions" smooth={true} spy={true} duration={1000}
               className="av-link">
               COMPETITIONS
+                </Link>
+          </li>
+          <li>
+            <Link to="#seeds" smooth={true} spy={true} duration={1000}
+              className="av-link">
+              SEEDS
                 </Link>
           </li>
           <li>

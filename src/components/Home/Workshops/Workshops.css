@@ -1,37 +1,48 @@
-.competition{
+.workshops{
     width: 100%;
     min-height: 100vh;    
-    background: #CC0045;
+    background: #002874;
     padding: 40px;
     position: relative;
 }
 
-.section-heading-competitions{
+.section-heading-workshops{
     margin: 40px;
     font-weight: bold;
     font-size: 55px;
     line-height: 67px;
     text-transform: uppercase;
     color: white;
-    z-index: 3;
     position: relative;
 }
-#competition-angel-connect-logo{
+#workshops-angel-connect-logo{
     width: 30%;
 }
-.competition-container{
+.workshops-container{
     /* margin: 70px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
     justify-content: space-evenly;
     width: 100%;
     margin-top: 60px;
-    z-index: 3;
+    position: relative;
+    
+}
+.workshops-container-2{
+    /* margin: 70px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
     position: relative;
 }
 
-.competition-box{
+.workshops-box{
     height: 500px;
     width: 350px;
     margin-bottom: 20px;
@@ -42,7 +53,7 @@
     overflow:hidden;
 }
 
-.competition-brewing-box{
+.workshops-brewing-box{
     background: #BBBBBB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 500px;
@@ -63,7 +74,7 @@
     font-weight: 600;
     color: #4B4B4B;
 }
-.competition-image-text {
+.workshops-image-text {
     /* display:none;    */
     transition: 0.2s ease;
     opacity: 0;
@@ -77,7 +88,7 @@
     font-size: 0.8rem;
     
 }
-.competition-image-container{
+.workshops-image-container{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -88,15 +99,7 @@
     overflow: hidden;
 }
 
-.competition-image-container:hover .competition-image{
-    opacity: 0.1;
-}
-
-.competition-image-container:hover .competition-image-text{
-    opacity: 1;
-}
-
-.competition-text{
+.workshops-text{
     padding-top:10px;
     position: absolute;
     bottom: 0;
@@ -115,36 +118,43 @@
     justify-content: start;
     align-items: center;
 } 
-.competition-image{
+.workshops-image{
     width: 100%;
     height: 50vh;
     transition: 0.2s ease;
 }
 
-.competition-text-name-container-hackathon{
+.workshops-text-name-container-hackathon{
     overflow: hidden;
-    padding-top:20px;
+    padding-top:5px;
     padding-bottom: 10px;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
 }
-.competition-text-name-container-angelconnect{
+.workshops-subtext-name-container-hackathon{
+    overflow: hidden;
+    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 15px;
+    color: #4B4B4B;
+}
+.workshops-text-name-container-angelconnect{
     overflow: hidden;
     padding-top:1px;
     /* padding-bottom: 5px; */
     font-size: 24px;
-    line-height: 30px;
+    line-height: 20px;
 }
-.competition-text-name-image{
+.workshops-text-name-image{
     width: 80%;
 }
-.competition-text-designation{
+.workshops-text-designation{
     font-size: 16px;
 
     line-height: 25px;
 }
 
-.competition-button{
+.workshops-button{
     font-weight: 300;
 font-size: 16.303px;
 line-height: 27px;
@@ -159,6 +169,9 @@ border-radius: 20px;
 text-decoration: none;
 background-color: #002874;
 transition: 0.3s;
+position: absolute;
+margin-bottom: 20px;
+bottom: 10px;
 }
 
 #angelconnet-image-banner {
@@ -166,7 +179,7 @@ transition: 0.3s;
     height: 65%;
 }
 
-.competition-button:hover{
+.workshops-button:hover{
     background-color: #CC0045;
 }
 
@@ -177,12 +190,29 @@ transition: 0.3s;
 .red{
     background-color: #CC0045;
 }
+
+.mymodal{
+    z-index: 100;
+    background-color: #fff;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+    
+}
 @media screen and (max-width:1100px){
-    .competition-box{
+    .workshops-box{
         height: 370px;
         width: 240px;
     }
-    .competition-brewing-box{
+    .workshops-brewing-box{
         height: 370px;
         width: 240px;
     }
@@ -190,43 +220,43 @@ transition: 0.3s;
 
 
 @media screen and (max-width:934px){
-    .competition-box{
+    .workshops-box{
         height: 400px;
         width: 300px;
     }
-    .competition-brewing-box{
+    .workshops-brewing-box{
         height: 400px;
         width: 300px;
     }
 }
 
 @media screen and (max-width:790px){
-    .competition-box{
+    .workshops-box{
         height: 340px;
         width: 220px;
     }
-    .section-heading-competitions {
+    .section-heading-workshops {
         font-size: 40px;
     }
-    .competition-brewing-box{
+    .workshops-brewing-box{
         height: 340px;
         width: 220px;
     }
 }
 
 @media screen and (max-width:616px){
-    .competition-box{
+    .workshops-box{
         height: 370px;
         width: 270px;
     }
-    .competition-brewing-box{
+    .workshops-brewing-box{
         height: 370px;
         width: 270px;
     }
 }
 
 @media screen and (max-width:500px){
-    .competition{
+    .workshops{
         
         display: flex;
         flex-direction: column;
@@ -234,18 +264,21 @@ transition: 0.3s;
         text-align: center;
         justify-content: center;
     }
-    .competition-container{
+    .workshops-container{
         align-items: center;
         justify-content: center;
     }
-    .competition-box{
+    .workshops-box{
         height: 370px;
         width: 270px;
         margin-right: 0;
     }
-    .competition-brewing-box{
+    .workshops-brewing-box{
         height: 370px;
         width: 270px;
         margin-right: 0;
+    }
+    .workshops-container-2{
+        margin-top: 0;
     }
 }
