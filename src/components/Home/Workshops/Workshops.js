@@ -1,11 +1,7 @@
 import { Component } from 'react';
 import { Link } from "react-router-dom";
 import './Workshops.css';
-import TechnoHackBanner from "../../../assets/technohack_banner.jpeg";
-import TechnoLogo from "../../../assets/technohacklogo.jpg";
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
-import AngelConnectLogo from "../../../assets/angelconnect_black.png";
-import AngelConnectBanner from "../../../assets/invest.jpg";
 import dsworkshop from '../../../assets/datasciencews.jpg'
 import pmworkshop from '../../../assets/pmws.jpg'
 import aworkshop from '../../../assets/abroadws.jpg'
@@ -26,7 +22,7 @@ export default class Workshops extends Component {
                 
                 <BackgroundAnimation />
                 
-                    <div className="section-heading-workshopss">Workshops</div>
+                    <div className="section-heading-workshops">Workshops</div>
                     <div className="workshops-container" style={{zIndex:this.state.modal ? 0 : 200}}>
                     
                         <div className="workshops-box">

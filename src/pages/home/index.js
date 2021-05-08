@@ -7,6 +7,7 @@ import About from "../../components/Home/About/About";
 import Workshops from "../../components/Home/Workshops/Workshops"
 import BackgroundAnimation from "../../components/Home/BackgroundAnimation/BackgroundAnimation";
 import HomeFaq from "../../components/Home/HomeFaq/HomeFaq";
+import Seeds from "../../components/Home/Seeds/Seeds"
 export default class Home extends Component {
   render() {
     return (
@@ -14,8 +15,9 @@ export default class Home extends Component {
         <Header />
         <div className='background-container'>
           <Speakers />
-          <Competitions />
           <Workshops/>
+          <Competitions />
+          <Seeds/>
           <HomeFaq/>
         </div>
         <About />
