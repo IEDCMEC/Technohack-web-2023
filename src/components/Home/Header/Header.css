@@ -15,7 +15,7 @@
     color: black;
     font-weight: bold;
     border-radius: 10px 10px 10px 10px;
-    z-index: 500;
+    z-index: 300;
     text-decoration: none;
     box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.233);
     animation: floating 3s infinite ease-in-out;
