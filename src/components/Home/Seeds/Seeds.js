@@ -2,10 +2,6 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Seeds.css";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
-import dsworkshop from "../../../assets/datasciencews.jpg";
-import pmworkshop from "../../../assets/pmws.jpg";
-import aworkshop from "../../../assets/abroadws.jpg";
-import iotworkshop from "../../../assets/iotws.jpg";
 import Modal from "../Modal/Modal";
 
 export default class Seeds extends Component {

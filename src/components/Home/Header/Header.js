@@ -33,7 +33,8 @@ export default class Header extends Component {
                             <Navbar />
                         </div>
                     </FadeIn>
-                    <a href="#" className="floating-button">REGISTER</a>
+                    <a href="https://www.townscript.com/e/technopreneur-2021-national-level-esummit-of-govt-model-engineering-college-kochi-040433"             target="_blank "
+            rel="noreferrer noopener" className="floating-button">REGISTER</a>
                 </div>
                 <div className="header-bottom">
                     <div className="row1">

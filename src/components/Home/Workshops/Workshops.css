@@ -192,7 +192,7 @@ bottom: 10px;
 }
 
 .mymodal{
-    z-index: 100;
+    z-index: 1000;
     background-color: #fff;
     position: fixed;
   top: 50%;

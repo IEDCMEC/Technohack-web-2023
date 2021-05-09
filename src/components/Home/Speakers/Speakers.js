@@ -2,10 +2,11 @@ import { Component } from 'react';
 import './Speakers.css';
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 import Modal from '../SpeakerModal/Modal';
-import dsworkshop from '../../../assets/datasciencews.jpg'
-import pmworkshop from '../../../assets/pmws.jpg'
-import aworkshop from '../../../assets/abroadws.jpg'
-import iotworkshop from '../../../assets/iotws.jpg'
+import samir from '../../../assets/samir.jpeg';
+import anas from '../../../assets/anas_speaker.jpg';
+import sujith from '../../../assets/sujith.jpeg';
+import lata from '../../../assets/lata.jpg';
+import rajesh from '../../../assets/rajesh.jpg';
 
 export default class Speakers extends Component {
     constructor(props){
@@ -27,7 +28,7 @@ export default class Speakers extends Component {
                     
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" src={dsworkshop} />
+                                <img className="workshops-image" src={lata} id="lata"/>
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
@@ -44,7 +45,7 @@ export default class Speakers extends Component {
                         </div>
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" id="angelconnet-image-banner" src={pmworkshop} />
+                                <img className="workshops-image" id="angelconnet-image-banner" src={anas} />
 
                             </div>
                             <div className="workshops-text">
@@ -66,7 +67,7 @@ export default class Speakers extends Component {
                     
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" src={aworkshop} />
+                                <img className="workshops-image" id="sujith" src={sujith} />
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
@@ -83,7 +84,7 @@ export default class Speakers extends Component {
                         </div>
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" id="angelconnet-image-banner" src={iotworkshop} />
+                                <img className="workshops-image" id="angelconnet-image-banner" src={rajesh} id="rajesh"/>
 
                             </div>
                             <div className="workshops-text">
