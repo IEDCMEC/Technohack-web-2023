@@ -45,9 +45,6 @@ export default function Modal(props) {
 
         <div class="modal-content">
           {modalData[props.track].desc}
-          <div to={modalData[props.track].link} className="modal-button">
-          Register
-        </div>
         </div>
         
       </div>

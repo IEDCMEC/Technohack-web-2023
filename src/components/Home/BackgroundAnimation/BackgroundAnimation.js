@@ -2,6 +2,9 @@ import { Component } from 'react';
 import './BackgroundAnimation.css';
 import anime from 'animejs';
 export default class BackgroundAnimation extends Component {
+  constructor(props) {
+    super(props);
+  }
 
     componentDidMount(){
         anime({
@@ -83,10 +86,12 @@ export default class BackgroundAnimation extends Component {
                 <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.83 738.7"><path className="cls-2" d="M133,446s-18-101,58-112,19-121,141-74,128,109,96,142,4,119-60,134-144,18-204-21C164,515,132,469,133,446Z"/></svg>
                 <svg id="svg-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.83 738.7"><path className="cls-2" d="M133,446s-18-101,58-112,19-121,141-74,128,109,96,142,4,119-60,134-144,18-204-21C164,515,132,469,133,446Z"/></svg>
                 <svg id="svg-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.83 738.7"><path className="cls-2" d="M133,446s-18-101,58-112,19-121,141-74,128,109,96,142,4,119-60,134-144,18-204-21C164,515,132,469,133,446Z"/></svg>
-                <svg id="svg-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.83 738.7"><path className="cls-2" d="M133,446s-18-101,58-112,19-121,141-74,128,109,96,142,4,119-60,134-144,18-204-21C164,515,132,469,133,446Z"/></svg>
-
-                
-
+                {
+                  this.props.seeds ?
+                  (null) : (
+                    <svg id="svg-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619.83 738.7"><path className="cls-2" d="M133,446s-18-101,58-112,19-121,141-74,128,109,96,142,4,119-60,134-144,18-204-21C164,515,132,469,133,446Z"/></svg>
+                  )
+                }
             </div>
         )
     }  

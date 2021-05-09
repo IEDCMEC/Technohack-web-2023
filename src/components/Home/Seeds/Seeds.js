@@ -19,7 +19,7 @@ export default class Seeds extends Component {
   render() {
     return (
       <div className="seeds" id="seeds">
-        <BackgroundAnimation />
+        <BackgroundAnimation seeds={true}/>
 
         <div className="section-heading-seeds">seeds</div>
         <div className="seeds-quote-container">
@@ -36,9 +36,6 @@ export default class Seeds extends Component {
           Thus, we are delighted to inform you that 10% of the proceeds of every
           ticket of Technopreneur go to the SEEDS initiative.
           </p>
-        </div>
-        <div className="seeds-button">
-            Donate
         </div>
       </div>
     );
