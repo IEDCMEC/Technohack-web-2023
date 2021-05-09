@@ -27,7 +27,7 @@
 
 .av-link {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 35px;
     cursor: pointer;
     text-decoration: none;
@@ -37,16 +37,26 @@
 .av-link:hover {
     font-weight: bold;
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:970px) {
     .navbar {
         margin-left: 10%;
         margin-right: 10%;
     }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width:840px) {
+    .navbar {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
     .av-link {
         padding: 8px 10px;
         font-size: 14px;
+    }
+}
+@media screen and (max-width:650px) {
+    .av-link {
+        padding: 8px 10px;
+        font-size: 13px;
     }
 }
 @media screen and (max-width:450px) {

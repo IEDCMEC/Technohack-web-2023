@@ -8,16 +8,6 @@
   background-color: var(--background-color);
 }
 
-.faq-title {
-  margin: 40px;
-  font-weight: bold;
-  font-size: 55px;
-  line-height: 67px;
-  color: var(--color);
-  z-index: 3;
-  position: relative;
-}
-
 .faq-container {
   margin: auto;
   margin-bottom: 20px;
@@ -58,6 +48,10 @@
   --background-color: #19072c00;
   --color: rgba(143, 0, 255, 0.6);
   --text-color: rgba(255, 255, 255, 1);
+}
+
+.faq.angelFaq {
+  --color: #195ac7;
 }
 
 @media only screen and (max-width: 500px) {

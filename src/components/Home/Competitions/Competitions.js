@@ -4,6 +4,8 @@ import './Competitions.css';
 import TechnoHackBanner from "../../../assets/technohack_banner.jpeg";
 import TechnoLogo from "../../../assets/technohacklogo.jpg";
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
+import AngelConnectLogo from "../../../assets/angelconnect_black.png";
+import AngelConnectBanner from "../../../assets/invest.jpg";
 export default class Competitions extends Component {
     render() {
         return (
@@ -19,7 +21,7 @@ export default class Competitions extends Component {
                                 </div>
                             </div>
                             <div className="competition-text">
-                                <p className="competition-text-name-container">
+                                <p className="competition-text-name-container-hackathon">
                                     <img className="competition-text-name-image" src={TechnoLogo} />
                                 </p>
                                 {/* <p className="competition-text-designation">Hackathon</p> */}
@@ -28,23 +30,22 @@ export default class Competitions extends Component {
                                 </Link>
                             </div>
                         </div>
-                        <div className="competition-brewing-box">
-                            {/*<div className="competition-image"></div>
+                        <div className="competition-box">
+                            <div className="competition-image-container">
+                                <img className="competition-image" id="angelconnet-image-banner" src={AngelConnectBanner} />
+                                <div className="competition-image-text">                                    
+                                <p>AngelConnect is a unique opportunity for all the student startups and fledgling entrepreneurs out there to network and get investments from Angel Investors themselves.</p>
+                                </div>
+                            </div>
                             <div className="competition-text">
-                                <p className="competition-text-name">Etho Oral</p>
-                                <p className="competition-text-designation">Zerodha CEO</p>
-                                <div className="competition-button red">Register</div>
-                            </div>*/}
-                            <p>Something lit is brewing here</p>
-                        </div>
-                        <div className="competition-brewing-box">
-                            {/*<div className="competition-image"></div>
-                            <div className="competition-text">
-                                <p className="competition-text-name">Etho Oral</p>
-                                <p className="competition-text-designation">Zerodha CEO</p>
-                                <div className="competition-button red">Register</div>
-                            </div>*/}
-                            <p>Something lit is brewing here</p>
+                                <p className="competition-text-name-container-angelconnect">
+                                    <img className="competition-text-name-image" id="competition-angel-connect-logo" src={AngelConnectLogo} />
+                                </p>
+                                {/* <p className="competition-text-designation">Hackathon</p> */}
+                                <Link to="/angelconnect" className="competition-button">
+                                    Register
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

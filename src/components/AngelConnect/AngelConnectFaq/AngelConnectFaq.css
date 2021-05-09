@@ -1,5 +1,10 @@
-.angel-connect-faq{
-    width: 100vw;
-    height: 100vh;
-    background-color: #002874;
+.angel-connect-faq {
+  background-image: url("../../../assets/event_faq_background.png");
+}
+
+.angel-connect-faq-heading {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
