@@ -5,6 +5,26 @@
 .fade {
     margin-top: 15vh;
 }
+.floating-button{
+    position: fixed;
+    display: block;
+    bottom: 50px;
+    right: 50px;
+    background: white;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 500;
+    text-decoration: none;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.233);
+    animation: floating 3s infinite ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, 0px); }    
+}
 .header-image-navbar{
     /* position: absolute; */
     /* top: 10%; */
