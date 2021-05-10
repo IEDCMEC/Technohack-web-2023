@@ -1,14 +1,14 @@
 import { Component } from 'react';
-import './Speakers.css';
+import { Link } from "react-router-dom";
+import './Workshops.css';
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
-import Modal from '../SpeakerModal/Modal';
+import amal from '../../../assets/amal_ws.jpg';
+import nikita from '../../../assets/nikita_ws.jpg';
+import Modal from '../Modal/Modal';
 import samir from '../../../assets/samir.jpeg';
-import anas from '../../../assets/anas_speaker.jpg';
-import sujith from '../../../assets/sujith.jpeg';
-import lata from '../../../assets/lata.jpg';
-import rajesh from '../../../assets/rajesh.jpg';
+import salman from '../../../assets/salman.jpeg';
 
-export default class Speakers extends Component {
+export default class Workshops extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -16,26 +16,25 @@ export default class Speakers extends Component {
             track:""
         }
     }
-
     render() {
         return (
-<div className="speaker" id="speakers">
+                <div className="workshops" id="workshops">
                 
                 <BackgroundAnimation />
                 
-                    <div className="section-heading-workshops">Speakers</div>
+                    <div className="section-heading-workshops">Workshops</div>
                     <div className="workshops-container" style={{zIndex:this.state.modal ? 0 : 200}}>
                     
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" src={lata} id="lata"/>
+                                <img className="workshops-image" src={samir} />
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
-                                Lata Hariharan 
+                                    Data Science
                                 </p>
                                 <p className="workshops-subtext-name-container-hackathon">
-                                Co-Founder (Svast Inc)
+                                    Samir Madhavan
                                 </p>
                                 {/* <p className="workshops-text-designation">Hackathon</p> */}
                                 <div onClick={()=>{this.setState({modal:true, track:"ds"})}} to="/technohack" className="workshops-button">
@@ -45,15 +44,15 @@ export default class Speakers extends Component {
                         </div>
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" id="angelconnet-image-banner" src={anas} />
+                                <img className="workshops-image" id="angelconnet-image-banner" src={nikita} />
 
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
-                                Anas Rahman Junaid
+                                    Product Management
                                 </p>
                                 <p className="workshops-subtext-name-container-hackathon">
-                                Hurun India MD
+                                    Nikita Mallya
                                 </p>
                                 {/* <p className="workshops-text-designation">Hackathon</p> */}
                                 <div onClick={()=>{this.setState({modal:true, track:"pm"})}} className="workshops-button">
@@ -67,14 +66,14 @@ export default class Speakers extends Component {
                     
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" id="sujith" src={sujith} />
+                                <img className="workshops-image" src={amal} />
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
-                                Sujith Nair
+                                    Higher Study track in Europe
                                 </p>
                                 <p className="workshops-subtext-name-container-hackathon">
-                                Beckn
+                                    Amal Jose Vallavanthara
                                 </p>
                                 {/* <p className="workshops-text-designation">Hackathon</p> */}
                                 <div onClick={()=>{this.setState({modal:true, track:"as"})}} to="/technohack" className="workshops-button">
@@ -84,15 +83,15 @@ export default class Speakers extends Component {
                         </div>
                         <div className="workshops-box">
                             <div className="workshops-image-container">
-                                <img className="workshops-image" id="angelconnet-image-banner" src={rajesh} id="rajesh"/>
+                                <img className="workshops-image" id="angelconnet-image-banner" src={salman} />
 
                             </div>
                             <div className="workshops-text">
                                 <p className="workshops-text-name-container-hackathon">
-                                Rajesh Nair
+                                    IoT
                                 </p>
                                 <p className="workshops-subtext-name-container-hackathon">
-                                    Professor
+                                    Salman Faris
                                 </p>
                                 {/* <p className="workshops-text-designation">Hackathon</p> */}
                                 <div onClick={()=>{this.setState({modal:true, track:"iot"})}} className="workshops-button">
