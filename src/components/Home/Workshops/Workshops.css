@@ -138,6 +138,14 @@
     line-height: 15px;
     color: #4B4B4B;
 }
+.workshops-designation-name-container-hackathon{
+    overflow: hidden;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #707070;
+}
+
 .workshops-text-name-container-angelconnect{
     overflow: hidden;
     padding-top:1px;
@@ -241,6 +249,9 @@ bottom: 10px;
     .workshops-brewing-box{
         height: 340px;
         width: 220px;
+    }
+    .workshops-designation-name-container-hackathon{
+        font-size: 11px;
     }
 }
 
