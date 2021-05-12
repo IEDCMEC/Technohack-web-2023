@@ -154,7 +154,8 @@
     }
     .speakers-speaker-box {
         height: 500px;
-        width: 98%;
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -183,6 +184,7 @@
     .section-heading-speakers {
         font-size: 40px;
     }
+
 }
 @media screen and (max-width:616px){
     .speaker-box{
@@ -192,6 +194,10 @@
     .speaker-brewing-box{
         height: 370px;
         width: 270px;
+    }
+    .speakers-speaker-box {
+        height: 500px;
+        width: 98%;
     }
 
 }
