@@ -40,36 +40,41 @@ export default class Speakers extends Component {
     render() {
         const speakerImgs = [lata, anas, sujith, rajesh, kris]
         return (
-            <div className="speakers-speaker-container" id="speakers">
-                {/* <BackgroundAnimation /> */}
-                <div className="section-heading-workshops">Speakers</div>
-                <div>
-                    <Carousel responsive={responsive}>
-                        {speakerList.map(speaker => (
-                            <div className="speakers-speaker-box" key={speaker.id}>
-                                <div>
-                                    <img className="speaker-img" src={speakerImgs[speaker.id - 1]} />
-                                </div>
-                                <div className="speakers-workshops-text">
-                                    <p className="workshops-text-name-container-hackathon">
-                                        {speaker.name}
-                                    </p>
-                                    <p className="workshops-subtext-name-container-hackathon">
-                                        {speaker.designation}
-                                    </p>
-                                    <div onClick={() => { this.setState({ modal: true, track: speaker.track }) }} to="/technohack" className="workshops-button">
-                                        Learn More
+            <div>
+                <div className="speakers-speaker-container" id="speakers">
+                    <div>
+                        <BackgroundAnimation />
+                    </div>
+                    <div>
+                        <div className="section-heading-workshops">Speakers</div>
+                        <div className="speakers-speaker-carousel-container">
+                            <Carousel responsive={responsive}>
+                                {speakerList.map(speaker => (
+                                    <div className="speakers-speaker-box" key={speaker.id}>
+                                        <div>
+                                            <img className="speaker-img" src={speakerImgs[speaker.id - 1]} />
+                                        </div>
+                                        <div className="speakers-workshops-text">
+                                            <p className="workshops-text-name-container-hackathon">
+                                                {speaker.name}
+                                            </p>
+                                            <p className="workshops-subtext-name-container-hackathon">
+                                                {speaker.designation}
+                                            </p>
+                                            <div onClick={() => { this.setState({ modal: true, track: speaker.track }) }} to="/technohack" className="workshops-button">
+                                                Learn More
                                     </div>
-                                </div>
-                            </div>
+                                        </div>
+                                    </div>
 
-                        ))}
-                    </Carousel>
-
+                                ))}
+                            </Carousel>
+                        </div>
+                    </div>
+                    {
+                        this.state.modal ? <Modal close={() => this.setState({ modal: false })} track={this.state.track} /> : null
+                    }
                 </div>
-                {
-                    this.state.modal ? <Modal close={() => this.setState({ modal: false })} track={this.state.track} /> : null
-                }
             </div >
         )
     }

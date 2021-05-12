@@ -16,6 +16,11 @@
     z-index: 3;
 }
 
+.speakers-speaker-carousel-container {
+    position: relative;
+    z-index: 3;
+}
+
 .speakers-speaker-box {
     height: 500px;
     width: 350px;
