@@ -10,7 +10,7 @@ import Devfolio from "../../../assets/Devfolio.png";
 import Spoon from "../../../assets/spoon.png";
 import HackClub from "../../../assets/hackclub.png";
 import DSC from "../../../assets/dsc_logo.png";
-
+import echoar from "../../../assets/echoar.webp";
 export default class EventSponsers extends Component {
     render() {
         return (<>
@@ -59,6 +59,14 @@ export default class EventSponsers extends Component {
                         <div className="sponsors-col sponsors-col-lg">
                         <a href="https://awsugkochi.in/" target="_blank" rel="noreferrer noopener">
                             <img src={AWSug} alt="sponsor_image" className="sponsor-image"></img>
+                        </a>
+                        </div>
+                    </div>
+                    <h2 className="sponsors-title">AR/VR Partner</h2>
+                    <div className="sponsors-row">
+                        <div className="sponsors-col sponsors-col-lg">
+                        <a href="https://www.echoar.xyz/" target="_blank" rel="noreferrer noopener">
+                            <img src={echoar} alt="sponsor_image" className="sponsor-image"></img>
                         </a>
                         </div>
                     </div>
