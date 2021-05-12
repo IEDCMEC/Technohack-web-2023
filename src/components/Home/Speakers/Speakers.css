@@ -1,0 +1,174 @@
+.speaker{
+    width: 100%;
+    min-height: 100vh;    
+    background: #CC0045;
+    padding: 40px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+#sujith {
+    height: 70%;
+}
+
+#rajesh {
+    width: 100%;
+}
+
+#lata {
+    width: 100%;
+}
+
+.section-heading-speakers {
+    margin: 40px;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    text-transform: uppercase;
+    color: white;
+    z-index: 3;
+    position: relative;
+}
+.speaker-container{
+    /* margin: 70px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
+    z-index: 3;
+    position: relative;
+}
+
+.speaker-box{
+    height: 500px;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    overflow:hidden;
+}
+.speaker-brewing-box{
+    background: #BBBBBB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 500px;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4B4B4B;
+}
+.speaker-image{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: violet;
+}
+.speaker-text{
+    padding-top:10px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0);
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    font-weight: 600;
+    font-size: 29.7384px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+} 
+.speaker-text-name{
+    font-size: 24px;
+    line-height: 30px;
+}
+.speaker-text-designation{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:1100px){
+    .speaker-box{
+        height: 370px;
+        width: 240px;
+    }
+}
+
+
+@media screen and (max-width:934px){
+    .speaker-box{
+        height: 400px;
+        width: 300px;
+    }
+    .speaker-brewing-box{
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .speaker-box{
+        height: 340px;
+        width: 220px;
+    }
+    .speaker-brewing-box{
+        height: 340px;
+        width: 220px;
+    }
+    .section-heading-speakers {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:616px){
+    .speaker-box{
+        height: 370px;
+        width: 270px;
+    }
+    .speaker-brewing-box{
+        height: 370px;
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .speaker{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .speaker-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .speaker-box{
+        height: 370px;
+        width: 270px;
+        margin-right: 0;
+    }
+    .speaker-brewing-box{
+        height: 370px;
+        width: 270px;
+        margin-right: 0;
+    }
+}

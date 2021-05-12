@@ -1,0 +1,219 @@
+.header{
+    /* position: relative; */
+    width: 100vw;
+}
+.fade {
+    margin-top: 15vh;
+}
+.floating-button{
+    position: fixed;
+    display: block;
+    bottom: 50px;
+    right: 50px;
+    background: white;
+    padding: 20px;
+    color: #CC0045;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 300;
+    text-decoration: none;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.233);
+    animation: floating 3s infinite ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, 0px); }    
+}
+.header-image-navbar{
+    /* position: absolute; */
+    /* top: 10%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-image{
+    width: 60vw;
+}
+.ksum_img{
+    width: 15%;
+}
+.last_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tie_img{
+    width: 15%;
+}
+
+.header-bottom{
+    margin-top: 30vh;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100vw; 
+    left: 0;
+    /* right: 0;  */
+    background: linear-gradient(to right, #002874 0%, #cc0045 100%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items:center;
+    align-content: center;
+}
+
+.row2, .row3{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  
+}
+.element1, .element2{
+    margin-right: 12vh;
+}
+.header-bottom-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px ;
+}
+.header-bottom-content-number{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 67px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.header-bottom-content-number sup{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: lowercase;
+
+}
+
+.header-bottom-content-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1250px) {
+    .element1, .element2{
+        margin-right: 8vh;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    
+    .element1, .element2 {
+        margin-right: 5vh;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .header-bottom {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .header-bottom-content-number {
+        font-size: 30px;
+    }
+    .header-bottom-content-text {
+        font-size: 20px;
+    }
+    .element1, .element2 {
+        margin-right: 3vh;
+    }
+
+}
+
+@media screen and (max-width:890px) {
+    .element1, .element2{
+        margin-right: .6vh;
+    }
+    .header-bottom{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    .header-bottom{
+        flex-direction: column;
+        justify-content: center;
+  
+        padding-top:20px;
+      
+    }
+    .element1{margin-right: 8vh;}
+   
+    .header-bottom-content{
+        padding-top: 0;
+    }
+    .header-bottom-content-number{
+        line-height: normal;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .header-bottom-content-text{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .header-bottom-content-number sup{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .fade {
+        margin-top: 10vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav {
+        visibility: hidden;
+    }
+    .header{
+        margin-top: 30vh;
+    }
+    .header-image{
+        width: 80%;
+    }
+    .header-bottom-content-number{
+        line-height: normal;
+        font-size: 20px;
+    }
+    .header-bottom-content-text{
+        font-size:10px;
+    }
+    .header-bottom-content-number sup{
+        font-size: 10px;
+    }
+    .fade{
+        margin-bottom: 30vh;
+    }
+    .techno_logo_on_top{
+        width: 90%;
+    }
+    .ksum_img{
+        width: 40%;
+    }
+    .tie_img{
+        width: 40%;
+    }
+}
