@@ -110,7 +110,10 @@
 .seeds-content-container {
   width: 75%;
   align-self: center;
+  position: relative;
+  z-index: 5;
 }
+
 .seeds-content {
   font-family: Montserrat;
   font-style: normal;
@@ -120,6 +123,9 @@
   text-align: justify;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 3%;
+}
+.seeds-content>a {
+  color: #fff;
 }
 
 @media screen and (max-width: 790px) {
