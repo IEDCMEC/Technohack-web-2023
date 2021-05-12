@@ -11,6 +11,7 @@ import Celo from "../../../assets/Celo.png";
 import Portis from "../../../assets/Portis.png";
 import Tezos from "../../../assets/Tezos.png";
 import Spoon from "../../../assets/spoon.png";
+import echoar from "../../../assets/echoar.webp";
 export default class EventPrizes extends Component {
   prizeCards = [
     {
@@ -77,6 +78,11 @@ export default class EventPrizes extends Component {
       description: "Best Dapp built on Celo",
       img: Celo,
       prizeMoney: "₹20,000",
+      imgStyle: "devfolio-prize-image",
+    },
+    {
+      description: "API access for one month",
+      img: echoar,
       imgStyle: "devfolio-prize-image",
     },
   ];
