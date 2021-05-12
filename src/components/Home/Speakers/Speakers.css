@@ -152,11 +152,6 @@
         height: 370px;
         width: 240px;
     }
-    .speakers-speaker-box {
-        height: 500px;
-        width: 80%;
-        margin: auto;
-    }
 }
 
 
@@ -169,7 +164,6 @@
         height: 400px;
         width: 300px;
     }
-    
 }
 
 @media screen and (max-width:790px){
@@ -183,8 +177,15 @@
     }
     .section-heading-speakers {
         font-size: 40px;
-    }
+    }    
 
+}
+@media screen and (max-width: 768px) {
+    .speakers-speaker-box {
+        height: 500px;
+        width: 78%;
+        margin: auto;
+    } 
 }
 @media screen and (max-width:616px){
     .speaker-box{
@@ -199,7 +200,6 @@
         height: 500px;
         width: 98%;
     }
-
 }
 
 @media screen and (max-width:500px){
