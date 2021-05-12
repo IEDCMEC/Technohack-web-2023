@@ -1,12 +1,29 @@
 import { Component } from 'react';
 import { Link } from "react-router-dom";
 import './Workshops.css';
+import Carousel from "react-multi-carousel";
+import workshopList from './WorkshopList';
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation';
 import amal from '../../../assets/amal_ws.jpg';
 import nikita from '../../../assets/nikita_ws.jpg';
 import Modal from '../Modal/Modal';
 import samir from '../../../assets/samir.jpeg';
 import salman from '../../../assets/salman.jpeg';
+
+const responsive = {
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 768 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 768, min: 0 },
+        items: 1,
+    }
+};
 
 export default class Workshops extends Component {
     constructor(props) {
@@ -17,106 +34,47 @@ export default class Workshops extends Component {
         }
     }
     render() {
+        const workshopImgs = [samir, nikita, amal, salman]
         return (
-            <div className="workshops" id="workshops">
+            <div>
+                <div className="workshops-speaker-container " id="workshops">
+                    <div>
+                        <BackgroundAnimation />
+                    </div>
+                    <div>
+                        <div className="section-heading-workshops">Workshops</div>
+                        <div className="speakers-speaker-carousel-container">
+                            <Carousel responsive={responsive}>
+                                {workshopList.map(workshop => (
+                                    <div className="speakers-speaker-box" key={workshop.id}>
+                                        <div>
+                                            <img className="workshops-image" src={workshopImgs[workshop.id - 1]} />
+                                        </div>
+                                        <div className="speakers-workshops-text">
+                                            <p className="workshops-text-name-container-hackathon"> 
+                                                {workshop.field}
+                                            </p>
+                                            <p className="workshops-subtext-name-container-hackathon">
+                                                {workshop.name}
+                                            </p>
+                                            <p className="workshops-designation-name-container-hackathon">
+                                                {workshop.designation}
+                                            </p>
+                                            <div onClick={() => { this.setState({ modal: true, track: workshop.track }) }} to="/technohack" className="workshops-button">
+                                                Learn More
+                                    </div>
+                                        </div>
+                                    </div>
 
-                <BackgroundAnimation />
-
-                <div className="section-heading-workshops">Workshops</div>
-                <div className="workshops-container" style={{ zIndex: this.state.modal ? 0 : 200 }}>
-
-                    <div className="workshops-box">
-                        <div className="workshops-image-container">
-                            <img className="workshops-image" src={samir} />
-                        </div>
-                        <div className="workshops-text">
-                            <p className="workshops-text-name-container-hackathon">
-                                Data Science
-                            </p>
-                            <p className="workshops-subtext-name-container-hackathon">
-                                Samir Madhavan
-                            </p>
-                            <p className="workshops-designation-name-container-hackathon">
-                                Director of Data Products at Kickfurther
-                            </p>
-                            {/* <p className="workshops-text-designation">Hackathon</p> */}
-                            <div onClick={() => { this.setState({ modal: true, track: "ds" }) }} to="/technohack" className="workshops-button">
-                                Learn More
-                            </div>
+                                ))}
+                            </Carousel>
                         </div>
                     </div>
-                    <div className="workshops-box">
-                        <div className="workshops-image-container">
-                            <img className="workshops-image" id="angelconnet-image-banner" src={nikita} />
-
-                        </div>
-                        <div className="workshops-text">
-                            <p className="workshops-text-name-container-hackathon">
-                                Product Management
-                            </p>
-                            <p className="workshops-subtext-name-container-hackathon">
-                                Nikita Mallya
-                            </p>
-                            <p className="workshops-designation-name-container-hackathon">
-                                Software Product Manager at Tesla
-                            </p>
-                            {/* <p className="workshops-text-designation">Hackathon</p> */}
-                            <div onClick={() => { this.setState({ modal: true, track: "pm" }) }} className="workshops-button">
-                                Learn More
-                            </div>
-                        </div>
-                    </div>
-
+                    {
+                        this.state.modal ? <Modal close={() => this.setState({ modal: false })} track={this.state.track} /> : null
+                    }
                 </div>
-                <div className="workshops-container-2" style={{ zIndex: this.state.modal ? 0 : 200 }}>
-
-                    <div className="workshops-box">
-                        <div className="workshops-image-container">
-                            <img className="workshops-image" src={amal} />
-                        </div>
-                        <div className="workshops-text">
-                            <p className="workshops-text-name-container-hackathon">
-                                Higher Study track in Europe
-                            </p>
-                            <p className="workshops-subtext-name-container-hackathon">
-                                Amal Jose Vallavanthara
-                            </p>
-                            <p className="workshops-designation-name-container-hackathon">
-                                XC: Cross Domain Computing at Bosch
-                            </p>
-                            {/* <p className="workshops-text-designation">Hackathon</p> */}
-                            <div onClick={() => { this.setState({ modal: true, track: "as" }) }} to="/technohack" className="workshops-button">
-                                Learn More
-                            </div>
-                        </div>
-                    </div>
-                    <div className="workshops-box">
-                        <div className="workshops-image-container">
-                            <img className="workshops-image" id="angelconnet-image-banner" src={salman} />
-
-                        </div>
-                        <div className="workshops-text">
-                            <p className="workshops-text-name-container-hackathon">
-                                IoT
-                            </p>
-                            <p className="workshops-subtext-name-container-hackathon">
-                                Salman Faris
-                            </p>
-                            <p className="workshops-designation-name-container-hackathon">
-                                Space Manager at Steag India
-                            </p>
-                            {/* <p className="workshops-text-designation">Hackathon</p> */}
-                            <div onClick={() => { this.setState({ modal: true, track: "iot" }) }} className="workshops-button">
-                                Learn More
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                {
-                    this.state.modal ? <Modal close={() => this.setState({ modal: false })} track={this.state.track} /> : null
-                }
-            </div>
+            </div >
         )
     }
 };

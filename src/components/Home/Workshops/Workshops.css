@@ -4,6 +4,16 @@
     background: #002874;
     padding: 40px;
     position: relative;
+    z-index: 3;
+}
+
+.workshops-speaker-container {
+    width: 100%;
+    min-height: 100vh;    
+    background: #002874;
+    padding: 40px;
+    position: relative;
+    z-index: 3;
 }
 
 .section-heading-workshops{
@@ -28,7 +38,6 @@
     width: 100%;
     margin-top: 60px;
     position: relative;
-    
 }
 .workshops-container-2{
     /* margin: 70px; */
@@ -37,6 +46,7 @@
     flex-wrap: wrap;
     
     justify-content: space-evenly;
+    background: #002874;
     width: 100%;
     margin-top: 60px;
     position: relative;
@@ -120,7 +130,7 @@
 } 
 .workshops-image{
     width: 100%;
-    height: 50vh;
+    height: 320px;
     transition: 0.2s ease;
 }
 
