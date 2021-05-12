@@ -25,6 +25,12 @@ const modalData = {
     mentor: "Professor, Founder of EnCube Labs",
     desc: "An alumni of prestigious institutions such as MIT and IISc, Rajesh Nair is an exceptional entrepreneur with the desire to bring a change with his relentless hunger for knowledge. He started four companies in Massachusetts and New Hampshire, three of them in hardware manufacturing. He is the founder of EnCube Labs, TechTop India and Degree Controls, and the holder of 13 US patents. He received the Entrepreneur of the Year award from New Hampshire High Tech Council in 2002. He has spoken at the UN General Assembly (2018), MIT Systems Thinking Conference (2016), and TEDxBeaconStreet (2014). Currently, he holds a Professor of Practice position at Asia School of Business, KL. He was also a Visiting Scholar at MIT. We are very proud to have such a distinguished personality such as him as one of the speakers at Technopreneur 2021.",
     link: ""
+  },
+  kg: {
+    name: "Kris Gopalakrishanan",
+    mentor: "Chairman at Axilor Ventures, Co-founder of Infosys",
+    desc: "Mr. Senapathy “Kris” Gopalakrishnan is one of the co-founders of Infosys, and served as the vice chairman to the company from 2011 to 2014. A billionaire entrepreneur with a unique vision aimed at innovation, he held the position of CEO and managing director of Infosys from 2007 to 2011. Recognized as a global business and technology thought leader, he was voted the top CEO in the Institutional Investor's inaugural ranking of Asia's Top Executives. He is the Chairman of Axilor Ventures, and was selected to Thinkers 50, an elite list of global business thinkers. Kris was elected as the president of India's apex industry chamber Confederation of Indian Industry (CII) for 2013-14, and served as one of the co-chairs of the World Economic Forum in Davos. In January 2011, the Government of India awarded Mr. Gopalakrishnan the Padma Bhushan, the country’s third-highest civilian honor. We are very honoured to have such an accomplished individual as one of our speakers at Technopreneur 2021.",
+    link: "",
   }
 
 }
