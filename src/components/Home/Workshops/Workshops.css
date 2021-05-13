@@ -189,7 +189,7 @@ background-color: #002874;
 transition: 0.3s;
 position: absolute;
 margin-bottom: 20px;
-bottom: 10px;
+bottom: 2px;
 }
 
 #angelconnet-image-banner {
@@ -301,5 +301,11 @@ bottom: 10px;
     }
     .workshops-container-2{
         margin-top: 0;
+    }
+    
+    .section-heading-workshops{
+        font-size: 22px;
+        z-index: 1;
+        text-align: center;
     }
 }
