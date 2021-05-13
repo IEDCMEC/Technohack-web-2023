@@ -9,17 +9,20 @@ import AngelConnectTimeline from '../../components/AngelConnect/AngelConnectTime
 import './index.css'
 export default class Home extends Component {
 
-    render() {
-        return (
-          <div className="angel-connect-page">
-            <AngelConnectHeader />
-            <AngelConnectAbout />
-            <AngelConnectTimeline />
-            <AngelConnectInvestors />
-            <AngelConnectFaq />
-            <AngelConnectFooter />
-          </div>
-          );
-        }
+  componentDidMount() {
+    document.getElementById('angel-connect-page').scrollIntoView()
+  }
+  render() {
+    return (
+      <div className="angel-connect-page" id="angel-connect-page">
+        <AngelConnectHeader />
+        <AngelConnectAbout />
+        <AngelConnectTimeline />
+        <AngelConnectInvestors />
+        <AngelConnectFaq />
+        <AngelConnectFooter />
+      </div>
+    );
+  }
 }
 
