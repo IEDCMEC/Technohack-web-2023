@@ -248,4 +248,9 @@ transition: 0.3s;
         width: 270px;
         margin-right: 0;
     }
+    .section-heading-competitions{
+        font-size: 25px;
+        z-index: 1;
+        text-align: center;
+    }
 }
