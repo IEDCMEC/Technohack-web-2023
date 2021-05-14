@@ -10,13 +10,13 @@ const modalData = {
   pm:{
     name:"Product Management",
     mentor:"Nikita Mallya",
-    desc:"Following her motto, “Living my dreams, one at a time”, is what has made Nikita’s story admirable and aspiring to a lot of the undergraduates out there. After graduating from Govt. Model Engineering College, she went on to do her Master of Science in the field of study - Management Science and Engineering, from  Columbia University. Within a rather short period of time, she got into Tesla, which is one of the most innovative and famous companies, as a Software Product Manager. As a part of Technopreneur 2021, she will be holding a  workshop on the topic of Product Management",
+    desc:"Following her motto, “Living my dreams, one at a time”, is what has made Nikita’s story admirable and aspiring to a lot of the undergraduates out there. After graduating from Govt. Model Engineering College, she went on to do her Master of Science in the field of study - Management Science and Engineering, from  Columbia University. Within a rather short period of time, she got into Tesla, a highly innovative and famous company, as a Software Product Manager. As a part of Technopreneur 2021, she will be holding a  workshop on the topic of Product Managemen",
     link:""
   },
   as:{
-    name:"Higher Study track in Europe",
+    name:"Entrepreneurship in a 9 to 5 job",
     mentor:"Amal Jose Vallavanthara",
-    desc:"An Electronics and Communications alumni from Model Engineering College, Amal Jose Vallavanthara is currently working in Cross Domain Computing at Bosch. His acclaimed career includes being an engineer at Siemens and working on High Performance Computing at the Fraunhofer Heinrich Hertz Institute. He has specialized in Machine Learning and Embedded systems and is the winner of multiple national level entrepreneurial business competitions in Netherlands and Germany. As a part of Technopreneur 2021, he will be giving a workshop on the topic of Higher Study track in Europe.",
+    desc:"An Electronics and Communications alumni from Model Engineering College, Amal Jose Vallavanthara is currently working in Cross Domain Computing at Bosch. His acclaimed career includes being an engineer at Siemens and working on High Performance Computing at the Fraunhofer Heinrich Hertz Institute. He has specialized in Machine Learning and Embedded systems and is the winner of multiple national level entrepreneurial business competitions in Netherlands and Germany. As a part of Technopreneur 2021, he will be giving a workshop on the topic of Higher Study track.",
     link:""
 
   },
