@@ -11,6 +11,8 @@ import Spoon from "../../../assets/spoon.png";
 import HackClub from "../../../assets/hackclub.png";
 import DSC from "../../../assets/dsc_logo.png";
 import echoar from "../../../assets/echoar.webp";
+import ye from '../../../assets/ye_stack.svg'
+import tgh_logo from '../../../assets/tgh_logo.png'
 export default class EventSponsers extends Component {
     render() {
         return (<>
@@ -80,6 +82,12 @@ export default class EventSponsers extends Component {
                     <div className="sponsors-row">
                         <div className="sponsors-col sponsors-col-lg">
                             <img src={DSC} alt="sponsor_image" className="sponsor-image" id="dsc-img"></img>
+                        </div>
+                        <div className="sponsors-col sponsors-col-lg">
+                            <img src={ye} alt="sponsor_image" className="sponsor-image" id="dsc-img"></img>
+                        </div>
+                        <div className="sponsors-col sponsors-col-lg">
+                            <img src={tgh_logo} alt="sponsor_image" className="sponsor-image" id="dsc-img"></img>
                         </div>
                     </div>
                 </div>
