@@ -1,3 +1,8 @@
+#seeds-image {
+  width: 15%;
+  padding-bottom: 10px;
+}
+
 .seeds {
   width: 100%;
   min-height: 100vh;
@@ -131,6 +136,10 @@
 @media screen and (max-width: 790px) {
   .section-heading-seeds {
     font-size: 40px;
+  }
+  #seeds-image {
+    width: 50%;
+    align-self: center;
   }
 }
 
