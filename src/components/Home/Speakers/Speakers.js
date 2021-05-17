@@ -8,7 +8,7 @@ import sujith from '../../../assets/sujith.jpeg';
 import lata from '../../../assets/lata.jpg';
 import rajesh from '../../../assets/rajesh.jpg';
 import kris from '../../../assets/kris.jpg';
-
+import Shan from '../../../assets/Shan.jpg';
 import speakerList from './SpeakerList'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -38,7 +38,7 @@ export default class Speakers extends Component {
     }
 
     render() {
-        const speakerImgs = [lata, anas, sujith, rajesh, kris]
+        const speakerImgs = [lata, anas, sujith, rajesh, kris,Shan]
         return (
             <div>
                 <div className="speakers-speaker-container" id="speakers">
