@@ -25,7 +25,13 @@ const modalData = {
     mentor:"Salman Faris",
     desc:"An alumni from the Copenhagen Institute of Interaction Design (CIID), Salman Faris has a significant amount of experience in hardware product development and prototyping with various development platforms. He is active in Maker Communities and a passionate technology enthusiast. He worked as an ambassador at Hackster.io and is currently an ambassador at Edge Impulse. He is a Board Member at the Open Source Hardware Association and the Space Manager at STEAG Energy Services. As a part of Technopreneur 2021, he will be giving a workshop on IoT.",
     link:""
-  }
+  },
+  ui:{
+    name:" UI/UX",
+    mentor:"Gokul Harikumar",
+    desc:"A computer science alumni from Model Engineering College, Gokul Harikumar is a design genius and a major fintech enthusiast. He co-founded Savemo, which has changed the Personal Finance scene and is one of the smartest money apps in India. Savemo, characterized by its unique and beautiful UI developed by Gokul, is an efficient personal finance management app for millennials. Savemo brings two of his passions, design, and finance, together in perfect harmony. A designer with incredible UI/UX skills, he was the designer at Blowhorn. Furthermore, he was also the Design Manager at sernez.io. As part of Technopreneur 2021, he will be taking us through the “UX driven UI perspectives”.",
+    link:""
+  },
 
 }
 export default function Modal(props) {

@@ -9,7 +9,7 @@ import nikita from '../../../assets/nikita_ws.jpg';
 import Modal from '../Modal/Modal';
 import samir from '../../../assets/samir.jpeg';
 import salman from '../../../assets/salman.jpeg';
-
+import gokul from '../../../assets/gokul.png';
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -34,7 +34,7 @@ export default class Workshops extends Component {
         }
     }
     render() {
-        const workshopImgs = [samir, nikita, amal, salman]
+        const workshopImgs = [samir, nikita, amal, salman,gokul]
         return (
             <div>
                 <div className="workshops-speaker-container " id="workshops">
