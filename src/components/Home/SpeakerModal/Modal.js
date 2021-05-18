@@ -31,6 +31,12 @@ const modalData = {
     mentor: "Chairman at Axilor Ventures, Co-founder of Infosys",
     desc: "Mr. Senapathy “Kris” Gopalakrishnan is one of the co-founders of Infosys, and served as the vice chairman to the company from 2011 to 2014. A billionaire entrepreneur with a unique vision aimed at innovation, he held the position of CEO and managing director of Infosys from 2007 to 2011. Recognized as a global business and technology thought leader, he was voted the top CEO in the Institutional Investor's inaugural ranking of Asia's Top Executives. He is the Chairman of Axilor Ventures, and was selected to Thinkers 50, an elite list of global business thinkers. Kris was elected as the president of India's apex industry chamber Confederation of Indian Industry (CII) for 2013-14, and served as one of the co-chairs of the World Economic Forum in Davos. In January 2011, the Government of India awarded Mr. Gopalakrishnan the Padma Bhushan, the country’s third-highest civilian honor. We are very honoured to have such an accomplished individual as one of our speakers at Technopreneur 2021.",
     link: "",
+  },
+  foods: {
+    name: "Shan Kadavil",
+    mentor: "Co-founder and CEO FreshtoHome Foods",
+    desc: "Beyond the enthralling mind of a farmer, fisherman, and entrepreneur, Shan Kadavil is the Co-founder and CEO of one of the most popular food delivery services in India, Freshtohome. After passing out from Model Engineering College, his illustrious career provides an impressive resume that contains his work as a Senior Software Engineer in MAPS Geosystems, a Software Consultant In SVAM international, a stunning variety of different posts in SupportSoft for nearly a decade, one of the founders and managing director at Dbaux.com and much more. As the Country Manager for Zynga, a social game service, his insights, and talent proved to be highly influential for the company's IPO. He was also one of the architects behind the wildly popular online social game FarmVille. An X-Mecian of immense caliber and success, we are very proud and honored to have him as a speaker at Technopreneur 2021.",
+    link: "",
   }
 
 }

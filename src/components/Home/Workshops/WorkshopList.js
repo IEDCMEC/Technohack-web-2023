@@ -35,6 +35,15 @@ const workshopList = [
         link: "",
         track: "iot",
     },
+    {
+        id: 5,
+        name: "GOKUL HARIKUMAR",
+        field: "UI/UX",
+        designation: "Co-Founder of Savemo",
+        desc: "A computer science alumni from Model Engineering College, Gokul Harikumar is a design genius and a major fintech enthusiast. He co-founded Savemo, which has changed the Personal Finance scene and is one of the smartest money apps in India. Savemo, characterized by its unique and beautiful UI developed by Gokul, is an efficient personal finance management app for millennials. Savemo brings two of his passions, design, and finance, together in perfect harmony. A designer with incredible UI/UX skills, he was the designer at Blowhorn. Furthermore, he was also the Design Manager at sernez.io. As part of Technopreneur 2021, he will be taking us through the “UX driven UI perspectives”.",
+        link: "",
+        track: "ui",
+    },
 ]
 
 export default workshopList

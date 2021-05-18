@@ -40,6 +40,14 @@ const speakerList = [
     link: "",
     track: "iot",
   },
+  {
+    id: 6,
+    name: "Shan Kadavil",
+    designation: "Co-founder and CEO FreshtoHome Foods",
+    desc: "Beyond the enthralling mind of a farmer, fisherman, and entrepreneur, Shan Kadavil is the Co-founder and CEO of one of the most popular food delivery services in India, Freshtohome. After passing out from Model Engineering College, his illustrious career provides an impressive resume that contains his work as a Senior Software Engineer in MAPS Geosystems, a Software Consultant In SVAM international, a stunning variety of different posts in SupportSoft for nearly a decade, one of the founders and managing director at Dbaux.com and much more. As the Country Manager for Zynga, a social game service, his insights, and talent proved to be highly influential for the company's IPO. He was also one of the architects behind the wildly popular online social game FarmVille. An X-Mecian of immense caliber and success, we are very proud and honored to have him as a speaker at Technopreneur 2021.",
+    link: "",
+    track: "foods",
+  },
 ];
 
 export default speakerList;
