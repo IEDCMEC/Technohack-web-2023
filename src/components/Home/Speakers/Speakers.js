@@ -38,7 +38,7 @@ export default class Speakers extends Component {
     }
 
     render() {
-        const speakerImgs = [lata, anas, sujith, rajesh, kris,Shan]
+        const speakerImgs = [lata, Shan, sujith, rajesh, kris,anas]
         return (
             <div>
                 <div className="speakers-speaker-container" id="speakers">
