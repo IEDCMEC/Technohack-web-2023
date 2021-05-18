@@ -9,11 +9,11 @@ const speakerList = [
   },
   {
     id: 2,
-    name: "Anas Rahman Junaid",
-    designation: "Hurun India MD",
-    desc: "An immensely successful entrepreneur and a visionary like no other, Anas Rahman Junaid is the co-founder of Callapina Capital and is an angel investor to companies like Crosspay and Zoko. From an intern at Hurun Report Global to meeting up with Rupert Hoogewerf, Hu Run himself, to discuss the ecosystem of Indian entrepreneurship, he has transformed into the founder of the world's largest rich list provider, Hurun India. An X-Mecian of immense calibre and success, we are very proud and honoured to have him as a speaker at Technopreneur 2021. ",
+    name: "Shan Kadavil",
+    designation: "Co-founder and CEO FreshtoHome Foods",
+    desc: "Beyond the enthralling mind of a farmer, fisherman, and entrepreneur, Shan Kadavil is the Co-founder and CEO of one of the most popular food delivery services in India, Freshtohome. After passing out from Model Engineering College, his illustrious career provides an impressive resume that contains his work as a Senior Software Engineer in MAPS Geosystems, a Software Consultant In SVAM international, a stunning variety of different posts in SupportSoft for nearly a decade, one of the founders and managing director at Dbaux.com and much more. As the Country Manager for Zynga, a social game service, his insights, and talent proved to be highly influential for the company's IPO. He was also one of the architects behind the wildly popular online social game FarmVille. An X-Mecian of immense caliber and success, we are very proud and honored to have him as a speaker at Technopreneur 2021.",
     link: "",
-    track: "pm",
+    track: "foods",
   },
   {
     id: 1,
@@ -42,11 +42,11 @@ const speakerList = [
   },
   {
     id: 6,
-    name: "Shan Kadavil",
-    designation: "Co-founder and CEO FreshtoHome Foods",
-    desc: "Beyond the enthralling mind of a farmer, fisherman, and entrepreneur, Shan Kadavil is the Co-founder and CEO of one of the most popular food delivery services in India, Freshtohome. After passing out from Model Engineering College, his illustrious career provides an impressive resume that contains his work as a Senior Software Engineer in MAPS Geosystems, a Software Consultant In SVAM international, a stunning variety of different posts in SupportSoft for nearly a decade, one of the founders and managing director at Dbaux.com and much more. As the Country Manager for Zynga, a social game service, his insights, and talent proved to be highly influential for the company's IPO. He was also one of the architects behind the wildly popular online social game FarmVille. An X-Mecian of immense caliber and success, we are very proud and honored to have him as a speaker at Technopreneur 2021.",
+    name: "Anas Rahman Junaid",
+    designation: "Hurun India MD",
+    desc: "An immensely successful entrepreneur and a visionary like no other, Anas Rahman Junaid is the co-founder of Callapina Capital and is an angel investor to companies like Crosspay and Zoko. From an intern at Hurun Report Global to meeting up with Rupert Hoogewerf, Hu Run himself, to discuss the ecosystem of Indian entrepreneurship, he has transformed into the founder of the world's largest rich list provider, Hurun India. An X-Mecian of immense calibre and success, we are very proud and honoured to have him as a speaker at Technopreneur 2021. ",
     link: "",
-    track: "foods",
+    track: "pm",
   },
 ];
 
