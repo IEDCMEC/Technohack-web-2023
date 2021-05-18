@@ -1,7 +1,7 @@
 const speakerList = [
   {
     id: 5,
-    name: "Kris Gopalakrishanan",
+    name: "Kris Gopalakrishnan",
     designation: "Co-founder of Infosys",
     desc: "Mr. Senapathy “Kris” Gopalakrishnan is one of the co-founders of Infosys, and served as the vice chairman to the company from 2011 to 2014. A billionaire entrepreneur with a unique vision aimed at innovation, he held the position of CEO and managing director of Infosys from 2007 to 2011. Recognized as a global business and technology thought leader, he was voted the top CEO in the Institutional Investor's inaugural ranking of Asia's Top Executives. He is the Chairman of Axilor Ventures, and was selected to Thinkers 50, an elite list of global business thinkers. Kris was elected as the president of India's apex industry chamber Confederation of Indian Industry (CII) for 2013-14, and served as one of the co-chairs of the World Economic Forum in Davos. In January 2011, the Government of India awarded Mr. Gopalakrishnan the Padma Bhushan, the country’s third-highest civilian honor. We are very honoured to have such an accomplished individual as one of our speakers at Technopreneur 2021.",
     link: "",
