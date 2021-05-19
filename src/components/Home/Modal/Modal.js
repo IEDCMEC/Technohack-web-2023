@@ -8,7 +8,7 @@ const modalData = {
     link:""
   },
   pm:{
-    name:"Product Management",
+    name:"Product Management (Learn through her journey)",
     mentor:"Nikita Mallya",
     desc:"Following her motto, “Living my dreams, one at a time”, is what has made Nikita’s story admirable and aspiring to a lot of the undergraduates out there. After graduating from Govt. Model Engineering College, she went on to do her Master of Science in the field of study - Management Science and Engineering, from  Columbia University. Within a rather short period of time, she got into Tesla, a highly innovative and famous company, as a Software Product Manager. As a part of Technopreneur 2021, she will be holding a  workshop on the topic of Product Managemen",
     link:""
