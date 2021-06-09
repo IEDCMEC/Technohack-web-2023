@@ -10,16 +10,9 @@ import Polygon from "../../../assets/Polygon.png";
 import Celo from "../../../assets/Celo.png";
 import Portis from "../../../assets/Portis.png";
 import Tezos from "../../../assets/Tezos.png";
-import Spoon from "../../../assets/spoon.png";
 import echoar from "../../../assets/echoar.webp";
 export default class EventPrizes extends Component {
   prizeCards = [
-    {
-      description: "Cloud Engineer Internship ",
-      img: Spoon,
-      prizeMoney: "₹90,000",
-      imgStyle: "devfolio-prize-image",
-    },
     {
       description: "First Prize",
       img: first,

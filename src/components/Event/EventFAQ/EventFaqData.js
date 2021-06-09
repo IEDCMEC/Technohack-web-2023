@@ -32,7 +32,7 @@ const eventData = [
     id: 3,
     question: "What is the team size?",
     ans:
-      "A team should have a minimum of 2 members and maximum of 4 members. For the Spoon track, only individual participants are eligible",
+      "A team should have a minimum of 2 members and maximum of 4 members",
   },
   {
     id: 4,
@@ -42,30 +42,24 @@ const eventData = [
   },
   {
     id: 5,
-    question: "What are the details about Spoon Internship?",
-    ans:
-      "The internship is for a Cloud Engineer role at Spoon, for a period of 6 months, with a stipend of Rs.90,000 (Rs.15,000 per month). It will be awarded to 1 individual from the Spoon Track.",
-  },
-  {
-    id: 6,
     question: "Who do I contact if I have any further doubts?",
     ans:
       "You can contact our Event Managers: Rindish (+91 85478 61324) or Adithya (+91 70127 03717), if you have any doubts. They'll be happy to help!",
   },
   {
-    id: 7,
+    id: 6,
     question: "When do registrations close?",
     ans: `
       The registrations close on 17th may 2021, 00:00 IST.
       `,
   },
   {
-    id: 8,
+    id: 7,
     question: "What is the venue of the hackathon?",
     ans: `Anywhere you want! Make sure you are surrounded by ample charging ports and follow social distancing norms.`,
   },
   {
-    id: 9,
+    id: 8,
     question: "Can I participate without a computer science background?",
     ans:
       "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
