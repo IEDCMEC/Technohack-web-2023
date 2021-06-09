@@ -7,7 +7,6 @@ import Celo from "../../../assets/Celo.png";
 import Portis from "../../../assets/Portis.png";
 import Tezos from "../../../assets/Tezos.png";
 import Devfolio from "../../../assets/Devfolio.png";
-import Spoon from "../../../assets/spoon.png";
 import HackClub from "../../../assets/hackclub.png";
 import DSC from "../../../assets/dsc_logo.png";
 import echoar from "../../../assets/echoar.webp";
@@ -26,11 +25,6 @@ export default class EventSponsers extends Component {
                         <a href="https://devfolio.co/" target="_blank" rel="noreferrer noopener">
                             <img src={Devfolio} alt="sponsor_image" className="sponsor-image"></img>
                         </a>
-                        </div>
-                        <div className="sponsors-col sponsors-col-lg">
-                            <a href="https://www.spoon.money/" target="_blank" rel="noreferrer noopener">
-                            <img src={Spoon} alt="sponsor_image" className="sponsor-image"></img>
-                            </a>
                         </div>
                     </div>
                     <h2 className="sponsors-title"><span className="sponsors-heading-platinum">Silver</span> Sponsors</h2>
