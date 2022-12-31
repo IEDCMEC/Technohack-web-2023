@@ -1,0 +1,67 @@
+.cls-2{fill:rgba(221, 218, 218, 0.288);}
+
+.background-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+}
+.svg-animation svg{
+    position: absolute;
+    overflow: visible;
+    display: none;
+}
+
+#svg-1 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-2 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-3 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-4 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-5 > path{
+    transform-origin: 285.988px 412.29px;
+}
+#svg-1{
+    position: absolute;
+    top: -300px;
+    left:400px;
+    transform: scale(1);
+}
+#svg-2{
+    position: absolute;
+    top: 00px;
+    left: -50%;
+    transform: scale(.3) rotate(90deg);
+}
+#svg-3{
+    position: absolute;
+    top: 1800px;
+    left: 80vw;
+    transform: scale(0.8) rotate(-180deg);
+}
+
+#svg-4{
+    position: absolute;
+    bottom:-1000px;
+    right: -100vw;
+    transform: scale(0.5) rotate(-150deg);
+}
+#svg-5{
+    position: absolute;
+    bottom: -1500px;
+    left: -100vw;
+    transform: scale(0.4) rotate(-150deg);
+}
+
+ /* #svg-5 > path{
+    fill: tomato;
+}   */

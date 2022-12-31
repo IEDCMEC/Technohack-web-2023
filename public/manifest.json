@@ -1,0 +1,16 @@
+{
+  "short_name": "Technopreneur",
+  "name": "Technopreneur 2021 | National E-Summit of MEC",
+  "description": "Technopreneur, the national flagship event of IEDC MEC and the annual entrepreneurial and managerial e-summit of Model Engineering College, includes a plethora of events including Idea Pitching, Prototype Development, hackathons, and much more.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
