@@ -1,0 +1,46 @@
+.Countdown {
+  margin: 10px auto;
+  padding-bottom: 20px;
+  font-family: arial;
+  color:#fff;
+  width: content;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  background-color: #5300BF;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 120px;
+}
+
+@media screen and (min-width: 1080px) {
+  .Countdown-col-element strong {
+    font-size: 4rem;
+    text-align: left;
+  }
+  .Countdown-col-element span {
+    margin-left: 6px;
+  }
+
+  .Countdown-col-element {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Countdown-col-element strong {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Countdown-col-element {
+    margin: 0 4px;
+  }
+}
