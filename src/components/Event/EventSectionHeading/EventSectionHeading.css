@@ -8,11 +8,11 @@
 .section-left-line{
     height: 5px;
     width: 80px;
-    background: #9126DE;
+    background: #00a1ea;
 }
 .section-right-line{
     height: 5px;
-    background: #9126DE;
+    background: #00a1ea;
     display: none;
     flex: 1;
 
@@ -20,7 +20,7 @@
 .section-left-line-right-square{
     height: 15px;
     width: 15px;
-    background: #9126DE;
+    background: #00a1ea;
 }
 .event-section-heading{
     font-weight: 600;

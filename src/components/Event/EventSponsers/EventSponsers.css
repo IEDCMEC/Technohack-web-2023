@@ -69,11 +69,11 @@
         margin-bottom: 12px;
     }
     .sponsors-col-lg {
-        width: 36%;
+        width: 160px;
         margin-right: 12px;
     }
     .sponsors-col-sm {
-        width: 36%;
+        width: 160px;
         margin-right: 12px; 
     }  
 }
@@ -91,6 +91,6 @@
     }
     .sponsor-image{
         width:70%;
-        margin-left: 10%;
+        /* margin-left: 10%; */
     }
 }

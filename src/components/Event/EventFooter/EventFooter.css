@@ -2,7 +2,7 @@
     width: 100vw;
     position: relative;
     height: 200px;
-    background: #27054D;
+    background: #041c2b;
 } */
 
 .event-footer {
@@ -32,7 +32,7 @@
     left: 0;
     height: 9rem;
     width: 105px;
-    border-right: 5px solid #9126de;
+    border-right: 5px solid #00a1ea;
     overflow-x: visible;
   }
 
@@ -43,7 +43,7 @@
     right: -10px;
     width: 15px;
     height: 15px;
-    background-color: #9126de;
+    background-color: #00a1ea;
   }
 
   .event-footer .container {

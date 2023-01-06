@@ -42,11 +42,12 @@
   padding-bottom: 20px;
   margin-right: 20px;
   font-weight: 500;
+  color: white;
 }
 
 .faq.event {
   --background-color: #19072c00;
-  --color: rgba(143, 0, 255, 0.6);
+  --color:#04364F;
   --text-color: rgba(255, 255, 255, 1);
 }
 

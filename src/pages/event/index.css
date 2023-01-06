@@ -1,5 +1,5 @@
 .event-page{
-    background: #19072C;
+    background: #041c2b;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -13,7 +13,7 @@
 .event-main{
     /* margin-top: -200px; */
     margin-left: 100px;
-    border-left: 5px solid #9126DE;
+    border-left: 5px solid #00a1ea;
     width: 100vw;
     padding-top:100px;
     padding-bottom: 100px;
@@ -27,7 +27,7 @@
     width: 15px;
     top: 50px;
     left: -10px;
-    background: #9126DE;
+    background: #00a1ea;
 }
 @media (min-height: 850px) {
     .event-main {
