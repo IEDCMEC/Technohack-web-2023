@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="event-footer-margin"></div>
       <div className="container">
         <div className="logo">
-          <a
+          {/* <a
             href="http://iedcmec.in/"
             target="_blank"
             rel="noreferrer noopener"
-          >
-            <img src={Logo} alt="" />
-          </a>
+          > */}
+            <img src={Logo} alt="" className="iedc-logo" />
+          {/* </a> */}
         </div>
 
         <div className="description-container">
@@ -25,7 +25,7 @@ const Footer = () => {
               Innovation and Entrepreneurship Development Cell <br />
             </strong>
             Govt. Model Engineering College <br />
-            Thrikkakara, Kochi, Kerala 682021 <br /> adithyaanilkumar@mec.ac.in
+            Thrikkakara, Kochi, Kerala 682021 <br /> technohack@iedcmec.in
           </div>
         </div>
 

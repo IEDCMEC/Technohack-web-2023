@@ -6,6 +6,7 @@
 }
 .event-landing{
     padding:20px 100px 0 100px;
+    margin-top: 12rem;
     position: relative;
     overflow-x: visible;
 }
@@ -83,3 +84,9 @@
         margin-left: auto;
     }
 } 
+
+@media (max-width:900px) {
+    .event-landing{
+        margin-top: 1.5rem;
+    }
+}
