@@ -1,10 +1,13 @@
 import React  from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import './EventNavbar.css';
-import logo from '../../../assets/techno-logo.png'
-import { useEffect } from 'react';
+import logoBlack from '../../../assets/techno-logo.png'
+import logoWhite from '../../../assets/techno-logo-black.png'
+import { useEffect,useState } from 'react';
 
 const EventNavbar = () => {
+
+    const [scroll,setScroll] = useState(false);
 
     useEffect(()=>{
         var navItems = [];
@@ -17,36 +20,53 @@ const EventNavbar = () => {
             element.addEventListener("click",scrollToView)
         });
 
+        var scrollNav = document.getElementById("scroll-nav");
+        window.addEventListener("scroll",navScrolled);
+
+        function navScrolled(e){
+            if(window.scrollY > 30){
+                setScroll(true)
+            }
+            else{
+                setScroll(false)
+            }
+        }
+
+
         function scrollToView(e){
             var source = document.getElementById(e.target.id + "-link_for_navbar")
             source.scrollIntoView({behavior:"smooth"})
         }
 
+
         return () => {
-            window.removeEventListener("click",scrollToView)
+            navItems.forEach(element => {
+                element.removeEventListener("click",scrollToView)
+            });
+            window.removeEventListener("scroll",navScrolled)
         };
     },[])
 
-    return (<div className="nav-wrap">
+    return (<div className="nav-wrapper">
     <div >
-        <img src={logo} alt="techno-hack" className="techno-logo-mobile"></img>
+        <img src={logoBlack} alt="techno-hack" className="techno-logo-mobile"></img>
     </div>
 
-    <div className="event-navbar">
-        <img src={logo} alt="techno-hack" className="techno-logo"></img>
-        <div className="event-nav-link"><Link to="/" smooth={true} spy={true} duration={1000}>
+    <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
+        <img src={scroll? logoWhite : logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
+        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}><Link to="/" smooth={true} spy={true} duration={1000}>
                 Technopreneur
             </Link></div>
-        <div className="event-nav-link " id='problem-statement'>
+        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
                 Tracks
         </div>
-        <div className="event-nav-link" id="prizes">
+        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="prizes">
                 Prizes
         </div>
-        <div className="event-nav-link" id="faq">
+        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="faq">
                 Faq
         </div>
-        <div className="event-nav-link" id="sponsors">
+        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="sponsors">
                 Sponsors
         </div>
     </div>
