@@ -5,10 +5,13 @@ import eventData from "./EventFaqData";
 
 const EventFAQ = () => {
   return (
-    <div id='faq-link_for_navbar_two'>
+    <>
+    <div id='faq-link_for_navbar'></div>
+    <div>
       <EventSectionHeading text='FAQ' />
       <Faq faqClass='event' data={eventData} />
     </div>
+    </>
   );
 };
 export default EventFAQ;
