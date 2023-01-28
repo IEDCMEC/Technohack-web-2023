@@ -9,6 +9,7 @@
 }
 
 .event-nav-link{
+    cursor: pointer;
     text-decoration: none;
     font-weight: 600;
     font-size: 23px;
@@ -36,6 +37,13 @@
 .nav-wrap{
    text-align: center;
     margin-top: 10px;
+}
+
+@media (min-width:900px) {
+    .nav-wrap{
+        position: fixed;
+        z-index: 2;
+    }
 }
 
 

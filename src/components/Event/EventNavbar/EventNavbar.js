@@ -1,40 +1,57 @@
-import { Component } from 'react';
+import React  from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import './EventNavbar.css';
 import logo from '../../../assets/techno-logo.png'
+import { useEffect } from 'react';
 
-export default class EventNavbar extends Component {
-    render() {
-        return (<div className="nav-wrap">
-            <div >
-                <img src={logo} alt="techno-hack" className="techno-logo-mobile"></img>
-            </div>
+const EventNavbar = () => {
 
-            <div className="event-navbar">
-                <img src={logo} alt="techno-hack" className="techno-logo"></img>
-                {/* <div className="event-nav-link event-active"><a href="">Home</a></div> */}
-                <div className="event-nav-link ">
-                    <Link to="#problem-statement-link_for_navbar" smooth={true} spy={true} duration={1000}>
-                        Tracks
-                    </Link>
-                </div>
-                <div className="event-nav-link">
-                    <Link to="#prizes-link_for_navbar" smooth={true} spy={true} duration={1000}>
-                        Prizes
-                    </Link>
-                </div>
-                <div className="event-nav-link">
-                    <Link to="#faq-link_for_navbar_two" smooth={true} spy={true} duration={1000}>
-                        Faq
-                    </Link>
-                </div>
-                <div className="event-nav-link">
-                    <Link to="#sponsors-link_for_navbar" smooth={true} spy={true} duration={1000}>
-                        Sponsors
-                    </Link>
-                </div>
-            </div>
+    useEffect(()=>{
+        var navItems = [];
+        navItems[0] = document.getElementById("problem-statement")
+        navItems[1] = document.getElementById("prizes")
+        navItems[2] = document.getElementById("faq")
+        navItems[3] = document.getElementById("sponsors")
+
+        navItems.forEach(element => {
+            element.addEventListener("click",scrollToView)
+        });
+
+        function scrollToView(e){
+            var source = document.getElementById(e.target.id + "-link_for_navbar")
+            source.scrollIntoView({behavior:"smooth"})
+        }
+
+        return () => {
+            window.removeEventListener("click",scrollToView)
+        };
+    },[])
+
+    return (<div className="nav-wrap">
+    <div >
+        <img src={logo} alt="techno-hack" className="techno-logo-mobile"></img>
+    </div>
+
+    <div className="event-navbar">
+        <img src={logo} alt="techno-hack" className="techno-logo"></img>
+        <div className="event-nav-link"><Link to="/" smooth={true} spy={true} duration={1000}>
+                Technopreneur
+            </Link></div>
+        <div className="event-nav-link " id='problem-statement'>
+                Tracks
         </div>
-        )
-    }
+        <div className="event-nav-link" id="prizes">
+                Prizes
+        </div>
+        <div className="event-nav-link" id="faq">
+                Faq
+        </div>
+        <div className="event-nav-link" id="sponsors">
+                Sponsors
+        </div>
+    </div>
+</div>
+)
 }
+
+export default EventNavbar;
