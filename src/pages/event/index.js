@@ -5,13 +5,13 @@ import EventPrizes from '../../components/Event/EventPrizes/EventPrizes'
 import EventFAQ from '../../components/Event/EventFAQ/EventFAQ'
 import EventSponsers from '../../components/Event/EventSponsers/EventSponsers'
 import EventFooter from '../../components/Event/EventFooter/EventFooter';
-import BackgroundAnimation from '../../components/Event/EventBackgroundAnimation/EventBackgroundAnimation';
+// import BackgroundAnimation from '../../components/Event/EventBackgroundAnimation/EventBackgroundAnimation';
 import './index.css';
 import { Helmet } from "react-helmet";
 
 export default function Event() {
     useEffect(() => {
-        document.title = "TechnoHack | Technopreneur 2021"
+        document.title = "TechnoHack | Technopreneur 2023"
         document.getElementById('technohack-page').scrollIntoView()
     }, []);
 

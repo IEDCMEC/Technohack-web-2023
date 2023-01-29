@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import HeaderImage from '../../../assets/event-header.png';
-import eventregbtn from '../../../assets/event-reg-btn.png';
+// import eventregbtn from '../../../assets/event-reg-btn.png';
 import EventNavbar from '../EventNavbar/EventNavbar';
 import './EventHeader.css';
 import Counter from "../Counter";
@@ -35,11 +35,11 @@ export default function EventHeader () {
           ></div>
                         </div>
                         <div className="counter">
-          <Counter date={`2021-05-17T00:00:00`} />
+          <Counter date={`2023-03-18T00:00:00`} />
         </div>
                     </div>
                     <div>
-                        <img src={HeaderImage} alt="Header-Image" className='event-header-image' />
+                        <img src={HeaderImage} alt="Headerimg" className='event-header-image' />
                     </div>
                 </div>
                 
