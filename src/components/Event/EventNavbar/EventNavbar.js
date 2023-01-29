@@ -1,13 +1,13 @@
 import React  from 'react';
 import './EventNavbar.css';
 import logoBlack from '../../../assets/techno-logo.png'
-import logoWhite from '../../../assets/techno-logo-black.png'
+// import logoWhite from '../../../assets/techno-logo-black.png'
 import { useEffect,useState } from 'react';
 
 const EventNavbar = () => {
 
     const [scroll,setScroll] = useState(false);
-
+    const [scrollValue, setScrollValue] = useState(30);
     useEffect(()=>{
         var navItems = [];
         navItems[0] = document.getElementById("problem-statement")
@@ -23,12 +23,14 @@ const EventNavbar = () => {
         window.addEventListener("scroll",navScrolled);
 
         function navScrolled(e){
-            if(window.scrollY > 30){
+            setScrollValue(window.scrollY)
+            if(window.scrollY >= scrollValue){
                 setScroll(true)
             }
-            else{
+            else if (window.scrollY < scrollValue){
                 setScroll(false)
             }
+            // console.log(scroll)
         }
 
 
@@ -44,7 +46,7 @@ const EventNavbar = () => {
             });
             window.removeEventListener("scroll",navScrolled)
         };
-    },[])
+    },[scrollValue])
 
     return (<div className="nav-wrapper">
     <div >
@@ -52,7 +54,7 @@ const EventNavbar = () => {
     </div>
 
     <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
-        <img src={scroll? logoWhite : logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
+        <img src={logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
                 Tracks
