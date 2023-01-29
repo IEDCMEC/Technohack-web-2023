@@ -48,7 +48,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1440px) {
     .event-navbar.scroll{
         opacity: 0;
         overflow: hidden;
