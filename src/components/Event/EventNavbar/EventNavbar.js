@@ -50,7 +50,7 @@ const EventNavbar = () => {
 
     return (<div className="nav-wrapper">
     <div >
-        <img src={logoBlack} alt="techno-hack" className="techno-logo-mobile"></img>
+        <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile scroll" : 'techno-logo-mobile'}></img>
     </div>
 
     <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">

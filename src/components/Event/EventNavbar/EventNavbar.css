@@ -7,8 +7,9 @@
     flex-direction: row;
     padding: 30px 20px;
     position: fixed;
+    background-color: #041c2b;
     z-index: 2;
-    box-shadow: 0px 3px 10px rgba(255, 249, 255,0.8) ;
+    box-shadow: 0px 3px 3px rgba(255, 249, 255,0.8) ;
     transition: opacity 0.6s linear, height 0.6s step-start;
 }
 
@@ -66,9 +67,9 @@
     }
   }
   @media only screen and (max-width: 900px) {
-    .event-navbar{
+    /* .event-navbar{
         position: relative;
-    }
+    } */
 
     .techno-logo{
         display:none;
@@ -81,6 +82,7 @@
         width:50%;
         height:50%;
     }
+    
     .nav-wrapper{
         margin-top: 20px;
     }
