@@ -53,6 +53,7 @@ const EventNavbar = () => {
 
     <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
         <img src={scroll? logoWhite : logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
+        {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
                 Tracks
         </div>
