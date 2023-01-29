@@ -20,7 +20,7 @@ const EventNavbar = () => {
             element.addEventListener("click",scrollToView)
         });
 
-        var scrollNav = document.getElementById("scroll-nav");
+        // var scrollNav = document.getElementById("scroll-nav");
         window.addEventListener("scroll",navScrolled);
 
         function navScrolled(e){
