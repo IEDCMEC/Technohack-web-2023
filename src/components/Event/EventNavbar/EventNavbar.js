@@ -1,5 +1,4 @@
 import React  from 'react';
-import { NavHashLink as Link } from 'react-router-hash-link';
 import './EventNavbar.css';
 import logoBlack from '../../../assets/techno-logo.png'
 import logoWhite from '../../../assets/techno-logo-black.png'
@@ -54,9 +53,7 @@ const EventNavbar = () => {
 
     <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
         <img src={scroll? logoWhite : logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
-        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}><Link to="/" smooth={true} spy={true} duration={1000}>
-                Technopreneur
-            </Link></div>
+        {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
                 Tracks
         </div>
