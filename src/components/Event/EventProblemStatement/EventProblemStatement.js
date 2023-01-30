@@ -1,15 +1,16 @@
-import { Component } from 'react';
-import EventSectionHeading from '../EventSectionHeading/EventSectionHeading'
-import './EventProblemStatement.css';
-import problemImg from '../../../assets/problemImg.png';
-import eventregbtn from '../../../assets/button.svg';
+import { Component } from "react";
+import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
+import "./EventProblemStatement.css";
+import problemImg from "../../../assets/problemImg.png";
+import eventregbtn from "../../../assets/button.svg";
 export default class EventProblemStatement extends Component {
-    render() {
-        return (<>
-            <div id="problem-statement-link_for_navbar"></div>
-            <div id="problem-statement">
-                <EventSectionHeading text="Tracks" />
-                <div className='combine'>
+  render() {
+    return (
+      <>
+        <div id="problem-statement-link_for_navbar"></div>
+        <div id="problem-statement">
+          <EventSectionHeading text="Vision" />
+          {/* <div className='combine'>
                     <div>
                         <p className='problem-text'>
                         <b>Block Chain</b>: The future lies in Decentralization and
@@ -32,9 +33,21 @@ export default class EventProblemStatement extends Component {
                     <div className="problem-statement-image-container">
                         <img src={problemImg} alt="Image" className='problem-statement-image' />
                     </div>
-                </div>
-            </div>
-            </>
-        )
-    }
+                </div> */}
+          <div class="vbox">
+            <p class="vision">
+              To bring together the brightest minds from various backgrounds to
+              create innovative solutions for pressing social, environmental,
+              and technological challenges.
+              <br />a premier event where coders, designers, and innovative
+              thinkers come together to tackle the world's biggest challenges.
+              With a focus on using technology for the greater good, our
+              hackathon offers a unique opportunity to make a real-world impact
+              through your passion for coding and problem-solving.
+            </p>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
