@@ -1,7 +1,7 @@
 // use array to define multi-line answers
 const eventData = [
   {
-    id: 0,
+    id: 1,
     question: "What are the rules?",
     ans: [
       "- Your project should be started from scratch and worked on only during the given 3 days,and you should only include outside resources that are freely licensed and accessible to all participants equally.",
@@ -10,7 +10,7 @@ const eventData = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     question: "What are the perks of participating in TechnoHack?",
     ans: [
       "- The top 50 teams will get 1000 AWS credits - 20 credits per team ",
@@ -23,43 +23,43 @@ const eventData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     question: "Who can attend?",
     ans:
       "Students currently studying in any college , as well as working professionals",
   },
   {
-    id: 3,
+    id: 4,
     question: "What is the team size?",
     ans:
       "A team should have a minimum of 2 members and maximum of 4 members",
   },
   {
-    id: 4,
+    id: 5,
     question: "How much does it cost?",
     ans:
       "This event is completely free! We’ll also provide you with a plethora of resources and tools to hack with as well.",
   },
   {
-    id: 5,
+    id: 6,
     question: "Who do I contact if I have any further doubts?",
     ans:
       "You can contact our Event Managers: Rindish (+91 85478 61324) or Adithya (+91 70127 03717), if you have any doubts. They'll be happy to help!",
   },
   {
-    id: 6,
+    id: 7,
     question: "When do registrations close?",
     ans: `
       The registrations close on 17th may 2021, 00:00 IST.
       `,
   },
   {
-    id: 7,
+    id: 8,
     question: "What is the venue of the hackathon?",
     ans: `Anywhere you want! Make sure you are surrounded by ample charging ports and follow social distancing norms.`,
   },
   {
-    id: 8,
+    id: 9,
     question: "Can I participate without a computer science background?",
     ans:
       "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
