@@ -1,54 +1,64 @@
-#problem-statement{
-    position: relative;
-    z-index: 4;
+#problem-statement {
+  position: relative;
+  /* z-index: 4; */
 }
-.combine{
-    display: flex;
-    padding: 50px 0;
+.combine {
+  display: flex;
+  padding: 50px 0;
 }
-.problem-text{
-    color: white;
-    padding-left: 135px;
-    padding-right: 100px;
-    font-size:20px;
+.problem-text {
+  color: white;
+  padding-left: 135px;
+  padding-right: 100px;
+  font-size: 20px;
 }
 .problem-statement-image {
-    width: 50%;
+  width: 50%;
 }
-.event-reg-btn-probelm{
-    margin-left: 136px; 
+.event-reg-btn-probelm {
+  margin-left: 136px;
+  margin-top: 15px;
+}
+
+.vbox {
+  margin: 2rem;
+  max-width: 50%;
+}
+.vision {
+  margin-left: 7rem;
+  color: white;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1302px) {
+  .event-reg-btn-probelm {
+    margin-left: 136px;
     margin-top: 15px;
- }
-
-@media screen and (max-width: 1302px){
-    .event-reg-btn-probelm{
-       margin-left: 136px; 
-       margin-top: 15px;
-    }
+  }
 }
 
-@media screen and (max-width: 900px){
-    .combine{
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .problem-statement-image{
-        transform: translate(30%,0);
-        margin-bottom: 10px;
-    }
-    .problem-statement-image-container {
-        align-content: center;
-    }
-    .problem-text {
-        padding-left: 50px;
-        padding-right: 10px;
-    }
-    .combine {
-        padding-left: 10px;
-    }
-    .event-reg-btn-probelm{
-        margin-left: 50px; 
-        margin-top: 15px;
-     }
+@media screen and (max-width: 900px) {
+  .combine {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .problem-statement-image {
+    transform: translate(30%, 0);
+    margin-bottom: 10px;
+  }
+  .problem-statement-image-container {
+    align-content: center;
+  }
+  .problem-text {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+  .combine {
+    padding-left: 10px;
+  }
+  .event-reg-btn-probelm {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
 }
