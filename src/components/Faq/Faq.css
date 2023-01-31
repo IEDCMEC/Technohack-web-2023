@@ -15,7 +15,7 @@
   border-radius: 10px;
   background: var(--color);
   width: 75%;
-  z-index: 3;
+  /* z-index: 3; */
   position: relative;
 }
 .faq-container :focus {
@@ -47,7 +47,7 @@
 
 .faq.event {
   --background-color: #19072c00;
-  --color:#04364F;
+  --color: #04364f;
   --text-color: rgba(255, 255, 255, 1);
 }
 

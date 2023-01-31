@@ -1,141 +1,140 @@
-.cls-1{fill:#280a45;opacity:0.56;}
-
-.event-background-animation{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-y: hidden;
-}
-.svg-animation svg{
-    position: absolute;
-    overflow: visible;
-    display: none;
+.cls-1 {
+  fill: #280a45;
+  opacity: 0.56;
 }
 
-#esvg-1 > path{
-    transform-origin: 285.988px 412.29px;
+.event-background-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
 }
-#esvg-2 > path{
-    transform-origin: 285.988px 412.29px;
-}
-#esvg-3 > path{
-    transform-origin: 285.988px 412.29px;
-}
-#esvg-4 > path{
-    transform-origin: 285.988px 412.29px;
-}
-#esvg-5 > path{
-    transform-origin: 285.988px 412.29px;
-}
-#esvg-1{
-    position: absolute;
-    top: -300px;
-    left:600px;
-    transform: scale(1.3);
-}
-#esvg-2{
-    position: absolute;
-    top: 00px;
-    left: -50%;
-    transform: scale(.8) rotateZ('90deg');
-}
-#esvg-3{
-    position: absolute;
-    top: 1800px;
-    left: 80vw;
-    transform: scale(1.5) rotateZ(-180deg);
+.svg-animation svg {
+  position: absolute;
+  overflow: visible;
+  display: none;
 }
 
-#esvg-4{
-    position: absolute;
-    bottom:-800px;
-    right: -100vw;
-    transform: scale(0.6) rotateZ(-150deg);
+#esvg-1 > path {
+  transform-origin: 285.988px 412.29px;
 }
-#esvg-5{
-    position: absolute;
-    bottom: -1500px;
-    left: -100vw;
-    transform: scale(0.7) rotateZ(-150deg);
+#esvg-2 > path {
+  transform-origin: 285.988px 412.29px;
 }
-
-#esvg-6{
-    position: absolute;
-    top: 0;
-    right: -50vw;
-    transform: scale(0.3);
+#esvg-3 > path {
+  transform-origin: 285.988px 412.29px;
 }
-
-#esvg-7{
-    position: absolute;
-    top: -800px;
-    left: -700px;
-    transform: scale(0.1);
+#esvg-4 > path {
+  transform-origin: 285.988px 412.29px;
 }
-
-
-#esvg-8{
-    position: absolute;
-    top: -1500px;
-    left: -1200px;
-    transform: scale(0.08) rotate(-30deg);
+#esvg-5 > path {
+  transform-origin: 285.988px 412.29px;
 }
-
-#esvg-9{
-    position: absolute;
-    top: 150px;
-    left: 700px;
-    transform: scale(0.2) rotate(60deg);
+#esvg-1 {
+  position: absolute;
+  top: -300px;
+  left: 600px;
+  transform: scale(1.3);
+}
+#esvg-2 {
+  position: absolute;
+  top: 00px;
+  left: -50%;
+  transform: scale(0.8) rotateZ("90deg");
+}
+#esvg-3 {
+  position: absolute;
+  top: 1800px;
+  left: 80vw;
+  transform: scale(1.5) rotateZ(-180deg);
 }
 
-#esvg-10{
-    position: absolute;
-    top: 750px;
-    left: 1200px;
-    transform: scale(3) rotate(60deg);
+#esvg-4 {
+  position: absolute;
+  bottom: -800px;
+  right: -100vw;
+  transform: scale(0.6) rotateZ(-150deg);
+}
+#esvg-5 {
+  position: absolute;
+  bottom: -1500px;
+  left: -100vw;
+  transform: scale(0.7) rotateZ(-150deg);
 }
 
-
-#esvg-11{
-    position: absolute;
-    top: 1250px;
-    left: 200px;
-    transform: scale(0.3) rotate(60deg);
+#esvg-6 {
+  position: absolute;
+  top: 0;
+  right: -50vw;
+  transform: scale(0.3);
 }
 
-#esvg-12{
-    position: absolute;
-    top: 950px;
-    left: -800px;
-    transform: scale(0.1) rotate(60deg);
+#esvg-7 {
+  position: absolute;
+  top: -800px;
+  left: -700px;
+  transform: scale(0.1);
 }
 
-
-#esvg-13{
-    position: absolute;
-    top: 1750px;
-    left: 100px;
-    transform: scale(0.2) rotate(120deg);
+#esvg-8 {
+  position: absolute;
+  top: -1500px;
+  left: -1200px;
+  transform: scale(0.08) rotate(-30deg);
 }
 
-
-#esvg-14{
-    position: absolute;
-    top: 2050px;
-    right: -1000px;
-    transform: scale(0.1) rotate(180deg);
+#esvg-9 {
+  position: absolute;
+  top: 150px;
+  left: 700px;
+  transform: scale(0.2) rotate(60deg);
 }
 
-#esvg-15{
-    position: absolute;
-    top: 1850px;
-    right: -500px;
-    transform: scale(0.1) rotate(-40deg);
+#esvg-10 {
+  position: absolute;
+  top: 750px;
+  left: 1200px;
+  transform: scale(3) rotate(60deg);
 }
 
- /* #esvg-13 > path{
+#esvg-11 {
+  position: absolute;
+  top: 1250px;
+  left: 200px;
+  transform: scale(0.3) rotate(60deg);
+}
+
+#esvg-12 {
+  position: absolute;
+  top: 950px;
+  left: -800px;
+  transform: scale(0.1) rotate(60deg);
+}
+
+#esvg-13 {
+  position: absolute;
+  top: 1750px;
+  left: 100px;
+  transform: scale(0.2) rotate(120deg);
+}
+
+#esvg-14 {
+  position: absolute;
+  top: 2050px;
+  right: -1000px;
+  transform: scale(0.1) rotate(180deg);
+}
+
+#esvg-15 {
+  position: absolute;
+  top: 1850px;
+  right: -500px;
+  transform: scale(0.1) rotate(-40deg);
+}
+
+/* #esvg-13 > path{
     fill: tomato;
 }  */
