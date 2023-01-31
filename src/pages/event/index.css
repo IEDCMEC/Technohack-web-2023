@@ -10,6 +10,7 @@
 .event-background-container{
     position: relative;
     z-index: 1;
+    margin-top: 50px;
 }
 .event-main{
     /* margin-top: -200px; */

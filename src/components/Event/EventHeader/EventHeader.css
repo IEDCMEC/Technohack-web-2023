@@ -1,15 +1,67 @@
-.event-header{
-    position: relative;
-    z-index: 4;
-    width: 100vw;
-    /* height: 100vh; */
+.event-header {
+  position: relative;
+  /* z-index: 4; */
+  width: 100vw;
+  /* height: 100vh; */
 }
-.event-landing{
-    padding:20px 100px 0 100px;
-    margin-top: 12rem;
-    position: relative;
-    overflow-x: visible;
+.event-landing {
+  padding: 36px;
+  /* margin-top: 4rem; */
+  position: relative;
+  background-image: url(/src/assets/spacebg.png);
+  background-size: cover;
 }
+.event-row-container {
+  min-height: 100vh;
+  display: flex;
+  padding: 50px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.banner {
+  /* position: relative; */
+  height: 500px;
+  padding: 10px;
+  flex-basis: 38%;
+  background-size: cover;
+  /* overflow: hidden; */
+  /* vertical-align: middle; */
+}
+.event-row-container .content-column{
+  /* max-height: 50vh; */
+  overflow-y: hidden;
+}
+.event-row-container .content-column .inner-column {
+  /* right: 50px; */
+  margin-top: 1rem;
+  text-align: left;
+  overflow-y: hidden;
+}
+
+.event-row-container .content-column .inner-column h2 {
+  /* position: relative; */
+  display: block;
+  font-size: 58px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-row-container .content-column .inner-column .text {
+  /* position: relative; */
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-top: 25px;
+  text-transform: capitalize;
+  max-width: 450px;
+  overflow: hidden;
+}
+
 /* .event-landing::before{
     content: '';
     float: left;
@@ -21,72 +73,70 @@
     clear: both;
     height: 100%;
 } */
-.event-countdown-container{
-    border-left: 5px solid #00a1ea;
-    position: relative;
-    /* margin-top:100px; */
-    overflow-x: visible;
+.event-countdown-container {
+  border-left: 5px solid #00a1ea;
+  /* position: relative; */
+  /* margin-top:100px; */
+  overflow-x: visible;
 }
 
+.event-reg-btn-header {
+  margin-top: 28px;
+  overflow-x: visible;
+}
+.header-text {
+  width: auto;
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  padding-left: 135px;
+  padding-right: 50px;
+}
+.counter {
+  /* margin-left: 20px;
+  padding-top: 90px; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  margin-top: 120px;
+  overflow-y: hidden;
+}
 
-.event-row-container{
-    display: flex;
-    padding: 50px 0;
-    flex-direction: row;
-    justify-content: flex-end;
+@media screen and (max-width: 1300px) {
+  .event-row-container {
+    text-align: center;
+  }
+  .header-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .event-header-image {
+    display: none;
+  }
+  .event-reg-btn-header {
+    padding-left: 0px;
+  }
+  .event-countdown-container {
+    display: none;
+  }
+  .event-landing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* .counter {
+    margin-left: auto;
+  } */
 }
-.event-reg-btn-header{
-    padding-left:135px;
-    margin-top:20px;
-    overflow-x: visible;
-  
-}
-.header-text{
-    width:auto;
-    color: white;
-    font-size:23px;
-    font-weight: 400;
-    padding-left: 135px;
-    padding-right: 50px;
-}
-.counter{
-    margin-left:100px;
-    padding-top:90px;
-}
-.event-header-image{
-    width: 80%;
-    margin-left: 20%;
-    /* width:397px; */
-    /* height:397px; */
-}
-@media screen and (max-width: 1300px){
-    .event-row-container{
-       text-align: center;
-    }
-    .header-text{
-        padding-left: 0px;
-        padding-right:0px;
-    }
-    .event-header-image{
-        display:none;
-    }
-    .event-reg-btn-header{
-        padding-left: 0px;
-    }
-    .event-countdown-container{
-        display:none;
-    }
-    .event-landing{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .counter{
-        margin-left: auto;
-    }
-} 
 
-@media (max-width:900px) {
-    .event-landing{
-        margin-top: 1.5rem;
-    }
+@media (max-width: 900px) {
+  /* .event-landing {
+    margin-top: 1.5rem;
+  } */
+}
+@media only screen and (max-width: 480px){
+  .event-row-container .content-column .inner-column h2{
+    font-size: 35px;
+  }
 }
