@@ -4,8 +4,6 @@ import Event from "./pages/event";
 
 export default class App extends Component {
   render() {
-    return (
-          <Event></Event>
-    );
+    return <Event></Event>;
   }
 }
