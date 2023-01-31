@@ -55,15 +55,14 @@
 .nav-wrapper{
     text-align: center;
 }
-
+.nav-items{
+    min-width: 40vw;
+}
 @media screen and (max-width: 1440px) {
     .event-navbar.scroll{
         opacity: 0;
         overflow: hidden;
         transition-timing-function: linear, step-end;
-    }
-    .nav-items{
-        min-width: 50vw;
     }
     
     /* .event-nav-link.scroll,.event-nav-link.scroll>a{
