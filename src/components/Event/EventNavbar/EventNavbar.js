@@ -49,13 +49,12 @@ const EventNavbar = () => {
     },[scrollValue])
 
     return (<div className="nav-wrapper">
-    <div >
-        <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile scroll" : 'techno-logo-mobile'}></img>
-    </div>
 
     <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
+        <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile scroll" : 'techno-logo-mobile'}></img>
         <img src={logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
-        {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
+        <div className='nav-items'>
+                    {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
                 Tracks
         </div>
@@ -67,6 +66,7 @@ const EventNavbar = () => {
         </div>
         <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="sponsors">
                 Sponsors
+        </div>
         </div>
     </div>
 </div>

@@ -1,8 +1,8 @@
 import { Component } from "react";
 import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
 import "./EventProblemStatement.css";
-import problemImg from "../../../assets/problemImg.png";
-import eventregbtn from "../../../assets/button.svg";
+// import problemImg from "../../../assets/problemImg.png";
+// import eventregbtn from "../../../assets/button.svg";
 export default class EventProblemStatement extends Component {
   render() {
     return (

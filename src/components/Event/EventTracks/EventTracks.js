@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
 import "./EventTracks.css";
 import foss from "../../../assets/foss.png";
@@ -111,7 +111,7 @@ function EventTracks() {
                 <h2>01</h2>
                 <h3>FOSS</h3>
                 <p>
-                  <img src={foss} className="image-foss"></img>
+                  <img src={foss} alt='foss-img' className="image-foss"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
 
@@ -130,10 +130,10 @@ function EventTracks() {
                 <h2>02</h2>
                 <h3>Health Care</h3>
                 <p>
-                  <img src={mlh} className="image-mlh"></img>
+                  <img src={mlh} alt='mlh-img' className="image-mlh"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
-                <a href="#">Read More</a>
+                <a href="/">Read More</a>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@ function EventTracks() {
                 <h2>03</h2>
                 <h3>Cyber Security</h3>
                 <p>
-                  <img src={foss} className="image-foss"></img>
+                  <img src={foss} alt='foss-img' className="image-foss"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
-                <a href="#">Read More</a>
+                <a href="/">Read More</a>
               </div>
             </div>
           </div>
@@ -158,10 +158,10 @@ function EventTracks() {
                 <h2>04</h2>
                 <h3>Environment</h3>
                 <p>
-                  <img src={foss} className="image-foss"></img>
+                  <img src={foss} alt='foss-img' className="image-foss"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
-                <a href="#">Read More</a>
+                <a href="/">Read More</a>
               </div>
             </div>
           </div>
@@ -172,10 +172,10 @@ function EventTracks() {
                 <h2>05</h2>
                 <h3>Social</h3>
                 <p>
-                  <img src={foss} className="image-foss"></img>
+                  <img src={foss} alt='foss-img' className="image-foss"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
-                <a href="#">Read More</a>
+                <a href="/">Read More</a>
               </div>
             </div>
           </div>
@@ -186,10 +186,10 @@ function EventTracks() {
                 <h2>06</h2>
                 <h3>TBD</h3>
                 <p>
-                  <img src={mlh} className="image-mlh"></img>
+                  <img src={mlh} alt='mlh-img' className="image-mlh"></img>
                 </p>
                 <h3>Rs. 10,000</h3>
-                <a href="#">Read More</a>
+                <a href="/">Read More</a>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import HeaderImage from "../../../assets/event-header.png";
+// import HeaderImage from "../../../assets/event-header.png";
 // import eventregbtn from '../../../assets/event-reg-btn.png';
 import EventNavbar from "../EventNavbar/EventNavbar";
 import "./EventHeader.css";

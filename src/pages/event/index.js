@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import EventHeader from "../../components/Event/EventHeader/EventHeader";
 import EventProblemStatement from "../../components/Event/EventProblemStatement/EventProblemStatement";
 import EventTracks from "../../components/Event/EventTracks/EventTracks";
-import EventPrizes from "../../components/Event/EventPrizes/EventPrizes";
+// import EventPrizes from "../../components/Event/EventPrizes/EventPrizes";
 import EventFAQ from "../../components/Event/EventFAQ/EventFAQ";
 import EventSponsers from "../../components/Event/EventSponsers/EventSponsers";
 import EventFooter from "../../components/Event/EventFooter/EventFooter";
