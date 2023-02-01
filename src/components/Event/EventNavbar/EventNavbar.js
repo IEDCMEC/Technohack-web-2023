@@ -50,22 +50,22 @@ const EventNavbar = () => {
 
     return (<div className="nav-wrapper">
     <div >
-        <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile scroll" : 'techno-logo-mobile'}></img>
+        <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile" : 'techno-logo-mobile'}></img>
     </div>
 
-    <div className={scroll?"event-navbar scroll":"event-navbar"} id="scroll-nav">
-        <img src={logoBlack } alt="techno-hack" className={scroll ? "techno-logo scroll" : "techno-logo"} ></img>
+    <div className={scroll?"event-navbar":"event-navbar"} id="scroll-nav">
+        <img src={logoBlack } alt="techno-hack" className={scroll ? "techno-logo" : "techno-logo"} ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
-        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id='problem-statement'>
+        <div className={scroll ? "event-nav-link" : "event-nav-link"} id='problem-statement'>
                 Tracks
         </div>
-        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="prizes">
+        <div className={scroll ? "event-nav-link" : "event-nav-link"} id="prizes">
                 Prizes
         </div>
-        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="faq">
+        <div className={scroll ? "event-nav-link" : "event-nav-link"} id="faq">
                 Faq
         </div>
-        <div className={scroll ? "event-nav-link scroll" : "event-nav-link"} id="sponsors">
+        <div className={scroll ? "event-nav-link" : "event-nav-link"} id="sponsors">
                 Sponsors
         </div>
     </div>
