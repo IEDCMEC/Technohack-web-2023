@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className={"socials"}>
-          <a
+          {/* <a
             href="https://www.instagram.com/iedcmec"
             target="_blank "
             rel="noreferrer noopener"
@@ -50,7 +50,7 @@ const Footer = () => {
             rel="noreferrer noopener"
           >
             <img src={Twitter} alt="" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

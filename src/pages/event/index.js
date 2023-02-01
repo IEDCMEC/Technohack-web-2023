@@ -5,6 +5,7 @@ import EventPrizes from '../../components/Event/EventPrizes/EventPrizes'
 import EventFAQ from '../../components/Event/EventFAQ/EventFAQ'
 import EventSponsers from '../../components/Event/EventSponsers/EventSponsers'
 import EventFooter from '../../components/Event/EventFooter/EventFooter';
+import EventCommunity from '../../components/Event/EventCommunity/EventCommunity';
 // import BackgroundAnimation from '../../components/Event/EventBackgroundAnimation/EventBackgroundAnimation';
 import './index.css';
 import { Helmet } from "react-helmet";
@@ -34,6 +35,7 @@ export default function Event() {
                     <EventProblemStatement />
                     <EventPrizes />
                     <EventFAQ />
+                    <EventCommunity/>
                     <EventSponsers />
                 </div>
             </div>

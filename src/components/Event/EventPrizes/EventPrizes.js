@@ -85,8 +85,9 @@ export default class EventPrizes extends Component {
       <div id="prizes-link_for_navbar"></div>
       <div id="prizes">
         <EventSectionHeading text="Prizes" />
-        <div className="prize-container">
-          {this.prizeCards.map((prize) => (
+        <div className="prize-container" style={{display: 'flex',alignItems:'center',justifyContent:'center',margin:'100px 0'}}>
+        <h3 style={{color:'white'}}>To be Announced ...</h3>
+          {/* {this.prizeCards.map((prize) => (
             <div className="prize-card">
               <img className={prize.imgStyle} style={{ textAlign: "center" }} src={prize.img} />
               <div className="prize-text">
@@ -96,7 +97,7 @@ export default class EventPrizes extends Component {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
       </>
