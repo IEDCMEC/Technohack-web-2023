@@ -91,8 +91,13 @@
 }
 
 @media (max-width: 900px) {
+    .sponsors-container h3{
+        margin-right: 0 ;
+    }
     .sponsors-container {
-        margin-left: 10px;
+        margin: 100px 0;
+        justify-content: center;
+        align-items: center;
     }
     .sponsors-col {
         height: 130px;
