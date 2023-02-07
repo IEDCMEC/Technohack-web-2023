@@ -55,5 +55,6 @@
     .event-main{
         margin-left: 0;
         border-left: hidden;
+        padding-bottom: 0;
     }
 }
