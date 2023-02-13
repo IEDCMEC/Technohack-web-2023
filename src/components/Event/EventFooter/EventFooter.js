@@ -1,8 +1,5 @@
 import "./EventFooter.css";
 import Logo from "../../../assets/LogoWhite.png";
-import Twitter from "../../../assets/twitter.svg";
-import Instagram from "../../../assets/instagram.svg";
-import LinkedIn from "../../../assets/linkedin.svg";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
