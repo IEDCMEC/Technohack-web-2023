@@ -1,9 +1,11 @@
 import "./EventFooter.css";
 import Logo from "../../../assets/LogoWhite.png";
-import Twitter from "../../../assets/twitter_blue.png";
-import Instagram from "../../../assets/instagram_blue.png";
-import LinkedIn from "../../../assets/linkedin_blue.png";
-
+import Twitter from "../../../assets/twitter.svg";
+import Instagram from "../../../assets/instagram.svg";
+import LinkedIn from "../../../assets/linkedin.svg";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
   return (
     <div className="event-footer">
@@ -29,28 +31,28 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={"socials"}>
-          {/* <a
+        <div className="socials">
+          <a
             href="https://www.instagram.com/iedcmec"
             target="_blank "
             rel="noreferrer noopener"
           >
-            <img src={Instagram} alt="" />
+            <InstagramIcon sx={{fontSize:'35px', color:'white'}}/>
           </a>
           <a
             href="https://www.linkedin.com/company/iedcmec"
             target="_blank "
             rel="noreferrer noopener"
           >
-            <img src={LinkedIn} alt="" />
+            <LinkedInIcon sx={{fontSize:'35px', color:'white'}}/>
           </a>
           <a
             href="https://www.twitter.com/iedc_mec"
             target="_blank "
             rel="noreferrer noopener"
           >
-            <img src={Twitter} alt="" />
-          </a> */}
+          <TwitterIcon sx={{fontSize:'35px', color:'white'}}/>
+          </a>
         </div>
       </div>
     </div>
