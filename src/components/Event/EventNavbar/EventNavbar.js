@@ -9,7 +9,6 @@ import { useEffect,useState } from 'react';
 const EventNavbar = () => {
 
     const [scroll,setScroll] = useState(false);
-    const [scrollValue, setScrollValue] = useState(30);
     const [isOpen, setOpen] = useState(false)
     const [hamColor,setColor] = useState("#FFFF")
 
@@ -30,14 +29,13 @@ const EventNavbar = () => {
         window.addEventListener("scroll",navScrolled);
 
         function navScrolled(e){
-            setScrollValue(window.scrollY)
-            if(window.scrollY >= scrollValue){
+            if(window.scrollY >= 30){
                 setScroll(true)
             }
-            else if (window.scrollY < scrollValue){
+            else {
                 setScroll(false)
             }
-            // console.log(scroll)
+            console.log(window.scrollY)
         }
 
 
@@ -53,14 +51,14 @@ const EventNavbar = () => {
             });
             window.removeEventListener("scroll",navScrolled)
         };
-    },[scrollValue])
+    },[])
 
     return (<div className="nav-wrapper">
         <div className='hamburger-menu'>
             <Menu right width='200px' isOpen={isOpen} onClose={ ()=>{
                 setOpen(false)
             }}>
-                <div className="event-nav-link menu-item" id='problem-statement'>
+                <div className="event-nav-link menu-item " id='problem-statement'>
                         Home
                 </div>
                 <div className="event-nav-link menu-item" id='problem-statement'>
@@ -77,7 +75,7 @@ const EventNavbar = () => {
                 </div>
             </Menu>    
         </div>
-    <div className={scroll?"event-navbar":"event-navbar"} id="scroll-nav">
+    <div className={!scroll?"event-navbar":"event-navbar scroll"} id="scroll-nav">
         <img src={logoBlack } alt="techno-hack" className={scroll ? "techno-logo" : "techno-logo"} ></img>
         <img src={logoBlack} alt="techno-hack" className={scroll? "techno-logo-mobile" : 'techno-logo-mobile'}></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
@@ -100,7 +98,7 @@ const EventNavbar = () => {
         </div>
 
         <div className='nav-hamburger'>
-            <Hamburger  color={hamColor} toggled={isOpen} toggle={setOpen} onToggle={()=>{
+            <Hamburger size={28}  color={hamColor} toggled={isOpen} toggle={setOpen} onToggle={()=>{
             }} />
                 </div>
     </div>
