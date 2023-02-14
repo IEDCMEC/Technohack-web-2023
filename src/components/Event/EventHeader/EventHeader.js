@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import HeaderImage from '../../../assets/event-header.png';
+import CalenderVector from '../../../assets/CalendarVector.svg'
+import LocationVector from '../../../assets/LocationVector.svg'
 // import eventregbtn from '../../../assets/event-reg-btn.png';
 import EventNavbar from '../EventNavbar/EventNavbar';
 import './EventHeader.css';
@@ -27,21 +29,33 @@ export default function EventHeader () {
                         </p> */}
           <div className="content-column">
             <div className="inner-column">
-              <h2>
-                Technohack 2023
-              </h2>
-              <h3 className="text">Building For a Better Tomorrow</h3>
-              <div className="text">
-                March 18 - 19 <br/> Model Engineering College, Kochi
+                <h2>
+                  TechnoHack 2023
+                </h2>
+              <div className='landing-subheading'>  
+                <h3>Building For a <br className='br-tagline'></br>Better Tomorrow</h3>
+                <div className='landing-date-mob'>
+                    18-19<br></br>
+                    Mar
+                </div>
+              </div>        
+              <div className='text'>
+                <div className="landing-date">
+                  <div className='landing-date-vector'><img src={CalenderVector}/></div> <div className='landing-date-text'>18 - 19 March 2023</div>
+                </div>
+                <div className="landing-location">
+                  <div className='landing-location-vector'> <img src={LocationVector} /></div> 
+                  <div className='landing-date-text'>Govt Model Engineering College <br/> Thrikkakara</div>
+                </div>
               </div>
-              {/* <div className="event-reg-btn-header">
+              <div className="event-reg-btn-header">
                 <div
                   className="apply-button"
                   data-hackathon-slug="technohack"
                   data-button-theme="light"
                   style={{ height: "44px", width: "312px",overflowY: 'hidden' }}
                 ></div>
-              </div> */}
+              </div>
             </div>
           </div>
 

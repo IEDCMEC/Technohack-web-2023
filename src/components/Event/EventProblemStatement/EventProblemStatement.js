@@ -6,7 +6,7 @@ import eventregbtn from '../../../assets/button.svg';
 export default class EventProblemStatement extends Component {
     render() {
         return (<>
-            <div id="problem-statement-link_for_navbar"></div>
+            <div id="tracks-link_for_navbar"></div>
             <div id="problem-statement">
                 <EventSectionHeading text="Tracks" />
                 <div className='combine'>
