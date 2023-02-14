@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+.card{
+    background-image: url('../../../assets/Maskgroup.svg');
+    background-repeat: no-repeat;
+    /* display: flex; */
+    margin: 1.25rem 3.125;
+    height: 14.973rem;
+    width: 29.465rem;
+    padding: 30px 30px 30px 40px;
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.Tname,.Pmoney{
+    padding: 5px;
+    /* min-height: 119.785px; */
+    display: flex;
+    align-items: center;    
+}
+.image{
+    border-radius: 10px;
+}
+.Tname{
+    color: white;
+    justify-content: space-between;
+    min-height: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.Pmoney{
+    color: black;
+    justify-content: flex-start;
+    width: 17.679rem;
+    height: 8.75rem;
+    font-size: 1.7rem;
+}
+@media only screen and (max-width:600px){
+    .card{
+        /* display: flex; */
+        margin: 1.25rem 3.125;
+        height: 14.973rem;
+        width: 25rem;
+        padding: 20px 9px 0px 40px;
+        font-family: 'Sora', sans-serif;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    .Tname{
+        height: 4rem;
+    }
+    .Pmoney{
+        width: 17.679rem;
+        height: 6rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .card{
+        position: relative;
+        right: 15px;
+    }
+}

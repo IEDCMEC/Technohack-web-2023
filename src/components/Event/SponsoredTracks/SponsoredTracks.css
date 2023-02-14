@@ -1,0 +1,12 @@
+.Cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .Cards{
+        flex-direction: column;
+    }
+}
