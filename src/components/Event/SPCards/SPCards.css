@@ -11,6 +11,8 @@
     font-family: 'Sora', sans-serif;
     overflow: hidden;
     flex-wrap: wrap;
+    position: relative;
+    right: 70px;
 }
 .Tname,.Pmoney{
     padding: 5px;
@@ -19,7 +21,7 @@
     align-items: center;    
 }
 .image{
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .Tname{
     color: white;
@@ -36,6 +38,11 @@
     height: 8.75rem;
     font-size: 1.7rem;
 }
+@media only screen and (max-width: 1100px){
+    .card{
+        right: 40px;
+    }
+}
 @media only screen and (max-width:600px){
     .card{
         /* display: flex; */
@@ -46,6 +53,7 @@
         font-family: 'Sora', sans-serif;
         overflow: hidden;
         flex-wrap: wrap;
+        right: 0;
     }
     .Tname{
         height: 4rem;

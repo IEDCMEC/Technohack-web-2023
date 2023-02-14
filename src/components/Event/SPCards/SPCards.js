@@ -5,7 +5,7 @@ export default function SPCards(props) {
     <div className='card'>
        <div className='Tname'>
             <div style={{maxWidth: '200px'}}><h1>{props.Tname}</h1> </div>
-            <div><img className='image' alt='' src={props.Simage}></img></div>
+            <div><img style={{height: props.height, width: props.width}} className='image' alt='' src={props.Simage}></img></div>
         </div>
        <div className='Pmoney'><h3>{props.Pmoney}</h3></div>
     </div>
