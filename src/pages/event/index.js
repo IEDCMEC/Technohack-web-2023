@@ -6,6 +6,7 @@ import EventFAQ from '../../components/Event/EventFAQ/EventFAQ'
 import EventSponsers from '../../components/Event/EventSponsers/EventSponsers'
 import EventFooter from '../../components/Event/EventFooter/EventFooter';
 import EventCommunity from '../../components/Event/EventCommunity/EventCommunity';
+import SponsoredTracks from '../../components/Event/SponsoredTracks/SponsoredTracks';
 // import BackgroundAnimation from '../../components/Event/EventBackgroundAnimation/EventBackgroundAnimation';
 import './index.css';
 import { Helmet } from "react-helmet";
@@ -33,6 +34,7 @@ export default function Event() {
                 <div className="event-main">
                     <div className="left-border-top-square"></div>
                     <EventProblemStatement />
+                    <SponsoredTracks/>
                     <EventPrizes />
                     <EventFAQ />
                     <EventCommunity/>
