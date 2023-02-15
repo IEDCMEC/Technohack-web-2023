@@ -76,13 +76,13 @@
     .nav-hamburger{
         display: block;
       overflow: hidden;
-      z-index: 3;
+      z-index: 5;
       margin-right: 5px;
     }
     .hamburger-menu{
         display: block;
         position: absolute;
-        z-index: 3;
+        z-index: 5;
     }
     .bm-burger-button {
         display: none;

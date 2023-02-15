@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import EventSectionHeading from '../EventSectionHeading/EventSectionHeading'
+import { Element } from 'react-scroll';
 import './EventSponsers.css';
 // import AWSug from "../../../assets/AWSug.png";
 // import Polygon from "../../../assets/Polygon.png";
@@ -16,6 +17,7 @@ export default class EventSponsers extends Component {
     render() {
         return (<>
             <div id="sponsors-link_for_navbar"></div>
+            <Element name="sponsors"/>
             <div id="sponsors">
                 <EventSectionHeading text="Sponsors" />
                 <div className="sponsors-container" style={{}}>

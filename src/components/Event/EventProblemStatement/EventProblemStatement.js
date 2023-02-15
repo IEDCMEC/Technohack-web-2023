@@ -2,11 +2,13 @@ import { Component } from 'react';
 import EventSectionHeading from '../EventSectionHeading/EventSectionHeading'
 import './EventProblemStatement.css';
 import problemImg from '../../../assets/problemImg.png';
+import { Element } from 'react-scroll'
 import eventregbtn from '../../../assets/button.svg';
 export default class EventProblemStatement extends Component {
     render() {
         return (<>
             <div id="tracks-link_for_navbar"></div>
+            <Element name="vision"/>
             <div id="problem-statement">
                 <EventSectionHeading text="Tracks" />
                 <div className='combine'>
