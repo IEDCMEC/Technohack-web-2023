@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import EventHeader from '../../components/Event/EventHeader/EventHeader';
 import EventProblemStatement from '../../components/Event/EventProblemStatement/EventProblemStatement'
 import EventPrizes from '../../components/Event/EventPrizes/EventPrizes'
@@ -12,11 +11,6 @@ import './index.css';
 import { Helmet } from "react-helmet";
 
 export default function Event() {
-    useEffect(() => {
-        document.title = "TechnoHack | Technopreneur 2023"
-        document.getElementById('technohack-page').scrollIntoView()
-    }, []);
-
     return (
         <div className="event-page" id="technohack-page">
             <Helmet>
