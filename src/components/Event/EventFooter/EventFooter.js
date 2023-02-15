@@ -3,12 +3,14 @@ import Logo from "../../../assets/LogoWhite.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Footerbg from '../../../assets/footerbg.svg'
 const Footer = () => {
   return (
     <div className="event-footer">
       <div className="event-footer-margin"></div>
       <div className="container">
-        <div className="logo">
+      <img src={Footerbg} style={{position: 'absolute', zIndex:'0', left:'0'}} alt=''></img>
+        <div style={{zIndex:'10'}}  className="logo">
           {/* <a
             href="http://iedcmec.in/"
             target="_blank"
@@ -18,7 +20,7 @@ const Footer = () => {
           {/* </a> */}
         </div>
 
-        <div className="description-container">
+        <div style={{zIndex:'10'}}  className="description-container">
           <div className="description">
             <strong>
               Innovation and Entrepreneurship Development Cell <br />
@@ -28,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="socials">
+        <div style={{zIndex:'10'}}  className="socials">
           <a
             href="https://www.instagram.com/iedcmec"
             target="_blank "
