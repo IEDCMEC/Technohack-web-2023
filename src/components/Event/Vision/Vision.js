@@ -8,24 +8,22 @@ const Vision = () => {
       <EventSectionHeading text="Vision" />
       <div className="vision">
         <p>
-          Our vision is to bring together the brightest minds and most creative
-          thinkers to innovate for a better tomorrow. We believe that by
-          leveraging technology and out-of-the-box ideas, we can create
-          sustainable products and solutions that help people and the planet.
-          Our goal is to inspire and empower our participants to think beyond
-          what's been done before and to create truly impactful innovations.
+          TechnoHack is the annual hackathon conducted as part of Technopreneur
+          - the annual e-summit hosted by the Innovation and Entrepreneurship
+          Development Cell (IEDC) of Govt. Model Engineering College.
           <br />
           <br />
-          We envision a future where the products and solutions developed at
-          this hackathon will have a positive impact on society, the
-          environment, and the economy, and we are committed to supporting our
-          participants every step of the way as they turn their ideas into
-          reality.
+          With a vision to create a space where participants can showcase their
+          talent and develop ideas that make a positive impact on society,
+          TechnoHack offers a unique opportunity for individuals to connect and
+          collaborate. Whether you are a student, a professional, or an
+          entrepreneur, TechnoHack welcomes participants from all fields and
+          backgrounds to join and bring their unique perspectives and ideas to
+          the table.
           <br />
           <br />
-          Technopreneur 2023 brings to you TechnoHack, a 24 hour-long hachathon,
-          which seeks to promote the creation of novel and distinctive technical
-          solutions to societal problems.
+          Come be a part of TechnoHack 2023, and work together to create a
+          better tomorrow through innovation and entrepreneurship!
         </p>
       </div>
     </div>
