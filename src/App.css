@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   --light: #00a1ea;
@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-*{
+* {
   font-family: Montserrat;
   font-style: normal;
   margin: 0;
@@ -19,7 +19,7 @@
   overflow-x: hidden;
 }
 
-.section-heading{
+.section-heading {
   margin: 40px;
   font-weight: bold;
   font-size: 55px;
@@ -27,7 +27,8 @@
   text-transform: uppercase;
 }
 
-html,body{
+html,
+body {
   width: 100%;
   margin: 0;
   padding: 0;

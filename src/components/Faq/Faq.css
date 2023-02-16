@@ -47,12 +47,20 @@
 
 .faq.event {
   --background-color: #19072c00;
-  --color:#04364F;
+  --color: #04364f;
   --text-color: rgba(255, 255, 255, 1);
 }
 
 .faq.angelFaq {
   --color: #195ac7;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.coc {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 500px) {

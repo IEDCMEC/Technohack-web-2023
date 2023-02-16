@@ -4,9 +4,16 @@ const eventData = [
     id: 1,
     question: "What are the rules?",
     ans: [
-      "- Your project should be started from scratch and worked on only during the given 3 days,and you should only include outside resources that are freely licensed and accessible to all participants equally.",
+      "- Your project should be started from scratch and worked on only during the given days, and you should only include outside resources that are freely licensed and accessible to all participants equally.",
       "- Remember to maintain a positive and respectful attitude toward your fellow hackers throughout the event.",
       "- Any decision made by the judges will be final.",
+      <a
+        href="http://technohack.technopreneur.co.in/code-of-conduct"
+        target="_blank"
+        rel="noreferrer"
+      >
+        - Link to <span className="coc">Code of Conduct</span>
+      </a>,
     ],
   },
   {
@@ -25,37 +32,32 @@ const eventData = [
   {
     id: 3,
     question: "Who can attend?",
-    ans:
-      "Students currently studying in any college , as well as working professionals",
+    ans: "Students currently studying in any college , as well as working professionals",
   },
   {
     id: 4,
     question: "What is the team size?",
-    ans:
-      "A team should have a minimum of 2 members and maximum of 4 members",
+    ans: "A team should have a minimum of 2 members and maximum of 4 members",
   },
   {
     id: 5,
     question: "How much does it cost?",
-    ans:
-      "This event is completely free! We’ll also provide you with a plethora of resources and tools to hack with as well.",
+    ans: "This event is completely free! We’ll also provide you with a plethora of resources and tools to hack with as well.",
   },
   {
     id: 6,
     question: "Who do I contact if I have any further doubts?",
-    ans:
-      "You can contact at technohack@iedcmec.in, if you have any doubts. We'll be happy to help!",
+    ans: "You can contact at technohack@iedcmec.in, if you have any doubts. We'll be happy to help!",
   },
   {
     id: 7,
     question: "What is the venue of the hackathon?",
-    ans: `Model Engineering College, Thrikkakara, Ernakulam, Cochin: 682021`,
+    ans: `Govt. Model Engineering College, Thrikkakara, Ernakulam, Cochin: 682021`,
   },
   {
     id: 8,
     question: "Can I participate without a computer science background?",
-    ans:
-      "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
+    ans: "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
   },
 ];
 
