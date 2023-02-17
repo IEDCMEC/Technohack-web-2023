@@ -16,8 +16,8 @@ import './EventSponsers.css';
 export default class EventSponsers extends Component {
     render() {
         return (<>
+        <Element name="sponsor"/>
             <div id="sponsors-link_for_navbar"></div>
-            <Element name="sponsors"/>
             <div id="sponsors">
                 <EventSectionHeading text="Sponsors" />
                 <div className="sponsors-container" style={{}}>

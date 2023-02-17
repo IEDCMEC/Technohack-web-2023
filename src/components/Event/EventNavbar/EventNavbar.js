@@ -51,7 +51,7 @@ const EventNavbar = () => {
                 <Link activeClass="active" to="faq" smooth={true} duration={500} className="event-nav-link menu-item" id="faq">
                         Faq
                 </Link>
-                <Link activeClass="active" to="sponsors" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
+                <Link activeClass="active" to="sponsor" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
                         Sponsers
                 </Link>
             </Menu>    
@@ -73,7 +73,7 @@ const EventNavbar = () => {
                 <Link activeClass="active" to="faq" smooth={true} duration={500} className="event-nav-link menu-item" id="faq">
                         Faq
                 </Link>
-                <Link activeClass="active" to="sponsors" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
+                <Link activeClass="active" to="sponsor" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
                         Sponsers
                 </Link>
         </div>

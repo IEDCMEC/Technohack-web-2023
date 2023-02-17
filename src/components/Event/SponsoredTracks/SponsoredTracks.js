@@ -10,6 +10,7 @@ import cyber from "../../../assets/cyber.png";
 export default function SponsoredTracks() {
   return (
     <div>
+      <Element name="tracks"/>
       <EventSectionHeading text="Hackathon Tracks" />
       <div class="tracks">
         <div class="card">

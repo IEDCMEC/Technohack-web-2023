@@ -1,7 +1,35 @@
-.vision {
+.vision{
+  margin-bottom: 8rem;
+}
+
+.vision-text {
   color: white;
   margin: 3em 10em;
   margin-right: 50%;
   line-height: 1.5em;
   font-size: 15px;
+}
+
+.vision-vector{
+  position: absolute;
+  top:0;
+  right: 0;
+  transform: scale(0.8);
+}
+
+@media (max-width:900px){
+  .vision{
+    margin: 3rem 0;
+  }
+  
+  .vision-text {
+    color: white;
+    margin: 0 3rem;
+    line-height: 1.5em;
+    font-size: 18px;
+  }
+
+  .vision-vector{
+   display: none;
+  }
 }
