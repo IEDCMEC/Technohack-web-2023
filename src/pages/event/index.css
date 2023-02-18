@@ -57,4 +57,7 @@
     border-left: hidden;
     padding-bottom: 0;
   }
+  .border-top-square{
+    display: none;
+  }
 }
