@@ -3,111 +3,50 @@
     z-index: 4;
 }
 .sponsors-container {
-    color: white;
-    margin-top: 100px;
-    margin-left: 140px;
+    color: white;   
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.sponsors-container h3{
-    margin-right: 300px ;
-}
-
-.sponsors-title {
-    margin-top: 50px;
-    font-weight: 420;
-    font-size: 25px;
-}
-
-.sponsors-row {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1400px;
     flex-wrap: wrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    margin-top: 20px;
+    margin-top: 100px;
 }
-
-.sponsors-col {
-    display:flex;
+.sponsors{
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(21px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items:center ;
     justify-content: center;
-    align-items: center;
-    height: 180px;
-    border-radius: 15px;
-    border: 4px solid #9126DE;
-    margin-bottom: 40px;
+    margin: 15px;
+    flex-direction: column;
 }
-
-.sponsors-col>a{
-    text-align: center;
-}
-
-.sponsor-image{
-    width: 150px;
-    text-align: center;
-}
-.sponsors-col-lg {
-    width: 24%;
-    margin-right: 40px;
-}
-
-.sponsors-col-sm {
-    width: 20%;
-    margin-right: 30px; 
-} 
-
-.sponsors-heading-diamond {
-    color: #A2CEE4 ;
-}
-
-.sponsors-heading-platinum{
-    color: #48B1E5
-}
-
-.sponsors-heading-gold {
-    color: #E2A548;
-}
-
-.sponsors-heading-bronze {
-    color: #E48D11;
+.sponsor-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
 
 @media (max-width: 1200px) {
-    .sponsors-col {
-        height: 160px;
-        border: 4px solid #9126DE;
-        margin-bottom: 12px;
-    }
-    .sponsors-col-lg {
-        width: 160px;
-        margin-right: 12px;
-    }
-    .sponsors-col-sm {
-        width: 160px;
-        margin-right: 12px; 
-    }  
+
 }
 
-@media (max-width: 900px) {
-    .sponsors-container h3{
-        margin-right: 0 ;
+@media (max-width: 600px) {
+    .sponsors-container{
+        flex-direction: column;
     }
-    .sponsors-container {
-        margin: 100px 0;
-        justify-content: center;
-        align-items: center;
+    .sponsors{
+        width: 175px;
+        height: 175px;
     }
-    .sponsors-col {
-        height: 130px;
-        border: 3px solid #9126DE;
-        margin-bottom: 12px;
-        display: flex;
-        justify-items: center;
-    }
-    .sponsor-image{
-        width:70%;
-        /* margin-left: 10%; */
+    .sponsor-img{
+        width: 175px;
+        height: 175px;
+        overflow: hidden;
     }
 }

@@ -14,6 +14,11 @@ const eventData = [
       >
         - Link to <span className="coc">Code of Conduct</span>
       </a>,
+      <a href="https://technohack.notion.site/FOSS-Project-Guidelines-93e5f2dcc4314caf855565dae30a3bf3"
+         target="_blank"
+         rel="noreferrer">
+        - Your project should follow these <span className="coc">FOSS guidelines</span>
+      </a>
     ],
   },
   {
