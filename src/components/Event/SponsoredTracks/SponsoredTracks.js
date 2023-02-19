@@ -6,11 +6,26 @@ import lyminal from "../../../assets/lyminal.png";
 import foss from "../../../assets/foss.png";
 import { Element } from "react-scroll";
 import cyber from "../../../assets/cyber.png";
+import TracksModal from "../TracksModal/TracksModal";
+import { tracksData } from "../../../data/tracksData";
 
 export default function SponsoredTracks() {
+  const [open, setOpen] = React.useState(false);
+  const [index, setIndex] = React.useState(0);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setOpen(true);
+  };
   return (
     <div>
-      <Element name="tracks"/>
+      <TracksModal
+        open={open}
+        handleClose={handleClose}
+        data={tracksData[index]}
+      />
+      <Element name="tracks" />
       <EventSectionHeading text="Hackathon Tracks" />
       <div class="tracks">
         <div class="card">
@@ -21,7 +36,15 @@ export default function SponsoredTracks() {
             <h6 class="primary-text">Cyber Security</h6>
             <h6 class="secondary-text">Rs. 30,000</h6>
           </div>
-          <button class="">Read More</button>
+          <button
+            class=""
+            onClick={() => {
+              setIndex(0);
+              handleOpen();
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         <div class="card">
@@ -32,7 +55,15 @@ export default function SponsoredTracks() {
             <h6 class="primary-text">Health Tech</h6>
             <h6 class="secondary-text">TBD</h6>
           </div>
-          <button class="">Read More</button>
+          <button
+            class=""
+            onClick={() => {
+              setIndex(1);
+              handleOpen();
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         <div class="card">
@@ -43,7 +74,15 @@ export default function SponsoredTracks() {
             <h6 class="primary-text">Environment</h6>
             <h6 class="secondary-text">TBD</h6>
           </div>
-          <button class="">Read More</button>
+          <button
+            class=""
+            onClick={() => {
+              setIndex(2);
+              handleOpen();
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         <div class="card">
@@ -54,7 +93,15 @@ export default function SponsoredTracks() {
             <h6 class="primary-text">Open Innovation</h6>
             <h6 class="secondary-text">TBD</h6>
           </div>
-          <button class="">Read More</button>
+          <button
+            class=""
+            onClick={() => {
+              setIndex(3);
+              handleOpen();
+            }}
+          >
+            Read More
+          </button>
         </div>
 
         <div class="card">
@@ -65,7 +112,15 @@ export default function SponsoredTracks() {
             <h6 class="primary-text">Anti-Drug/MSME</h6>
             <h6 class="secondary-text">TBD</h6>
           </div>
-          <button class="">Read More</button>
+          <button
+            class=""
+            onClick={() => {
+              setIndex(4);
+              handleOpen();
+            }}
+          >
+            Read More
+          </button>
         </div>
       </div>
       {/* <Element name="tracks" /> */}

@@ -1,0 +1,206 @@
+.tracks-modal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 3rem;
+}
+.tracks-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.tracks-modal-header-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+.tracks-modal-header-left-heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.tracks-modal-left-sub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.tracks-modal-left-sub-heading {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+.tracks-modal-left-sub-image {
+  width: 200px;
+  height: auto;
+}
+.tracks-modal-close {
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+}
+.tracks-modal-problem {
+  background: rgba(0, 70, 105, 0.31);
+  border-radius: 20px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.tracks-modal-problem-heading {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+.tracks-modal-problem-statements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.tracks-modal-problem-statement {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.tracks-modal-prize-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.tracks-modal-prize-card {
+  width: 250px;
+  height: 250px;
+  background: #052737;
+  box-shadow: 4px 4px 19px rgba(3, 65, 95, 0.69);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+.track-modal-prize-position {
+  width: 92px;
+  height: 80px;
+}
+.track-modal-prize-position-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.7);
+}
+.track-modal-prize-position-money {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.tracks-modal-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 700px) {
+  .tracks-modal {
+    row-gap: 1rem;
+    padding: 2rem;
+  }
+  .tracks-modal-header-left-heading {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .tracks-modal-left-sub-heading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .tracks-modal-left-sub-image {
+    width: 150px;
+    height: auto;
+  }
+  .tracks-modal-problem-heading {
+    font-size: 22px;
+    text-align: center;
+    line-height: 28px;
+  }
+  .tracks-modal-problem {
+    padding: 1.3rem;
+    text-align: center;
+  }
+  .tracks-modal-problem-statement {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .tracks-modal-prize-card {
+    width: 200px;
+    height: 200px;
+  }
+  .track-modal-prize-position {
+    width: 72px;
+    height: 60px;
+  }
+  .track-modal-prize-position-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .track-modal-prize-position-money {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media (max-width:450px) {
+    .tracks-modal-header-left-heading {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .tracks-modal-close
+    {
+        font-size: 24px;
+    }
+    .tracks-modal-left-sub-heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .tracks-modal-left-sub-image {
+        width: 100px;
+        height: auto;
+    }
+    .tracks-modal-problem-heading {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .tracks-modal-problem-statement {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tracks-modal-prize-card {
+        width: 150px;
+        height: 150px;
+    }
+    .track-modal-prize-position {
+        width: 52px;
+        height: 40px;
+    }
+    .track-modal-prize-position-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .track-modal-prize-position-money {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
