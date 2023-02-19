@@ -76,28 +76,20 @@ const Registration = () => {
       .required("Please enter website")
       .min(4),
     teamMember2Name: Yup.string().optional().min(3),
-    teamMember2InstitutionName: Yup.string()
-      .optional()
-      .required("Please enter a valid Institution name")
-      .min(3),
+    teamMember2InstitutionName: Yup.string().optional().min(3),
     teamMember2GradYear: Yup.string()
       .optional()
       .oneOf(
         ["2023", "2024", "2025", "2026", "2027"],
         "Invalid Graduation Year"
-      )
-      .required("Required"),
-    teamMember2Email: Yup.string()
-      .optional()
-      .email("Invalid email address")
-      .required("Please enter a valid email ID"),
+      ),
+    teamMember2Email: Yup.string().optional().email("Invalid email address"),
     teamMember2LinkedIn: Yup.string()
       .optional()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
       .min(4),
     teamMember2GitHub: Yup.string()
       .optional()
@@ -105,7 +97,6 @@ const Registration = () => {
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
       .min(4),
     teamMember2Devfolio: Yup.string()
       .optional()
@@ -113,31 +104,23 @@ const Registration = () => {
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
       .min(4),
     teamMember4Name: Yup.string().optional().min(3),
-    teamMember4InstitutionName: Yup.string()
-      .optional()
-      .required("Please enter a valid Institution name")
-      .min(3),
+    teamMember4InstitutionName: Yup.string().optional().min(3),
     teamMember4GradYear: Yup.string()
       .optional()
       .oneOf(
         ["2023", "2024", "2025", "2026", "2027"],
         "Invalid Graduation Year"
-      )
-      .required("Required"),
-    teamMember4Email: Yup.string()
-      .optional()
-      .email("Invalid email address")
-      .required("Please enter a valid email ID"),
+      ),
+    teamMember4Email: Yup.string().optional().email("Invalid email address"),
     teamMember4LinkedIn: Yup.string()
       .optional()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+
       .min(4),
     teamMember4GitHub: Yup.string()
       .optional()
@@ -145,7 +128,7 @@ const Registration = () => {
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+
       .min(4),
     teamMember4Devfolio: Yup.string()
       .optional()
@@ -153,41 +136,37 @@ const Registration = () => {
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+
       .min(4),
     teamMember3Name: Yup.string().optional().min(3),
-    teamMember3InstitutionName: Yup.string()
-      .required("Please enter a valid Institution name")
-      .min(3),
+    teamMember3InstitutionName: Yup.string().optional().min(3),
     teamMember3GradYear: Yup.string()
       .oneOf(
         ["2023", "2024", "2025", "2026", "2027"],
         "Invalid Graduation Year"
       )
-      .required("Required"),
-    teamMember3Email: Yup.string()
-      .email("Invalid email address")
-      .required("Please enter a valid email ID"),
+      .optional(),
+    teamMember3Email: Yup.string().email("Invalid email address").optional(),
     teamMember3LinkedIn: Yup.string()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+      .optional()
       .min(4),
     teamMember3GitHub: Yup.string()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+      .optional()
       .min(4),
     teamMember3Devfolio: Yup.string()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter website")
+      .optional()
       .min(4),
     idea: Yup.string().required().max(500),
   });
