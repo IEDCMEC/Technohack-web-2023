@@ -1,4 +1,4 @@
-import { Formik, useField } from "formik";
+import { Formik, useField, Field } from "formik";
 import React from "react";
 import * as Yup from "yup";
 
@@ -15,7 +15,7 @@ const Registration = () => {
     teamMember2: "",
     teamMember3: "",
     teamMember4: "",
-    track: "",
+    track: [],
     idea: "",
   };
 
@@ -42,6 +42,7 @@ const Registration = () => {
     teamMember2: Yup.string().optional().min(3),
     teamMember3: Yup.string().optional().min(3),
     teamMember4: Yup.string().optional().min(3),
+    idea: Yup.string().required().max(500),
   });
 
   const handleSubmit = (values) => {
@@ -60,6 +61,33 @@ const Registration = () => {
       </div>
     );
   };
+
+  // const Checkbox = (props) => {
+  //   return (
+  //     <Field name={props.name}>
+  //       {({ field, form }) => (
+  //         <label>
+  //           <input
+  //             {...field}
+  //             type="checkbox"
+  //             checked={field.value.includes(props.value)}
+  //             onChange={() => {
+  //               const set = new Set(field.value);
+  //               if (set.has(props.value)) {
+  //                 set.delete(props.value);
+  //               } else {
+  //                 set.add(props.value);
+  //               }
+  //               field.onChange(field.name)(Array.from(set));
+  //               form.setFieldTouched(field.name, true);
+  //             }}
+  //           />
+  //           {props.value}
+  //         </label>
+  //       )}
+  //     </Field>
+  //   );
+  // };
   return (
     <>
       <Formik
@@ -212,6 +240,23 @@ const Registration = () => {
               {formik.touched.teamMember4 && formik.errors.teamMember4 ? (
                 <div>{formik.errors.teamMember4}</div>
               ) : null}
+
+              <label htmlFor="idea">Brief description of idea</label>
+              <textarea
+                type="text"
+                name="idea"
+                id="idea"
+                value={formik.values.idea}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.idea && formik.errors.idea ? (
+                <div>{formik.errors.idea}</div>
+              ) : null}
+
+              {/* <div>Track</div>
+              <Checkbox name="track" value="admin" />
+              <Checkbox name="track" value="customer" /> */}
               <button type="submit">Submit</button>
             </form>
           </div>
