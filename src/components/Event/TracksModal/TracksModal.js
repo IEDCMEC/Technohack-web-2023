@@ -9,8 +9,8 @@ function TracksModal({ open, handleClose, data }) {
     <Dialog
       open={open}
       onClose={handleClose}
-      fullWidth={true}
       maxWidth="lg"
+      fullWidth={true}
       disableScrollLock={true}
       PaperProps={{
         sx: {
@@ -82,8 +82,8 @@ function TracksModal({ open, handleClose, data }) {
             })}
           </div>
         </div>
-        <img src={tracksmodal} alt="tracksmodal" className="tracks-modal-img" />
       </DialogContent>
+      <img src={tracksmodal} alt="tracksmodal" className="tracks-modal-img" />
     </Dialog>
   );
 }
