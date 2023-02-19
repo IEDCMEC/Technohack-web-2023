@@ -4,14 +4,20 @@ import * as Yup from "yup";
 
 const Registration = () => {
   const initialValue = {
-    firstName: "",
-    lastName: "",
+    teamName: "",
+    teamLeaderName: "",
+    institutionName: "",
     email: "",
   };
 
   const validation = Yup.object({
-    firstName: Yup.string().required("Please add a valid project name").min(3),
-    lastName: Yup.string().required("Please add a valid project name").min(3),
+    teamName: Yup.string().required("Please enter a valid Team name").min(3),
+    teamLeaderName: Yup.string()
+      .required("Please enter a valid Team Leader name")
+      .min(3),
+    institutionName: Yup.string()
+      .required("Please enter a valid Institution name")
+      .min(3),
     email: Yup.string()
       .email("Invalid email address")
       .required("Please enter a valid email ID"),
@@ -29,31 +35,48 @@ const Registration = () => {
       >
         {(formik) => (
           <div>
+            {/* TEAM NAME */}
             <form onSubmit={formik.handleSubmit}>
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="teamName">Team Name</label>
               <input
                 type="text"
-                name="firstName"
-                id="firstName"
-                value={formik.values.firstName}
+                name="teamName"
+                id="teamName"
+                value={formik.values.teamName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              {formik.touched.firstName && formik.errors.firstName ? (
-                <div>{formik.errors.firstName}</div>
+              {formik.touched.teamName && formik.errors.teamName ? (
+                <div>{formik.errors.teamName}</div>
               ) : null}
 
-              <label htmlFor="lastName">Last Name</label>
+              {/* TEAM LEADER NAME */}
+              <label htmlFor="teamLeaderName">Team Leader Name</label>
               <input
                 type="text"
-                name="lastName"
-                id="lastName"
-                value={formik.values.lastName}
+                name="teamLeaderName"
+                id="teamLeaderName"
+                value={formik.values.teamLeaderName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              {formik.touched.lastName && formik.errors.lastName ? (
-                <div>{formik.errors.lastName}</div>
+              {formik.touched.teamLeaderName && formik.errors.teamLeaderName ? (
+                <div>{formik.errors.teamLeaderName}</div>
+              ) : null}
+
+              {/* INSTITUTION NAME */}
+              <label htmlFor="institutionName">Institution Name</label>
+              <input
+                type="text"
+                name="institutionName"
+                id="institutionName"
+                value={formik.values.institutionName}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.institutionName &&
+              formik.errors.institutionName ? (
+                <div>{formik.errors.institutionName}</div>
               ) : null}
 
               <label htmlFor="email">Email Address</label>
