@@ -1,4 +1,4 @@
-import { Formik } from "formik";
+import { Formik, useField } from "formik";
 import React from "react";
 import * as Yup from "yup";
 
@@ -7,6 +7,7 @@ const Registration = () => {
     teamName: "",
     teamLeaderName: "",
     institutionName: "",
+    gradYear: "",
     email: "",
   };
 
@@ -18,6 +19,12 @@ const Registration = () => {
     institutionName: Yup.string()
       .required("Please enter a valid Institution name")
       .min(3),
+    gradYear: Yup.string()
+      .oneOf(
+        ["2023", "2024", "2025", "2026", "2027"],
+        "Invalid Graduation Year"
+      )
+      .required("Required"),
     email: Yup.string()
       .email("Invalid email address")
       .required("Please enter a valid email ID"),
@@ -25,6 +32,19 @@ const Registration = () => {
 
   const handleSubmit = (values) => {
     alert(JSON.stringify(values, null, 2));
+  };
+
+  const MySelect = ({ label, ...props }) => {
+    const [field, meta] = useField(props);
+    return (
+      <div>
+        <label htmlFor={props.id || props.name}>{label}</label>
+        <select {...field} {...props} />
+        {meta.touched && meta.error ? (
+          <div className="error">{meta.error}</div>
+        ) : null}
+      </div>
+    );
   };
   return (
     <>
@@ -78,6 +98,15 @@ const Registration = () => {
               formik.errors.institutionName ? (
                 <div>{formik.errors.institutionName}</div>
               ) : null}
+
+              <MySelect label="Graduation Year" name="gradYear">
+                <option value="">Select</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+              </MySelect>
 
               <label htmlFor="email">Email Address</label>
               <input
