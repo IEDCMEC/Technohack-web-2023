@@ -9,6 +9,14 @@ const Registration = () => {
     institutionName: "",
     gradYear: "",
     email: "",
+    linkedIn: "",
+    GitHub: "",
+    Devfolio: "",
+    teamMember2: "",
+    teamMember3: "",
+    teamMember4: "",
+    track: "",
+    idea: "",
   };
 
   const validation = Yup.object({
@@ -28,6 +36,12 @@ const Registration = () => {
     email: Yup.string()
       .email("Invalid email address")
       .required("Please enter a valid email ID"),
+    linkedIn: Yup.string().min(4),
+    GitHub: Yup.string().min(4),
+    Devfolio: Yup.string().min(4),
+    teamMember2: Yup.string().optional().min(3),
+    teamMember3: Yup.string().optional().min(3),
+    teamMember4: Yup.string().optional().min(3),
   });
 
   const handleSubmit = (values) => {
@@ -121,6 +135,83 @@ const Registration = () => {
                 <div>{formik.errors.email}</div>
               ) : null}
 
+              <label htmlFor="linkedIn">LinkedIn</label>
+              <input
+                type="text"
+                name="linkedIn"
+                id="linkedIn"
+                value={formik.values.linkedIn}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.linkedIn && formik.errors.linkedIn ? (
+                <div>{formik.errors.linkedIn}</div>
+              ) : null}
+
+              <label htmlFor="GitHub">GitHub</label>
+              <input
+                type="text"
+                name="GitHub"
+                id="GitHub"
+                value={formik.values.GitHub}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.GitHub && formik.errors.GitHub ? (
+                <div>{formik.errors.GitHub}</div>
+              ) : null}
+
+              <label htmlFor="Devfolio">Devfolio</label>
+              <input
+                type="text"
+                name="Devfolio"
+                id="Devfolio"
+                value={formik.values.Devfolio}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.Devfolio && formik.errors.Devfolio ? (
+                <div>{formik.errors.Devfolio}</div>
+              ) : null}
+
+              <label htmlFor="teamMember2">Team Member 2</label>
+              <input
+                type="text"
+                name="teamMember2"
+                id="teamMember2"
+                value={formik.values.teamMember2}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.teamMember2 && formik.errors.teamMember2 ? (
+                <div>{formik.errors.teamMember2}</div>
+              ) : null}
+
+              <label htmlFor="teamMember3">Team Member 3</label>
+              <input
+                type="text"
+                name="teamMember3"
+                id="teamMember3"
+                value={formik.values.teamMember3}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.teamMember3 && formik.errors.teamMember3 ? (
+                <div>{formik.errors.teamMember3}</div>
+              ) : null}
+
+              <label htmlFor="teamMember4">Team Member 4</label>
+              <input
+                type="text"
+                name="teamMember4"
+                id="teamMember4"
+                value={formik.values.teamMember4}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.teamMember4 && formik.errors.teamMember4 ? (
+                <div>{formik.errors.teamMember4}</div>
+              ) : null}
               <button type="submit">Submit</button>
             </form>
           </div>
