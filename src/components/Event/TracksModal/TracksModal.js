@@ -35,7 +35,8 @@ function TracksModal({ open, handleClose, data }) {
               <div className="tracks-modal-header-left-heading">
                 {data.name} Track
               </div>
-              <div className="tracks-modal-left-sub">
+
+              {/* <div className="tracks-modal-left-sub">
                 <div className="tracks-modal-left-sub-heading">
                   sponsored by
                 </div>
@@ -44,9 +45,39 @@ function TracksModal({ open, handleClose, data }) {
                   alt="lyminal"
                   className="tracks-modal-left-sub-image"
                 />
-              </div>
+              </div> */}
             </div>
             <IoMdClose onClick={handleClose} className="tracks-modal-close" />
+          </div>
+          <div className="tracks-modal-powered-by">powered by</div>
+          <div className="tracks-modal-prize-section">
+            <div>
+              {" "}
+              <img
+                src={data.sponsorlogo}
+                alt="lyminal"
+                className="tracks-modal-left-sub-image"
+              />
+            </div>
+            {data.prizes.map((item, index) => {
+              return (
+                <div className="tracks-modal-prize-card" key={index}>
+                  <img
+                    src={item.image}
+                    alt="first"
+                    className="track-modal-prize-position"
+                  />
+                  <div>
+                    <div className="track-modal-prize-position-text">
+                      {item.position} Prize
+                    </div>
+                    <div className="track-modal-prize-position-money">
+                      {item.money} INR
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           <div className="tracks-modal-problem">
             <div className="tracks-modal-problem-heading">
@@ -61,25 +92,6 @@ function TracksModal({ open, handleClose, data }) {
                 );
               })}
             </div>
-          </div>
-          <div className="tracks-modal-prize-section">
-            {data.prizes.map((item, index) => {
-              return (
-                <div className="tracks-modal-prize-card" key={index}>
-                  <img
-                    src={item.image}
-                    alt="first"
-                    className="track-modal-prize-position"
-                  />
-                  <div className="track-modal-prize-position-text">
-                    {item.name} Prize
-                  </div>
-                  <div className="track-modal-prize-position-money">
-                    {item.money} INR
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </DialogContent>
