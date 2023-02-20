@@ -76,6 +76,7 @@ const Registration = () => {
     teamMember4Devfolio: "",
     track: [],
     idea: "",
+    suggestions: "",
   };
 
   const validation = Yup.object({
@@ -213,7 +214,9 @@ const Registration = () => {
   });
 
   const handleSubmit = (values) => {
-    alert(JSON.stringify(values, null, 2));
+    console.log("Clicked");
+    // alert(JSON.stringify(values, null, 2));
+    console.log("Values",values)
   };
 
   return (
@@ -359,43 +362,43 @@ const Registration = () => {
               <div className="team-detail-heading">Team Member 2 Details</div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="teamLeaderName">Name</label>
+                  <label htmlFor="teamMember2Name">Name</label>
                   <input
                     type="text"
-                    name="teamLeaderName"
-                    id="teamLeaderName"
-                    value={formik.values.teamLeaderName}
+                    name="teamMember2Name"
+                    id="teamMember2Name"
+                    value={formik.values.teamMember2Name}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.teamLeaderName &&
-                  formik.errors.teamLeaderName ? (
-                    <div>{formik.errors.teamLeaderName}</div>
+                  {formik.touched.teamMember2Name &&
+                  formik.errors.teamMember2Name ? (
+                    <div>{formik.errors.teamMember2Name}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
                   {/* INSTITUTION NAME */}
-                  <label htmlFor="leaderInstitutionName">
+                  <label htmlFor="teamMember2InstitutionName">
                     Institution Name
                   </label>
                   <input
                     type="text"
-                    name="leaderInstitutionName"
-                    id="leaderInstitutionName"
-                    value={formik.values.leaderInstitutionName}
+                    name="teamMember2InstitutionNameteamMember2InstitutionName"
+                    id="teamMember2InstitutionName"
+                    value={formik.values.teamMember2InstitutionName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderInstitutionName &&
-                  formik.errors.leaderInstitutionName ? (
-                    <div>{formik.errors.leaderInstitutionName}</div>
+                  {formik.touched.teamMember2InstitutionName &&
+                  formik.errors.teamMember2InstitutionName ? (
+                    <div>{formik.errors.teamMember2InstitutionName}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
                   <label>Graduation Year</label>
-                  <select label="Graduation Year" name="leaderGradYear">
+                  <select label="Graduation Year" name="teamMember2GradYear">
                     <option value="">Select</option>
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
@@ -406,63 +409,65 @@ const Registration = () => {
                 </div>
 
                 <div className="inputGroup">
-                  <label htmlFor="leaderEmail">Email Address</label>
+                  <label htmlFor="teamMember2Email">Email Address</label>
                   <input
                     type="text"
-                    name="leaderEmail"
-                    id="leaderEmail"
-                    value={formik.values.leaderEmail}
+                    name="teamMember2Email"
+                    id="teamMember2Email"
+                    value={formik.values.teamMember2Email}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderEmail && formik.errors.leaderEmail ? (
-                    <div>{formik.errors.leaderEmail}</div>
+                  {formik.touched.teamMember2Email &&
+                  formik.errors.teamMember2Email ? (
+                    <div>{formik.errors.teamMember2Email}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
+                  <label htmlFor="teamMember2LinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
-                    name="leaderLinkedIn"
-                    id="leaderLinkedIn"
-                    value={formik.values.leaderLinkedIn}
+                    name="teamMember2LinkedIn"
+                    id="teamMember2LinkedIn"
+                    value={formik.values.teamMember2LinkedIn}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderLinkedIn &&
-                  formik.errors.leaderLinkedIn ? (
-                    <div>{formik.errors.leaderLinkedIn}</div>
+                  {formik.touched.teamMember2LinkedIn &&
+                  formik.errors.teamMember2LinkedIn ? (
+                    <div>{formik.errors.teamMember2LinkedIn}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL</label>
+                  <label htmlFor="teamMember2GitHub">GitHub URL</label>
                   <input
                     type="text"
-                    name="leaderGitHub"
-                    id="leaderGitHub"
-                    value={formik.values.leaderGitHub}
+                    name="teamMember2GitHub"
+                    id="teamMember2GitHub"
+                    value={formik.values.teamMember2GitHub}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderGitHub && formik.errors.leaderGitHub ? (
-                    <div>{formik.errors.leaderGitHub}</div>
+                  {formik.touched.teamMember2GitHub &&
+                  formik.errors.teamMember2GitHub ? (
+                    <div>{formik.errors.teamMember2GitHub}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
+                  <label htmlFor="teamMember2Devfolio">Devfolio URL</label>
                   <input
                     type="text"
-                    name="leaderDevfolio"
-                    id="leaderDevfolio"
-                    value={formik.values.leaderDevfolio}
+                    name="teamMember2Devfolio"
+                    id="teamMember2Devfolio"
+                    value={formik.values.teamMember2Devfolio}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderDevfolio &&
-                  formik.errors.leaderDevfolio ? (
-                    <div>{formik.errors.leaderDevfolio}</div>
+                  {formik.touched.teamMember2Devfolio &&
+                  formik.errors.teamMember2Devfolio ? (
+                    <div>{formik.errors.teamMember2Devfolio}</div>
                   ) : null}
                   <hr />
                 </div>
@@ -471,43 +476,43 @@ const Registration = () => {
 
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="teamLeaderName">Name</label>
+                  <label htmlFor="teamMember3Name">Name</label>
                   <input
                     type="text"
-                    name="teamLeaderName"
-                    id="teamLeaderName"
-                    value={formik.values.teamLeaderName}
+                    name="teamMember3Name"
+                    id="teamMember3Name"
+                    value={formik.values.teamMember3Name}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.teamLeaderName &&
-                  formik.errors.teamLeaderName ? (
-                    <div>{formik.errors.teamLeaderName}</div>
+                  {formik.touched.teamMember3Name &&
+                  formik.errors.teamMember3Name ? (
+                    <div>{formik.errors.teamMember3Name}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
                   {/* INSTITUTION NAME */}
-                  <label htmlFor="leaderInstitutionName">
+                  <label htmlFor="teamMember3InstitutionName">
                     Institution Name
                   </label>
                   <input
                     type="text"
-                    name="leaderInstitutionName"
-                    id="leaderInstitutionName"
-                    value={formik.values.leaderInstitutionName}
+                    name="teamMember3InstitutionName"
+                    id="teamMember3InstitutionName"
+                    value={formik.values.teamMember3InstitutionName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderInstitutionName &&
-                  formik.errors.leaderInstitutionName ? (
-                    <div>{formik.errors.leaderInstitutionName}</div>
+                  {formik.touched.teamMember3InstitutionName &&
+                  formik.errors.teamMember3InstitutionName ? (
+                    <div>{formik.errors.teamMember3InstitutionName}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
                   <label>Graduation Year</label>
-                  <select label="Graduation Year" name="leaderGradYear">
+                  <select label="Graduation Year" name="teamMember3GradYear">
                     <option value="">Select</option>
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
@@ -521,60 +526,62 @@ const Registration = () => {
                   <label htmlFor="leaderEmail">Email Address</label>
                   <input
                     type="text"
-                    name="leaderEmail"
-                    id="leaderEmail"
-                    value={formik.values.leaderEmail}
+                    name="teamMember3Email"
+                    id="teamMember3Email"
+                    value={formik.values.teamMember3Email}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderEmail && formik.errors.leaderEmail ? (
-                    <div>{formik.errors.leaderEmail}</div>
+                  {formik.touched.teamMember3Email &&
+                  formik.errors.teamMember3Email ? (
+                    <div>{formik.errors.teamMember3Email}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
+                  <label htmlFor="teamMember3LinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
-                    name="leaderLinkedIn"
-                    id="leaderLinkedIn"
-                    value={formik.values.leaderLinkedIn}
+                    name="teamMember3LinkedIn"
+                    id="teamMember3LinkedIn"
+                    value={formik.values.teamMember3LinkedIn}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderLinkedIn &&
-                  formik.errors.leaderLinkedIn ? (
-                    <div>{formik.errors.leaderLinkedIn}</div>
+                  {formik.touched.teamMember3LinkedIn &&
+                  formik.errors.teamMember3LinkedIn ? (
+                    <div>{formik.errors.teamMember3LinkedIn}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL</label>
+                  <label htmlFor="teamMember3GitHub">GitHub URL</label>
                   <input
                     type="text"
-                    name="leaderGitHub"
-                    id="leaderGitHub"
-                    value={formik.values.leaderGitHub}
+                    name="teamMember3GitHub"
+                    id="teamMember3GitHub"
+                    value={formik.values.teamMember3GitHub}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderGitHub && formik.errors.leaderGitHub ? (
-                    <div>{formik.errors.leaderGitHub}</div>
+                  {formik.touched.teamMember3GitHub &&
+                  formik.errors.teamMember3GitHub ? (
+                    <div>{formik.errors.teamMember3GitHub}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
+                  <label htmlFor="teamMember3Devfolio">Devfolio URL</label>
                   <input
                     type="text"
-                    name="leaderDevfolio"
-                    id="leaderDevfolio"
-                    value={formik.values.leaderDevfolio}
+                    name="teamMember3Devfolio"
+                    id="teamMember3Devfolio"
+                    value={formik.values.teamMember3Devfolio}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderDevfolio &&
-                  formik.errors.leaderDevfolio ? (
-                    <div>{formik.errors.leaderDevfolio}</div>
+                  {formik.touched.teamMember3Devfolio &&
+                  formik.errors.teamMember3Devfolio ? (
+                    <div>{formik.errors.teamMember3Devfolio}</div>
                   ) : null}
                   <hr />
                 </div>
@@ -583,43 +590,43 @@ const Registration = () => {
 
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="teamLeaderName">Name</label>
+                  <label htmlFor="teamMember4Name">Name</label>
                   <input
                     type="text"
-                    name="teamLeaderName"
-                    id="teamLeaderName"
-                    value={formik.values.teamLeaderName}
+                    name="teamMember4Name"
+                    id="teamMember4Name"
+                    value={formik.values.teamMember4Name}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.teamLeaderName &&
-                  formik.errors.teamLeaderName ? (
-                    <div>{formik.errors.teamLeaderName}</div>
+                  {formik.touched.teamMember4Name &&
+                  formik.errors.teamMember4Name ? (
+                    <div>{formik.errors.teamMember4Name}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
                   {/* INSTITUTION NAME */}
-                  <label htmlFor="leaderInstitutionName">
+                  <label htmlFor="teamMember4InstitutionName">
                     Institution Name
                   </label>
                   <input
                     type="text"
-                    name="leaderInstitutionName"
-                    id="leaderInstitutionName"
-                    value={formik.values.leaderInstitutionName}
+                    name="teamMember4InstitutionName"
+                    id="teamMember4InstitutionName"
+                    value={formik.values.teamMember4InstitutionName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderInstitutionName &&
-                  formik.errors.leaderInstitutionName ? (
-                    <div>{formik.errors.leaderInstitutionName}</div>
+                  {formik.touched.teamMember4InstitutionName &&
+                  formik.errors.teamMember4InstitutionName ? (
+                    <div>{formik.errors.teamMember4InstitutionName}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
                   <label>Graduation Year</label>
-                  <select label="Graduation Year" name="leaderGradYear">
+                  <select label="Graduation Year" name="teamMember4GradYear">
                     <option value="">Select</option>
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
@@ -630,83 +637,69 @@ const Registration = () => {
                 </div>
 
                 <div className="inputGroup">
-                  <label htmlFor="leaderEmail">Email Address</label>
+                  <label htmlFor="teamMember4Email">Email Address</label>
                   <input
                     type="text"
-                    name="leaderEmail"
-                    id="leaderEmail"
-                    value={formik.values.leaderEmail}
+                    name="teamMember4Email"
+                    id="teamMember4Email"
+                    value={formik.values.teamMember4Email}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderEmail && formik.errors.leaderEmail ? (
-                    <div>{formik.errors.leaderEmail}</div>
+                  {formik.touched.teamMember4Email &&
+                  formik.errors.teamMember4Email ? (
+                    <div>{formik.errors.teamMember4Email}</div>
                   ) : null}
                 </div>
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
+                  <label htmlFor="teamMember4LinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
-                    name="leaderLinkedIn"
-                    id="leaderLinkedIn"
-                    value={formik.values.leaderLinkedIn}
+                    name="teamMember4LinkedIn"
+                    id="teamMember4LinkedIn"
+                    value={formik.values.teamMember4LinkedIn}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderLinkedIn &&
-                  formik.errors.leaderLinkedIn ? (
-                    <div>{formik.errors.leaderLinkedIn}</div>
+                  {formik.touched.teamMember4LinkedIn &&
+                  formik.errors.teamMember4LinkedIn ? (
+                    <div>{formik.errors.teamMember4LinkedIn}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL</label>
+                  <label htmlFor="teamMember4GitHub">GitHub URL</label>
                   <input
                     type="text"
-                    name="leaderGitHub"
-                    id="leaderGitHub"
-                    value={formik.values.leaderGitHub}
+                    name="teamMember4GitHub"
+                    id="teamMember4GitHub"
+                    value={formik.values.teamMember4GitHub}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderGitHub && formik.errors.leaderGitHub ? (
-                    <div>{formik.errors.leaderGitHub}</div>
+                  {formik.touched.teamMember4GitHub &&
+                  formik.errors.teamMember4GitHub ? (
+                    <div>{formik.errors.teamMember4GitHub}</div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
+                  <label htmlFor="teamMember4Devfolio">Devfolio URL</label>
                   <input
                     type="text"
-                    name="leaderDevfolio"
-                    id="leaderDevfolio"
-                    value={formik.values.leaderDevfolio}
+                    name="teamMember4Devfolio"
+                    id="teamMember4Devfolio"
+                    value={formik.values.teamMember4Devfolio}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  {formik.touched.leaderDevfolio &&
-                  formik.errors.leaderDevfolio ? (
-                    <div>{formik.errors.leaderDevfolio}</div>
+                  {formik.touched.teamMember4Devfolio &&
+                  formik.errors.teamMember4Devfolio ? (
+                    <div>{formik.errors.teamMember4Devfolio}</div>
                   ) : null}
                   <hr />
                 </div>
               </div>
-
-              <label htmlFor="idea" className="team-detail-heading">
-                Brief Description of Idea
-              </label>
-              <textarea
-                type="text"
-                rows={10}
-                name="idea"
-                id="idea"
-                value={formik.values.idea}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-              />
-              {formik.touched.idea && formik.errors.idea ? (
-                <div>{formik.errors.idea}</div>
-              ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Any Interesting Problem You have in mind to solve during the
                 hackathon?
@@ -727,7 +720,7 @@ const Registration = () => {
                     gap: "0.5rem",
                   }}
                 >
-                  <input type="radio" value="Yes" />
+                  <input type="radio" value="Yes" name="problem" />
                   <label>Yes</label>
                 </div>
                 <div
@@ -738,24 +731,13 @@ const Registration = () => {
                     gap: "0.5rem",
                   }}
                 >
-                  <input type="radio" value="No" />
+                  <input type="radio" value="No" name="problem" />
                   <label>No</label>
                 </div>
               </div>
+
               <label htmlFor="idea" className="team-detail-heading">
-                Probable Tracks you may be applying for ?
-              </label>
-              <ThemeProvider theme={theme}>
-                <Autocomplete
-                  options={["CyberSecurity", "Blockchain", "HealthCare"]}
-                  sx={{ width: "90%" }}
-                  multiple
-                  disableCloseOnSelect
-                  renderInput={(params) => <TextField {...params} />}
-                />
-              </ThemeProvider>
-              <label htmlFor="idea" className="team-detail-heading">
-                Anything else you want to let us know ?
+                Brief Description of Idea
               </label>
               <textarea
                 type="text"
@@ -766,9 +748,49 @@ const Registration = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              <div type="submit" className="submit-btn">
+              {formik.touched.idea && formik.errors.idea ? (
+                <div>{formik.errors.idea}</div>
+              ) : null}
+              <label htmlFor="idea" className="team-detail-heading">
+                Probable Tracks you may be applying for ?
+              </label>
+              <ThemeProvider theme={theme}>
+                <Autocomplete
+                  options={["CyberSecurity", "Blockchain", "HealthCare"]}
+                  sx={{ width: "90%" }}
+                  multiple
+                  disableCloseOnSelect
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      sx={{
+                        input: { color: "white", fontFamily: "Montserrat" },
+                      }}
+                    />
+                  )}
+                />
+              </ThemeProvider>
+              <label htmlFor="suggestions" className="team-detail-heading">
+                Anything else you want to let us know ?
+              </label>
+              <textarea
+                type="text"
+                rows={10}
+                name="suggestions"
+                id="suggestions"
+                value={formik.values.suggestions}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              <button
+                type="submit"
+                className="submit-btn"
+                onClick={
+                  handleSubmit
+                }
+              >
                 Submit
-              </div>
+              </button>
             </form>
           </div>
         )}

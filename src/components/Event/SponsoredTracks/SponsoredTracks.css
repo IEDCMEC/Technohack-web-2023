@@ -91,7 +91,7 @@
   /* letter-spacing: 1px; */
   margin: 5px 0;
 }
-button {
+.card button {
   width: 50%;
   padding: 12px 0;
   font-size: 14px;
@@ -107,7 +107,7 @@ button {
   border: none;
 }
 
-button:hover {
+.card button:hover {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -121,9 +121,9 @@ button:hover {
   transition-property: color, background-color;
 }
 
-button:hover,
-button:focus,
-button:active {
+.card button:hover,
+.card button:focus,
+.card button:active {
   background-color: #00a1ea;
   color: white;
 }
