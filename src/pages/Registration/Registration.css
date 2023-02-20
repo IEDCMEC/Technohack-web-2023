@@ -1,20 +1,114 @@
-.reg{
-    margin-left: 10px;
-}
-
-.inputGroup{
+.reg
+{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    padding-top: 5rem;
+    width: 100%;
+    padding-bottom: 5rem;
+     color: white;
 }
-
-.row{
+.registration_heading
+{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.reg form
+{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.inputGroup
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputGroup input
+{
+    padding: 0.75rem;
+    width: 300px;
+    border-radius: 8px;
+    outline: none;
+}
+.inputGroup input:active
+{
+    outline: none;
+}
+.row
+{
     display: flex;
     flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inputGroup select
+{
+    padding: 0.75rem;
+    border-radius: 8px;
+    outline: none;
+    width: 300px;
+}
+.team-detail-heading
+{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 1rem;
+    text-align: center;
+}
+.submit-btn
+{
+    align-self: center;
+    margin-top: 2rem;
 }
 
-#teamName{
-    width: 200px;
+/* CSS */
+.submit-btn{
+  background-color: #00a1ea;
+  border: 1px solid #00a1ea;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.submit-btn:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+textarea
+{
+    padding: 0.75rem;
+    width: 100%;
+    resize: vertical;
+    border-radius: 8px;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+  .submit-btn {
+    padding: 10px 30px;
+  }
+  
+}
+
