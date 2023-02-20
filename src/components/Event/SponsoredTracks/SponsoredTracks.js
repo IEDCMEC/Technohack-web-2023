@@ -6,6 +6,10 @@ import lyminal from "../../../assets/lyminal.png";
 import foss from "../../../assets/foss.png";
 import { Element } from "react-scroll";
 import cyber from "../../../assets/cyber.png";
+import drug from "../../../assets/drug.png";
+import earth from "../../../assets/earth.png";
+import health2 from "../../../assets/health2.png";
+import bulb from "../../../assets/bulb.png";
 import TracksModal from "../TracksModal/TracksModal";
 import { tracksData } from "../../../data/tracksData";
 
@@ -26,7 +30,7 @@ export default function SponsoredTracks() {
         data={tracksData[index]}
       />
       <Element name="tracks" />
-      <EventSectionHeading text="Hackathon Tracks" />
+      <EventSectionHeading text="Tracks and Prizes" />
       <div class="tracks">
         <div class="card">
           <div class="card-img">
@@ -34,7 +38,7 @@ export default function SponsoredTracks() {
           </div>
           <div class="desc">
             <h6 class="primary-text">Cyber Security</h6>
-            <h6 class="secondary-text">Rs. 30,000</h6>
+            <h6 class="secondary-text">Rs. 20,000</h6>
           </div>
           <button
             class=""
@@ -49,11 +53,11 @@ export default function SponsoredTracks() {
 
         <div class="card">
           <div class="card-img">
-            <img src={cyber} />
+            <img src={health2} className="health" />
           </div>
           <div class="desc">
             <h6 class="primary-text">Health Tech</h6>
-            <h6 class="secondary-text">TBD</h6>
+            <h6 class="secondary-text">Rs. 20,000</h6>
           </div>
           <button
             class=""
@@ -68,7 +72,7 @@ export default function SponsoredTracks() {
 
         <div class="card">
           <div class="card-img">
-            <img src={cyber} />
+            <img src={earth} />
           </div>
           <div class="desc">
             <h6 class="primary-text">Environment</h6>
@@ -87,11 +91,11 @@ export default function SponsoredTracks() {
 
         <div class="card">
           <div class="card-img">
-            <img src={cyber} />
+            <img src={bulb} />
           </div>
           <div class="desc">
             <h6 class="primary-text">Open Innovation</h6>
-            <h6 class="secondary-text">TBD</h6>
+            <h6 class="secondary-text">Rs. 20,000</h6>
           </div>
           <button
             class=""
@@ -106,7 +110,7 @@ export default function SponsoredTracks() {
 
         <div class="card">
           <div class="card-img">
-            <img src={cyber} />
+            <img src={drug} />
           </div>
           <div class="desc">
             <h6 class="primary-text">Anti-Drug/MSME</h6>
@@ -130,6 +134,8 @@ export default function SponsoredTracks() {
             <SPCards Tname="Health Tech" Pmoney="TBD"/>
             <SPCards Tname="Environment Track" Pmoney="TBD"/>
         </div> */}
+      <br />
+      <br />
     </div>
   );
 }

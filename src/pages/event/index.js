@@ -46,8 +46,8 @@ export default function Event() {
           <SponsoredTracks />
           {/* <EventPrizes /> */}
           <EventFAQ />
-          <EventCommunity />
           <EventSponsers />
+          <EventCommunity />
         </div>
       </div>
       <EventFooter />

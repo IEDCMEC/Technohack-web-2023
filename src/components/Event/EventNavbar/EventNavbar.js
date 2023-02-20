@@ -1,90 +1,185 @@
-import React  from 'react';
-import './EventNavbar.css';
-import logoBlack from '../../../assets/techno-logo.png'
-import Hamburger from 'hamburger-react'
-import { slide as Menu } from 'react-burger-menu'
-import { Link, Element, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
+import React from "react";
+import "./EventNavbar.css";
+import logoBlack from "../../../assets/techno-logo.png";
+import Hamburger from "hamburger-react";
+import { slide as Menu } from "react-burger-menu";
+import {
+  Link,
+  Element,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 // import logoWhite from '../../../assets/techno-logo-black.png'
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from "react";
 
 const EventNavbar = () => {
+  const [scrolled, setScroll] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const [hamColor, setColor] = useState("#FFFF");
 
-    const [scrolled,setScroll] = useState(false);
-    const [isOpen, setOpen] = useState(false)
-    const [hamColor,setColor] = useState("#FFFF")
+  useEffect(() => {
+    // var scrollNav = document.getElementById("scroll-nav");
+    window.addEventListener("scroll", navScrolled);
 
+    function navScrolled(e) {
+      if (window.scrollY >= 30) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+      console.log(window.scrollY);
+    }
 
-    useEffect(()=>{
-        // var scrollNav = document.getElementById("scroll-nav");
-        window.addEventListener("scroll",navScrolled);
+    return () => {
+      window.removeEventListener("scroll", navScrolled);
+    };
+  }, []);
 
-        function navScrolled(e){
-            if(window.scrollY >= 30){
-                setScroll(true)
-            }
-            else {
-                setScroll(false)
-            }
-            console.log(window.scrollY)
-        }
-
-        return () => {
-            window.removeEventListener("scroll",navScrolled)
-        };
-    },[])
-
-    return (<div className="nav-wrapper">
-        <div className='hamburger-menu'>
-            <Menu right width='200px' isOpen={isOpen} onClose={ ()=>{
-                setOpen(false)
-            }}>
-                <Link activeClass="active" onClick={scroll.scrollToTop} smooth={true} duration={500} className="event-nav-link menu-item " id='home'>
-                        Home
-                </Link>
-                <Link activeClass="active" to="vision" smooth={true} duration={500} className="event-nav-link menu-item" id='vision'>
-                        Vision
-                </Link>
-                <Link activeClass="active" to="tracks" smooth={true} duration={500} className="event-nav-link menu-item" id='tracks'>
-                        Tracks
-                </Link>
-                <Link activeClass="active" to="faq" smooth={true} duration={500} className="event-nav-link menu-item" id="faq">
-                        Faq
-                </Link>
-                <Link activeClass="active" to="sponsor" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
-                        Sponsers
-                </Link>
-            </Menu>    
-        </div>
-    <div className={!scrolled?"event-navbar":"event-navbar scroll"} id="scroll-nav">
-        <img src={logoBlack } alt="techno-hack" className={scrolled ? "techno-logo" : "techno-logo"} ></img>
-        <img src={logoBlack} alt="techno-hack" className={scrolled? "techno-logo-mobile" : 'techno-logo-mobile'}></img>
+  return (
+    <div className="nav-wrapper">
+      <div className="hamburger-menu">
+        <Menu
+          right
+          width="200px"
+          isOpen={isOpen}
+          onClose={() => {
+            setOpen(false);
+          }}
+        >
+          <Link
+            activeClass="active"
+            onClick={scroll.scrollToTop}
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item "
+            id="home"
+          >
+            Home
+          </Link>
+          <Link
+            activeClass="active"
+            to="vision"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="vision"
+          >
+            Vision
+          </Link>
+          <Link
+            activeClass="active"
+            to="tracks"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="tracks"
+          >
+            Tracks
+          </Link>
+          <Link
+            activeClass="active"
+            to="faq"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="faq"
+          >
+            Faq
+          </Link>
+          <Link
+            activeClass="active"
+            to="sponsor"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="sponsors"
+          >
+            Sponsers
+          </Link>
+        </Menu>
+      </div>
+      <div
+        className={!scrolled ? "event-navbar" : "event-navbar scroll"}
+        id="scroll-nav"
+      >
+        <img
+          src={logoBlack}
+          alt="techno-hack"
+          className={scrolled ? "techno-logo" : "techno-logo"}
+        ></img>
+        <img
+          src={logoBlack}
+          alt="techno-hack"
+          className={scrolled ? "techno-logo-mobile" : "techno-logo-mobile"}
+        ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
-        <div className='nav-sections'>
-                <Link activeClass="active" onClick={scroll.scrollToTop} smooth={true} duration={500} className="event-nav-link menu-item " id='home'>
-                        Home
-                </Link>
-                <Link activeClass="active" to="vision" smooth={true} duration={500} className="event-nav-link menu-item" id='vision'>
-                        Vision
-                </Link>
-                <Link activeClass="active" to="tracks" smooth={true} duration={500} className="event-nav-link menu-item" id='tracks'>
-                        Tracks
-                </Link>
-                <Link activeClass="active" to="faq" smooth={true} duration={500} className="event-nav-link menu-item" id="faq">
-                        Faq
-                </Link>
-                <Link activeClass="active" to="sponsor" smooth={true} duration={500} className="event-nav-link menu-item" id="sponsors">
-                        Sponsers
-                </Link>
+        <div className="nav-sections">
+          <Link
+            activeClass="active"
+            onClick={scroll.scrollToTop}
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item "
+            id="home"
+          >
+            Home
+          </Link>
+          <Link
+            activeClass="active"
+            to="vision"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="vision"
+          >
+            Vision
+          </Link>
+          <Link
+            activeClass="active"
+            to="tracks"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="tracks"
+          >
+            Tracks
+          </Link>
+          <Link
+            activeClass="active"
+            to="faq"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="faq"
+          >
+            Faq
+          </Link>
+          <Link
+            activeClass="active"
+            to="sponsor"
+            smooth={true}
+            duration={500}
+            className="event-nav-link menu-item"
+            id="sponsors"
+          >
+            Sponsers
+          </Link>
         </div>
 
-        <div className='nav-hamburger'>
-            <Hamburger size={28}  color={hamColor} toggled={isOpen} toggle={setOpen} onToggle={()=>{
-            }} />
-                </div>
+        <div className="nav-hamburger">
+          <Hamburger
+            size={28}
+            color={hamColor}
+            toggled={isOpen}
+            toggle={setOpen}
+            onToggle={() => {}}
+          />
+        </div>
+      </div>
     </div>
-</div>
-)
-}
+  );
+};
 
 export default EventNavbar;

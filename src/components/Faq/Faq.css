@@ -71,4 +71,10 @@ a {
   .faq-title {
     text-align: center;
   }
+  .question-wrapper {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 14px;
+  }
 }

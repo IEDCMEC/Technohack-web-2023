@@ -8,7 +8,7 @@
   padding: 36px;
   /* margin-top: 4rem; */
   position: relative;
-  background-image: url('/src/assets/bg.svg');
+  background-image: url("/src/assets/bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -29,7 +29,7 @@
   /* overflow: hidden; */
   /* vertical-align: middle; */
 }
-.event-row-container .content-column{
+.event-row-container .content-column {
   /* max-height: 50vh; */
   overflow-y: hidden;
 }
@@ -42,11 +42,11 @@
   text-align: left;
   overflow-y: hidden;
 }
-.event-row-container .content-column .inner-column h2{
+.event-row-container .content-column .inner-column h2 {
   /* position: relative; */
   display: block;
   font-family: Sora;
-  font-size:55px;
+  font-size: 55px;
   font-weight: 600;
   line-height: 5rem;
   letter-spacing: 0em;
@@ -71,7 +71,7 @@
   border-left: solid 5px white;
 }
 
-.event-row-container .content-column .inner-column h3{
+.event-row-container .content-column .inner-column h3 {
   font-family: Sora;
   color: #ffffff;
   font-size: 25px;
@@ -79,27 +79,32 @@
   line-height: 2rem;
 }
 
-.landing-date,.landing-location{
+.landing-date,
+.landing-location {
   display: flex;
   align-items: center;
 }
-.landing-location-vector,.landing-date-vector{
+.landing-location-vector,
+.landing-date-vector {
   width: 40px;
   text-align: center;
 }
 
-.event-row-container .content-column .inner-column .text img{
+.event-row-container .content-column .inner-column .text img {
   transform: scale(0.8);
 }
 
-.landing-date-text{
+.landing-date-text {
   padding-left: 20px;
   padding-bottom: 5px;
 }
-.landing-date-mob{
+.landing-date-mob {
   display: none;
 }
-.br-tagline{
+.br-tagline {
+  display: none;
+}
+.loc {
   display: none;
 }
 
@@ -139,12 +144,10 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  justify-content:  center;
+  justify-content: center;
   margin-top: 20rem;
   overflow-y: hidden;
 }
-
-
 
 @media screen and (max-width: 1300px) {
   .event-row-container {
@@ -167,48 +170,64 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
   /* .counter {
     margin-left: auto;
   } */
 }
 
 @media (max-width: 900px) {
-  /* .event-landing {
-    margin-top: 1.5rem;
-  } */
-  .event-row-container{
-    padding-top:8rem;
+  .event-landing {
+    background-image: url("/src/assets/bg3.png");
   }
-  .event-row-container .content-column .inner-column .text{
+  .event-row-container {
+    padding-top: 8rem;
+  }
+  .event-row-container .content-column .inner-column .text {
     display: none;
   }
-  .event-row-container .content-column .inner-column h2{
+  .loc {
+    display: flex;
+    margin-top: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .loc-text {
+    font-size: 1rem;
+    color: white;
+    margin-left: 1rem;
+  }
+  .loc-vector img {
+    height: 1.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .event-row-container .content-column .inner-column h2 {
     font-size: 2rem;
   }
-  .event-row-container .content-column .inner-column{
+  .event-row-container .content-column .inner-column {
     margin: 0;
   }
-  .landing-subheading{
+  .landing-subheading {
     display: flex;
     justify-content: space-between;
   }
-  .br-tagline{
+  .br-tagline {
     display: block;
   }
-  .landing-date-mob{
+  .landing-date-mob {
     display: flex;
     align-items: center;
     font-family: Sora;
     font-size: 15px;
     width: 6rem;
-    padding-left:1.5rem;
+    padding-left: 1.5rem;
     color: #ffffff;
-    background-color: #5F6886;
+    background-color: #5f6886;
     border-radius: 0 10px 10px 0;
-    border-left: solid 5px #0085FF;
+    border-left: solid 5px #0085ff;
     font-weight: 600;
   }
-  .event-row-container .content-column .inner-column h3{
+  .event-row-container .content-column .inner-column h3 {
     display: block;
     font-family: Sora;
     font-weight: 700;
@@ -222,8 +241,8 @@
     margin-top: 5rem;
   }
 }
-@media only screen and (max-width: 480px){
-  .event-row-container .content-column .inner-column h2{
-    font-size: 35px;
+@media only screen and (max-width: 480px) {
+  .event-row-container .content-column .inner-column h2 {
+    font-size: 37px;
   }
 }

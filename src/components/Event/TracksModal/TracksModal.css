@@ -86,8 +86,8 @@
 }
 .tracks-modal-problem-statement {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 .tracks-modal-prize-section {
   display: flex;
@@ -136,9 +136,8 @@
   right: 0;
   pointer-events: none;
 }
-@media (max-width:1096px) {
-  .tracks-modal-left-sub-image
-  {
+@media (max-width: 1096px) {
+  .tracks-modal-left-sub-image {
     width: 150px;
     margin-top: 1rem;
     height: auto;
@@ -170,16 +169,17 @@
   }
   .tracks-modal-problem-heading {
     font-size: 22px;
-    text-align: center;
+    text-align: left;
     line-height: 28px;
   }
   .tracks-modal-problem {
     padding: 1.3rem;
-    text-align: center;
+    text-align: left;
   }
   .tracks-modal-problem-statement {
     font-size: 16px;
     line-height: 25px;
+    text-align: left;
   }
   .tracks-modal-prize-card {
     width: 240px;
@@ -202,10 +202,11 @@
   .tracks-modal-header-left-heading {
     font-size: 22px;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
+    margin-right: 10px;
   }
   .tracks-modal-prize-section {
-   padding-top: 3rem;
+    padding-top: 3rem;
   }
   .tracks-modal-close {
     font-size: 24px;
