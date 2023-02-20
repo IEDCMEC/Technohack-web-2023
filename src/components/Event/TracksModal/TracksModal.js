@@ -59,25 +59,34 @@ function TracksModal({ open, handleClose, data }) {
                 className="tracks-modal-left-sub-image"
               />
             </div>
-            {data.prizes.map((item, index) => {
-              return (
-                <div className="tracks-modal-prize-card" key={index}>
-                  <img
-                    src={item.image}
-                    alt="first"
-                    className="track-modal-prize-position"
-                  />
-                  <div>
-                    <div className="track-modal-prize-position-text">
-                      {item.position} Prize
-                    </div>
-                    <div className="track-modal-prize-position-money">
-                      {item.money} INR
+            <div style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "2rem"
+            }}>
+              {data.prizes.map((item, index) => {
+                return (
+                  <div className="tracks-modal-prize-card" key={index}>
+                    <img
+                      src={item.image}
+                      alt="first"
+                      className="track-modal-prize-position"
+                    />
+                    <div>
+                      <div className="track-modal-prize-position-text">
+                        {item.position} Prize
+                      </div>
+                      <div className="track-modal-prize-position-money">
+                        {item.money} INR
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
           <div className="tracks-modal-problem">
             <div className="tracks-modal-problem-heading">
