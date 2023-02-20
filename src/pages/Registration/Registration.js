@@ -1,4 +1,4 @@
-import { Formik, useField, Field } from "formik";
+import { Formik } from "formik";
 import React from "react";
 import "./Registration.css";
 import * as Yup from "yup";
@@ -216,19 +216,6 @@ const Registration = () => {
     alert(JSON.stringify(values, null, 2));
   };
 
-  const MySelect = ({ label, ...props }) => {
-    const [field, meta] = useField(props);
-    return (
-      <div>
-        <label htmlFor={props.id || props.name}>{label}</label>
-        <select {...field} {...props} />
-        {meta.touched && meta.error ? (
-          <div className="error">{meta.error}</div>
-        ) : null}
-      </div>
-    );
-  };
-
   return (
     <>
       <Formik
@@ -324,7 +311,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -339,7 +326,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub</label>
+                  <label htmlFor="leaderGitHub">GitHub URL</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -353,7 +340,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
@@ -435,7 +422,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -450,7 +437,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub</label>
+                  <label htmlFor="leaderGitHub">GitHub URL</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -464,7 +451,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
@@ -547,7 +534,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -562,7 +549,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub</label>
+                  <label htmlFor="leaderGitHub">GitHub URL</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -576,7 +563,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
@@ -659,7 +646,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -674,7 +661,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub</label>
+                  <label htmlFor="leaderGitHub">GitHub URL</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -688,7 +675,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
@@ -764,9 +751,7 @@ const Registration = () => {
                   sx={{ width: "90%" }}
                   multiple
                   disableCloseOnSelect
-                  renderInput={(params) => (
-                    <TextField {...params}/>
-                  )}
+                  renderInput={(params) => <TextField {...params} />}
                 />
               </ThemeProvider>
               <label htmlFor="idea" className="team-detail-heading">
