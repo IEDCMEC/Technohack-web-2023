@@ -142,7 +142,7 @@ export const tracksData = [
   {
     id: 5,
     name: "Anti-Drug / MSME",
-    sponsorlogo: "",
+    sponsorlogo: lyminal,
     problemstatements: [
       {
         id: 1,
