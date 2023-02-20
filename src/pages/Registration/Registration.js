@@ -1,5 +1,6 @@
 import { Formik, useField, Field } from "formik";
 import React from "react";
+import "./Registration.css";
 import * as Yup from "yup";
 
 const Registration = () => {
@@ -196,10 +197,10 @@ const Registration = () => {
         onSubmit={handleSubmit}
       >
         {(formik) => (
-          <div>
+          <div className="reg">
             {/* TEAM NAME */}
             <form onSubmit={formik.handleSubmit}>
-              <div>
+              <div className="inputGroup">
                 <label htmlFor="teamName">Team Name</label>
                 <input
                   type="text"
@@ -212,8 +213,10 @@ const Registration = () => {
                 {formik.touched.teamName && formik.errors.teamName ? (
                   <div>{formik.errors.teamName}</div>
                 ) : null}
-
+              </div>
                 {/* TEAM LEADER NAME */}
+              <div className="row">
+                <div className="inputGroup">
                 <label htmlFor="teamLeaderName">Team Leader Name</label>
                 <input
                   type="text"
@@ -228,8 +231,10 @@ const Registration = () => {
                   <div>{formik.errors.teamLeaderName}</div>
                 ) : null}
 
-                {/* INSTITUTION NAME */}
-                <label htmlFor="leaderInstitutionName">Institution Name</label>
+                </div>
+                <div className="inputGroup">
+                  {/* INSTITUTION NAME */}
+                  <label htmlFor="leaderInstitutionName">Institution Name</label>
                 <input
                   type="text"
                   name="leaderInstitutionName"
@@ -242,7 +247,11 @@ const Registration = () => {
                 formik.errors.leaderInstitutionName ? (
                   <div>{formik.errors.leaderInstitutionName}</div>
                 ) : null}
-
+                </div>
+                
+              </div>
+              <div className="row">
+                <div className="inputGroup">
                 <MySelect label="Graduation Year" name="leaderGradYear">
                   <option value="">Select</option>
                   <option value="2023">2023</option>
@@ -251,7 +260,9 @@ const Registration = () => {
                   <option value="2026">2026</option>
                   <option value="2027">2027</option>
                 </MySelect>
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="leaderEmail">Email Address</label>
                 <input
                   type="text"
@@ -264,7 +275,11 @@ const Registration = () => {
                 {formik.touched.leaderEmail && formik.errors.leaderEmail ? (
                   <div>{formik.errors.leaderEmail}</div>
                 ) : null}
-
+                </div>
+                
+              </div>
+              <div className="row">
+                <div className="inputGroup">
                 <label htmlFor="leaderLinkedIn">LinkedIn</label>
                 <input
                   type="text"
@@ -278,6 +293,8 @@ const Registration = () => {
                 formik.errors.leaderLinkedIn ? (
                   <div>{formik.errors.leaderLinkedIn}</div>
                 ) : null}
+                </div>
+                <div className="inputGroup">
 
                 <label htmlFor="leaderGitHub">GitHub</label>
                 <input
@@ -292,6 +309,8 @@ const Registration = () => {
                   <div>{formik.errors.leaderGitHub}</div>
                 ) : null}
 
+                </div>
+                <div className="inputGroup">
                 <label htmlFor="leaderDevfolio">Devfolio</label>
                 <input
                   type="text"
@@ -306,8 +325,12 @@ const Registration = () => {
                   <div>{formik.errors.leaderDevfolio}</div>
                 ) : null}
                 <hr />
+                </div>           
+
+               
               </div>
-              <div>
+              <div className="row">
+              <div className="inputGroup">
                 <label htmlFor="teamMember2Name">Team Member 2</label>
                 <input
                   type="text"
@@ -321,8 +344,9 @@ const Registration = () => {
                 formik.errors.teamMember2Name ? (
                   <div>{formik.errors.teamMember2Name}</div>
                 ) : null}
-
+                </div>
                 {/* INSTITUTION NAME */}
+                <div className="inputGroup">
                 <label htmlFor="teamMember2InstitutionName">
                   Institution Name
                 </label>
@@ -338,7 +362,10 @@ const Registration = () => {
                 formik.errors.teamMember2InstitutionName ? (
                   <div>{formik.errors.teamMember2InstitutionName}</div>
                 ) : null}
-
+              </div>
+              </div>
+              <div className="row">
+              <div className="inputGroup">
                 <MySelect label="Graduation Year" name="teamMember2GradYear">
                   <option value="">Select</option>
                   <option value="2023">2023</option>
@@ -347,8 +374,9 @@ const Registration = () => {
                   <option value="2026">2026</option>
                   <option value="2027">2027</option>
                 </MySelect>
-
-                <label htmlFor="teamMember2Email">Email Address</label>
+              </div>  
+              <div className="inputGroup">
+              <label htmlFor="teamMember2Email">Email Address</label>
                 <input
                   type="text"
                   name="teamMember2Email"
@@ -361,7 +389,11 @@ const Registration = () => {
                 formik.errors.teamMember2Email ? (
                   <div>{formik.errors.teamMember2Email}</div>
                 ) : null}
-
+              </div>
+                
+                </div>
+                <div className="row">
+                <div className="inputGroup">
                 <label htmlFor="teamMember2LinkedIn">LinkedIn</label>
                 <input
                   type="text"
@@ -375,6 +407,8 @@ const Registration = () => {
                 formik.errors.teamMember2LinkedIn ? (
                   <div>{formik.errors.teamMember2LinkedIn}</div>
                 ) : null}
+                </div>
+                <div className="inputGroup">
 
                 <label htmlFor="teamMember2GitHub">GitHub</label>
                 <input
@@ -389,6 +423,8 @@ const Registration = () => {
                 formik.errors.teamMember2GitHub ? (
                   <div>{formik.errors.teamMember2GitHub}</div>
                 ) : null}
+                </div>
+                <div className="inputGroup">
 
                 <label htmlFor="teamMember2Devfolio">Devfolio</label>
                 <input
@@ -404,8 +440,13 @@ const Registration = () => {
                   <div>{formik.errors.teamMember2Devfolio}</div>
                 ) : null}
                 <hr />
+                </div>
+                
+
+
               </div>
-              <div>
+              <div className="row">
+              <div className="inputGroup">
                 <label htmlFor="teamMember3Name">Team Member 3</label>
                 <input
                   type="text"
@@ -419,8 +460,9 @@ const Registration = () => {
                 formik.errors.teamMember3Name ? (
                   <div>{formik.errors.teamMember3Name}</div>
                 ) : null}
-
+                </div>
                 {/* INSTITUTION NAME */}
+                <div className="inputGroup">
                 <label htmlFor="teamMember3InstitutionName">
                   Institution Name
                 </label>
@@ -436,7 +478,11 @@ const Registration = () => {
                 formik.errors.teamMember3InstitutionName ? (
                   <div>{formik.errors.teamMember3InstitutionName}</div>
                 ) : null}
-
+                </div>
+                
+                </div>
+                <div className="row">
+                <div className="inputGroup">
                 <MySelect label="Graduation Year" name="teamMember3GradYear">
                   <option value="">Select</option>
                   <option value="2023">2023</option>
@@ -445,7 +491,10 @@ const Registration = () => {
                   <option value="2026">2026</option>
                   <option value="2027">2027</option>
                 </MySelect>
-
+                </div>
+                
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember3Email">Email Address</label>
                 <input
                   type="text"
@@ -459,7 +508,10 @@ const Registration = () => {
                 formik.errors.teamMember3Email ? (
                   <div>{formik.errors.teamMember3Email}</div>
                 ) : null}
-
+                </div>
+                </div>
+                <div className="row">
+                <div className="inputGroup">
                 <label htmlFor="teamMember3LinkedIn">LinkedIn</label>
                 <input
                   type="text"
@@ -473,7 +525,9 @@ const Registration = () => {
                 formik.errors.teamMember3LinkedIn ? (
                   <div>{formik.errors.teamMember3LinkedIn}</div>
                 ) : null}
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember3GitHub">GitHub</label>
                 <input
                   type="text"
@@ -487,7 +541,9 @@ const Registration = () => {
                 formik.errors.teamMember3GitHub ? (
                   <div>{formik.errors.teamMember3GitHub}</div>
                 ) : null}
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember3Devfolio">Devfolio</label>
                 <input
                   type="text"
@@ -502,9 +558,13 @@ const Registration = () => {
                   <div>{formik.errors.teamMember3Devfolio}</div>
                 ) : null}
                 <hr />
+                </div>                
+
+                
               </div>
-              <div>
-                <label htmlFor="teamMember4Name">Team Member 4</label>
+              <div className="row">
+              <div className="inputGroup">
+              <label htmlFor="teamMember4Name">Team Member 4</label>
                 <input
                   type="text"
                   name="teamMember4Name"
@@ -518,7 +578,10 @@ const Registration = () => {
                   <div>{formik.errors.teamMember4Name}</div>
                 ) : null}
 
+              </div>
+               
                 {/* INSTITUTION NAME */}
+                <div className="inputGroup">
                 <label htmlFor="teamMember4InstitutionName">
                   Institution Name
                 </label>
@@ -534,7 +597,11 @@ const Registration = () => {
                 formik.errors.teamMember4InstitutionName ? (
                   <div>{formik.errors.teamMember4InstitutionName}</div>
                 ) : null}
-
+              </div>
+                
+                </div>
+                <div className="row">
+                <div className="inputGroup">
                 <MySelect label="Graduation Year" name="teamMember4GradYear">
                   <option value="">Select</option>
                   <option value="2023">2023</option>
@@ -543,7 +610,9 @@ const Registration = () => {
                   <option value="2026">2026</option>
                   <option value="2027">2027</option>
                 </MySelect>
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember4Email">Email Address</label>
                 <input
                   type="text"
@@ -557,7 +626,11 @@ const Registration = () => {
                 formik.errors.teamMember4Email ? (
                   <div>{formik.errors.teamMember4Email}</div>
                 ) : null}
-
+                </div>
+                </div>
+                
+                <div className="row">
+                <div className="inputGroup">
                 <label htmlFor="teamMember4LinkedIn">LinkedIn</label>
                 <input
                   type="text"
@@ -571,7 +644,9 @@ const Registration = () => {
                 formik.errors.teamMember4LinkedIn ? (
                   <div>{formik.errors.teamMember4LinkedIn}</div>
                 ) : null}
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember4GitHub">GitHub</label>
                 <input
                   type="text"
@@ -585,7 +660,9 @@ const Registration = () => {
                 formik.errors.teamMember4GitHub ? (
                   <div>{formik.errors.teamMember4GitHub}</div>
                 ) : null}
-
+                </div>
+                
+                <div className="inputGroup">
                 <label htmlFor="teamMember4Devfolio">Devfolio</label>
                 <input
                   type="text"
@@ -600,7 +677,9 @@ const Registration = () => {
                   <div>{formik.errors.teamMember4Devfolio}</div>
                 ) : null}
                 <hr />
-              </div>
+                </div>
+                </div>
+                
               ‚¯
               <label htmlFor="idea">Brief description of idea</label>
               <textarea
