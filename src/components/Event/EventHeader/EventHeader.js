@@ -7,10 +7,13 @@ import EventNavbar from "../EventNavbar/EventNavbar";
 import "./EventHeader.css";
 import Counter from "../Counter";
 import { useHistory } from "react-router-dom";
-
+import Aos from "aos";
 
 export default function EventHeader() {
   const history=useHistory();
+  useEffect(()=>{
+    Aos.init({duration:700})
+  },[])
   useEffect(() => {
     // const script = document.createElement("script");
     // script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -33,10 +36,10 @@ export default function EventHeader() {
             <div className="inner-column">
               <h2>TechnoHack 2023</h2>
               <div className="landing-subheading">
-                <h3>
+                <h3  data-aos="fade-up">
                   Building For a <br className="br-tagline"></br>Better Tomorrow
                 </h3>
-                <div className="landing-date-mob">
+                <div data-aos="fade-up" className="landing-date-mob">
                   18-19<br></br>
                   Mar
                 </div>
@@ -46,14 +49,14 @@ export default function EventHeader() {
                   <div className="landing-date-vector">
                     <img src={CalenderVector} />
                   </div>{" "}
-                  <div className="landing-date-text">18 - 19 March 2023</div>
+                  <div data-aos="fade-up" className="landing-date-text">18 - 19 March 2023</div>
                 </div>
                 <div className="landing-location">
                   <div className="landing-location-vector">
                     {" "}
                     <img src={LocationVector} />
                   </div>
-                  <div className="landing-date-text">
+                  <div data-aos="fade-up" className="landing-date-text">
                     Govt Model Engineering College <br /> Thrikkakara
                   </div>
                 </div>
@@ -63,7 +66,7 @@ export default function EventHeader() {
                   {" "}
                   <img src={LocationVector} />
                 </div>
-                <div className="loc-text">
+                <div  data-aos="fade-up" className="loc-text">
                   Govt Model Engineering College <br /> Thrikkakara
                 </div>
               </div>
@@ -79,7 +82,7 @@ export default function EventHeader() {
                   }}
                 ></div>
               </div> */}
-              <button className="reg_btn" onClick={()=>{
+              <button data-aos="fade-up" className="reg_btn" onClick={()=>{
                 history.push('/register')
               }}>
                 REGISTER

@@ -1,14 +1,16 @@
-import { Component } from "react";
+import { Component,Suspense } from "react";
 import "./App.css";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Event from "./pages/event";
 import CoC from "./pages/coc";
 import Registration from "./pages/Registration/Registration";
+// import {Event,CoC,Registration} from './pages/index'
 import { Toaster } from "react-hot-toast";
-
+import Loader from "./components/Loader/Loader";
 export default class App extends Component {
   render() {
     return (
+      <Suspense fallback={Loader}>
       <BrowserRouter>
         <Toaster />
         <Switch>
@@ -17,6 +19,7 @@ export default class App extends Component {
           <Route path="/register" component={Registration} exact />
         </Switch>
       </BrowserRouter>
+      </Suspense>
     );
   }
 }
