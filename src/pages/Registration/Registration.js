@@ -11,6 +11,7 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import { SupabaseClient } from "../../utils/supabaseClient";
+import { toast } from "react-hot-toast";
 
 const Registration = () => {
   const [interesting, setInteresting] = useState(false);
@@ -57,38 +58,37 @@ const Registration = () => {
     },
   });
   const initialValue = {
-    teamName: "initiallValue",
-    teamLeaderName: "initiallValue",
-    leaderInstitutionName: "initiallValue",
-    leaderGradYear: "2023",
-    leaderEmail: "initiallValue@gmail.com",
-    leaderLinkedIn: "www.initiallValue@teste.com",
-    leaderGitHub: "www.initiallValue@teste.com",
-    leaderDevfolio: "www.initiallValue@teste.com",
-    teamMember2Name: "initiallValue",
-    teamMember2InstitutionName: "initiallValue",
-    teamMember2GradYear: "2023",
-    teamMember2Email: "initiallValue@gmail.com",
-    teamMember2LinkedIn: "www.initiallValue@teste.com",
-    teamMember2GitHub: "www.initiallValue@teste.com",
-    teamMember2Devfolio: "www.initiallValue@teste.com",
-    teamMember3Name: "initiallValue",
-    teamMember3InstitutionName: "initiallValue",
-    teamMember3GradYear: "2023",
-    teamMember3Email: "initiallValue@gmail.com",
-    teamMember3LinkedIn: "www.initiallValue@teste.com",
-    teamMember3GitHub: "www.initiallValue@teste.com",
-    teamMember3Devfolio: "www.initiallValue@teste.com",
-    teamMember4Name: "initiallValue",
-    teamMember4InstitutionName: "initiallValue",
-    teamMember4GradYear: "2023",
-    teamMember4Email: "initiallValue@gmail.com",
-    teamMember4LinkedIn: "www.initiallValue@teste.com",
-    teamMember4GitHub: "www.initiallValue@teste.com",
-    teamMember4Devfolio: "www.initiallValue@teste.com",
-    track: [],
-    idea: "idea test",
-    suggestions: "sugestoins test",
+    teamName: "",
+    teamLeaderName: "",
+    leaderInstitutionName: "",
+    leaderGradYear: "",
+    leaderEmail: "",
+    leaderLinkedIn: "",
+    leaderGitHub: "",
+    leaderDevfolio: "",
+    teamMember2Name: "",
+    teamMember2InstitutionName: "",
+    teamMember2GradYear: "",
+    teamMember2Email: "",
+    teamMember2LinkedIn: "",
+    teamMember2GitHub: "",
+    teamMember2Devfolio: "",
+    teamMember3Name: "",
+    teamMember3InstitutionName: "",
+    teamMember3GradYear: "",
+    teamMember3Email: "",
+    teamMember3LinkedIn: "",
+    teamMember3GitHub: "",
+    teamMember3Devfolio: "",
+    teamMember4Name: "",
+    teamMember4InstitutionName: "",
+    teamMember4GradYear: "",
+    teamMember4Email: "",
+    teamMember4LinkedIn: "",
+    teamMember4GitHub: "",
+    teamMember4Devfolio: "",
+    idea: "",
+    suggestions: "",
   };
 
   const validation = Yup.object({
@@ -226,6 +226,7 @@ const Registration = () => {
   });
 
   const handleSubmit = async (values, actions) => {
+    toast.success("testing");
     console.log(values);
     const { setSubmitting, setErrors } = actions;
     if (setErrors) {
@@ -233,6 +234,10 @@ const Registration = () => {
       Object.keys(setErrors).forEach((key) => {
         console.log(`${key}: ${setErrors[key]}`);
       });
+    }
+    if (tracks.length === 0) {
+      toast.error("Please Select atleast one track");
+      return;
     }
     const team = {
       name: values.teamName,
@@ -330,7 +335,7 @@ const Registration = () => {
 
   return (
     <>
-    <EventNavbar/>
+      <EventNavbar />
       <Formik
         initialValues={initialValue}
         validationSchema={validation}
@@ -355,9 +360,15 @@ const Registration = () => {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.teamName && formik.errors.teamName ? (
-                  <div>{formik.errors.teamName}</div>
+                  <div
+                    style={{
+                      color: "red",
+                    }}
+                  >
+                    {formik.errors.teamName}
+                  </div>
                 ) : null}
-              </div>
+              </div>{" "}
               {/* TEAM LEADER NAME */}
               <div className="team-detail-heading">Team Leader Details</div>
               <div className="row">
@@ -373,7 +384,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamLeaderName &&
                   formik.errors.teamLeaderName ? (
-                    <div>{formik.errors.teamLeaderName}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamLeaderName}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -391,7 +408,14 @@ const Registration = () => {
                   />
                   {formik.touched.leaderInstitutionName &&
                   formik.errors.leaderInstitutionName ? (
-                    <div>{formik.errors.leaderInstitutionName}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {" "}
+                      {formik.errors.leaderInstitutionName}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -419,7 +443,13 @@ const Registration = () => {
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.leaderEmail && formik.errors.leaderEmail ? (
-                    <div>{formik.errors.leaderEmail}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.leaderEmail}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -436,7 +466,13 @@ const Registration = () => {
                   />
                   {formik.touched.leaderLinkedIn &&
                   formik.errors.leaderLinkedIn ? (
-                    <div>{formik.errors.leaderLinkedIn}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.leaderLinkedIn}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -450,7 +486,13 @@ const Registration = () => {
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.leaderGitHub && formik.errors.leaderGitHub ? (
-                    <div>{formik.errors.leaderGitHub}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.leaderGitHub}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -465,7 +507,13 @@ const Registration = () => {
                   />
                   {formik.touched.leaderDevfolio &&
                   formik.errors.leaderDevfolio ? (
-                    <div>{formik.errors.leaderDevfolio}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.leaderDevfolio}
+                    </div>
                   ) : null}
                   <hr />
                 </div>
@@ -484,7 +532,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2Name &&
                   formik.errors.teamMember2Name ? (
-                    <div>{formik.errors.teamMember2Name}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2Name}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -494,7 +548,7 @@ const Registration = () => {
                   </label>
                   <input
                     type="text"
-                    name="teamMember2InstitutionNameteamMember2InstitutionName"
+                    name="teamMember2InstitutionName"
                     id="teamMember2InstitutionName"
                     value={formik.values.teamMember2InstitutionName}
                     onChange={formik.handleChange}
@@ -502,7 +556,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2InstitutionName &&
                   formik.errors.teamMember2InstitutionName ? (
-                    <div>{formik.errors.teamMember2InstitutionName}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2InstitutionName}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -531,7 +591,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2Email &&
                   formik.errors.teamMember2Email ? (
-                    <div>{formik.errors.teamMember2Email}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2Email}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -548,7 +614,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2LinkedIn &&
                   formik.errors.teamMember2LinkedIn ? (
-                    <div>{formik.errors.teamMember2LinkedIn}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2LinkedIn}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -563,7 +635,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2GitHub &&
                   formik.errors.teamMember2GitHub ? (
-                    <div>{formik.errors.teamMember2GitHub}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2GitHub}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -578,13 +656,18 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember2Devfolio &&
                   formik.errors.teamMember2Devfolio ? (
-                    <div>{formik.errors.teamMember2Devfolio}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember2Devfolio}
+                    </div>
                   ) : null}
                   <hr />
                 </div>
               </div>
               <div className="team-detail-heading">Team Member 3 Details</div>
-
               <div className="row">
                 <div className="inputGroup">
                   <label htmlFor="teamMember3Name">Name</label>
@@ -598,7 +681,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3Name &&
                   formik.errors.teamMember3Name ? (
-                    <div>{formik.errors.teamMember3Name}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3Name}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -616,7 +705,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3InstitutionName &&
                   formik.errors.teamMember3InstitutionName ? (
-                    <div>{formik.errors.teamMember3InstitutionName}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3InstitutionName}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -645,7 +740,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3Email &&
                   formik.errors.teamMember3Email ? (
-                    <div>{formik.errors.teamMember3Email}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3Email}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -662,7 +763,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3LinkedIn &&
                   formik.errors.teamMember3LinkedIn ? (
-                    <div>{formik.errors.teamMember3LinkedIn}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3LinkedIn}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -677,7 +784,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3GitHub &&
                   formik.errors.teamMember3GitHub ? (
-                    <div>{formik.errors.teamMember3GitHub}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3GitHub}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -692,13 +805,18 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember3Devfolio &&
                   formik.errors.teamMember3Devfolio ? (
-                    <div>{formik.errors.teamMember3Devfolio}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember3Devfolio}
+                    </div>
                   ) : null}
                   <hr />
                 </div>
               </div>
               <div className="team-detail-heading">Team Member 4 Details</div>
-
               <div className="row">
                 <div className="inputGroup">
                   <label htmlFor="teamMember4Name">Name</label>
@@ -712,7 +830,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4Name &&
                   formik.errors.teamMember4Name ? (
-                    <div>{formik.errors.teamMember4Name}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4Name}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -730,7 +854,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4InstitutionName &&
                   formik.errors.teamMember4InstitutionName ? (
-                    <div>{formik.errors.teamMember4InstitutionName}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4InstitutionName}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -759,7 +889,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4Email &&
                   formik.errors.teamMember4Email ? (
-                    <div>{formik.errors.teamMember4Email}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4Email}
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -776,7 +912,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4LinkedIn &&
                   formik.errors.teamMember4LinkedIn ? (
-                    <div>{formik.errors.teamMember4LinkedIn}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4LinkedIn}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -791,7 +933,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4GitHub &&
                   formik.errors.teamMember4GitHub ? (
-                    <div>{formik.errors.teamMember4GitHub}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4GitHub}
+                    </div>
                   ) : null}
                 </div>
                 <div className="inputGroup">
@@ -806,7 +954,13 @@ const Registration = () => {
                   />
                   {formik.touched.teamMember4Devfolio &&
                   formik.errors.teamMember4Devfolio ? (
-                    <div>{formik.errors.teamMember4Devfolio}</div>
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.teamMember4Devfolio}
+                    </div>
                   ) : null}
                   <hr />
                 </div>
@@ -860,7 +1014,6 @@ const Registration = () => {
                   <label>No</label>
                 </div>
               </div>
-
               <label htmlFor="idea" className="team-detail-heading">
                 Brief Description of Idea
               </label>
@@ -874,7 +1027,13 @@ const Registration = () => {
                 onBlur={formik.handleBlur}
               />
               {formik.touched.idea && formik.errors.idea ? (
-                <div>{formik.errors.idea}</div>
+                <div
+                  style={{
+                    color: "red",
+                  }}
+                >
+                  {formik.errors.idea}
+                </div>
               ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Probable Tracks you may be applying for ?
@@ -914,6 +1073,9 @@ const Registration = () => {
               <button
                 type="submit"
                 className="submit-btn"
+                onClick={() => {
+                  handleSubmit();
+                }}
                 style={{
                   backgroundColor: formik.isSubmitting ? "gray" : "#00a1ea",
                 }}
@@ -924,10 +1086,8 @@ const Registration = () => {
             </form>
           </div>
         )}
-        
-  
       </Formik>
-      <Footer/>
+      <Footer />
     </>
   );
 };
