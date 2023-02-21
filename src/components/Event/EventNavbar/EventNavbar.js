@@ -99,7 +99,7 @@ const EventNavbar = () => {
             className="event-nav-link menu-item"
             id="sponsors"
           >
-            Sponsers
+            Sponsors
           </Link>
         </Menu>
       </div>
@@ -168,7 +168,7 @@ const EventNavbar = () => {
             className="event-nav-link menu-item"
             id="sponsors"
           >
-            Sponsers
+            Sponsors
           </Link>
         </div>
 
