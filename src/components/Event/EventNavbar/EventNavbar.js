@@ -106,20 +106,20 @@ const EventNavbar = () => {
         className={!scrolled ? "event-navbar" : "event-navbar scroll"}
         id="scroll-nav"
       >
-        <PageLink
+        {/* <PageLink
           to="/"
           onClick={scroll.scrollToTop}
           smooth={true}
           duration={500}
           className="event-nav-link menu-item"
           id="home"
-        >
-          <img
-            src={logoBlack}
-            alt="techno-hack"
-            className={scrolled ? "techno-logo" : "techno-logo"}
-          ></img>
-        </PageLink>
+        > */}
+        <img
+          src={logoBlack}
+          alt="techno-hack"
+          className={scrolled ? "techno-logo" : "techno-logo"}
+        ></img>
+        {/* </PageLink> */}
         <img
           src={logoBlack}
           alt="techno-hack"
