@@ -2,6 +2,8 @@ import { Formik } from "formik";
 import React, { useState } from "react";
 import "./Registration.css";
 import * as Yup from "yup";
+import EventNavbar from "../../components/Event/EventNavbar/EventNavbar";
+import Footer from "../../components/Event/EventFooter/EventFooter";
 import {
   Autocomplete,
   createTheme,
@@ -328,6 +330,7 @@ const Registration = () => {
 
   return (
     <>
+    <EventNavbar/>
       <Formik
         initialValues={initialValue}
         validationSchema={validation}
@@ -921,7 +924,9 @@ const Registration = () => {
             </form>
           </div>
         )}
+  
       </Formik>
+      <Footer/>
     </>
   );
 };
