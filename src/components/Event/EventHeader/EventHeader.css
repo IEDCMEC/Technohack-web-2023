@@ -149,8 +149,6 @@
   overflow-y: hidden;
 }
 
-
-
 .reg_btn {
   display: flex;
   justify-content: center;
@@ -173,14 +171,14 @@
   cursor: pointer;
 }
 
-
-.reg_btn:hover{
+.reg_btn:hover {
   color: #0085ff;
   background-color: #ffff;
 }
 
-
-
+.btn-transparent {
+  background-color: transparent;
+}
 
 @media screen and (max-width: 1300px) {
   .event-row-container {
@@ -283,8 +281,7 @@
   }
 }
 
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .reg_btn {
     /* width: 150px; */
     font-size: 1rem;
@@ -293,9 +290,8 @@
     /* width: 150px; */
   }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .reg_btn {
     font-size: 1rem;
   }
 }
-
