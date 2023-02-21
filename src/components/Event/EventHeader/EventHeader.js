@@ -6,8 +6,11 @@ import LocationVector from "../../../assets/LocationVector.svg";
 import EventNavbar from "../EventNavbar/EventNavbar";
 import "./EventHeader.css";
 import Counter from "../Counter";
+import { useHistory } from "react-router-dom";
+
 
 export default function EventHeader() {
+  const history=useHistory();
   useEffect(() => {
     // const script = document.createElement("script");
     // script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -64,7 +67,7 @@ export default function EventHeader() {
                   Govt Model Engineering College <br /> Thrikkakara
                 </div>
               </div>
-              <div className="event-reg-btn-header">
+              {/* <div className="event-reg-btn-header">
                 <div
                   className="apply-button"
                   data-hackathon-slug="technohack"
@@ -75,7 +78,12 @@ export default function EventHeader() {
                     overflowY: "hidden",
                   }}
                 ></div>
-              </div>
+              </div> */}
+              <button className="reg_btn" onClick={()=>{
+                history.push('/register')
+              }}>
+                REGISTER
+              </button>
             </div>
           </div>
 
