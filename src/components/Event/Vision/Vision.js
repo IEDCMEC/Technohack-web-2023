@@ -41,7 +41,7 @@ const Vision = () => {
           Come be a part of TechnoHack 2023, and work together to create a
           better tomorrow through innovation and entrepreneurship!
         </div>
-        <img src={VisionVector} className="vision-vector"></img>
+        <img src={VisionVector} className="vision-vector" alt=" "></img>
       </div>
     </div>
   );

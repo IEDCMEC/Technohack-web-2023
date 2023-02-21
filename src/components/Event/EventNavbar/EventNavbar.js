@@ -10,11 +10,14 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import {Link as PageLink} from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 
 // import logoWhite from '../../../assets/techno-logo-black.png'
 import { useEffect, useState } from "react";
 
 const EventNavbar = () => {
+  const history=useHistory();
   const [scrolled, setScroll] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [hamColor, setColor] = useState("#FFFF");
@@ -48,16 +51,16 @@ const EventNavbar = () => {
             setOpen(false);
           }}
         >
-          <Link
+          <PageLink
             activeClass="active"
-            onClick={scroll.scrollToTop}
+            to="/"
             smooth={true}
             duration={500}
             className="event-nav-link menu-item "
             id="home"
           >
             Home
-          </Link>
+          </PageLink>
           <Link
             activeClass="active"
             to="vision"
@@ -116,16 +119,17 @@ const EventNavbar = () => {
         ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className="nav-sections">
-          <Link
+          <PageLink
             activeClass="active"
             onClick={scroll.scrollToTop}
             smooth={true}
             duration={500}
             className="event-nav-link menu-item "
             id="home"
+            to="/"
           >
             Home
-          </Link>
+          </PageLink>
           <Link
             activeClass="active"
             to="vision"
