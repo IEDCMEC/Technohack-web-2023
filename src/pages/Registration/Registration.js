@@ -1,5 +1,5 @@
 import { Formik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import "./Registration.css";
 import * as Yup from "yup";
 import {
@@ -11,6 +11,15 @@ import {
 import { SupabaseClient } from "../../utils/supabaseClient";
 
 const Registration = () => {
+  const [interesting, setInteresting] = useState(false);
+  const [tracks, setTracks] = useState([]);
+  const allTracks = [
+    "Cybersecurity",
+    "Health Tech",
+    "Environment",
+    "Open Innovation",
+    "Anti Drug / MSME",
+  ];
   const theme = createTheme({
     components: {
       MuiOutlinedInput: {
@@ -227,11 +236,13 @@ const Registration = () => {
       name: values.teamName,
       idea: values.idea,
       suggestions: values.suggestions,
-      tracks: ["Cybersecurity", "Web Development"],
+      tracks: tracks,
+      interesting: interesting,
     };
-    const { data, error } = await SupabaseClient.from(
-      "technohack-teams"
-    ).insert([team]).select();
+    console.log(team);
+    const { data, error } = await SupabaseClient.from("technohack-teams")
+      .insert([team])
+      .select();
     if (error) {
       console.log(error);
     }
@@ -817,7 +828,14 @@ const Registration = () => {
                     gap: "0.5rem",
                   }}
                 >
-                  <input type="radio" value="Yes" name="problem" />
+                  <input
+                    type="radio"
+                    value={interesting}
+                    onClick={(e) => {
+                      setInteresting(true);
+                    }}
+                    name="problem"
+                  />
                   <label>Yes</label>
                 </div>
                 <div
@@ -828,7 +846,14 @@ const Registration = () => {
                     gap: "0.5rem",
                   }}
                 >
-                  <input type="radio" value="No" name="problem" />
+                  <input
+                    type="radio"
+                    value={interesting}
+                    name="problem"
+                    onClick={(e) => {
+                      setInteresting(false);
+                    }}
+                  />
                   <label>No</label>
                 </div>
               </div>
@@ -853,16 +878,14 @@ const Registration = () => {
               </label>
               <ThemeProvider theme={theme}>
                 <Autocomplete
-                  options={[
-                    "Cyber Security",
-                    "Health Tech",
-                    "Environment",
-                    "Open Innovation",
-                    "Anti-Drug/MSME",
-                  ]}
+                  options={allTracks}
                   sx={{ width: "90%" }}
                   multiple
+                  onChange={(event, value) => {
+                    setTracks(value);
+                  }}
                   disableCloseOnSelect
+                  filterSelectedOptions
                   renderInput={(params) => (
                     <TextField
                       {...params}
