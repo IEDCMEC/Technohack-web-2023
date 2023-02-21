@@ -924,6 +924,7 @@ const Registration = () => {
             </form>
           </div>
         )}
+        
   
       </Formik>
       <Footer/>
