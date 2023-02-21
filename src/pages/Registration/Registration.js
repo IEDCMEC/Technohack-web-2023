@@ -214,9 +214,16 @@ const Registration = () => {
   });
 
   const handleSubmit = (values, actions) => {
-    console.log("Clicked");
-    // alert(JSON.stringify(values, null, 2));
-    console.log("Values", values);
+    console.log(values);
+    const { setSubmitting, setErrors } = actions;
+    if (setErrors) {
+      console.log("errors:");
+      Object.keys(setErrors).forEach((key) => {
+        console.log(`${key}: ${setErrors[key]}`);
+      });
+    }
+
+    setSubmitting(false);
   };
 
   return (
@@ -224,21 +231,8 @@ const Registration = () => {
       <Formik
         initialValues={initialValue}
         validationSchema={validation}
-        // validateOnChange={true}
-        onSubmit={(values, { setSubmitting, setErrors }) => {
-          console.log("submitting...");
-          console.log("values: ", values);
-          console.log("errors: ", setErrors);
-
-          if (setErrors) {
-            console.log("errors:");
-            Object.keys(setErrors).forEach((key) => {
-              console.log(`${key}: ${setErrors[key]}`);
-            });
-          }
-
-          setSubmitting(false);
-        }}
+        validateOnBlur={true}
+        onSubmit={handleSubmit}
       >
         {(formik) => (
           <div className='reg'>
@@ -805,9 +799,8 @@ const Registration = () => {
               <button
                 type='submit'
                 className='submit-btn'
-                onClick={() => {
-                  console.log(formik.errors);
-                  formik.handleSubmit();
+                style={{
+                  backgroundColor: formik.isSubmitting ? "gray" : "#00a1ea",
                 }}
                 disabled={formik.isSubmitting}
               >
