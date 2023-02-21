@@ -106,25 +106,32 @@ const EventNavbar = () => {
         className={!scrolled ? "event-navbar" : "event-navbar scroll"}
         id="scroll-nav"
       >
-        {/* <PageLink
+        <PageLink
           to="/"
           onClick={scroll.scrollToTop}
           smooth={true}
           duration={500}
-          className="event-nav-link menu-item"
-          id="home"
-        > */}
-        <img
-          src={logoBlack}
-          alt="techno-hack"
-          className={scrolled ? "techno-logo" : "techno-logo"}
-        ></img>
-        {/* </PageLink> */}
-        <img
-          src={logoBlack}
-          alt="techno-hack"
-          className={scrolled ? "techno-logo-mobile" : "techno-logo-mobile"}
-        ></img>
+          className="event-nav-link menu-item event-nav-link-no-center"
+        >
+          <img
+            src={logoBlack}
+            alt="techno-hack"
+            className={scrolled ? "techno-logo" : "techno-logo"}
+          ></img>
+        </PageLink>
+        <PageLink
+          to="/"
+          onClick={scroll.scrollToTop}
+          smooth={true}
+          duration={500}
+          className="event-nav-link menu-item event-nav-link-no-center"
+        >
+          <img
+            src={logoBlack}
+            alt="techno-hack"
+            className={scrolled ? "techno-logo-mobile" : "techno-logo-mobile"}
+          ></img>
+        </PageLink>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className="nav-sections">
           <PageLink
