@@ -32,7 +32,6 @@ const EventNavbar = () => {
       } else {
         setScroll(false);
       }
-      console.log(window.scrollY);
     }
 
     return () => {
