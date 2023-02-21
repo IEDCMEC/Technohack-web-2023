@@ -225,7 +225,17 @@ const Registration = () => {
       )
       .optional()
       .min(4),
-    idea: Yup.string().required().max(500),
+    idea: Yup.string()
+      .max(500)
+      .test("Idea-Yes", "Please enter an Idea Description", function (value) {
+        console.log(value);
+        if (interesting && value?.length > 0) {
+          return true;
+        } else if (!interesting) {
+          return true;
+        }
+        return false;
+      }),
   });
 
   const handleSubmit = async (values, actions) => {
@@ -336,6 +346,7 @@ const Registration = () => {
           console.log(error);
         }
       }
+      toast.success("Registered Successfully...");
     }
 
     setSubmitting(false);
@@ -393,17 +404,6 @@ const Registration = () => {
                   <option value="3">3</option>
                   <option value="4">4</option>
                 </select>
-                {formik.touched.leaderGradYear &&
-                formik.errors.leaderGradYear ? (
-                  <div
-                    style={{
-                      color: "red",
-                    }}
-                  >
-                    {" "}
-                    {formik.errors.leaderGradYear}
-                  </div>
-                ) : null}
               </div>
               {/* TEAM LEADER NAME */}
               <div className="team-detail-heading">Team Leader Details</div>
@@ -739,7 +739,7 @@ const Registration = () => {
                     </div>
                   </div>
                 </>
-              ): null}
+              ) : null}
               {teamSize >= 3 ? (
                 <>
                   <div className="team-detail-heading">
@@ -909,7 +909,7 @@ const Registration = () => {
                     </div>
                   </div>
                 </>
-              ):null}
+              ) : null}
               {teamSize >= 4 ? (
                 <>
                   <div className="team-detail-heading">
@@ -1079,7 +1079,7 @@ const Registration = () => {
                     </div>
                   </div>
                 </>
-              ):null}
+              ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Any Interesting Problem You have in mind to solve during the
                 hackathon?
@@ -1131,26 +1131,30 @@ const Registration = () => {
                   <label>No</label>
                 </div>
               </div>
-              <label htmlFor="idea" className="team-detail-heading">
-                Brief Description of Idea
-              </label>
-              <textarea
-                type="text"
-                rows={10}
-                name="idea"
-                id="idea"
-                value={formik.values.idea}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-              />
-              {formik.touched.idea && formik.errors.idea ? (
-                <div
-                  style={{
-                    color: "red",
-                  }}
-                >
-                  {formik.errors.idea}
-                </div>
+              {interesting ? (
+                <>
+                  <label htmlFor="idea" className="team-detail-heading">
+                    Brief Description of Idea
+                  </label>
+                  <textarea
+                    type="text"
+                    rows={10}
+                    name="idea"
+                    id="idea"
+                    value={formik.values.idea}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  {formik.touched.idea && formik.errors.idea ? (
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.idea}
+                    </div>
+                  ) : null}
+                </>
               ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Probable Tracks you may be applying for ?
