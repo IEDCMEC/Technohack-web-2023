@@ -100,14 +100,21 @@ hr {
 
   .event-footer .socials {
     display: flex;
+    justify-content: center;
   }
 
   .event-footer .socials a:first-child {
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .event-footer .socials a {
+    margin-top: 1rem;
     margin-left: 1.5rem;
+  }
+
+  .event-footer .form-container {
+    margin-left: 2rem;
+    white-space: nowrap;
   }
 }
 
@@ -128,10 +135,16 @@ hr {
   }
 
   .event-footer .socials a {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     height: 2rem;
     display: block;
+  }
+
+  .event-footer .form-container {
+    margin-top: 1rem;
+    align-self: center;
+    white-space: normal;
   }
 }
