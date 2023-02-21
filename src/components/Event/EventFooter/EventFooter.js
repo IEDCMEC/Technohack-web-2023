@@ -59,11 +59,20 @@ const Footer = () => {
             </a>
             <br />
             technohack@iedcmec.in
+            <br />
+            <br />© 2023 IEDC MEC. All rights reserved.
           </div>
         </div>
         <div style={{ zIndex: "10" }} className="form-container">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEd1YTm_P5iXw8IA-21bJOcPaJc_gOZqb9bMwiQajE41uGHw/viewform?usp=sf_link"
-          target={"_blank"} rel="noreferrer"><span className="coc">Having queries / trouble registering?</span></a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScEd1YTm_P5iXw8IA-21bJOcPaJc_gOZqb9bMwiQajE41uGHw/viewform?usp=sf_link"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Got any queries?
+            <br />
+            <span className="coc">Fill this form!</span>
+          </a>
         </div>
       </div>
     </div>
