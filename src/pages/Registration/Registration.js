@@ -16,6 +16,8 @@ import { toast } from "react-hot-toast";
 const Registration = () => {
   const [interesting, setInteresting] = useState(false);
   const [tracks, setTracks] = useState([]);
+  const [tracksError, setTracksError] = useState("");
+  const [teamSize, setTeamSize] = useState(1);
   const allTracks = [
     "Cybersecurity",
     "Health Tech",
@@ -57,6 +59,7 @@ const Registration = () => {
       },
     },
   });
+
   const initialValue = {
     teamName: "",
     teamLeaderName: "",
@@ -222,12 +225,24 @@ const Registration = () => {
       )
       .optional()
       .min(4),
-    idea: Yup.string().required().max(500),
+    idea: Yup.string()
+      .max(500)
+      .test("Idea-Yes", "Please enter an Idea Description", function (value) {
+        console.log(value);
+        if (interesting && value?.length > 0) {
+          return true;
+        } else if (!interesting) {
+          return true;
+        }
+        return false;
+      }),
   });
 
   const handleSubmit = async (values, actions) => {
-    toast.success("testing");
-    console.log(values);
+    if (Array.isArray(tracks) && tracks.length < 1) {
+      setTracksError("Please Choose Atleast one track");
+      return;
+    }
     const { setSubmitting, setErrors } = actions;
     if (setErrors) {
       console.log("errors:");
@@ -256,25 +271,36 @@ const Registration = () => {
     console.log(data);
     if (data.length > 0) {
       const teamId = data[0].id;
-      const teamMember1 = {
-        name: values.teamLeaderName,
-        institutionName: values.leaderInstitutionName,
-        gradYear: values.leaderGradYear,
-        email: values.leaderEmail,
-        linkedIn: values.leaderLinkedIn,
-        github: values.leaderGitHub,
-        devfolio: values.leaderDevfolio,
-        teamId: teamId,
-      };
-      const { error } = await SupabaseClient.from("technohack-users").insert([
-        teamMember1,
-      ]);
+      if (teamSize === 1) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+        ]);
 
-      if (error) {
-        console.log(error);
+        if (error) {
+          console.log(error);
+        }
       }
-
-      if (values.teamMember2Name) {
+      if (teamSize === 2) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
         const teamMember2 = {
           name: values.teamMember2Name,
           institutionName: values.teamMember2InstitutionName,
@@ -286,13 +312,34 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
           teamMember2,
         ]);
         if (error) {
           console.log(error);
         }
       }
-      if (values.teamMember3Name) {
+      if (teamSize === 3) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const teamMember2 = {
+          name: values.teamMember2Name,
+          institutionName: values.teamMember2InstitutionName,
+          gradYear: values.teamMember2GradYear,
+          email: values.teamMember2Email,
+          linkedIn: values.teamMember2LinkedIn,
+          github: values.teamMember2GitHub,
+          devfolio: values.teamMember2Devfolio,
+          teamId: teamId,
+        };
         const teamMember3 = {
           name: values.teamMember3Name,
           institutionName: values.teamMember3InstitutionName,
@@ -304,13 +351,45 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+          teamMember2,
           teamMember3,
         ]);
         if (error) {
           console.log(error);
         }
       }
-      if (values.teamMember4Name) {
+      if (teamSize === 4) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const teamMember2 = {
+          name: values.teamMember2Name,
+          institutionName: values.teamMember2InstitutionName,
+          gradYear: values.teamMember2GradYear,
+          email: values.teamMember2Email,
+          linkedIn: values.teamMember2LinkedIn,
+          github: values.teamMember2GitHub,
+          devfolio: values.teamMember2Devfolio,
+          teamId: teamId,
+        };
+        const teamMember3 = {
+          name: values.teamMember3Name,
+          institutionName: values.teamMember3InstitutionName,
+          gradYear: values.teamMember3GradYear,
+          email: values.teamMember3Email,
+          linkedIn: values.teamMember3LinkedIn,
+          github: values.teamMember3GitHub,
+          devfolio: values.teamMember3Devfolio,
+          teamId: teamId,
+        };
         const teamMember4 = {
           name: values.teamMember4Name,
           institutionName: values.teamMember4InstitutionName,
@@ -322,6 +401,9 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+          teamMember2,
+          teamMember3,
           teamMember4,
         ]);
         if (error) {
@@ -349,7 +431,7 @@ const Registration = () => {
             <form onSubmit={formik.handleSubmit}>
               <div className="inputGroup">
                 <label htmlFor="teamName" className="team-detail-heading">
-                  Team Name
+                  Team Name *
                 </label>
                 <input
                   type="text"
@@ -369,11 +451,28 @@ const Registration = () => {
                   </div>
                 ) : null}
               </div>{" "}
+              <div className="inputGroup">
+                <label>Team Size *</label>
+                <select
+                  label="teamSize"
+                  name="teamSize"
+                  value={teamSize}
+                  onChange={(e) => {
+                    setTeamSize(e.target.value);
+                    console.log(e.target.value);
+                  }}
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
               {/* TEAM LEADER NAME */}
               <div className="team-detail-heading">Team Leader Details</div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="teamLeaderName">Name</label>
+                  <label htmlFor="teamLeaderName">Name *</label>
                   <input
                     type="text"
                     name="teamLeaderName"
@@ -396,7 +495,7 @@ const Registration = () => {
                 <div className="inputGroup">
                   {/* INSTITUTION NAME */}
                   <label htmlFor="leaderInstitutionName">
-                    Institution Name
+                    Institution Name *
                   </label>
                   <input
                     type="text"
@@ -421,8 +520,13 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label>Graduation Year</label>
-                  <select label="Graduation Year" name="leaderGradYear">
+                  <label>Graduation Year *</label>
+                  <select
+                    label="Graduation Year"
+                    name="leaderGradYear"
+                    value={formik.values.leaderGradYear}
+                    onChange={formik.handleChange}
+                  >
                     <option value="">Select</option>
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
@@ -430,10 +534,21 @@ const Registration = () => {
                     <option value="2026">2026</option>
                     <option value="2027">2027</option>
                   </select>
+                  {formik.touched.leaderGradYear &&
+                  formik.errors.leaderGradYear ? (
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {" "}
+                      {formik.errors.leaderGradYear}
+                    </div>
+                  ) : null}
                 </div>
 
                 <div className="inputGroup">
-                  <label htmlFor="leaderEmail">Email Address</label>
+                  <label htmlFor="leaderEmail">Email Address *</label>
                   <input
                     type="text"
                     name="leaderEmail"
@@ -455,7 +570,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL *</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -476,7 +591,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL</label>
+                  <label htmlFor="leaderGitHub">GitHub URL *</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -496,7 +611,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL *</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
@@ -518,453 +633,516 @@ const Registration = () => {
                   <hr />
                 </div>
               </div>
-              <div className="team-detail-heading">Team Member 2 Details</div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember2Name">Name</label>
-                  <input
-                    type="text"
-                    name="teamMember2Name"
-                    id="teamMember2Name"
-                    value={formik.values.teamMember2Name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2Name &&
-                  formik.errors.teamMember2Name ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2Name}
+              {teamSize >= 2 ? (
+                <>
+                  <div className="team-detail-heading">
+                    Team Member 2 Details
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember2Name">Name</label>
+                      <input
+                        type="text"
+                        name="teamMember2Name"
+                        id="teamMember2Name"
+                        value={formik.values.teamMember2Name}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2Name &&
+                      formik.errors.teamMember2Name ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2Name}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  {/* INSTITUTION NAME */}
-                  <label htmlFor="teamMember2InstitutionName">
-                    Institution Name
-                  </label>
-                  <input
-                    type="text"
-                    name="teamMember2InstitutionName"
-                    id="teamMember2InstitutionName"
-                    value={formik.values.teamMember2InstitutionName}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2InstitutionName &&
-                  formik.errors.teamMember2InstitutionName ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2InstitutionName}
+                    <div className="inputGroup">
+                      {/* INSTITUTION NAME */}
+                      <label htmlFor="teamMember2InstitutionName">
+                        Institution Name
+                      </label>
+                      <input
+                        type="text"
+                        name="teamMember2InstitutionName"
+                        id="teamMember2InstitutionName"
+                        value={formik.values.teamMember2InstitutionName}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2InstitutionName &&
+                      formik.errors.teamMember2InstitutionName ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2InstitutionName}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label>Graduation Year</label>
-                  <select label="Graduation Year" name="teamMember2GradYear">
-                    <option value="">Select</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                  </select>
-                </div>
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label>Graduation Year</label>
+                      <select
+                        label="Graduation Year"
+                        name="teamMember2GradYear"
+                        value={formik.values.teamMember2GradYear}
+                        onChange={formik.handleChange}
+                      >
+                        <option value="">Select</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                      </select>
+                      {formik.touched.teamMember2GradYear &&
+                      formik.errors.teamMember2GradYear ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2GradYear}
+                        </div>
+                      ) : null}
+                    </div>
 
-                <div className="inputGroup">
-                  <label htmlFor="teamMember2Email">Email Address</label>
-                  <input
-                    type="text"
-                    name="teamMember2Email"
-                    id="teamMember2Email"
-                    value={formik.values.teamMember2Email}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2Email &&
-                  formik.errors.teamMember2Email ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2Email}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember2Email">Email Address</label>
+                      <input
+                        type="text"
+                        name="teamMember2Email"
+                        id="teamMember2Email"
+                        value={formik.values.teamMember2Email}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2Email &&
+                      formik.errors.teamMember2Email ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2Email}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember2LinkedIn">LinkedIn URL</label>
-                  <input
-                    type="text"
-                    name="teamMember2LinkedIn"
-                    id="teamMember2LinkedIn"
-                    value={formik.values.teamMember2LinkedIn}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2LinkedIn &&
-                  formik.errors.teamMember2LinkedIn ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2LinkedIn}
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember2LinkedIn">LinkedIn URL</label>
+                      <input
+                        type="text"
+                        name="teamMember2LinkedIn"
+                        id="teamMember2LinkedIn"
+                        value={formik.values.teamMember2LinkedIn}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2LinkedIn &&
+                      formik.errors.teamMember2LinkedIn ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2LinkedIn}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember2GitHub">GitHub URL</label>
-                  <input
-                    type="text"
-                    name="teamMember2GitHub"
-                    id="teamMember2GitHub"
-                    value={formik.values.teamMember2GitHub}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2GitHub &&
-                  formik.errors.teamMember2GitHub ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2GitHub}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember2GitHub">GitHub URL</label>
+                      <input
+                        type="text"
+                        name="teamMember2GitHub"
+                        id="teamMember2GitHub"
+                        value={formik.values.teamMember2GitHub}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2GitHub &&
+                      formik.errors.teamMember2GitHub ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2GitHub}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember2Devfolio">Devfolio URL</label>
-                  <input
-                    type="text"
-                    name="teamMember2Devfolio"
-                    id="teamMember2Devfolio"
-                    value={formik.values.teamMember2Devfolio}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember2Devfolio &&
-                  formik.errors.teamMember2Devfolio ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember2Devfolio}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember2Devfolio">Devfolio URL</label>
+                      <input
+                        type="text"
+                        name="teamMember2Devfolio"
+                        id="teamMember2Devfolio"
+                        value={formik.values.teamMember2Devfolio}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember2Devfolio &&
+                      formik.errors.teamMember2Devfolio ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember2Devfolio}
+                        </div>
+                      ) : null}
+                      <hr />
                     </div>
-                  ) : null}
-                  <hr />
-                </div>
-              </div>
-              <div className="team-detail-heading">Team Member 3 Details</div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember3Name">Name</label>
-                  <input
-                    type="text"
-                    name="teamMember3Name"
-                    id="teamMember3Name"
-                    value={formik.values.teamMember3Name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3Name &&
-                  formik.errors.teamMember3Name ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3Name}
+                  </div>
+                </>
+              ) : null}
+              {teamSize >= 3 ? (
+                <>
+                  <div className="team-detail-heading">
+                    Team Member 3 Details
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember3Name">Name</label>
+                      <input
+                        type="text"
+                        name="teamMember3Name"
+                        id="teamMember3Name"
+                        value={formik.values.teamMember3Name}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3Name &&
+                      formik.errors.teamMember3Name ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3Name}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  {/* INSTITUTION NAME */}
-                  <label htmlFor="teamMember3InstitutionName">
-                    Institution Name
-                  </label>
-                  <input
-                    type="text"
-                    name="teamMember3InstitutionName"
-                    id="teamMember3InstitutionName"
-                    value={formik.values.teamMember3InstitutionName}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3InstitutionName &&
-                  formik.errors.teamMember3InstitutionName ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3InstitutionName}
+                    <div className="inputGroup">
+                      {/* INSTITUTION NAME */}
+                      <label htmlFor="teamMember3InstitutionName">
+                        Institution Name
+                      </label>
+                      <input
+                        type="text"
+                        name="teamMember3InstitutionName"
+                        id="teamMember3InstitutionName"
+                        value={formik.values.teamMember3InstitutionName}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3InstitutionName &&
+                      formik.errors.teamMember3InstitutionName ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3InstitutionName}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label>Graduation Year</label>
-                  <select label="Graduation Year" name="teamMember3GradYear">
-                    <option value="">Select</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                  </select>
-                </div>
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label>Graduation Year</label>
+                      <select
+                        label="Graduation Year"
+                        name="teamMember3GradYear"
+                        value={formik.values.teamMember3GradYear}
+                        onChange={formik.handleChange}
+                      >
+                        <option value="">Select</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                      </select>
+                      {formik.touched.teamMember3GradYear &&
+                      formik.errors.teamMember3GradYear ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3GradYear}
+                        </div>
+                      ) : null}
+                    </div>
 
-                <div className="inputGroup">
-                  <label htmlFor="leaderEmail">Email Address</label>
-                  <input
-                    type="text"
-                    name="teamMember3Email"
-                    id="teamMember3Email"
-                    value={formik.values.teamMember3Email}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3Email &&
-                  formik.errors.teamMember3Email ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3Email}
+                    <div className="inputGroup">
+                      <label htmlFor="leaderEmail">Email Address</label>
+                      <input
+                        type="text"
+                        name="teamMember3Email"
+                        id="teamMember3Email"
+                        value={formik.values.teamMember3Email}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3Email &&
+                      formik.errors.teamMember3Email ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3Email}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember3LinkedIn">LinkedIn URL</label>
-                  <input
-                    type="text"
-                    name="teamMember3LinkedIn"
-                    id="teamMember3LinkedIn"
-                    value={formik.values.teamMember3LinkedIn}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3LinkedIn &&
-                  formik.errors.teamMember3LinkedIn ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3LinkedIn}
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember3LinkedIn">LinkedIn URL</label>
+                      <input
+                        type="text"
+                        name="teamMember3LinkedIn"
+                        id="teamMember3LinkedIn"
+                        value={formik.values.teamMember3LinkedIn}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3LinkedIn &&
+                      formik.errors.teamMember3LinkedIn ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3LinkedIn}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember3GitHub">GitHub URL</label>
-                  <input
-                    type="text"
-                    name="teamMember3GitHub"
-                    id="teamMember3GitHub"
-                    value={formik.values.teamMember3GitHub}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3GitHub &&
-                  formik.errors.teamMember3GitHub ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3GitHub}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember3GitHub">GitHub URL</label>
+                      <input
+                        type="text"
+                        name="teamMember3GitHub"
+                        id="teamMember3GitHub"
+                        value={formik.values.teamMember3GitHub}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3GitHub &&
+                      formik.errors.teamMember3GitHub ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3GitHub}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember3Devfolio">Devfolio URL</label>
-                  <input
-                    type="text"
-                    name="teamMember3Devfolio"
-                    id="teamMember3Devfolio"
-                    value={formik.values.teamMember3Devfolio}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember3Devfolio &&
-                  formik.errors.teamMember3Devfolio ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember3Devfolio}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember3Devfolio">Devfolio URL</label>
+                      <input
+                        type="text"
+                        name="teamMember3Devfolio"
+                        id="teamMember3Devfolio"
+                        value={formik.values.teamMember3Devfolio}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember3Devfolio &&
+                      formik.errors.teamMember3Devfolio ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember3Devfolio}
+                        </div>
+                      ) : null}
+                      <hr />
                     </div>
-                  ) : null}
-                  <hr />
-                </div>
-              </div>
-              <div className="team-detail-heading">Team Member 4 Details</div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember4Name">Name</label>
-                  <input
-                    type="text"
-                    name="teamMember4Name"
-                    id="teamMember4Name"
-                    value={formik.values.teamMember4Name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4Name &&
-                  formik.errors.teamMember4Name ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4Name}
+                  </div>
+                </>
+              ) : null}
+              {teamSize >= 4 ? (
+                <>
+                  <div className="team-detail-heading">
+                    Team Member 4 Details
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember4Name">Name</label>
+                      <input
+                        type="text"
+                        name="teamMember4Name"
+                        id="teamMember4Name"
+                        value={formik.values.teamMember4Name}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4Name &&
+                      formik.errors.teamMember4Name ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4Name}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  {/* INSTITUTION NAME */}
-                  <label htmlFor="teamMember4InstitutionName">
-                    Institution Name
-                  </label>
-                  <input
-                    type="text"
-                    name="teamMember4InstitutionName"
-                    id="teamMember4InstitutionName"
-                    value={formik.values.teamMember4InstitutionName}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4InstitutionName &&
-                  formik.errors.teamMember4InstitutionName ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4InstitutionName}
+                    <div className="inputGroup">
+                      {/* INSTITUTION NAME */}
+                      <label htmlFor="teamMember4InstitutionName">
+                        Institution Name
+                      </label>
+                      <input
+                        type="text"
+                        name="teamMember4InstitutionName"
+                        id="teamMember4InstitutionName"
+                        value={formik.values.teamMember4InstitutionName}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4InstitutionName &&
+                      formik.errors.teamMember4InstitutionName ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4InstitutionName}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label>Graduation Year</label>
-                  <select label="Graduation Year" name="teamMember4GradYear">
-                    <option value="">Select</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                  </select>
-                </div>
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label>Graduation Year</label>
+                      <select
+                        label="Graduation Year"
+                        name="teamMember4GradYear"
+                        value={formik.values.teamMember4GradYear}
+                        onChange={formik.handleChange}
+                      >
+                        <option value="">Select</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                      </select>
+                      {formik.touched.teamMember4GradYear &&
+                      formik.errors.teamMember4GradYear ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4GradYear}
+                        </div>
+                      ) : null}
+                    </div>
 
-                <div className="inputGroup">
-                  <label htmlFor="teamMember4Email">Email Address</label>
-                  <input
-                    type="text"
-                    name="teamMember4Email"
-                    id="teamMember4Email"
-                    value={formik.values.teamMember4Email}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4Email &&
-                  formik.errors.teamMember4Email ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4Email}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember4Email">Email Address</label>
+                      <input
+                        type="text"
+                        name="teamMember4Email"
+                        id="teamMember4Email"
+                        value={formik.values.teamMember4Email}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4Email &&
+                      formik.errors.teamMember4Email ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4Email}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamMember4LinkedIn">LinkedIn URL</label>
-                  <input
-                    type="text"
-                    name="teamMember4LinkedIn"
-                    id="teamMember4LinkedIn"
-                    value={formik.values.teamMember4LinkedIn}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4LinkedIn &&
-                  formik.errors.teamMember4LinkedIn ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4LinkedIn}
+                  </div>
+                  <div className="row">
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember4LinkedIn">LinkedIn URL</label>
+                      <input
+                        type="text"
+                        name="teamMember4LinkedIn"
+                        id="teamMember4LinkedIn"
+                        value={formik.values.teamMember4LinkedIn}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4LinkedIn &&
+                      formik.errors.teamMember4LinkedIn ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4LinkedIn}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember4GitHub">GitHub URL</label>
-                  <input
-                    type="text"
-                    name="teamMember4GitHub"
-                    id="teamMember4GitHub"
-                    value={formik.values.teamMember4GitHub}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4GitHub &&
-                  formik.errors.teamMember4GitHub ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4GitHub}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember4GitHub">GitHub URL</label>
+                      <input
+                        type="text"
+                        name="teamMember4GitHub"
+                        id="teamMember4GitHub"
+                        value={formik.values.teamMember4GitHub}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4GitHub &&
+                      formik.errors.teamMember4GitHub ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4GitHub}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-                <div className="inputGroup">
-                  <label htmlFor="teamMember4Devfolio">Devfolio URL</label>
-                  <input
-                    type="text"
-                    name="teamMember4Devfolio"
-                    id="teamMember4Devfolio"
-                    value={formik.values.teamMember4Devfolio}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.teamMember4Devfolio &&
-                  formik.errors.teamMember4Devfolio ? (
-                    <div
-                      style={{
-                        color: "red",
-                      }}
-                    >
-                      {formik.errors.teamMember4Devfolio}
+                    <div className="inputGroup">
+                      <label htmlFor="teamMember4Devfolio">Devfolio URL</label>
+                      <input
+                        type="text"
+                        name="teamMember4Devfolio"
+                        id="teamMember4Devfolio"
+                        value={formik.values.teamMember4Devfolio}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                      />
+                      {formik.touched.teamMember4Devfolio &&
+                      formik.errors.teamMember4Devfolio ? (
+                        <div
+                          style={{
+                            color: "red",
+                          }}
+                        >
+                          {formik.errors.teamMember4Devfolio}
+                        </div>
+                      ) : null}
+                      <hr />
                     </div>
-                  ) : null}
-                  <hr />
-                </div>
-              </div>
+                  </div>
+                </>
+              ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Any Interesting Problem You have in mind to solve during the
                 hackathon?
@@ -991,6 +1169,7 @@ const Registration = () => {
                     onClick={(e) => {
                       setInteresting(true);
                     }}
+                    checked={interesting}
                     name="problem"
                   />
                   <label>Yes</label>
@@ -1007,6 +1186,7 @@ const Registration = () => {
                     type="radio"
                     value={interesting}
                     name="problem"
+                    checked={!interesting}
                     onClick={(e) => {
                       setInteresting(false);
                     }}
@@ -1014,26 +1194,30 @@ const Registration = () => {
                   <label>No</label>
                 </div>
               </div>
-              <label htmlFor="idea" className="team-detail-heading">
-                Brief Description of Idea
-              </label>
-              <textarea
-                type="text"
-                rows={10}
-                name="idea"
-                id="idea"
-                value={formik.values.idea}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-              />
-              {formik.touched.idea && formik.errors.idea ? (
-                <div
-                  style={{
-                    color: "red",
-                  }}
-                >
-                  {formik.errors.idea}
-                </div>
+              {interesting ? (
+                <>
+                  <label htmlFor="idea" className="team-detail-heading">
+                    Brief Description of Idea
+                  </label>
+                  <textarea
+                    type="text"
+                    rows={10}
+                    name="idea"
+                    id="idea"
+                    value={formik.values.idea}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  {formik.touched.idea && formik.errors.idea ? (
+                    <div
+                      style={{
+                        color: "red",
+                      }}
+                    >
+                      {formik.errors.idea}
+                    </div>
+                  ) : null}
+                </>
               ) : null}
               <label htmlFor="idea" className="team-detail-heading">
                 Probable Tracks you may be applying for ?
@@ -1042,12 +1226,20 @@ const Registration = () => {
                 <Autocomplete
                   options={allTracks}
                   sx={{ width: "90%" }}
+                  name="tracks"
                   multiple
                   onChange={(event, value) => {
                     setTracks(value);
                   }}
                   disableCloseOnSelect
                   filterSelectedOptions
+                  onBlur={() => {
+                    if (Array.isArray(tracks) && tracks.length < 1) {
+                      setTracksError("Please Choose Atleast one track");
+                    } else {
+                      setTracksError("");
+                    }
+                  }}
                   renderInput={(params) => (
                     <TextField
                       {...params}
@@ -1057,6 +1249,15 @@ const Registration = () => {
                     />
                   )}
                 />
+                {tracksError ? (
+                  <div
+                    style={{
+                      color: "red",
+                    }}
+                  >
+                    {tracksError}
+                  </div>
+                ) : null}
               </ThemeProvider>
               <label htmlFor="suggestions" className="team-detail-heading">
                 Anything else you want to let us know ?
@@ -1073,9 +1274,7 @@ const Registration = () => {
               <button
                 type="submit"
                 className="submit-btn"
-                onClick={() => {
-                  handleSubmit();
-                }}
+                // onClick={formik.handleSubmit}
                 style={{
                   backgroundColor: formik.isSubmitting ? "gray" : "#00a1ea",
                 }}
