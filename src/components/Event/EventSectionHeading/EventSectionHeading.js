@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import './EventSectionHeading.css';
-
 export default class EventSectionHeading extends Component {
+    
     render() {
         return (
            <div className="event-section-heading-container">

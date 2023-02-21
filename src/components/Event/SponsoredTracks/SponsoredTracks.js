@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
 import "./SponsoredTracks.css";
 import SPCards from "../SPCards/SPCards";
@@ -12,6 +12,7 @@ import health2 from "../../../assets/health2.png";
 import bulb from "../../../assets/bulb.png";
 import TracksModal from "../TracksModal/TracksModal";
 import { tracksData } from "../../../data/tracksData";
+import Aos from "aos";
 
 export default function SponsoredTracks() {
   const [open, setOpen] = React.useState(false);
@@ -22,6 +23,9 @@ export default function SponsoredTracks() {
   const handleOpen = () => {
     setOpen(true);
   };
+  useEffect(()=>{
+    Aos.init({duration:500})
+  },[])
   return (
     <div>
       <TracksModal
@@ -31,8 +35,8 @@ export default function SponsoredTracks() {
       />
       <Element name="tracks" />
       <EventSectionHeading text="Tracks and Prizes" />
-      <div class="tracks">
-        <div class="card">
+      <div  class="tracks">
+        <div data-aos="fade-up" aos-delay="100" class="card">
           <div class="card-img">
             <img src={cyber} />
           </div>
@@ -51,7 +55,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div class="card">
+        <div data-aos="fade-up" aos-delay="150" class="card">
           <div class="card-img">
             <img src={health2} className="health" />
           </div>
@@ -70,7 +74,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div class="card">
+        <div data-aos="fade-up" aos-delay="200" class="card">
           <div class="card-img">
             <img src={earth} />
           </div>
@@ -89,7 +93,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div class="card">
+        <div data-aos="fade-up" aos-delay="250" class="card">
           <div class="card-img">
             <img src={bulb} />
           </div>
@@ -108,7 +112,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div class="card">
+        <div data-aos="fade-up" aos-delay="300" class="card">
           <div class="card-img">
             <img src={drug} />
           </div>
