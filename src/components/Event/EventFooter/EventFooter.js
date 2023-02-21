@@ -18,6 +18,29 @@ const Footer = () => {
           > */}
           <img src={Logo} alt="" className="iedc-logo" />
           {/* </a> */}
+          <div style={{ zIndex: "10" }} className="socials">
+            <a
+              href="https://www.instagram.com/iedcmec"
+              target="_blank "
+              rel="noreferrer noopener"
+            >
+              <InstagramIcon sx={{ fontSize: "35px", color: "white" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/iedcmec"
+              target="_blank "
+              rel="noreferrer noopener"
+            >
+              <LinkedInIcon sx={{ fontSize: "35px", color: "white" }} />
+            </a>
+            <a
+              href="https://www.twitter.com/iedc_mec"
+              target="_blank "
+              rel="noreferrer noopener"
+            >
+              <TwitterIcon sx={{ fontSize: "35px", color: "white" }} />
+            </a>
+          </div>
         </div>
 
         <div style={{ zIndex: "10" }} className="description-container">
@@ -38,29 +61,9 @@ const Footer = () => {
             technohack@iedcmec.in
           </div>
         </div>
-
-        <div style={{ zIndex: "10" }} className="socials">
-          <a
-            href="https://www.instagram.com/iedcmec"
-            target="_blank "
-            rel="noreferrer noopener"
-          >
-            <InstagramIcon sx={{ fontSize: "35px", color: "white" }} />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/iedcmec"
-            target="_blank "
-            rel="noreferrer noopener"
-          >
-            <LinkedInIcon sx={{ fontSize: "35px", color: "white" }} />
-          </a>
-          <a
-            href="https://www.twitter.com/iedc_mec"
-            target="_blank "
-            rel="noreferrer noopener"
-          >
-            <TwitterIcon sx={{ fontSize: "35px", color: "white" }} />
-          </a>
+        <div style={{ zIndex: "10" }} className="form-container">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEd1YTm_P5iXw8IA-21bJOcPaJc_gOZqb9bMwiQajE41uGHw/viewform?usp=sf_link"
+          target={"_blank"} rel="noreferrer"><span className="coc">Having queries / trouble registering?</span></a>
         </div>
       </div>
     </div>
