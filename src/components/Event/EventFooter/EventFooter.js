@@ -7,7 +7,6 @@ import Footerbg from "../../../assets/footerbg.svg";
 const Footer = () => {
   return (
     <div className="event-footer">
-      <div className="border-top-square"></div>
       <hr />
       <div className="container">
         {/* <img src={Footerbg} style={{position: 'absolute', zIndex:'0', left:'0'}} alt=''></img> */}

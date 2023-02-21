@@ -1,5 +1,6 @@
 import { Formik } from "formik";
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Registration.css";
 import * as Yup from "yup";
 import EventNavbar from "../../components/Event/EventNavbar/EventNavbar";
@@ -18,6 +19,7 @@ const Registration = () => {
   const [tracks, setTracks] = useState([]);
   const [tracksError, setTracksError] = useState("");
   const [teamSize, setTeamSize] = useState(1);
+  const history = useHistory();
   const allTracks = [
     "Cybersecurity",
     "Health Tech",
@@ -250,10 +252,6 @@ const Registration = () => {
         console.log(`${key}: ${setErrors[key]}`);
       });
     }
-    if (tracks.length === 0) {
-      toast.error("Please Select atleast one track");
-      return;
-    }
     const team = {
       name: values.teamName,
       idea: values.idea,
@@ -282,15 +280,20 @@ const Registration = () => {
           devfolio: values.leaderDevfolio,
           teamId: teamId,
         };
-        const { error } = await SupabaseClient.from("technohack-users").insert([
-          teamMember1,
-        ]);
+        const { error, status } = await SupabaseClient.from(
+          "technohack-users"
+        ).insert([teamMember1]);
 
         if (error) {
           console.log(error);
         }
+        if (status === 201) {
+          toast.success("Team Registered Successfully");
+          history.push("/");
+        }
       }
       if (teamSize === 2) {
+        console.log("team size 2");
         const teamMember1 = {
           name: values.teamLeaderName,
           institutionName: values.leaderInstitutionName,
@@ -311,12 +314,15 @@ const Registration = () => {
           devfolio: values.teamMember2Devfolio,
           teamId: teamId,
         };
-        const { error } = await SupabaseClient.from("technohack-users").insert([
-          teamMember1,
-          teamMember2,
-        ]);
+        const { error, status } = await SupabaseClient.from(
+          "technohack-users"
+        ).insert([teamMember1, teamMember2]);
         if (error) {
           console.log(error);
+        }
+        if (status === 201) {
+          toast.success("Team Registered Successfully");
+          history.push("/");
         }
       }
       if (teamSize === 3) {
@@ -350,13 +356,15 @@ const Registration = () => {
           devfolio: values.teamMember3Devfolio,
           teamId: teamId,
         };
-        const { error } = await SupabaseClient.from("technohack-users").insert([
-          teamMember1,
-          teamMember2,
-          teamMember3,
-        ]);
+        const { error, status } = await SupabaseClient.from(
+          "technohack-users"
+        ).insert([teamMember1, teamMember2, teamMember3]);
         if (error) {
           console.log(error);
+        }
+        if (status === 201) {
+          toast.success("Team Registered Successfully");
+          history.push("/");
         }
       }
       if (teamSize === 4) {
@@ -400,14 +408,15 @@ const Registration = () => {
           devfolio: values.teamMember4Devfolio,
           teamId: teamId,
         };
-        const { error } = await SupabaseClient.from("technohack-users").insert([
-          teamMember1,
-          teamMember2,
-          teamMember3,
-          teamMember4,
-        ]);
+        const { error, status } = await SupabaseClient.from(
+          "technohack-users"
+        ).insert([teamMember1, teamMember2, teamMember3, teamMember4]);
         if (error) {
           console.log(error);
+        }
+        if (status === 201) {
+          toast.success("Team Registered Successfully");
+          history.push("/");
         }
       }
     }
@@ -458,8 +467,7 @@ const Registration = () => {
                   name="teamSize"
                   value={teamSize}
                   onChange={(e) => {
-                    setTeamSize(e.target.value);
-                    console.log(e.target.value);
+                    setTeamSize(+e.target.value);
                   }}
                 >
                   <option value="1">1</option>
