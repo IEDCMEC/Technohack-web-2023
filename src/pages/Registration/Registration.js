@@ -1,5 +1,5 @@
-import { Formik, useFormikContext } from "formik";
-import React, { useEffect, useState } from "react";
+import { Formik } from "formik";
+import React, { useState } from "react";
 import "./Registration.css";
 import * as Yup from "yup";
 import EventNavbar from "../../components/Event/EventNavbar/EventNavbar";
@@ -243,9 +243,6 @@ const Registration = () => {
       setTracksError("Please Choose Atleast one track");
       return;
     }
-    console.log("HELLO");
-    toast.success("testing");
-    console.log(values);
     const { setSubmitting, setErrors } = actions;
     if (setErrors) {
       console.log("errors:");
@@ -274,25 +271,36 @@ const Registration = () => {
     console.log(data);
     if (data.length > 0) {
       const teamId = data[0].id;
-      const teamMember1 = {
-        name: values.teamLeaderName,
-        institutionName: values.leaderInstitutionName,
-        gradYear: values.leaderGradYear,
-        email: values.leaderEmail,
-        linkedIn: values.leaderLinkedIn,
-        github: values.leaderGitHub,
-        devfolio: values.leaderDevfolio,
-        teamId: teamId,
-      };
-      const { error } = await SupabaseClient.from("technohack-users").insert([
-        teamMember1,
-      ]);
+      if (teamSize === 1) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+        ]);
 
-      if (error) {
-        console.log(error);
+        if (error) {
+          console.log(error);
+        }
       }
-
-      if (values.teamMember2Name) {
+      if (teamSize === 2) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
         const teamMember2 = {
           name: values.teamMember2Name,
           institutionName: values.teamMember2InstitutionName,
@@ -304,13 +312,34 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
           teamMember2,
         ]);
         if (error) {
           console.log(error);
         }
       }
-      if (values.teamMember3Name) {
+      if (teamSize === 3) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const teamMember2 = {
+          name: values.teamMember2Name,
+          institutionName: values.teamMember2InstitutionName,
+          gradYear: values.teamMember2GradYear,
+          email: values.teamMember2Email,
+          linkedIn: values.teamMember2LinkedIn,
+          github: values.teamMember2GitHub,
+          devfolio: values.teamMember2Devfolio,
+          teamId: teamId,
+        };
         const teamMember3 = {
           name: values.teamMember3Name,
           institutionName: values.teamMember3InstitutionName,
@@ -322,13 +351,45 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+          teamMember2,
           teamMember3,
         ]);
         if (error) {
           console.log(error);
         }
       }
-      if (values.teamMember4Name) {
+      if (teamSize === 4) {
+        const teamMember1 = {
+          name: values.teamLeaderName,
+          institutionName: values.leaderInstitutionName,
+          gradYear: values.leaderGradYear,
+          email: values.leaderEmail,
+          linkedIn: values.leaderLinkedIn,
+          github: values.leaderGitHub,
+          devfolio: values.leaderDevfolio,
+          teamId: teamId,
+        };
+        const teamMember2 = {
+          name: values.teamMember2Name,
+          institutionName: values.teamMember2InstitutionName,
+          gradYear: values.teamMember2GradYear,
+          email: values.teamMember2Email,
+          linkedIn: values.teamMember2LinkedIn,
+          github: values.teamMember2GitHub,
+          devfolio: values.teamMember2Devfolio,
+          teamId: teamId,
+        };
+        const teamMember3 = {
+          name: values.teamMember3Name,
+          institutionName: values.teamMember3InstitutionName,
+          gradYear: values.teamMember3GradYear,
+          email: values.teamMember3Email,
+          linkedIn: values.teamMember3LinkedIn,
+          github: values.teamMember3GitHub,
+          devfolio: values.teamMember3Devfolio,
+          teamId: teamId,
+        };
         const teamMember4 = {
           name: values.teamMember4Name,
           institutionName: values.teamMember4InstitutionName,
@@ -340,13 +401,15 @@ const Registration = () => {
           teamId: teamId,
         };
         const { error } = await SupabaseClient.from("technohack-users").insert([
+          teamMember1,
+          teamMember2,
+          teamMember3,
           teamMember4,
         ]);
         if (error) {
           console.log(error);
         }
       }
-      toast.success("Registered Successfully...");
     }
 
     setSubmitting(false);
