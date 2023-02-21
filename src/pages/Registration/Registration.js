@@ -116,21 +116,21 @@ const Registration = () => {
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter Valid URL")
+      .optional("Please enter Valid URL")
       .min(4),
     leaderGitHub: Yup.string()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter Valid URL")
+      .optional("Please enter Valid URL")
       .min(4),
     leaderDevfolio: Yup.string()
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
         "Enter correct url!"
       )
-      .required("Please enter Valid URL")
+      .optional("Please enter Valid URL")
       .min(4),
     teamMember2Name: Yup.string().optional().min(3),
     teamMember2InstitutionName: Yup.string().optional().min(3),
@@ -570,7 +570,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL *</label>
+                  <label htmlFor="leaderLinkedIn">LinkedIn URL</label>
                   <input
                     type="text"
                     name="leaderLinkedIn"
@@ -591,7 +591,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL *</label>
+                  <label htmlFor="leaderGitHub">GitHub URL</label>
                   <input
                     type="text"
                     name="leaderGitHub"
@@ -611,7 +611,7 @@ const Registration = () => {
                   ) : null}
                 </div>
                 <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL *</label>
+                  <label htmlFor="leaderDevfolio">Devfolio URL</label>
                   <input
                     type="text"
                     name="leaderDevfolio"
