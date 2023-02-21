@@ -55,18 +55,20 @@ function TracksModal({ open, handleClose, data }) {
               {" "}
               <img
                 src={data.sponsorlogo}
-                alt="lyminal"
+                alt="sponsorlogo"
                 className="tracks-modal-left-sub-image"
               />
             </div>
-            <div style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "2rem"
-            }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "2rem",
+              }}
+            >
               {data.prizes.map((item, index) => {
                 return (
                   <div className="tracks-modal-prize-card" key={index}>

@@ -5,6 +5,7 @@ import "./EventCommunity.css";
 import logobg from "../../../assets/logobg.svg";
 import aws from "../../../assets/aws.png";
 import bms from "../../../assets/bms.png";
+import bma from "../../../assets/bma.png";
 export default class EventSponsers extends Component {
   render() {
     return (
@@ -19,6 +20,9 @@ export default class EventSponsers extends Component {
             </div>
             <div className="community">
               <img className="community-img" src={bms} />
+            </div>
+            <div className="community">
+              <img className="community-img" src={bma} />
             </div>
             {/* <div className="community">
               <img

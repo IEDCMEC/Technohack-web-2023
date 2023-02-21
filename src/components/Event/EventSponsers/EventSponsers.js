@@ -7,14 +7,14 @@ import lyminal from "../../../assets/lyminal-logo.png";
 import Aos from "aos";
 import fossunited from "../../../assets/fossunited.png";
 import github from "../../../assets/github.png";
-import kims from "../../../assets/kims.png";
+import kims from "../../../assets/sponsors/kims.png";
 import githubname from "../../../assets/192-1923313_2-februari-github-logo-png-white-removebg-preview 1.png";
 export default class EventSponsers extends Component {
   componentDidMount() {
     // or simply just AOS.init();
     Aos.init({
       // initialise with other settings
-      duration : 200
+      duration: 200,
     });
   }
   render() {
@@ -44,7 +44,7 @@ export default class EventSponsers extends Component {
                 src={githubname}
               />
             </div>
-            <div  className="sponsors">
+            <div className="sponsors">
               <img
                 className="sponsor-img"
                 src={kims}

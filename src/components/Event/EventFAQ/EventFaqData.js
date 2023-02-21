@@ -14,15 +14,39 @@ const eventData = [
       >
         - Link to <span className="coc">Code of Conduct</span>
       </a>,
-      <a href="https://technohack.notion.site/FOSS-Project-Guidelines-93e5f2dcc4314caf855565dae30a3bf3"
-         target="_blank"
-         rel="noreferrer">
-        - Your project should follow these <span className="coc">FOSS guidelines</span>
-      </a>
+      <a
+        href="https://technohack.notion.site/FOSS-Project-Guidelines-93e5f2dcc4314caf855565dae30a3bf3"
+        target="_blank"
+        rel="noreferrer"
+      >
+        - Your project should follow these{" "}
+        <span className="coc">FOSS guidelines</span>
+      </a>,
     ],
   },
   {
     id: 2,
+    question: "How to register for TechnoHack?",
+    ans: [
+      <a
+        href="https://technohack.technopreneur.co.in/register"
+        target="_blank"
+        rel="noreferrer"
+      >
+        - Fill the registration form <span className="coc">here</span>
+      </a>,
+      "- Only the team leader needs to fill for the whole team",
+      "- If you want to make edits, feel free to fill the form once more. Only the latest submission will be considered",
+      // "- Cash Prize of Rs.10,000 for the best hack built on Ethereum or Rs.15,000 for the best hack built on Ethereum + Polygon, ",
+      // "- Eligibility to apply for internship/full-time roles and seed funding of up to 5,000 USD for winners",
+      // "- Rs.15,000 as cash prize for best Dapp built on Portis",
+      // "- Rs.20,000 for best Dapp built on Tezos",
+      // "- Continuity Grant opportunity for exceptional builders",
+      // "- Rs.20,000 for best Dapp built on Celo",
+    ],
+  },
+  {
+    id: 3,
     question: "What are the perks of participating in TechnoHack?",
     ans: [
       "- To be Announced... ",
@@ -35,32 +59,32 @@ const eventData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     question: "Who can attend?",
     ans: "Students currently studying in any college , as well as working professionals",
   },
   {
-    id: 4,
+    id: 5,
     question: "What is the team size?",
-    ans: "A team should have a minimum of 2 members and maximum of 4 members",
+    ans: "A team should have minimum 1 member and a maximum of 4 members",
   },
   {
-    id: 5,
+    id: 6,
     question: "How much does it cost?",
     ans: "This event is completely free! We’ll also provide you with a plethora of resources and tools to hack with as well.",
   },
   {
-    id: 6,
+    id: 7,
     question: "Who do I contact if I have any further doubts?",
     ans: "You can contact at technohack@iedcmec.in, if you have any doubts. We'll be happy to help!",
   },
   {
-    id: 7,
+    id: 8,
     question: "What is the venue of the hackathon?",
     ans: `Govt. Model Engineering College, Thrikkakara, Ernakulam, Cochin: 682021`,
   },
   {
-    id: 8,
+    id: 9,
     question: "Can I participate without a computer science background?",
     ans: "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
   },

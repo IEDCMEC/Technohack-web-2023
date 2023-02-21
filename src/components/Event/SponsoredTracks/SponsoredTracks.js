@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
 import "./SponsoredTracks.css";
 import SPCards from "../SPCards/SPCards";
@@ -23,9 +23,9 @@ export default function SponsoredTracks() {
   const handleOpen = () => {
     setOpen(true);
   };
-  useEffect(()=>{
-    Aos.init({duration:500})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
     <div>
       <TracksModal
@@ -35,7 +35,7 @@ export default function SponsoredTracks() {
       />
       <Element name="tracks" />
       <EventSectionHeading text="Tracks and Prizes" />
-      <div  class="tracks">
+      <div class="tracks">
         <div data-aos="fade-up" aos-delay="100" class="card">
           <div class="card-img">
             <img src={cyber} />
@@ -112,7 +112,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div data-aos="fade-up" aos-delay="300" class="card">
+        {/* <div data-aos="fade-up" aos-delay="300" class="card">
           <div class="card-img">
             <img src={drug} />
           </div>
@@ -129,7 +129,7 @@ export default function SponsoredTracks() {
           >
             Read More
           </button>
-        </div>
+        </div> */}
       </div>
       {/* <Element name="tracks" /> */}
       {/* <div className='Cards'>
