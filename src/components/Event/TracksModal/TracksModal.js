@@ -1,4 +1,4 @@
-import { Dialog, DialogContent } from "@mui/material";
+import { Dialog, DialogContent, DialogTitle } from "@mui/material";
 import React from "react";
 import "./TracksModal.css";
 import { IoMdClose } from "react-icons/io";
@@ -18,6 +18,7 @@ function TracksModal({ open, handleClose, data }) {
           width: "calc(100% - 32px)",
           backgroundColor: "#04364F",
           color: "#fff",
+          padding:"1rem"
         },
       }}
       BackdropProps={{
@@ -26,17 +27,14 @@ function TracksModal({ open, handleClose, data }) {
         },
       }}
     >
-      <DialogContent
-        sx={{ "&::-webkit-scrollbar": { display: "none" }, padding: 0 }}
-      >
-        <div className="tracks-modal">
-          <div className="tracks-modal-header">
-            <div className="tracks-modal-header-left">
-              <div className="tracks-modal-header-left-heading">
-                {data.name} Track
-              </div>
+      <DialogTitle>
+        <div className="tracks-modal-header">
+          <div className="tracks-modal-header-left">
+            <div className="tracks-modal-header-left-heading">
+              {data.name} Track
+            </div>
 
-              {/* <div className="tracks-modal-left-sub">
+            {/* <div className="tracks-modal-left-sub">
                 <div className="tracks-modal-left-sub-heading">
                   sponsored by
                 </div>
@@ -46,9 +44,14 @@ function TracksModal({ open, handleClose, data }) {
                   className="tracks-modal-left-sub-image"
                 />
               </div> */}
-            </div>
-            <IoMdClose onClick={handleClose} className="tracks-modal-close" />
           </div>
+          <IoMdClose onClick={handleClose} className="tracks-modal-close" />
+        </div>
+      </DialogTitle>
+      <DialogContent
+        sx={{ "&::-webkit-scrollbar": { display: "none" }, padding: 0 }}
+      >
+        <div className="tracks-modal">
           {data.id > 2 ? null : (
             <div className="tracks-modal-powered-by">powered by</div>
           )}
