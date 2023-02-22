@@ -37,6 +37,7 @@
     width: 300px;
     border-radius: 8px;
     outline: none;
+    border: none;
 }
 .inputGroup input:active
 {
@@ -56,6 +57,7 @@
     border-radius: 8px;
     outline: none;
     width: 300px;
+    border: none;
 }
 .team-detail-heading
 {
@@ -103,6 +105,7 @@ textarea
     resize: vertical;
     border-radius: 8px;
     outline: none;
+    border: none;
 }
 
 @media (min-width: 768px) {
