@@ -144,6 +144,8 @@ const EventNavbar = () => {
           <Link
             activeClass="active"
             to="vision"
+            
+            offset= {-70}
             smooth={true}
             duration={500}
             className="event-nav-link menu-item"
@@ -154,6 +156,7 @@ const EventNavbar = () => {
           <Link
             activeClass="active"
             to="tracks"
+            offset= {-70}
             smooth={true}
             duration={500}
             className="event-nav-link menu-item"
@@ -164,6 +167,7 @@ const EventNavbar = () => {
           <Link
             activeClass="active"
             to="faq"
+            offset= {-150}
             smooth={true}
             duration={500}
             className="event-nav-link menu-item"
@@ -174,6 +178,7 @@ const EventNavbar = () => {
           <Link
             activeClass="active"
             to="sponsor"
+            offset= {-70}
             smooth={true}
             duration={500}
             className="event-nav-link menu-item"
