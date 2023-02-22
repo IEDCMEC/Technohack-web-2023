@@ -149,22 +149,20 @@
   overflow-y: hidden;
 }
 
-
-
 .reg_btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
   font-family: var(--primary-font);
-  width: 220px;
-  height: 70px;
+  width: 246px;
+  height: 60px;
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #ffffff;
   background: transparent;
-  border: 4.1922px solid #ffffff;
+  border: 2.5px solid #ffffff;
   border-radius: 10px;
   position: relative;
   transform-style: preserve-3d;
@@ -172,15 +170,11 @@
   cursor: pointer;
 }
 
-
-.reg_btn:hover{
+.reg_btn:hover {
   color: #0085ff;
-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #ffff;
 }
-
-
-
 
 @media screen and (max-width: 1300px) {
   .event-row-container {
@@ -283,8 +277,7 @@ transition: all 0.3s ease-in-out;
   }
 }
 
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .reg_btn {
     /* width: 150px; */
     font-size: 1rem;
@@ -293,9 +286,8 @@ transition: all 0.3s ease-in-out;
     /* width: 150px; */
   }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .reg_btn {
     font-size: 1rem;
   }
 }
-
