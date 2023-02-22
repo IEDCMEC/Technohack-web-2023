@@ -127,10 +127,7 @@ const Registration = () => {
       .optional("Please enter Valid URL")
       .min(4),
     leaderDevfolio: Yup.string()
-      .matches(
-        /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
-        "Enter correct url!"
-      )
+      .matches(/devfolio.co/, "Enter correct url!")
       .optional("Please enter Valid URL")
       .min(4),
     teamMember2Name: Yup.string().optional().min(3),
@@ -157,11 +154,8 @@ const Registration = () => {
       )
       .min(4),
     teamMember2Devfolio: Yup.string()
-      .optional()
-      .matches(
-        /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
-        "Enter correct url!"
-      )
+      .matches(/devfolio.co/, "Enter correct url!")
+      .optional("Please enter Valid URL")
       .min(4),
     teamMember4Name: Yup.string().optional().min(3),
     teamMember4InstitutionName: Yup.string().optional().min(3),
@@ -189,12 +183,8 @@ const Registration = () => {
 
       .min(4),
     teamMember4Devfolio: Yup.string()
-      .optional()
-      .matches(
-        /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
-        "Enter correct url!"
-      )
-
+      .matches(/devfolio.co/, "Enter correct url!")
+      .optional("Please enter Valid URL")
       .min(4),
     teamMember3Name: Yup.string().optional().min(3),
     teamMember3InstitutionName: Yup.string().optional().min(3),
@@ -220,11 +210,8 @@ const Registration = () => {
       .optional()
       .min(4),
     teamMember3Devfolio: Yup.string()
-      .matches(
-        /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
-        "Enter correct url!"
-      )
-      .optional()
+      .matches(/devfolio.co/, "Enter correct url!")
+      .optional("Please enter Valid URL")
       .min(4),
     idea: Yup.string()
       .max(500)
