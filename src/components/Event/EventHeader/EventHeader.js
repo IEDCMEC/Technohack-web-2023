@@ -82,7 +82,10 @@ export default function EventHeader() {
                   }}
                 ></div>
               </div> */}
+
+
               <button className="reg_btn" onClick={()=>{
+
                 history.push('/register')
               }}>
                 REGISTER

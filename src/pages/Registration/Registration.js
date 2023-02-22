@@ -25,7 +25,6 @@ const Registration = () => {
     "Health Tech",
     "Environment",
     "Open Innovation",
-    "Anti Drug / MSME",
   ];
   const theme = createTheme({
     components: {
@@ -242,7 +241,7 @@ const Registration = () => {
 
   const handleSubmit = async (values, actions) => {
     if (Array.isArray(tracks) && tracks.length < 1) {
-      setTracksError("Please Choose Atleast one track");
+      setTracksError("Please choose at least one track");
       return;
     }
     const { setSubmitting, setErrors } = actions;
