@@ -35,12 +35,12 @@ export default class EventSponsers extends Component {
               />
             </div>
             <div className="sponsors">
-              <img
+              {/* <img
                 style={{ width: "100px", position: "relative", bottom: "8px" }}
                 src={github}
-              />
+              /> */}
               <img
-                style={{ width: "100px", position: "relative", bottom: "20px" }}
+                style={{ width: "100px" }}
                 src={githubname}
               />
             </div>
