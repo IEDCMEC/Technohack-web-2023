@@ -137,6 +137,7 @@
 @media (max-width: 600px) {
   .tracks {
     margin: 0;
+    overflow-y: hidden;
   }
 
   .card {

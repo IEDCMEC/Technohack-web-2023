@@ -49,7 +49,10 @@ function TracksModal({ open, handleClose, data }) {
             </div>
             <IoMdClose onClick={handleClose} className="tracks-modal-close" />
           </div>
-          <div className="tracks-modal-powered-by">powered by</div>
+          {data.id > 2 ? null : (
+            <div className="tracks-modal-powered-by">powered by</div>
+          )}
+
           <div className="tracks-modal-prize-section">
             <div>
               {" "}

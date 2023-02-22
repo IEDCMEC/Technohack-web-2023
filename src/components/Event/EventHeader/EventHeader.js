@@ -82,7 +82,10 @@ export default function EventHeader() {
                   }}
                 ></div>
               </div> */}
-              <button data-aos="fade-up" className="reg_btn btn-transparent" onClick={()=>{
+
+
+              <button className="reg_btn" onClick={()=>{
+
                 history.push('/register')
               }}>
                 REGISTER

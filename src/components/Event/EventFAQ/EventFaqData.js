@@ -61,12 +61,12 @@ const eventData = [
   {
     id: 4,
     question: "Who can attend?",
-    ans: "Students currently studying in any college , as well as working professionals",
+    ans: "The event is open to both college students and working professionals.",
   },
   {
     id: 5,
     question: "What is the team size?",
-    ans: "A team should have minimum 1 member and a maximum of 4 members",
+    ans: "The allowed team size ranges from a minimum of 1 member to a maximum of 4 members.",
   },
   {
     id: 6,
@@ -76,7 +76,16 @@ const eventData = [
   {
     id: 7,
     question: "Who do I contact if I have any further doubts?",
-    ans: "You can contact at technohack@iedcmec.in, if you have any doubts. We'll be happy to help!",
+    ans: (
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScEd1YTm_P5iXw8IA-21bJOcPaJc_gOZqb9bMwiQajE41uGHw/viewform?usp=sf_link"
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        If you have any further questions or concerns, fill out{" "}
+        <span className="coc">this form.</span> We'll be happy to assist you.
+      </a>
+    ),
   },
   {
     id: 8,
@@ -86,7 +95,7 @@ const eventData = [
   {
     id: 9,
     question: "Can I participate without a computer science background?",
-    ans: "Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.",
+    ans: "Certainly! A computer science background is not a requirement for participation. Your creativity and innovation are not limited by technical skills, and you can always learn the necessary tools and technologies. The goal is to keep learning!",
   },
 ];
 
