@@ -149,6 +149,8 @@
   overflow-y: hidden;
 }
 
+
+
 .reg_btn {
   display: flex;
   justify-content: center;
@@ -165,20 +167,21 @@
   border: 4.1922px solid #ffffff;
   border-radius: 10px;
   position: relative;
+  z-index: 9;
   transform-style: preserve-3d;
   margin: 1rem 0;
   cursor: pointer;
 }
 
-.reg_btn:hover {
+
+.reg_btn:hover{
   color: #0085ff;
 transition: all 0.3s ease-in-out;
   background-color: #ffff;
 }
 
-.btn-transparent {
-  background-color: transparent;
-}
+
+
 
 @media screen and (max-width: 1300px) {
   .event-row-container {
@@ -281,7 +284,8 @@ transition: all 0.3s ease-in-out;
   }
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 800px){
   .reg_btn {
     /* width: 150px; */
     font-size: 1rem;
@@ -290,8 +294,9 @@ transition: all 0.3s ease-in-out;
     /* width: 150px; */
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
   .reg_btn {
     font-size: 1rem;
   }
 }
+
