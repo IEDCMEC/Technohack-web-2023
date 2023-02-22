@@ -163,7 +163,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #ffffff;
-  background: #050912;
+  background: transparent;
   border: 4.1922px solid #ffffff;
   border-radius: 10px;
   position: relative;
@@ -176,6 +176,7 @@
 
 .reg_btn:hover{
   color: #0085ff;
+transition: all 0.3s ease-in-out;
   background-color: #ffff;
 }
 
