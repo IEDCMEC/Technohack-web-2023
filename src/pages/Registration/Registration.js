@@ -25,7 +25,6 @@ const Registration = () => {
     "Health Tech",
     "Environment",
     "Open Innovation",
-    "Anti Drug / MSME",
   ];
   const theme = createTheme({
     components: {
