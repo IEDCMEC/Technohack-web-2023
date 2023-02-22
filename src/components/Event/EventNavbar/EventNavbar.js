@@ -113,11 +113,20 @@ const EventNavbar = () => {
           onClick={() => {
             history.push("/");
           }}
-        ></img>
+          style={{
+            cursor: "pointer",
+          }}
+        />
         <img
           src={logoBlack}
           alt="techno-hack"
           className={scrolled ? "techno-logo-mobile" : "techno-logo-mobile"}
+          onClick={() => {
+            history.push("/");
+          }}
+          style={{
+            cursor: "pointer",
+          }}
         ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className="nav-sections">
