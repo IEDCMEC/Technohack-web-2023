@@ -90,7 +90,12 @@ const eventData = [
   {
     id: 8,
     question: "What is the venue of the hackathon?",
-    ans: `Govt. Model Engineering College, Thrikkakara, Ernakulam, Cochin: 682021`,
+    ans: (<a
+      href="https://goo.gl/maps/zobPcWsfw1k8S8mD8"
+      target={"_blank"}
+      rel="noreferrer"
+      style={{ textDecoration: "underline" }}
+    >Govt. Model Engineering College, Thrikkakara, Ernakulam, Cochin: 682021</a>),
   },
   {
     id: 9,
