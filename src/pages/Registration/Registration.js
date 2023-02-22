@@ -1151,7 +1151,7 @@ const Registration = () => {
                 </>
               ) : null}
               <label htmlFor="idea" className="team-detail-heading">
-                Any Interesting Problem You have in mind to solve during the
+                Any Interesting Problem you have in mind to solve during the
                 hackathon?
               </label>
               <div
@@ -1227,7 +1227,7 @@ const Registration = () => {
                 </>
               ) : null}
               <label htmlFor="idea" className="team-detail-heading">
-                Probable Tracks you may be applying for ?
+                Probable tracks you may be applying for ?
               </label>
               <ThemeProvider theme={theme}>
                 <Autocomplete
