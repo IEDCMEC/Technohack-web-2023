@@ -10,14 +10,14 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
-import {Link as PageLink} from 'react-router-dom'
+import { Link as PageLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 // import logoWhite from '../../../assets/techno-logo-black.png'
 import { useEffect, useState } from "react";
 
 const EventNavbar = () => {
-  const history=useHistory();
+  const history = useHistory();
   const [scrolled, setScroll] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [hamColor, setColor] = useState("#FFFF");
@@ -110,11 +110,23 @@ const EventNavbar = () => {
           src={logoBlack}
           alt="techno-hack"
           className={scrolled ? "techno-logo" : "techno-logo"}
-        ></img>
+          onClick={() => {
+            history.push("/");
+          }}
+          style={{
+            cursor: "pointer",
+          }}
+        />
         <img
           src={logoBlack}
           alt="techno-hack"
           className={scrolled ? "techno-logo-mobile" : "techno-logo-mobile"}
+          onClick={() => {
+            history.push("/");
+          }}
+          style={{
+            cursor: "pointer",
+          }}
         ></img>
         {/* <div className={scroll ? "event-nav-link scroll" : "event-nav-link"}>Technopreneur</div> */}
         <div className="nav-sections">
