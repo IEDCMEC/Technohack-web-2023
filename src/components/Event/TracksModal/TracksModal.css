@@ -147,6 +147,7 @@
   .tracks-modal {
     row-gap: 1rem;
     padding: 2rem;
+    padding-top: 0rem !important;
   }
   .tracks-modal-powered-by {
     transform: translateY(120%);
