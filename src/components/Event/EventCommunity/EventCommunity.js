@@ -15,9 +15,15 @@ export default class EventSponsers extends Component {
         <div id="community">
           <EventSectionHeading text="Community Partners" />
           <div className="community-container">
-            <div className="community">
-              <img className="community-img" src={aws} />
-            </div>
+            <a
+              href="https://www.linkedin.com/in/awsugkochi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="community">
+                <img className="community-img" src={aws} />
+              </div>
+            </a>
             <div className="community">
               <img className="community-img" src={bms} />
             </div>
