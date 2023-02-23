@@ -25,37 +25,47 @@ export default class EventSponsers extends Component {
         <div id="sponsors">
           <EventSectionHeading text="Sponsors" />
           <div data-aos="fade-up" className="sponsors-container">
-            <div className="sponsors">
-              <img className="sponsor-img" src={lyminal} />
-            </div>
-            <div className="sponsors">
-              <img
-                style={{ width: "160px", marginLeft: "10px" }}
-                src={fossunited}
-              />
-            </div>
-            <div className="sponsors">
-              {/* <img
+            <a href="https://lyminal.space/" target="_blank" rel="noreferrer">
+              <div className="sponsors">
+                <img className="sponsor-img" src={lyminal} />
+              </div>
+            </a>
+            <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
+              <div className="sponsors">
+                <img
+                  style={{ width: "160px", marginLeft: "10px" }}
+                  src={fossunited}
+                />
+              </div>
+            </a>
+            <a href="https://github.com " target="_blank" rel="noreferrer">
+              <div className="sponsors">
+                {/* <img
                 style={{ width: "100px", position: "relative", bottom: "8px" }}
                 src={github}
               /> */}
-              <img
-                style={{ width: "100px" }}
-                src={githubname}
-              />
-            </div>
-            <div className="sponsors">
-              <img
-                className="sponsor-img"
-                src={kims}
-                style={{
-                  width: "220px",
-                  height: "80px",
-                  position: "relative",
-                  bottom: "5px",
-                }}
-              />
-            </div>
+                <img style={{ width: "100px" }} src={githubname} />
+              </div>
+            </a>
+
+            <a
+              href="https://www.kimshealth.org/trivandrum/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="sponsors">
+                <img
+                  className="sponsor-img"
+                  src={kims}
+                  style={{
+                    width: "220px",
+                    height: "80px",
+                    position: "relative",
+                    bottom: "5px",
+                  }}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </>
