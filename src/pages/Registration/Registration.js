@@ -108,7 +108,7 @@ const Registration = () => {
         ["2023", "2024", "2025", "2026", "2027"],
         "Invalid Graduation Year"
       )
-      .required("Required"),
+      .optional(),
     leaderEmail: Yup.string()
       .email("Invalid email address")
       .required("Please enter a valid email ID"),
@@ -490,7 +490,7 @@ const Registration = () => {
               </div>
               <div className="row">
                 <div className="inputGroup">
-                  <label>Graduation Year *</label>
+                  <label>Graduation Year</label>
                   <select
                     label="Graduation Year"
                     name="leaderGradYear"
