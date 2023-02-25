@@ -1,6 +1,11 @@
 // use array to define multi-line answers
 const eventData = [
   {
+    id: 10,
+    question: "What is the last date to register for Technohack?",
+    ans: "The registrations will close at 11:59 PM, 10th March 2023",
+  },
+  {
     id: 1,
     question: "What are the rules?",
     ans: [
