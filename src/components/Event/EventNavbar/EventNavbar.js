@@ -5,10 +5,10 @@ import Hamburger from "hamburger-react";
 import { slide as Menu } from "react-burger-menu";
 import {
   Link,
-  Element,
+  // Element,
   animateScroll as scroll,
-  scrollSpy,
-  scroller,
+  // scrollSpy,
+  // scroller,
 } from "react-scroll";
 import { Link as PageLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -20,7 +20,7 @@ const EventNavbar = () => {
   const history = useHistory();
   const [scrolled, setScroll] = useState(false);
   const [isOpen, setOpen] = useState(false);
-  const [hamColor, setColor] = useState("#FFFF");
+  // const [hamColor, setColor] = useState("#FFFF");
 
   useEffect(() => {
     // var scrollNav = document.getElementById("scroll-nav");

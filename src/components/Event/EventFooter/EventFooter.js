@@ -3,7 +3,7 @@ import Logo from "../../../assets/LogoWhite.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Footerbg from "../../../assets/footerbg.svg";
+// import Footerbg from "../../../assets/footerbg.svg";
 const Footer = () => {
   return (
     <div className="event-footer">
