@@ -396,18 +396,18 @@ const Registration = () => {
         onSubmit={handleSubmit}
       >
         {(formik) => (
-          <div className="reg">
-            <div className="registration_heading">TechnoHack Registration</div>
+          <div className='reg'>
+            <div className='registration_heading'>TechnoHack Registration</div>
             {/* TEAM NAME */}
             <form onSubmit={formik.handleSubmit}>
-              <div className="inputGroup">
-                <label htmlFor="teamName" className="team-detail-heading">
+              <div className='inputGroup'>
+                <label htmlFor='teamName' className='team-detail-heading'>
                   Team Name *
                 </label>
                 <input
-                  type="text"
-                  name="teamName"
-                  id="teamName"
+                  type='text'
+                  name='teamName'
+                  id='teamName'
                   value={formik.values.teamName}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -422,31 +422,31 @@ const Registration = () => {
                   </div>
                 ) : null}
               </div>{" "}
-              <div className="inputGroup">
+              <div className='inputGroup'>
                 <label>Team Size *</label>
                 <select
-                  label="teamSize"
-                  name="teamSize"
+                  label='teamSize'
+                  name='teamSize'
                   value={teamSize}
                   onChange={(e) => {
                     setTeamSize(+e.target.value);
                   }}
                 >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value='1'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
                 </select>
               </div>
               {/* TEAM LEADER NAME */}
-              <div className="team-detail-heading">Team Leader Details</div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="teamLeaderName">Name *</label>
+              <div className='team-detail-heading'>Team Leader Details</div>
+              <div className='row'>
+                <div className='inputGroup'>
+                  <label htmlFor='teamLeaderName'>Name *</label>
                   <input
-                    type="text"
-                    name="teamLeaderName"
-                    id="teamLeaderName"
+                    type='text'
+                    name='teamLeaderName'
+                    id='teamLeaderName'
                     value={formik.values.teamLeaderName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -462,15 +462,15 @@ const Registration = () => {
                     </div>
                   ) : null}
                 </div>
-                <div className="inputGroup">
+                <div className='inputGroup'>
                   {/* INSTITUTION NAME */}
-                  <label htmlFor="leaderInstitutionName">
+                  <label htmlFor='leaderInstitutionName'>
                     Institution Name *
                   </label>
                   <input
-                    type="text"
-                    name="leaderInstitutionName"
-                    id="leaderInstitutionName"
+                    type='text'
+                    name='leaderInstitutionName'
+                    id='leaderInstitutionName'
                     value={formik.values.leaderInstitutionName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -488,21 +488,21 @@ const Registration = () => {
                   ) : null}
                 </div>
               </div>
-              <div className="row">
-                <div className="inputGroup">
+              <div className='row'>
+                <div className='inputGroup'>
                   <label>Graduation Year</label>
                   <select
-                    label="Graduation Year"
-                    name="leaderGradYear"
+                    label='Graduation Year'
+                    name='leaderGradYear'
                     value={formik.values.leaderGradYear}
                     onChange={formik.handleChange}
                   >
-                    <option value="">Select</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
+                    <option value=''>Select</option>
+                    <option value='2023'>2023</option>
+                    <option value='2024'>2024</option>
+                    <option value='2025'>2025</option>
+                    <option value='2026'>2026</option>
+                    <option value='2027'>2027</option>
                   </select>
                   {formik.touched.leaderGradYear &&
                   formik.errors.leaderGradYear ? (
@@ -517,12 +517,12 @@ const Registration = () => {
                   ) : null}
                 </div>
 
-                <div className="inputGroup">
-                  <label htmlFor="leaderEmail">Email Address *</label>
+                <div className='inputGroup'>
+                  <label htmlFor='leaderEmail'>Email Address *</label>
                   <input
-                    type="text"
-                    name="leaderEmail"
-                    id="leaderEmail"
+                    type='text'
+                    name='leaderEmail'
+                    id='leaderEmail'
                     value={formik.values.leaderEmail}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -538,13 +538,13 @@ const Registration = () => {
                   ) : null}
                 </div>
               </div>
-              <div className="row">
-                <div className="inputGroup">
-                  <label htmlFor="leaderLinkedIn">LinkedIn URL *</label>
+              <div className='row'>
+                <div className='inputGroup'>
+                  <label htmlFor='leaderLinkedIn'>LinkedIn URL *</label>
                   <input
-                    type="text"
-                    name="leaderLinkedIn"
-                    id="leaderLinkedIn"
+                    type='text'
+                    name='leaderLinkedIn'
+                    id='leaderLinkedIn'
                     value={formik.values.leaderLinkedIn}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -560,12 +560,12 @@ const Registration = () => {
                     </div>
                   ) : null}
                 </div>
-                <div className="inputGroup">
-                  <label htmlFor="leaderGitHub">GitHub URL *</label>
+                <div className='inputGroup'>
+                  <label htmlFor='leaderGitHub'>GitHub URL *</label>
                   <input
-                    type="text"
-                    name="leaderGitHub"
-                    id="leaderGitHub"
+                    type='text'
+                    name='leaderGitHub'
+                    id='leaderGitHub'
                     value={formik.values.leaderGitHub}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -580,12 +580,12 @@ const Registration = () => {
                     </div>
                   ) : null}
                 </div>
-                <div className="inputGroup">
-                  <label htmlFor="leaderDevfolio">Devfolio URL *</label>
+                <div className='inputGroup'>
+                  <label htmlFor='leaderDevfolio'>Devfolio URL *</label>
                   <input
-                    type="text"
-                    name="leaderDevfolio"
-                    id="leaderDevfolio"
+                    type='text'
+                    name='leaderDevfolio'
+                    id='leaderDevfolio'
                     value={formik.values.leaderDevfolio}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -605,16 +605,16 @@ const Registration = () => {
               </div>
               {teamSize >= 2 ? (
                 <>
-                  <div className="team-detail-heading">
+                  <div className='team-detail-heading'>
                     Team Member 2 Details
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember2Name">Name</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember2Name'>Name</label>
                       <input
-                        type="text"
-                        name="teamMember2Name"
-                        id="teamMember2Name"
+                        type='text'
+                        name='teamMember2Name'
+                        id='teamMember2Name'
                         value={formik.values.teamMember2Name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -630,15 +630,15 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
+                    <div className='inputGroup'>
                       {/* INSTITUTION NAME */}
-                      <label htmlFor="teamMember2InstitutionName">
+                      <label htmlFor='teamMember2InstitutionName'>
                         Institution Name
                       </label>
                       <input
-                        type="text"
-                        name="teamMember2InstitutionName"
-                        id="teamMember2InstitutionName"
+                        type='text'
+                        name='teamMember2InstitutionName'
+                        id='teamMember2InstitutionName'
                         value={formik.values.teamMember2InstitutionName}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -655,21 +655,21 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
+                  <div className='row'>
+                    <div className='inputGroup'>
                       <label>Graduation Year</label>
                       <select
-                        label="Graduation Year"
-                        name="teamMember2GradYear"
+                        label='Graduation Year'
+                        name='teamMember2GradYear'
                         value={formik.values.teamMember2GradYear}
                         onChange={formik.handleChange}
                       >
-                        <option value="">Select</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
+                        <option value=''>Select</option>
+                        <option value='2023'>2023</option>
+                        <option value='2024'>2024</option>
+                        <option value='2025'>2025</option>
+                        <option value='2026'>2026</option>
+                        <option value='2027'>2027</option>
                       </select>
                       {formik.touched.teamMember2GradYear &&
                       formik.errors.teamMember2GradYear ? (
@@ -683,12 +683,12 @@ const Registration = () => {
                       ) : null}
                     </div>
 
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember2Email">Email Address</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember2Email'>Email Address</label>
                       <input
-                        type="text"
-                        name="teamMember2Email"
-                        id="teamMember2Email"
+                        type='text'
+                        name='teamMember2Email'
+                        id='teamMember2Email'
                         value={formik.values.teamMember2Email}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -705,13 +705,13 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember2LinkedIn">LinkedIn URL</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember2LinkedIn'>LinkedIn URL</label>
                       <input
-                        type="text"
-                        name="teamMember2LinkedIn"
-                        id="teamMember2LinkedIn"
+                        type='text'
+                        name='teamMember2LinkedIn'
+                        id='teamMember2LinkedIn'
                         value={formik.values.teamMember2LinkedIn}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -727,12 +727,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember2GitHub">GitHub URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember2GitHub'>GitHub URL</label>
                       <input
-                        type="text"
-                        name="teamMember2GitHub"
-                        id="teamMember2GitHub"
+                        type='text'
+                        name='teamMember2GitHub'
+                        id='teamMember2GitHub'
                         value={formik.values.teamMember2GitHub}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -748,12 +748,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember2Devfolio">Devfolio URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember2Devfolio'>Devfolio URL</label>
                       <input
-                        type="text"
-                        name="teamMember2Devfolio"
-                        id="teamMember2Devfolio"
+                        type='text'
+                        name='teamMember2Devfolio'
+                        id='teamMember2Devfolio'
                         value={formik.values.teamMember2Devfolio}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -775,16 +775,16 @@ const Registration = () => {
               ) : null}
               {teamSize >= 3 ? (
                 <>
-                  <div className="team-detail-heading">
+                  <div className='team-detail-heading'>
                     Team Member 3 Details
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember3Name">Name</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember3Name'>Name</label>
                       <input
-                        type="text"
-                        name="teamMember3Name"
-                        id="teamMember3Name"
+                        type='text'
+                        name='teamMember3Name'
+                        id='teamMember3Name'
                         value={formik.values.teamMember3Name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -800,15 +800,15 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
+                    <div className='inputGroup'>
                       {/* INSTITUTION NAME */}
-                      <label htmlFor="teamMember3InstitutionName">
+                      <label htmlFor='teamMember3InstitutionName'>
                         Institution Name
                       </label>
                       <input
-                        type="text"
-                        name="teamMember3InstitutionName"
-                        id="teamMember3InstitutionName"
+                        type='text'
+                        name='teamMember3InstitutionName'
+                        id='teamMember3InstitutionName'
                         value={formik.values.teamMember3InstitutionName}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -825,21 +825,21 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
+                  <div className='row'>
+                    <div className='inputGroup'>
                       <label>Graduation Year</label>
                       <select
-                        label="Graduation Year"
-                        name="teamMember3GradYear"
+                        label='Graduation Year'
+                        name='teamMember3GradYear'
                         value={formik.values.teamMember3GradYear}
                         onChange={formik.handleChange}
                       >
-                        <option value="">Select</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
+                        <option value=''>Select</option>
+                        <option value='2023'>2023</option>
+                        <option value='2024'>2024</option>
+                        <option value='2025'>2025</option>
+                        <option value='2026'>2026</option>
+                        <option value='2027'>2027</option>
                       </select>
                       {formik.touched.teamMember3GradYear &&
                       formik.errors.teamMember3GradYear ? (
@@ -853,12 +853,12 @@ const Registration = () => {
                       ) : null}
                     </div>
 
-                    <div className="inputGroup">
-                      <label htmlFor="leaderEmail">Email Address</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='leaderEmail'>Email Address</label>
                       <input
-                        type="text"
-                        name="teamMember3Email"
-                        id="teamMember3Email"
+                        type='text'
+                        name='teamMember3Email'
+                        id='teamMember3Email'
                         value={formik.values.teamMember3Email}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -875,13 +875,13 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember3LinkedIn">LinkedIn URL</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember3LinkedIn'>LinkedIn URL</label>
                       <input
-                        type="text"
-                        name="teamMember3LinkedIn"
-                        id="teamMember3LinkedIn"
+                        type='text'
+                        name='teamMember3LinkedIn'
+                        id='teamMember3LinkedIn'
                         value={formik.values.teamMember3LinkedIn}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -897,12 +897,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember3GitHub">GitHub URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember3GitHub'>GitHub URL</label>
                       <input
-                        type="text"
-                        name="teamMember3GitHub"
-                        id="teamMember3GitHub"
+                        type='text'
+                        name='teamMember3GitHub'
+                        id='teamMember3GitHub'
                         value={formik.values.teamMember3GitHub}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -918,12 +918,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember3Devfolio">Devfolio URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember3Devfolio'>Devfolio URL</label>
                       <input
-                        type="text"
-                        name="teamMember3Devfolio"
-                        id="teamMember3Devfolio"
+                        type='text'
+                        name='teamMember3Devfolio'
+                        id='teamMember3Devfolio'
                         value={formik.values.teamMember3Devfolio}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -945,16 +945,16 @@ const Registration = () => {
               ) : null}
               {teamSize >= 4 ? (
                 <>
-                  <div className="team-detail-heading">
+                  <div className='team-detail-heading'>
                     Team Member 4 Details
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember4Name">Name</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember4Name'>Name</label>
                       <input
-                        type="text"
-                        name="teamMember4Name"
-                        id="teamMember4Name"
+                        type='text'
+                        name='teamMember4Name'
+                        id='teamMember4Name'
                         value={formik.values.teamMember4Name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -970,15 +970,15 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
+                    <div className='inputGroup'>
                       {/* INSTITUTION NAME */}
-                      <label htmlFor="teamMember4InstitutionName">
+                      <label htmlFor='teamMember4InstitutionName'>
                         Institution Name
                       </label>
                       <input
-                        type="text"
-                        name="teamMember4InstitutionName"
-                        id="teamMember4InstitutionName"
+                        type='text'
+                        name='teamMember4InstitutionName'
+                        id='teamMember4InstitutionName'
                         value={formik.values.teamMember4InstitutionName}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -995,21 +995,21 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
+                  <div className='row'>
+                    <div className='inputGroup'>
                       <label>Graduation Year</label>
                       <select
-                        label="Graduation Year"
-                        name="teamMember4GradYear"
+                        label='Graduation Year'
+                        name='teamMember4GradYear'
                         value={formik.values.teamMember4GradYear}
                         onChange={formik.handleChange}
                       >
-                        <option value="">Select</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
+                        <option value=''>Select</option>
+                        <option value='2023'>2023</option>
+                        <option value='2024'>2024</option>
+                        <option value='2025'>2025</option>
+                        <option value='2026'>2026</option>
+                        <option value='2027'>2027</option>
                       </select>
                       {formik.touched.teamMember4GradYear &&
                       formik.errors.teamMember4GradYear ? (
@@ -1023,12 +1023,12 @@ const Registration = () => {
                       ) : null}
                     </div>
 
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember4Email">Email Address</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember4Email'>Email Address</label>
                       <input
-                        type="text"
-                        name="teamMember4Email"
-                        id="teamMember4Email"
+                        type='text'
+                        name='teamMember4Email'
+                        id='teamMember4Email'
                         value={formik.values.teamMember4Email}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -1045,13 +1045,13 @@ const Registration = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember4LinkedIn">LinkedIn URL</label>
+                  <div className='row'>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember4LinkedIn'>LinkedIn URL</label>
                       <input
-                        type="text"
-                        name="teamMember4LinkedIn"
-                        id="teamMember4LinkedIn"
+                        type='text'
+                        name='teamMember4LinkedIn'
+                        id='teamMember4LinkedIn'
                         value={formik.values.teamMember4LinkedIn}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -1067,12 +1067,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember4GitHub">GitHub URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember4GitHub'>GitHub URL</label>
                       <input
-                        type="text"
-                        name="teamMember4GitHub"
-                        id="teamMember4GitHub"
+                        type='text'
+                        name='teamMember4GitHub'
+                        id='teamMember4GitHub'
                         value={formik.values.teamMember4GitHub}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -1088,12 +1088,12 @@ const Registration = () => {
                         </div>
                       ) : null}
                     </div>
-                    <div className="inputGroup">
-                      <label htmlFor="teamMember4Devfolio">Devfolio URL</label>
+                    <div className='inputGroup'>
+                      <label htmlFor='teamMember4Devfolio'>Devfolio URL</label>
                       <input
-                        type="text"
-                        name="teamMember4Devfolio"
-                        id="teamMember4Devfolio"
+                        type='text'
+                        name='teamMember4Devfolio'
+                        id='teamMember4Devfolio'
                         value={formik.values.teamMember4Devfolio}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -1113,7 +1113,7 @@ const Registration = () => {
                   </div>
                 </>
               ) : null}
-              <label htmlFor="idea" className="team-detail-heading">
+              <label htmlFor='idea' className='team-detail-heading'>
                 Any Interesting Problem You have in mind to solve during the
                 hackathon?
               </label>
@@ -1134,13 +1134,13 @@ const Registration = () => {
                   }}
                 >
                   <input
-                    type="radio"
+                    type='radio'
                     value={interesting}
                     onClick={(e) => {
                       setInteresting(true);
                     }}
                     checked={interesting}
-                    name="problem"
+                    name='problem'
                   />
                   <label>Yes</label>
                 </div>
@@ -1153,9 +1153,9 @@ const Registration = () => {
                   }}
                 >
                   <input
-                    type="radio"
+                    type='radio'
                     value={interesting}
-                    name="problem"
+                    name='problem'
                     checked={!interesting}
                     onClick={(e) => {
                       setInteresting(false);
@@ -1166,14 +1166,15 @@ const Registration = () => {
               </div>
               {interesting ? (
                 <>
-                  <label htmlFor="idea" className="team-detail-heading">
+                  <label htmlFor='idea' className='team-detail-heading'>
                     Brief Description of Idea
                   </label>
                   <textarea
-                    type="text"
+                    type='text'
                     rows={10}
-                    name="idea"
-                    id="idea"
+                    placeholder='There are greater chances of you succeeding in the hackathon if you have an idea already in mind.'
+                    name='idea'
+                    id='idea'
                     value={formik.values.idea}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -1189,14 +1190,14 @@ const Registration = () => {
                   ) : null}
                 </>
               ) : null}
-              <label htmlFor="idea" className="team-detail-heading">
+              <label htmlFor='idea' className='team-detail-heading'>
                 Probable Tracks you may be applying for ?
               </label>
               <ThemeProvider theme={theme}>
                 <Autocomplete
                   options={allTracks}
                   sx={{ width: "90%" }}
-                  name="tracks"
+                  name='tracks'
                   multiple
                   onChange={(event, value) => {
                     setTracks(value);
@@ -1229,21 +1230,21 @@ const Registration = () => {
                   </div>
                 ) : null}
               </ThemeProvider>
-              <label htmlFor="suggestions" className="team-detail-heading">
+              <label htmlFor='suggestions' className='team-detail-heading'>
                 Anything else you want to let us know ?
               </label>
               <textarea
-                type="text"
+                type='text'
                 rows={10}
-                name="suggestions"
-                id="suggestions"
+                name='suggestions'
+                id='suggestions'
                 value={formik.values.suggestions}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
               <button
-                type="submit"
-                className="submit-btn"
+                type='submit'
+                className='submit-btn'
                 // onClick={formik.handleSubmit}
                 style={{
                   backgroundColor: formik.isSubmitting ? "gray" : "#00a1ea",
