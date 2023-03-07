@@ -2,7 +2,6 @@ import { Component } from "react";
 import EventSectionHeading from "../EventSectionHeading/EventSectionHeading";
 import { Element } from "react-scroll";
 import "./EventCommunity.css";
-import logobg from "../../../assets/logobg.svg";
 import aws from "../../../assets/aws.png";
 import bms from "../../../assets/bms.png";
 import bma from "../../../assets/bma.png";
@@ -21,14 +20,14 @@ export default class EventSponsers extends Component {
               rel="noreferrer"
             >
               <div className="community">
-                <img className="community-img" src={aws} />
+                <img className="community-img" src={aws} alt="aws logo"/>
               </div>
             </a>
             <div className="community">
-              <img className="community-img" src={bms} />
+              <img className="community-img" src={bms} alt="bms logo" />
             </div>
             <div className="community">
-              <img className="community-img" src={bma} />
+              <img className="community-img" src={bma} alt="bma logo"/>
             </div>
             {/* <div className="community">
               <img
