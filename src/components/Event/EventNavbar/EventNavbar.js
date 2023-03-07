@@ -20,7 +20,7 @@ const EventNavbar = () => {
   const history = useHistory();
   const [scrolled, setScroll] = useState(false);
   const [isOpen, setOpen] = useState(false);
-  // const [hamColor, setColor] = useState("#FFFF");
+  const [hamColor, setColor] = useState("#FFFF");
 
   useEffect(() => {
     // var scrollNav = document.getElementById("scroll-nav");

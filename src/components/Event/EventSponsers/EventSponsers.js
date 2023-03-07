@@ -27,14 +27,14 @@ export default class EventSponsers extends Component {
           <div data-aos="fade-up" className="sponsors-container">
             <a href="https://lyminal.space/" target="_blank" rel="noreferrer">
               <div className="sponsors">
-                <img className="sponsor-img" src={lyminal}  />
+                <img className="sponsor-img" src={lyminal} alt="Lyminal Logo"  />
               </div>
             </a>
             <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
               <div className="sponsors">
                 <img
                   style={{ width: "160px", marginLeft: "10px" }}
-                  src={fossunited}
+                  src={fossunited} alt="Foss United Logo"
                 />
               </div>
             </a>
@@ -44,7 +44,7 @@ export default class EventSponsers extends Component {
                 style={{ width: "100px", position: "relative", bottom: "8px" }}
                 src={github}
               /> */}
-                <img style={{ width: "100px" }} src={githubname} />
+                <img style={{ width: "100px" }} src={githubname} alt="github logo" />
               </div>
             </a>
 
@@ -56,10 +56,10 @@ export default class EventSponsers extends Component {
               <div className="sponsors">
                 <img
                   className="sponsor-img"
-                  src={kims}
+                  src={kims} alt="kims logo"
                   style={{
-                    width: "220px",
-                    height: "80px",
+                    width: "140px",
+                    height: "120px",
                     position: "relative",
                     bottom: "5px",
                   }}
