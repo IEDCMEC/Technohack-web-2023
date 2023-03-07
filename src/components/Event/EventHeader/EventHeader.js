@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import HeaderImage from "../../../assets/event-header.png";
+// import HeaderImage from "../../../assets/event-header.png";
 import CalenderVector from "../../../assets/CalendarVector.svg";
 import LocationVector from "../../../assets/LocationVector.svg";
 // import eventregbtn from '../../../assets/event-reg-btn.png';
@@ -47,7 +47,7 @@ export default function EventHeader() {
               <div className="text">
                 <div className="landing-date">
                   <div data-aos="fade-up" className="landing-date-vector">
-                    <img src={CalenderVector} />
+                    <img src={CalenderVector} alt="calender icon" />
                   </div>{" "}
                   <div data-aos="fade-up" className="landing-date-text">
                     18 - 19 March 2023
@@ -56,7 +56,7 @@ export default function EventHeader() {
                 <div className="landing-location">
                   <div data-aos="fade-up" className="landing-location-vector">
                     {" "}
-                    <img src={LocationVector} />
+                    <img src={LocationVector} alt="location icon"/>
                   </div>
                   <div data-aos="fade-up" className="landing-date-text">
                     Govt. Model Engineering College <br /> Thrikkakara
@@ -66,7 +66,7 @@ export default function EventHeader() {
               <div className="loc">
                 <div data-aos="fade-up" className="loc-vector">
                   {" "}
-                  <img src={LocationVector} />
+                  <img src={LocationVector} alt="location icon"/>
                 </div>
                 <div data-aos="fade-up" className="loc-text">
                   Govt Model Engineering College <br /> Thrikkakara
