@@ -203,6 +203,7 @@ const Registration = () => {
   });
 
   const handleSubmit = async (values, actions) => {
+    let toEmailList;
     if (Array.isArray(tracks) && tracks.length < 1) {
       setTracksError("Please Choose Atleast one track");
       return;
@@ -253,6 +254,7 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
+        toEmailList = [values.leaderEmail];
       }
       if (teamSize === 2) {
         console.log("team size 2");
@@ -286,6 +288,7 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
+        toEmailList = [values.leaderEmail,values.teamMember2Email];
       }
       if (teamSize === 3) {
         const teamMember1 = {
@@ -328,6 +331,7 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
+        toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email];
       }
       if (teamSize === 4) {
         const teamMember1 = {
@@ -380,9 +384,41 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
+        toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email,values.teamMember4Email];
       }
     }
+    const url =
+    "https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email";
+    const params = {
+      subject: `Technohack 2023 - Form Submission Received`,
+      content: 
+      `Hi There,
 
+      Thank you for your interest in Technohack 2023. We have successfully received the form submitted by your team, ${values.teamName}.
+      
+      We will be reviewing your application, and further updates will be notified via e-mail.
+      
+      For more information and event rules, please visit our website at [https://technohack.technopreneur.co.in/]
+      
+      Best regards,
+      
+      The Technohack Team`,
+      toEmail: toEmailList,
+    };
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
     setSubmitting(false);
   };
 
