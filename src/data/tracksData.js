@@ -50,15 +50,20 @@ export const tracksData = [
       {
         id: 1,
         statement:
-          "Public find it very difficult to navigate through large hospitals. Bystanders often get lost and need constant help, which in a hospital environment is not the priority. Find a solution so that the public can track and reach various hospital facilities with ease.",
+          "Around 762 million people in the world have mental illnesses, with depression being a common cause. Research has shown that certain language patterns can indicate depression and self-destructive behaviour. Develop a mental illness detection system that detects mental illness through analysing 2-5 minutes of a patient's speech and behaviour, and recommends the nearest qualified healthcare professional for further treatment.",
       },
       {
         id: 2,
         statement:
-          "Patient history is very important while treating diseases and the numerous amount of data regarding the diagnosis and treatment generated usually get lost easily. Find a solution to access the data regarding one's medical history all in one place and ensure privacy.",
+          "Speech impediments such as lisps, stutters, and dysarthria can develop due to muscle weakness, autism, degenerative diseases, etc. It could be a disadvantage in an able-bodied world and may often be a source of insecurity and can affect a person's self-esteem and overall quality of life, especially in minors. Develop a speech training buddy that helps individuals to manage or overcome these impediments.",
       },
       {
         id: 3,
+        statement:
+          "Public find it very difficult to navigate through large hospitals. Bystanders often get lost and need constant help, which in a hospital environment is not the priority. Find a solution so that the public can track and reach various hospital facilities with ease.",
+      },
+      {
+        id: 4,
         statement:
           "Audio-visually impaired people still find it difficult to navigate through their daily life. Public transport and information access is still a tedious procedure and needed technology is not equipped. Find a solution to make it easier for the audio-visaully impaired people to use public transport.",
       },
