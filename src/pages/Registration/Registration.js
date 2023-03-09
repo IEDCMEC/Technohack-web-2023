@@ -203,6 +203,7 @@ const Registration = () => {
   });
 
   const handleSubmit = async (values, actions) => {
+    let toEmailList;
     if (Array.isArray(tracks) && tracks.length < 1) {
       setTracksError("Please Choose Atleast one track");
       return;
@@ -382,7 +383,37 @@ const Registration = () => {
         }
       }
     }
+    toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email,values.teamMember4Email].filter(email=>email.length);
+    const url = process.env.REACT_APP_TECHNOHACK_CONFIRMATION_EMAIL_URL;
+    const params = {
+      subject: `Technohack 2023 - Form Submission Received`,
+      content: 
+      `Hi There,
 
+      Thank you for your interest in Technohack 2023. We have successfully received the form submitted by your team, ${values.teamName}.
+      
+      We will be reviewing your application, and further updates will be notified via e-mail.
+      
+      For more information and event rules, please visit our website at [https://technohack.technopreneur.co.in/]
+      
+      Best regards,
+      
+      The Technohack Team`,
+      toEmail: toEmailList,
+    };
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
     setSubmitting(false);
   };
 
