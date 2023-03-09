@@ -254,7 +254,6 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
-        toEmailList = [values.leaderEmail];
       }
       if (teamSize === 2) {
         console.log("team size 2");
@@ -288,7 +287,6 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
-        toEmailList = [values.leaderEmail,values.teamMember2Email];
       }
       if (teamSize === 3) {
         const teamMember1 = {
@@ -331,7 +329,6 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
-        toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email];
       }
       if (teamSize === 4) {
         const teamMember1 = {
@@ -384,11 +381,10 @@ const Registration = () => {
           toast.success("Team Registered Successfully");
           history.push("/");
         }
-        toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email,values.teamMember4Email];
       }
     }
-    const url =
-    "https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email";
+    toEmailList = [values.leaderEmail,values.teamMember2Email,values.teamMember3Email,values.teamMember4Email].filter(email=>email.length);
+    const url = process.env.REACT_APP_TECHNOHACK_CONFIRMATION_EMAIL_URL;
     const params = {
       subject: `Technohack 2023 - Form Submission Received`,
       content: 
@@ -417,7 +413,6 @@ const Registration = () => {
       console.log(data);
     } catch (error) {
       console.error(error);
-      throw error;
     }
     setSubmitting(false);
   };
