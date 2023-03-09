@@ -67,6 +67,11 @@ export const tracksData = [
         statement:
           "Audio-visually impaired people still find it difficult to navigate through their daily life. Public transport and information access is still a tedious procedure and needed technology is not equipped. Find a solution to make it easier for the audio-visaully impaired people to use public transport.",
       },
+      {
+        id: 5,
+        statement:
+          "Any other problem statement of your own which could come under Health Tech",
+      },
     ],
     prizes: [
       {
