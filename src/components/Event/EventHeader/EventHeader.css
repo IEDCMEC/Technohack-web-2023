@@ -148,6 +148,19 @@
   overflow-y: hidden;
 }
 
+.reg-closed{
+  display: flex;
+  justify-content: start;
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: transparent;
+  position: relative;
+}
+
 .reg_btn {
   display: flex;
   justify-content: center;

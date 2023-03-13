@@ -84,14 +84,18 @@ export default function EventHeader() {
                   }}
                 ></div>
               </div> */}
-              <button
+              <div className="reg-closed">
+                Registrations Closed !
+              </div>
+              {/* <button
                 className="reg_btn"
                 onClick={() => {
                   history.push("/register");
                 }}
               >
-                REGISTER
-              </button>
+                Registration Closed !
+                Stay Tuned
+              </button> */}
             </div>
           </div>
 
