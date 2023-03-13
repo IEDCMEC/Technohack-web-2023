@@ -16,7 +16,7 @@ export default class App extends Component {
         <Switch>
           <Route path="/" component={Event} exact />
           <Route path="/code-of-conduct" component={CoC} exact />
-          <Route path="/register" component={Registration} exact />
+          {/* <Route path="/register" component={Registration} exact /> */}
         </Switch>
       </BrowserRouter>
     );
