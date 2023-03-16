@@ -26,6 +26,11 @@ export const tracksData = [
         statement:
           "Find a solution for vendors across Kerala to manage private customer information securely, to prevent misuse or sale of data. e.g., using signatures or encryption.",
       },
+      {
+        id: 4,
+        statement:
+          "Apart from the above problem statements, any innovative solution related to cyber security domain is welcome. The solution could address issues related to data privacy, network security, identity and access management, threat intelligence, security automation and orchestration, cloud security, or any other relevant cybersecurity challenge.",
+      },
     ],
     prizes: [
       {
@@ -70,7 +75,7 @@ export const tracksData = [
       {
         id: 5,
         statement:
-          "Any other problem statement of your own which could come under Health Tech",
+          "Any other problem statement of your own which could come under Health Tech domain.",
       },
     ],
     prizes: [
@@ -130,8 +135,14 @@ export const tracksData = [
     sponsorlogo: bulb,
     problemstatements: [
       {
+        id: 1,
         statement:
-          "In this track, we are looking for individuals or teams who want to collaborate and come up with innovative solutions to real-world problems.The aim of the track is to encourage collaboration, creativity, and outside-the-box thinking. We encourage participants to think beyond traditional solutions and incorporate emerging technologies and trends in their ideas. Register now and get ready to create innovative solutions that have the potential to make a real impact!",
+          "The Open Innovation track is seeking teams with the ability to generate inventive solutions for real-world issues. Our goal is to foster collaboration, creativity, and unconventional thinking. Participants are encouraged to think beyond conventional solutions by integrating emerging technologies and trends into their concepts. Brace yourselves to develop innovative solutions that could potentially address pressing real-world problems!",
+      },
+      {
+        id: 2,
+        statement:
+          "Environment-focused: We're looking for any innovative ideas that could benefit our planet and promote sustainability.",
       },
     ],
     prizes: [

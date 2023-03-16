@@ -74,7 +74,7 @@ export default function SponsoredTracks() {
           </button>
         </div>
 
-        <div data-aos="fade-up" aos-delay="200" class="card">
+        {/* <div data-aos="fade-up" aos-delay="200" class="card">
           <div class="card-img">
             <img src={earth} />
           </div>
@@ -91,7 +91,7 @@ export default function SponsoredTracks() {
           >
             Read More
           </button>
-        </div>
+        </div> */}
 
         <div data-aos="fade-up" aos-delay="250" class="card">
           <div class="card-img">

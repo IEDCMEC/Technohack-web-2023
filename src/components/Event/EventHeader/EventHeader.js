@@ -85,7 +85,7 @@ export default function EventHeader() {
                 ></div>
               </div> */}
               <div className="reg-closed">
-                Registrations Closed !
+                Registrations Closed.
               </div>
               {/* <button
                 className="reg_btn"
